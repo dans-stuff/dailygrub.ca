@@ -61,23 +61,11 @@ export default function Home() {
               <p className="text-sm text-gray-400 mt-1">Try another day</p>
             </div>
           ) : (
-            <>
-              <div className="mb-3 text-xs text-gray-500">
-                <span className="inline-flex items-center gap-1.5">
-                  <svg className="w-3 h-3 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Orange = time-limited
-                </span>
-                <span className="mx-2">•</span>
-                <span>Click for details</span>
-              </div>
-              {dealsGrouped.map(({ restaurant, activeDeals }) =>
-                activeDeals.map((deal) => (
-                  <DealCard key={deal.id} restaurant={restaurant} deal={deal} />
-                ))
-              )}
-            </>
+            dealsGrouped.map(({ restaurant, activeDeals }) =>
+              activeDeals.map((deal) => (
+                <DealCard key={deal.id} restaurant={restaurant} deal={deal} />
+              ))
+            )
           )}
         </div>
 
