@@ -30,30 +30,30 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <div className="max-w-2xl w-full">
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Daily Grub</h1>
-          <p className="text-gray-600">Find the best food & drink deals in your city</p>
+          <p className="text-base text-gray-600">Find daily specials and happy hours in your city</p>
         </div>
 
         {/* City Selector */}
-        <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
-          <div className="p-6 border-b border-gray-200">
+        <div className="bg-white border border-gray-300 rounded-lg shadow-sm overflow-hidden">
+          <div className="p-6 border-b border-gray-300">
             <h2 className="text-lg font-semibold text-gray-900">Choose your city</h2>
           </div>
           <div>
             {Object.entries(citiesByProvince).map(([provinceCode, provinceCities]) => (
               <div key={provinceCode}>
                 {/* Province Header */}
-                <div className="px-6 py-3 bg-gray-50 border-b border-gray-200">
-                  <h3 className="text-sm font-semibold text-gray-700">
+                <div className="px-6 py-3 bg-gray-50 border-b border-gray-300">
+                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
                     {provinceNames[provinceCode] || provinceCode}
                   </h3>
                 </div>
                 {/* Cities in Province */}
-                <div className="divide-y divide-gray-200">
+                <div className="divide-y divide-gray-300">
                   {provinceCities.map((city) => (
                     <Link
                       key={city.slug}
@@ -78,19 +78,17 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 text-center text-xs sm:text-sm text-gray-500">
-          <div className="space-y-2.5">
-            <div>
-              <Link href="/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 transition-colors">
-                Privacy
-              </Link>
-            </div>
-            <p className="text-gray-600">
-              Missing a deal or restaurant?{' '}
-              <a href="mailto:support@lunoh.com" className="text-gray-900 hover:underline break-all">
-                support@lunoh.com
-              </a>
-            </p>
+        <footer className="mt-12 text-center text-sm text-gray-500 space-y-3">
+          <p className="text-gray-600">
+            Missing your city?{' '}
+            <a href="mailto:support@lunoh.com" className="text-gray-900 hover:text-emerald-600 font-medium transition-colors">
+              support@lunoh.com
+            </a>
+          </p>
+          <div className="pt-3 border-t border-gray-300">
+            <Link href="/privacy" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700 transition-colors">
+              Privacy Policy
+            </Link>
           </div>
         </footer>
       </div>

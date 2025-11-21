@@ -14,21 +14,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daily Grub - Find Food and Drink Deals",
-  description: "Find the best daily specials and happy hours at restaurants in your city. Wing nights, taco Tuesdays, happy hours and more. Updated daily.",
-  keywords: ["food deals", "restaurant specials", "happy hour", "wing night", "taco tuesday", "Alberta", "Canada", "cheap eats"],
+  title: "Daily Grub - Daily Restaurant Specials & Happy Hours",
+  description: "Never miss a deal. Find daily specials, happy hours, wing nights, and taco Tuesdays at local restaurants. Updated daily with verified prices.",
+  keywords: ["restaurant deals", "daily specials", "happy hour", "wing night", "taco tuesday", "food deals", "cheap eats", "Alberta", "Canada"],
   openGraph: {
-    title: "Daily Grub - Find Food and Drink Deals",
-    description: "Find the best daily specials and happy hours at restaurants in your city.",
+    title: "Daily Grub - Daily Restaurant Specials & Happy Hours",
+    description: "Find daily specials, happy hours, and food deals at local restaurants. Updated daily.",
     url: "https://dailygrub.ca",
     siteName: "Daily Grub",
     locale: "en_CA",
     type: "website",
   },
   twitter: {
-    card: "summary",
-    title: "Daily Grub - Find Food and Drink Deals",
-    description: "Find the best daily specials and happy hours at restaurants in your city.",
+    card: "summary_large_image",
+    title: "Daily Grub - Daily Restaurant Specials & Happy Hours",
+    description: "Find daily specials, happy hours, and food deals at local restaurants.",
   },
   icons: {
     icon: "/favicon.svg",

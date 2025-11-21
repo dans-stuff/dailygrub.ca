@@ -69,21 +69,20 @@ export default function CityPage() {
         <header className="mb-6">
           <div className="flex items-start justify-between gap-4 mb-1">
             <div>
-              <div className="flex items-baseline gap-2 flex-wrap mb-0.5">
-                <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">Daily Grub</h1>
-                <span className="text-gray-400">·</span>
-                <span className="text-base sm:text-lg font-medium text-gray-900">{city.name}</span>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-0.5">Daily Grub</h1>
+              <div className="flex items-baseline gap-2 flex-wrap mb-1">
+                <p className="text-sm text-gray-600">Food & drink deals in</p>
                 <Link
                   href="/"
-                  className="text-sm text-gray-500 hover:text-gray-700 transition-colors flex items-center gap-0.5"
+                  className="inline-flex items-center gap-1 text-sm font-medium text-gray-900 hover:text-emerald-600 transition-colors group"
                   title="Change city"
                 >
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <span>{city.name}</span>
+                  <svg className="w-3.5 h-3.5 text-gray-400 group-hover:text-emerald-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                   </svg>
                 </Link>
               </div>
-              <p className="text-sm text-gray-600">Food & drink deals</p>
             </div>
             <div className="text-right">
               <p className="text-xs text-gray-500 mb-0.5">Missing a deal?</p>
