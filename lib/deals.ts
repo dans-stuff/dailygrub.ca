@@ -28,11 +28,15 @@ export function getCity(citySlug: string): City | null {
 }
 
 /**
- * Get current date/time in Lethbridge timezone (America/Edmonton)
+ * Get current date/time in Mountain Time (America/Edmonton)
+ * Used for Alberta cities: Lethbridge, Calgary, etc.
  */
-export function getLethbridgeTime(): Date {
+export function getCurrentTime(): Date {
   return new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Edmonton' }));
 }
+
+// Backwards compatibility alias
+export const getLethbridgeTime = getCurrentTime;
 
 /**
  * Check if a deal is active for the given date and time
@@ -79,7 +83,7 @@ export function isDealActive(deal: Deal, date: Date): boolean {
 /**
  * Get all active deals for a given city and date/time
  */
-export function getActiveDeals(citySlug: string, date: Date = getLethbridgeTime()): Array<{
+export function getActiveDeals(citySlug: string, date: Date = getCurrentTime()): Array<{
   restaurant: Restaurant;
   deal: Deal;
 }> {
@@ -104,7 +108,7 @@ export function getActiveDeals(citySlug: string, date: Date = getLethbridgeTime(
  */
 export function getDealsGroupedByRestaurant(
   citySlug: string,
-  date: Date = getLethbridgeTime(),
+  date: Date = getCurrentTime(),
   showAll: boolean = false
 ): Array<{
   restaurant: Restaurant;

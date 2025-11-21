@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daily Grub - Lethbridge Food & Drink Deals",
-  description: "Find the best daily specials and happy hours at Lethbridge restaurants. Wing nights, taco Tuesdays, happy hours and more. Updated daily.",
-  keywords: ["Lethbridge", "food deals", "restaurant specials", "happy hour", "wing night", "taco tuesday", "Alberta", "cheap eats"],
+  title: "Daily Grub - Find Food & Drink Deals",
+  description: "Find the best daily specials and happy hours at restaurants in your city. Wing nights, taco Tuesdays, happy hours and more. Updated daily.",
+  keywords: ["food deals", "restaurant specials", "happy hour", "wing night", "taco tuesday", "Alberta", "Canada", "cheap eats"],
   openGraph: {
-    title: "Daily Grub - Lethbridge Food & Drink Deals",
-    description: "Find the best daily specials and happy hours at Lethbridge restaurants.",
+    title: "Daily Grub - Find Food & Drink Deals",
+    description: "Find the best daily specials and happy hours at restaurants in your city.",
     url: "https://dailygrub.ca",
     siteName: "Daily Grub",
     locale: "en_CA",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Daily Grub - Lethbridge Food & Drink Deals",
-    description: "Find the best daily specials and happy hours at Lethbridge restaurants.",
+    title: "Daily Grub - Find Food & Drink Deals",
+    description: "Find the best daily specials and happy hours at restaurants in your city.",
   },
   icons: {
     icon: "/favicon.svg",

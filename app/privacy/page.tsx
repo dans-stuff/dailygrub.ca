@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Privacy Policy - Daily Grub',
-  description: 'Privacy policy for Daily Grub Lethbridge',
+  description: 'Privacy policy for Daily Grub',
 };
 
 export default function PrivacyPolicy() {
@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
             <p className="text-gray-700 leading-relaxed">
               We collect basic analytics data to understand how people use Daily Grub,
               including which deals are most popular. This helps us improve the site
-              and provide better information about Lethbridge food deals.
+              and provide better information about local food deals.
             </p>
           </section>
 
@@ -85,9 +85,8 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">Contact</h2>
             <p className="text-gray-700 leading-relaxed">
-              Daily Grub is a simple community resource for finding food deals in
-              Lethbridge. We're committed to keeping your data safe and your experience
-              simple.
+              Daily Grub is a simple community resource for finding food deals in your city.
+              We're committed to keeping your data safe and your experience simple.
             </p>
           </section>
 

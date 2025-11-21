@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { DealCard } from '@/components/DealCard';
 import { DaySelector } from '@/components/DaySelector';
-import { getDealsGroupedByRestaurant, getLethbridgeTime, getDayName, getCity } from '@/lib/deals';
+import { getDealsGroupedByRestaurant, getCurrentTime, getDayName, getCity } from '@/lib/deals';
 
 export default function CityPage() {
   const params = useParams();
@@ -23,9 +23,9 @@ export default function CityPage() {
       return;
     }
 
-    const lethbridgeTime = getLethbridgeTime();
-    setSelectedDay(lethbridgeTime.getDay());
-    setCurrentTime(lethbridgeTime);
+    const currentTime = getCurrentTime();
+    setSelectedDay(currentTime.getDay());
+    setCurrentTime(currentTime);
   }, [city]);
 
   if (cityNotFound) {

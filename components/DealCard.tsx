@@ -183,30 +183,19 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
               </div>
             </div>
 
-            {/* Info button and expand arrow */}
-            <div className="flex-shrink-0 flex items-center gap-1">
-              <div className="w-5 h-5 flex items-center justify-center">
-                <svg
-                  className="w-4 h-4 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div className="w-5 h-5 flex items-center justify-center">
-                <svg
-                  className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${
-                    isExpanded ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
+            {/* Details button */}
+            <div className="flex-shrink-0 flex items-center gap-1.5 text-xs text-emerald-600 font-medium">
+              <span>Details</span>
+              <svg
+                className={`w-4 h-4 transition-transform duration-200 ${
+                  isExpanded ? 'rotate-180' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </div>
           </div>
 
