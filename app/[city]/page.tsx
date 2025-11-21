@@ -57,9 +57,10 @@ export default function CityPage() {
     );
   }
 
-  const dealsGrouped = getDealsGroupedByRestaurant(citySlug, selectedDate, selectedDay === -1);
   const isToday = selectedDay === currentTime.getDay();
   const isAllDays = selectedDay === -1;
+  // Always show all deals for the selected day (no time filtering)
+  const dealsGrouped = getDealsGroupedByRestaurant(citySlug, selectedDate, true);
 
   return (
     <div className="min-h-screen bg-gray-50">
