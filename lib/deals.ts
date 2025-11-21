@@ -1,5 +1,7 @@
-import { Deal, Restaurant } from '@/types/deals';
-import dealsData from '@/data/deals.json';
+import { Deal, Restaurant, DealsData } from '@/types/deals';
+import dealsDataRaw from '@/data/deals.json';
+
+const dealsData = dealsDataRaw as DealsData;
 
 /**
  * Get current date/time in Lethbridge timezone (America/Edmonton)
