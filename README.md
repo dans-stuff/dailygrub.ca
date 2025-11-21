@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daily Grub
+
+Lethbridge's best food & drink deals in one place.
+
+## Features
+
+- Daily specials and happy hours for Lethbridge restaurants
+- Time-aware deal filtering (shows deals based on current day/time in Lethbridge timezone)
+- Clean, modern, responsive UI
+- PostHog analytics integration for tracking deal interactions
+- SEO-optimized with Next.js server-side rendering
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- PostHog Analytics
+- Deployed on Netlify
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies
+npm install
+
+# Create environment file
+cp .env.local.example .env.local
+
+# Add your PostHog credentials to .env.local
+# NEXT_PUBLIC_POSTHOG_KEY=your_key_here
+# NEXT_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Run development server
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Open http://localhost:3000
+```
 
-## Learn More
+### Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Create production build
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start production server
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Data Structure
 
-## Deploy on Vercel
+Deals are stored in `/data/deals.json` with the following structure:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```json
+{
+  "id": "unique-deal-id",
+  "title": "Deal Title",
+  "summary": "Short description",
+  "description": "Full description with details",
+  "type": "food" | "drink" | "both",
+  "price": "$10" (optional),
+  "dayOfWeek": 0-6 (optional, for single-day deals),
+  "daysOfWeek": [0,1,2] (optional, for multi-day deals),
+  "startHour": 14 (optional, for hourly deals),
+  "endHour": 18 (optional, for hourly deals),
+  "isActive": true
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+### Netlify
+
+1. Push to GitHub
+2. Connect repository to Netlify
+3. Set environment variables:
+   - `NEXT_PUBLIC_POSTHOG_KEY`
+   - `NEXT_PUBLIC_POSTHOG_HOST`
+4. Deploy
+
+Build settings are configured in `netlify.toml`.
+
+## Analytics
+
+Deal clicks are tracked in PostHog with the following event:
+
+```javascript
+posthog.capture('deal_opened', {
+  deal_id: string,
+  deal_title: string,
+  restaurant_id: string,
+  restaurant_name: string,
+  deal_type: 'food' | 'drink' | 'both'
+})
+```
+
+## License
+
+MIT

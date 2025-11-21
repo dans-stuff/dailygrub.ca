@@ -1,0 +1,594 @@
+{
+  "restaurants": [
+    {
+      "id": "original-joes",
+      "name": "Original Joe's",
+      "deals": [
+        {
+          "id": "oj-margaritas-tacos-mon",
+          "title": "Margaritas & Tacos",
+          "summary": "Margaritas & Tacos special",
+          "description": "Enjoy margaritas and tacos at Original Joe's. Available at North & West locations.",
+          "type": "both",
+          "dayOfWeek": 1,
+          "isActive": true
+        },
+        {
+          "id": "oj-half-price-wings-tue",
+          "title": "Half-Price Wings",
+          "summary": "50% off wings after 2pm",
+          "description": "Half-price wings starting at 2pm. Available at North & West locations.",
+          "type": "food",
+          "dayOfWeek": 2,
+          "startHour": 14,
+          "isActive": true
+        },
+        {
+          "id": "oj-half-price-wine-thu",
+          "title": "Half-Price Wine",
+          "summary": "50% off wine all day",
+          "description": "Half-price wine all day Thursday. Available at North & West locations.",
+          "type": "drink",
+          "dayOfWeek": 4,
+          "isActive": true
+        },
+        {
+          "id": "oj-sangria-sat",
+          "title": "Sangria Special",
+          "summary": "$2 off sangria",
+          "description": "$2 off all sangria. Available at North & West locations.",
+          "type": "drink",
+          "dayOfWeek": 6,
+          "isActive": true
+        },
+        {
+          "id": "oj-weekend-brunch",
+          "title": "Weekend Brunch",
+          "summary": "Brunch till 3pm",
+          "description": "Weekend brunch menu available Saturday and Sunday until 3pm. Dine-in only. Available at North & West locations.",
+          "type": "food",
+          "daysOfWeek": [0, 6],
+          "startHour": 0,
+          "endHour": 15,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "the-onion",
+      "name": "The Onion Bar & Grill",
+      "deals": [
+        {
+          "id": "onion-pints-riblets-mon",
+          "title": "Pints & Riblets",
+          "summary": "Pints & riblets special",
+          "description": "Enjoy pints and riblets special every Monday.",
+          "type": "both",
+          "dayOfWeek": 1,
+          "isActive": true
+        },
+        {
+          "id": "onion-paralyzers-lasagna-mon",
+          "title": "Vodka Paralyzers & Lasagna",
+          "summary": "Paralyzers & lasagna special",
+          "description": "Vodka paralyzers and lasagna special available Monday and Tuesday.",
+          "type": "both",
+          "daysOfWeek": [1, 2],
+          "isActive": true
+        },
+        {
+          "id": "onion-thirsty-thursday",
+          "title": "Thirsty Thursday",
+          "summary": "Burger & beer special",
+          "description": "Burger and beer special every Thursday.",
+          "type": "both",
+          "dayOfWeek": 4,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "telegraph-taphouse",
+      "name": "Telegraph Taphouse",
+      "deals": [
+        {
+          "id": "telegraph-pork-lager-mon",
+          "title": "Pulled Pork & Lager",
+          "summary": "Pulled pork sandwich + lager $17",
+          "description": "Pulled pork sandwich paired with Russel Craft Lager for $17.",
+          "type": "both",
+          "price": "$17",
+          "dayOfWeek": 1,
+          "isActive": true
+        },
+        {
+          "id": "telegraph-tacos-tue",
+          "title": "Half-Price Tacos",
+          "summary": "Half-price tacos + drink specials",
+          "description": "Half-price tacos with margarita ($8) or lager ($6).",
+          "type": "both",
+          "dayOfWeek": 2,
+          "isActive": true
+        },
+        {
+          "id": "telegraph-ribs-thu",
+          "title": "Ribs Special",
+          "summary": "Thursday ribs special",
+          "description": "Ribs special every Thursday.",
+          "type": "food",
+          "dayOfWeek": 4,
+          "isActive": true
+        },
+        {
+          "id": "telegraph-whiskey-fri",
+          "title": "Whiskey Specials",
+          "summary": "Whiskey specials all night",
+          "description": "Whiskey specials every Friday.",
+          "type": "drink",
+          "dayOfWeek": 5,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "boston-pizza",
+      "name": "Boston Pizza",
+      "deals": [
+        {
+          "id": "bp-pizza-monday",
+          "title": "Pizza Monday",
+          "summary": "Pizza specials all day",
+          "description": "Pizza Monday specials. Available at both Lethbridge locations.",
+          "type": "food",
+          "dayOfWeek": 1,
+          "isActive": true
+        },
+        {
+          "id": "bp-pasta-tuesday",
+          "title": "Pasta Tuesday",
+          "summary": "Pasta specials all day",
+          "description": "Pasta Tuesday specials. Available at both Lethbridge locations.",
+          "type": "food",
+          "dayOfWeek": 2,
+          "isActive": true
+        },
+        {
+          "id": "bp-wing-wednesday",
+          "title": "Wing Wednesday",
+          "summary": "Wing specials all day",
+          "description": "Wing Wednesday specials. Available at both Lethbridge locations.",
+          "type": "food",
+          "dayOfWeek": 3,
+          "isActive": true
+        },
+        {
+          "id": "bp-appy-thursday",
+          "title": "Appy Thursday",
+          "summary": "Appetizer specials all day",
+          "description": "Appetizer Thursday specials. Available at both Lethbridge locations.",
+          "type": "food",
+          "dayOfWeek": 4,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "duke-pub",
+      "name": "Duke Pub",
+      "deals": [
+        {
+          "id": "duke-wing-night-tue",
+          "title": "Wing Night",
+          "summary": "Wing night + $0.50 tacos",
+          "description": "Wing night with $0.50 tacos also available.",
+          "type": "food",
+          "dayOfWeek": 2,
+          "isActive": true
+        },
+        {
+          "id": "duke-wing-wednesday",
+          "title": "Wing Wednesday",
+          "summary": "Busiest wing night in town",
+          "description": "Wing Wednesday - very popular with students. Expect a busy crowd!",
+          "type": "food",
+          "dayOfWeek": 3,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "bar-one",
+      "name": "Bar One",
+      "deals": [
+        {
+          "id": "bar-one-taco-tue",
+          "title": "Taco Night",
+          "summary": "Taco night specials",
+          "description": "Taco night every Tuesday.",
+          "type": "food",
+          "dayOfWeek": 2,
+          "isActive": true
+        },
+        {
+          "id": "bar-one-wing-thu",
+          "title": "Wing Thursday",
+          "summary": "Wing specials all day",
+          "description": "Wing Thursday specials.",
+          "type": "food",
+          "dayOfWeek": 4,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "taco-time",
+      "name": "Taco Time",
+      "deals": [
+        {
+          "id": "taco-time-tuesday",
+          "title": "Taco Tuesday",
+          "summary": "Taco Tuesday deals",
+          "description": "Taco Tuesday specials at all Lethbridge locations.",
+          "type": "food",
+          "dayOfWeek": 2,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "blanco-cantina",
+      "name": "Blanco Cantina",
+      "deals": [
+        {
+          "id": "blanco-taco-tuesday",
+          "title": "Taco Tuesday",
+          "summary": "Taco Tuesday specials",
+          "description": "Taco Tuesday at Blanco Cantina.",
+          "type": "food",
+          "dayOfWeek": 2,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "streats-west",
+      "name": "Streats West",
+      "deals": [
+        {
+          "id": "streats-fish-tacos-tue",
+          "title": "Fish Tacos",
+          "summary": "$3 fish tacos",
+          "description": "$3 fish tacos every Tuesday.",
+          "type": "food",
+          "price": "$3",
+          "dayOfWeek": 2,
+          "isActive": true
+        },
+        {
+          "id": "streats-taco-thursday",
+          "title": "Taco Thursday",
+          "summary": "Taco specials",
+          "description": "Taco Thursday specials.",
+          "type": "food",
+          "dayOfWeek": 4,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "steel-and-vines",
+      "name": "Steel & Vines",
+      "deals": [
+        {
+          "id": "steel-vines-tuesday",
+          "title": "Tuesday Discount",
+          "summary": "General discount on Tuesdays",
+          "description": "Tuesday discount available.",
+          "type": "both",
+          "dayOfWeek": 2,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "pops-taphouse",
+      "name": "Pop's Taphouse",
+      "deals": [
+        {
+          "id": "pops-burger-brew-wed",
+          "title": "Burger & Brew Special",
+          "summary": "Burger & brew specials",
+          "description": "Burger and brew special every Wednesday. Available at North & South locations.",
+          "type": "both",
+          "dayOfWeek": 3,
+          "isActive": true
+        },
+        {
+          "id": "pops-wing-thursday",
+          "title": "Wing Night",
+          "summary": "Wing specials all day",
+          "description": "Wing night every Thursday. Available at North & South locations.",
+          "type": "food",
+          "dayOfWeek": 4,
+          "isActive": true
+        },
+        {
+          "id": "pops-fish-chips-fri",
+          "title": "Fish & Chips Special",
+          "summary": "Fish & chips all day",
+          "description": "Fish and chips special every Friday. Available at North & South locations.",
+          "type": "food",
+          "dayOfWeek": 5,
+          "isActive": true
+        },
+        {
+          "id": "pops-pasta-saturday",
+          "title": "Pasta Saturday",
+          "summary": "Pasta specials all day",
+          "description": "Pasta Saturday specials. Available at North & South locations.",
+          "type": "food",
+          "dayOfWeek": 6,
+          "isActive": true
+        },
+        {
+          "id": "pops-steak-sunday",
+          "title": "Steak Sunday",
+          "summary": "Top sirloin with all the fixings",
+          "description": "Steak Sunday featuring top sirloin with fries, onion rings, and garlic toast. Available at North & South locations.",
+          "type": "food",
+          "dayOfWeek": 0,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "honkers-pub",
+      "name": "Honkers Pub",
+      "deals": [
+        {
+          "id": "honkers-daily-specials",
+          "title": "Daily Specials",
+          "summary": "Mon-Wed 2pm-close",
+          "description": "Daily specials Monday through Wednesday from 2pm to close.",
+          "type": "food",
+          "daysOfWeek": [1, 2, 3],
+          "startHour": 14,
+          "isActive": true
+        },
+        {
+          "id": "honkers-happy-hour-weekday",
+          "title": "Happy Hour Bevies",
+          "summary": "Mon-Wed 2pm-close",
+          "description": "Happy hour beverage specials Monday through Wednesday from 2pm to close.",
+          "type": "drink",
+          "daysOfWeek": [1, 2, 3],
+          "startHour": 14,
+          "isActive": true
+        },
+        {
+          "id": "honkers-happy-hour-weekend",
+          "title": "Happy Hour",
+          "summary": "Fri-Sat 2pm-6pm happy appy specials",
+          "description": "Happy hour with happy appy specials Friday and Saturday from 2pm to 6pm.",
+          "type": "both",
+          "daysOfWeek": [5, 6],
+          "startHour": 14,
+          "endHour": 18,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "ten-ten-pub",
+      "name": "Ten Ten Pub",
+      "deals": [
+        {
+          "id": "ten-ten-wings-thu",
+          "title": "Wing Night",
+          "summary": "Thursday wing specials",
+          "description": "Wing night every Thursday.",
+          "type": "food",
+          "dayOfWeek": 4,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "firestone",
+      "name": "Firestone Restaurant",
+      "deals": [
+        {
+          "id": "firestone-brunch",
+          "title": "Weekend Brunch",
+          "summary": "Sat-Sun 7am-2pm",
+          "description": "Weekend brunch Saturday and Sunday from 7am to 2pm.",
+          "type": "food",
+          "daysOfWeek": [0, 6],
+          "startHour": 7,
+          "endHour": 14,
+          "isActive": true
+        },
+        {
+          "id": "firestone-desserts-dark",
+          "title": "Desserts After Dark",
+          "summary": "Discounted desserts after 8pm",
+          "description": "Discounted cheesecakes, desserts, and specialty espresso Sunday through Thursday after 8pm.",
+          "type": "food",
+          "daysOfWeek": [0, 1, 2, 3, 4],
+          "startHour": 20,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "italian-table",
+      "name": "Italian Table",
+      "deals": [
+        {
+          "id": "italian-sunday-brunch",
+          "title": "Sunday Brunch",
+          "summary": "Sunday brunch specials",
+          "description": "Sunday brunch specials.",
+          "type": "food",
+          "dayOfWeek": 0,
+          "isActive": true
+        },
+        {
+          "id": "italian-happy-hour",
+          "title": "Happy Hour",
+          "summary": "Daily happy hour features",
+          "description": "Daily happy hour features.",
+          "type": "both",
+          "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "water-tower",
+      "name": "Water Tower Grill",
+      "deals": [
+        {
+          "id": "water-tower-cocktail-hour",
+          "title": "Cocktail Hour",
+          "summary": "20% off cocktails & beer 2-5pm",
+          "description": "20% off all cocktails and beer daily from 2pm to 5pm.",
+          "type": "drink",
+          "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+          "startHour": 14,
+          "endHour": 17,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "the-keg",
+      "name": "The Keg Steakhouse",
+      "deals": [
+        {
+          "id": "keg-happy-hour-weekday",
+          "title": "Happy Hour",
+          "summary": "Food & drink specials",
+          "description": "Happy hour specials: Mon-Fri 3-5pm. $10 garlic cheese toast, $15 tuna tartare, $15 three pepper wings, $20 Keg burger + fries, $24 prime rib sandwich.",
+          "type": "both",
+          "daysOfWeek": [1, 2, 3, 4, 5],
+          "startHour": 15,
+          "endHour": 17,
+          "isActive": true
+        },
+        {
+          "id": "keg-happy-hour-late-weekday",
+          "title": "Late Night Happy Hour",
+          "summary": "Food & drink specials",
+          "description": "Late night happy hour: Sun-Thu 9pm-close. $10 garlic cheese toast, $15 tuna tartare, $15 three pepper wings, $20 Keg burger + fries, $24 prime rib sandwich.",
+          "type": "both",
+          "daysOfWeek": [0, 1, 2, 3, 4],
+          "startHour": 21,
+          "isActive": true
+        },
+        {
+          "id": "keg-happy-hour-late-weekend",
+          "title": "Late Night Happy Hour",
+          "summary": "Food & drink specials",
+          "description": "Late night happy hour: Fri-Sat 10pm-close. $10 garlic cheese toast, $15 tuna tartare, $15 three pepper wings, $20 Keg burger + fries, $24 prime rib sandwich.",
+          "type": "both",
+          "daysOfWeek": [5, 6],
+          "startHour": 22,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "mr-mikes",
+      "name": "MR MIKES",
+      "deals": [
+        {
+          "id": "mikes-happiest-hours",
+          "title": "Happiest Hours",
+          "summary": "2-5pm & 9pm-close daily",
+          "description": "Food and drink specials daily from 2-5pm and 9pm-close.",
+          "type": "both",
+          "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+          "startHour": 14,
+          "endHour": 17,
+          "isActive": true
+        },
+        {
+          "id": "mikes-happiest-hours-late",
+          "title": "Happiest Hours Late",
+          "summary": "9pm-close daily",
+          "description": "Food and drink specials daily from 9pm to close.",
+          "type": "both",
+          "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+          "startHour": 21,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "rivaaz",
+      "name": "Rivaaz Indian Pizza & Cuisine",
+      "deals": [
+        {
+          "id": "rivaaz-lunch-special",
+          "title": "Lunch Special",
+          "summary": "Mon-Fri 11am-4pm dine-in",
+          "description": "Lunch special Monday through Friday from 11am to 4pm. Dine-in only.",
+          "type": "food",
+          "daysOfWeek": [1, 2, 3, 4, 5],
+          "startHour": 11,
+          "endHour": 16,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "dono-sushi",
+      "name": "Dono Sushi",
+      "deals": [
+        {
+          "id": "dono-lunch-special",
+          "title": "Lunch Specials",
+          "summary": "~$20 combo deals",
+          "description": "Lunch specials with combo deals around $20.",
+          "type": "food",
+          "price": "~$20",
+          "daysOfWeek": [1, 2, 3, 4, 5],
+          "startHour": 11,
+          "endHour": 14,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "two-guys-pizza",
+      "name": "Two Guys & A Pizza Place",
+      "deals": [
+        {
+          "id": "two-guys-daily",
+          "title": "Daily Specials",
+          "summary": "Food & drink specials, closed Mon",
+          "description": "Daily specials on food and drinks. Throwback prices on throwback pizzas. Happy hour specials. Over 90 craft beers. CLOSED MONDAYS.",
+          "type": "both",
+          "daysOfWeek": [2, 3, 4, 5, 6, 0],
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "id": "canadian-brewhouse",
+      "name": "The Canadian Brewhouse",
+      "deals": [
+        {
+          "id": "brewhouse-daily",
+          "title": "Daily Specials",
+          "summary": "Specials every night",
+          "description": "Daily specials every night of the week. Features rooftop patio and basement bowling alley.",
+          "type": "both",
+          "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+          "isActive": true
+        }
+      ]
+    }
+  ]
+}
