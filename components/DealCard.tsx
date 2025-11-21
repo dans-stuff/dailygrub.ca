@@ -1,13 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { Deal, Restaurant } from '@/types/deals';
+import { EnhancedDeal, Restaurant } from '@/types/deals';
 import { posthog } from '@/lib/posthog';
-import { formatHour } from '@/lib/deals';
 
 interface DealCardProps {
   restaurant: Restaurant;
-  deal: Deal;
+  deal: EnhancedDeal;
   cityName?: string;
   citySlug?: string;
   isExpanded: boolean;
@@ -33,26 +32,6 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
     }
     onToggle();
   };
-
-  const getDealTimeInfo = () => {
-    if (deal.startHour !== undefined && deal.endHour !== undefined) {
-      return `${formatHour(deal.startHour)}-${formatHour(deal.endHour)}`;
-    } else if (deal.startHour !== undefined) {
-      return `${formatHour(deal.startHour)}+`;
-    }
-    return null;
-  };
-
-  const isDaySpecific = () => {
-    // Single day deal
-    if (deal.dayOfWeek !== undefined) return true;
-    // Specific days (not all 7)
-    if (deal.daysOfWeek && deal.daysOfWeek.length > 0 && deal.daysOfWeek.length < 7) return true;
-    return false;
-  };
-
-  const timeInfo = getDealTimeInfo();
-  const isSingleDay = isDaySpecific();
 
   // Pick icon based on deal content
   const getIcon = () => {
@@ -161,7 +140,7 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
   return (
     <div
       onClick={handleClick}
-      className="bg-white border border-gray-200 rounded-lg p-4 cursor-pointer hover:border-emerald-300 hover:shadow-md transition-all duration-150 active:scale-[0.99]"
+      className="bg-white border border-gray-300 rounded-lg p-4 shadow-sm cursor-pointer hover:border-emerald-400 hover:shadow-md transition-all duration-150 active:scale-[0.99]"
     >
       <div className="flex items-start gap-3">
         {/* Icon */}
@@ -194,17 +173,17 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
                   {restaurant.type === 'local' ? 'Local' : 'Chain'}
                 </span>
                 <span className={`text-xs px-2 py-0.5 rounded whitespace-nowrap ${
-                  isSingleDay
+                  deal.isSingleDay
                     ? 'bg-blue-50 text-blue-700 font-medium'
                     : 'bg-gray-50 text-gray-500'
                 }`}>
-                  {isSingleDay ? 'Daily special' : 'Multi-day'}
+                  {deal.isSingleDay ? 'Daily special' : 'Multi-day'}
                 </span>
-                {timeInfo && (
+                {deal.timeInfo && (
                   <>
                     <span className="text-gray-300">•</span>
                     <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded whitespace-nowrap">
-                      {timeInfo}
+                      {deal.timeInfo}
                     </span>
                   </>
                 )}

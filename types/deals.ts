@@ -15,6 +15,13 @@ export interface Deal {
   isActive: boolean;
 }
 
+// Enhanced deal with computed properties for display and sorting
+export interface EnhancedDeal extends Deal {
+  isSingleDay: boolean;
+  isDaySpecific: boolean;
+  timeInfo: string | null;
+}
+
 export type RestaurantType = 'local' | 'chain' | 'sponsored';
 
 export interface Restaurant {

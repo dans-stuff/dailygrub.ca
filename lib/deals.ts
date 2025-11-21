@@ -1,4 +1,4 @@
-import { Deal, Restaurant, DealsData, City } from '@/types/deals';
+import { Deal, Restaurant, DealsData, City, EnhancedDeal } from '@/types/deals';
 import Papa from 'papaparse';
 // @ts-ignore - Raw loader for CSV file
 import dealsCsvRaw from '@/data/deals.csv';
@@ -168,33 +168,38 @@ export function getActiveDeals(citySlug: string, date: Date = getCurrentTime()):
 }
 
 /**
- * Check if a deal is day-specific (not available every day)
+ * Enhance a deal with computed properties for display and sorting
  */
-function isDaySpecific(deal: Deal): boolean {
-  // Has a specific single day
-  if (deal.dayOfWeek !== undefined) return true;
+function enhanceDeal(deal: Deal): EnhancedDeal {
+  // Single-day deal (e.g., Friday only)
+  const isSingleDay = deal.dayOfWeek !== undefined;
 
-  // Has specific days (not all 7 days)
-  if (deal.daysOfWeek && deal.daysOfWeek.length > 0 && deal.daysOfWeek.length < 7) {
-    return true;
+  // Day-specific deal (not all 7 days)
+  const isDaySpecific = isSingleDay ||
+    (deal.daysOfWeek && deal.daysOfWeek.length > 0 && deal.daysOfWeek.length < 7) ||
+    false;
+
+  // Time info string
+  let timeInfo: string | null = null;
+  if (deal.startHour !== undefined && deal.endHour !== undefined) {
+    timeInfo = `${formatHour(deal.startHour)}-${formatHour(deal.endHour)}`;
+  } else if (deal.startHour !== undefined) {
+    timeInfo = `${formatHour(deal.startHour)}+`;
   }
 
-  // No day restriction or all 7 days = multi-day
-  return false;
-}
-
-/**
- * Check if a restaurant has any day-specific deals
- */
-function hasAnyDaySpecificDeals(restaurant: Restaurant): boolean {
-  return restaurant.deals.some(deal => isDaySpecific(deal));
+  return {
+    ...deal,
+    isSingleDay,
+    isDaySpecific,
+    timeInfo,
+  };
 }
 
 /**
  * Get deals grouped by restaurant for a given city and date/time
- * Restaurants are sorted by:
+ * Deals are enhanced with computed properties and restaurants are sorted by:
  * 1. Type: sponsored > local > chain
- * 2. Day-specificity: one-day deals > multi-day deals
+ * 2. Deal specificity: single-day > multi-day > all-day
  * 3. Alphabetically by name
  */
 export function getDealsGroupedByRestaurant(
@@ -203,17 +208,17 @@ export function getDealsGroupedByRestaurant(
   showAll: boolean = false
 ): Array<{
   restaurant: Restaurant;
-  activeDeals: Deal[];
+  activeDeals: EnhancedDeal[];
 }> {
   const city = getCity(citySlug);
   if (!city) return [];
 
-  const grouped = new Map<string, { restaurant: Restaurant; activeDeals: Deal[] }>();
+  const grouped = new Map<string, { restaurant: Restaurant; activeDeals: EnhancedDeal[] }>();
 
   city.restaurants.forEach((restaurant) => {
     const activeDeals = showAll
-      ? restaurant.deals.filter((deal) => deal.isActive)
-      : restaurant.deals.filter((deal) => isDealActive(deal, date));
+      ? restaurant.deals.filter((deal) => deal.isActive).map(enhanceDeal)
+      : restaurant.deals.filter((deal) => isDealActive(deal, date)).map(enhanceDeal);
     if (activeDeals.length > 0) {
       grouped.set(restaurant.id, { restaurant, activeDeals });
     }
@@ -226,30 +231,43 @@ export function getDealsGroupedByRestaurant(
     chain: 2,
   };
 
-  // Sort restaurants by type, then day-specificity, then alphabetically
+  // Sort restaurants: sponsored first, then single-day (local > chain), then multi-day (local > chain)
   const sortedRestaurants = Array.from(grouped.values()).sort((a, b) => {
-    // First: Sort by restaurant type
-    const typeDiff = typePriority[a.restaurant.type] - typePriority[b.restaurant.type];
-    if (typeDiff !== 0) return typeDiff;
+    // First: Sponsored always comes first
+    if (a.restaurant.type === 'sponsored' && b.restaurant.type !== 'sponsored') return -1;
+    if (a.restaurant.type !== 'sponsored' && b.restaurant.type === 'sponsored') return 1;
 
-    // Second: Sort by day-specificity (day-specific first)
-    const aHasDaySpecific = hasAnyDaySpecificDeals(a.restaurant);
-    const bHasDaySpecific = hasAnyDaySpecificDeals(b.restaurant);
-    if (aHasDaySpecific && !bHasDaySpecific) return -1;
-    if (!aHasDaySpecific && bHasDaySpecific) return 1;
+    // Second: Check if restaurants have single-day deals
+    const aHasSingleDay = a.activeDeals.some(deal => deal.isSingleDay);
+    const bHasSingleDay = b.activeDeals.some(deal => deal.isSingleDay);
 
-    // Third: Sort alphabetically by name
+    // If both have single-day or both don't, sort by type (local > chain)
+    if (aHasSingleDay === bHasSingleDay) {
+      const typeDiff = typePriority[a.restaurant.type] - typePriority[b.restaurant.type];
+      if (typeDiff !== 0) return typeDiff;
+      return a.restaurant.name.localeCompare(b.restaurant.name);
+    }
+
+    // Single-day deals come before multi-day
+    if (aHasSingleDay && !bHasSingleDay) return -1;
+    if (!aHasSingleDay && bHasSingleDay) return 1;
+
+    // Fallback: alphabetically
     return a.restaurant.name.localeCompare(b.restaurant.name);
   });
 
-  // Sort deals within each restaurant (day-specific deals first)
+  // Sort deals within each restaurant (single-day first, then multi-day, then all-day)
   return sortedRestaurants.map(group => ({
     ...group,
     activeDeals: group.activeDeals.sort((a, b) => {
-      const aIsSpecific = isDaySpecific(a);
-      const bIsSpecific = isDaySpecific(b);
-      if (aIsSpecific && !bIsSpecific) return -1;
-      if (!aIsSpecific && bIsSpecific) return 1;
+      // Single-day deals first
+      if (a.isSingleDay && !b.isSingleDay) return -1;
+      if (!a.isSingleDay && b.isSingleDay) return 1;
+
+      // Then day-specific multi-day deals
+      if (a.isDaySpecific && !b.isDaySpecific) return -1;
+      if (!a.isDaySpecific && b.isDaySpecific) return 1;
+
       return 0;
     })
   }));
