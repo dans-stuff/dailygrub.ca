@@ -189,8 +189,34 @@ export function getActiveDeals(citySlug: string, date: Date = getCurrentTime()):
 }
 
 /**
+ * Check if a deal is day-specific (not available every day)
+ */
+function isDaySpecific(deal: Deal): boolean {
+  // Has a specific single day
+  if (deal.dayOfWeek !== undefined) return true;
+
+  // Has specific days (not all 7 days)
+  if (deal.daysOfWeek && deal.daysOfWeek.length > 0 && deal.daysOfWeek.length < 7) {
+    return true;
+  }
+
+  // No day restriction or all 7 days = multi-day
+  return false;
+}
+
+/**
+ * Check if a restaurant has any day-specific deals
+ */
+function hasAnyDaySpecificDeals(restaurant: Restaurant): boolean {
+  return restaurant.deals.some(deal => isDaySpecific(deal));
+}
+
+/**
  * Get deals grouped by restaurant for a given city and date/time
- * Restaurants are sorted by type: sponsored > local > chain
+ * Restaurants are sorted by:
+ * 1. Type: sponsored > local > chain
+ * 2. Day-specificity: one-day deals > multi-day deals
+ * 3. Alphabetically by name
  */
 export function getDealsGroupedByRestaurant(
   citySlug: string,
@@ -221,10 +247,19 @@ export function getDealsGroupedByRestaurant(
     chain: 2,
   };
 
-  // Sort by type (sponsored > local > chain), then alphabetically by name
+  // Sort by type, then day-specificity, then alphabetically
   return Array.from(grouped.values()).sort((a, b) => {
+    // First: Sort by restaurant type
     const typeDiff = typePriority[a.restaurant.type] - typePriority[b.restaurant.type];
     if (typeDiff !== 0) return typeDiff;
+
+    // Second: Sort by day-specificity (day-specific first)
+    const aHasDaySpecific = hasAnyDaySpecificDeals(a.restaurant);
+    const bHasDaySpecific = hasAnyDaySpecificDeals(b.restaurant);
+    if (aHasDaySpecific && !bHasDaySpecific) return -1;
+    if (!aHasDaySpecific && bHasDaySpecific) return 1;
+
+    // Third: Sort alphabetically by name
     return a.restaurant.name.localeCompare(b.restaurant.name);
   });
 }
