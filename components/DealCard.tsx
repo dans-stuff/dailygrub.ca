@@ -15,7 +15,6 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
 
   const handleClick = () => {
     if (!isExpanded) {
-      // Track the deal open event in PostHog
       posthog.capture('deal_opened', {
         deal_id: deal.id,
         deal_title: deal.title,
@@ -37,97 +36,111 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
   };
 
   const timeInfo = getDealTimeInfo();
+  const isTimeLimited = deal.startHour !== undefined || deal.endHour !== undefined;
 
-  const getDealTypeIcon = () => {
+  const getTypeIcon = () => {
     if (deal.type === 'food') {
       return (
-        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
         </svg>
       );
     } else if (deal.type === 'drink') {
       return (
-        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z" clipRule="evenodd" />
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       );
     }
     return (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-        <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
       </svg>
     );
-  };
-
-  const getTypeColor = () => {
-    if (deal.type === 'food') return 'bg-orange-100 text-orange-700';
-    if (deal.type === 'drink') return 'bg-blue-100 text-blue-700';
-    return 'bg-purple-100 text-purple-700';
   };
 
   return (
     <div
       onClick={handleClick}
-      className="bg-white border-2 border-gray-100 rounded-xl p-5 cursor-pointer hover:border-blue-200 hover:shadow-lg transition-all duration-200"
+      className={`border rounded-lg p-3 cursor-pointer transition-all ${
+        isTimeLimited
+          ? 'border-orange-200 bg-orange-50/30 hover:border-orange-400 hover:bg-orange-50/50'
+          : 'border-gray-200 bg-white hover:border-gray-400'
+      }`}
     >
-      <div className="flex justify-between items-start gap-4">
+      <div className="flex items-start gap-3">
+        {/* Icon */}
+        <div className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center ${
+          isTimeLimited ? 'bg-orange-100 text-orange-700' : 'bg-gray-100 text-gray-600'
+        }`}>
+          {isTimeLimited ? (
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          ) : (
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          )}
+        </div>
+
+        {/* Content */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-3 mb-2">
-            <div className={`p-2 rounded-lg ${getTypeColor()}`}>
-              {getDealTypeIcon()}
-            </div>
+          <div className="flex items-start justify-between gap-2">
             <div className="flex-1 min-w-0">
-              <h3 className="font-bold text-lg text-gray-900 truncate">
-                {deal.title}
-              </h3>
-              <p className="text-sm text-gray-600 truncate">{restaurant.name}</p>
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <h3 className="font-semibold text-gray-900">{deal.title}</h3>
+                {deal.price && (
+                  <span className="text-sm font-bold text-green-700">{deal.price}</span>
+                )}
+              </div>
+              <p className="text-xs text-gray-500 mt-0.5">{restaurant.name}</p>
+            </div>
+
+            {/* Expand arrow */}
+            <div className="flex-shrink-0 w-5 h-5 flex items-center justify-center">
+              <svg
+                className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${
+                  isExpanded ? 'rotate-180' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2 mb-3">
+          {/* Tags - always same height to prevent layout shift */}
+          <div className="flex items-center gap-1.5 mt-1.5 min-h-[20px]">
             {timeInfo && (
-              <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-700">
-                <svg className="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+              <span className="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 bg-white/80 text-orange-700 rounded border border-orange-200">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 {timeInfo}
               </span>
             )}
-            {deal.price && (
-              <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700">
-                {deal.price}
-              </span>
-            )}
+            <span className="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 bg-gray-100 text-gray-600 rounded">
+              {getTypeIcon()}
+              <span>{deal.type === 'both' ? 'Food & Drink' : deal.type.charAt(0).toUpperCase() + deal.type.slice(1)}</span>
+            </span>
           </div>
 
-          <p className="text-gray-700 font-medium">{deal.summary}</p>
+          <p className="text-sm text-gray-700 mt-2">{deal.summary}</p>
 
-          {isExpanded && (
-            <div className="mt-4 pt-4 border-t border-gray-100 animate-fadeIn">
-              <p className="text-gray-600 leading-relaxed">{deal.description}</p>
-            </div>
-          )}
-        </div>
-
-        <div className="flex-shrink-0">
+          {/* Expanded content - uses max-height for smooth animation without layout shift */}
           <div
-            className={`p-2 rounded-full bg-gray-100 transition-transform duration-200 ${
-              isExpanded ? 'rotate-180' : ''
+            className={`grid transition-all duration-200 ${
+              isExpanded ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'
             }`}
           >
-            <svg
-              className="w-5 h-5 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <div className="overflow-hidden">
+              <div className="pt-2 border-t border-gray-200">
+                <p className="text-sm text-gray-600">{deal.description}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

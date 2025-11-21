@@ -17,18 +17,37 @@ export function isDealActive(deal: Deal, date: Date): boolean {
   const dayOfWeek = date.getDay(); // 0-6
   const currentHour = date.getHours(); // 0-23
 
-  if (deal.type === 'daily') {
-    return deal.dayOfWeek === dayOfWeek;
+  // Check if deal is valid for the current day
+  let isDayMatch = false;
+
+  if (deal.dayOfWeek !== undefined) {
+    // Single day deal
+    isDayMatch = deal.dayOfWeek === dayOfWeek;
+  } else if (deal.daysOfWeek && deal.daysOfWeek.length > 0) {
+    // Multi-day deal
+    isDayMatch = deal.daysOfWeek.includes(dayOfWeek);
+  } else {
+    // No day restriction, available all days
+    isDayMatch = true;
   }
 
-  if (deal.type === 'hourly') {
-    const isDayMatch = deal.daysOfWeek?.includes(dayOfWeek) ?? true;
-    const isHourMatch =
-      currentHour >= (deal.startHour ?? 0) && currentHour < (deal.endHour ?? 24);
-    return isDayMatch && isHourMatch;
+  if (!isDayMatch) return false;
+
+  // Check if deal is valid for the current time
+  if (deal.startHour !== undefined || deal.endHour !== undefined) {
+    const startHour = deal.startHour ?? 0;
+    const endHour = deal.endHour ?? 24;
+
+    // Handle deals that don't have an end hour (e.g., "after 2pm")
+    if (deal.endHour === undefined && deal.startHour !== undefined) {
+      return currentHour >= startHour;
+    }
+
+    return currentHour >= startHour && currentHour < endHour;
   }
 
-  return false;
+  // No time restriction, available all day
+  return true;
 }
 
 /**
