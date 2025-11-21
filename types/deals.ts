@@ -15,9 +15,12 @@ export interface Deal {
   isActive: boolean;
 }
 
+export type RestaurantType = 'local' | 'chain' | 'sponsored';
+
 export interface Restaurant {
   id: string;
   name: string;
+  type: RestaurantType;
   deals: Deal[];
 }
 

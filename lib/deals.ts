@@ -10,6 +10,7 @@ interface DealRow {
   city_province: string;
   restaurant_id: string;
   restaurant_name: string;
+  restaurant_type: 'local' | 'chain' | 'sponsored';
   deal_id: string;
   deal_title: string;
   deal_summary: string;
@@ -53,6 +54,7 @@ function loadDealsFromCSV(csvContent: string): DealsData {
       restaurant = {
         id: row.restaurant_id,
         name: row.restaurant_name,
+        type: row.restaurant_type,
         deals: [],
       };
       city.restaurants.push(restaurant);
@@ -188,6 +190,7 @@ export function getActiveDeals(citySlug: string, date: Date = getCurrentTime()):
 
 /**
  * Get deals grouped by restaurant for a given city and date/time
+ * Restaurants are sorted by type: sponsored > local > chain
  */
 export function getDealsGroupedByRestaurant(
   citySlug: string,
@@ -211,7 +214,19 @@ export function getDealsGroupedByRestaurant(
     }
   });
 
-  return Array.from(grouped.values());
+  // Define sort order for restaurant types
+  const typePriority: Record<string, number> = {
+    sponsored: 0,
+    local: 1,
+    chain: 2,
+  };
+
+  // Sort by type (sponsored > local > chain), then alphabetically by name
+  return Array.from(grouped.values()).sort((a, b) => {
+    const typeDiff = typePriority[a.restaurant.type] - typePriority[b.restaurant.type];
+    if (typeDiff !== 0) return typeDiff;
+    return a.restaurant.name.localeCompare(b.restaurant.name);
+  });
 }
 
 /**
