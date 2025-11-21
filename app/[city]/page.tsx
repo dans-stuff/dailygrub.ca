@@ -59,8 +59,8 @@ export default function CityPage() {
 
   const isToday = selectedDay === currentTime.getDay();
   const isAllDays = selectedDay === -1;
-  // Always show all deals for the selected day (no time filtering)
-  const dealsGrouped = getDealsGroupedByRestaurant(citySlug, selectedDate, true);
+  // Filter by day only (no time filtering)
+  const dealsGrouped = getDealsGroupedByRestaurant(citySlug, selectedDate, isAllDays);
 
   return (
     <div className="min-h-screen bg-gray-50">

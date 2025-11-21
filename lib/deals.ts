@@ -124,44 +124,23 @@ export function getCurrentTime(): Date {
 export const getLethbridgeTime = getCurrentTime;
 
 /**
- * Check if a deal is active for the given date and time
+ * Check if a deal is active for the given day (ignores time)
  */
 export function isDealActive(deal: Deal, date: Date): boolean {
   if (!deal.isActive) return false;
 
   const dayOfWeek = date.getDay(); // 0-6
-  const currentHour = date.getHours(); // 0-23
 
-  // Check if deal is valid for the current day
-  let isDayMatch = false;
-
+  // Check if deal is valid for the day
   if (deal.dayOfWeek !== undefined) {
     // Single day deal
-    isDayMatch = deal.dayOfWeek === dayOfWeek;
+    return deal.dayOfWeek === dayOfWeek;
   } else if (deal.daysOfWeek && deal.daysOfWeek.length > 0) {
     // Multi-day deal
-    isDayMatch = deal.daysOfWeek.includes(dayOfWeek);
-  } else {
-    // No day restriction, available all days
-    isDayMatch = true;
+    return deal.daysOfWeek.includes(dayOfWeek);
   }
 
-  if (!isDayMatch) return false;
-
-  // Check if deal is valid for the current time
-  if (deal.startHour !== undefined || deal.endHour !== undefined) {
-    const startHour = deal.startHour ?? 0;
-    const endHour = deal.endHour ?? 24;
-
-    // Handle deals that don't have an end hour (e.g., "after 2pm")
-    if (deal.endHour === undefined && deal.startHour !== undefined) {
-      return currentHour >= startHour;
-    }
-
-    return currentHour >= startHour && currentHour < endHour;
-  }
-
-  // No time restriction, available all day
+  // No day restriction, available all days
   return true;
 }
 
