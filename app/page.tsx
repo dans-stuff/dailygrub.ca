@@ -50,28 +50,6 @@ export default function Home() {
           <DaySelector selectedDay={selectedDay} onDayChange={setSelectedDay} />
         </div>
 
-        {/* Legend */}
-        {dealsGrouped.length > 0 && (
-          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-600">
-            <div className="flex items-center gap-1.5">
-              <div className="w-6 h-6 rounded bg-white border border-gray-200 flex items-center justify-center">
-                <svg className="w-3 h-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <span>All-day special</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <div className="w-6 h-6 rounded bg-orange-100 border border-orange-200 flex items-center justify-center">
-                <svg className="w-3 h-3 text-orange-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <span>Happy hour / time-limited</span>
-            </div>
-          </div>
-        )}
-
         {/* Deals List */}
         <div className="space-y-2 mb-12">
           {dealsGrouped.length === 0 ? (
@@ -83,11 +61,23 @@ export default function Home() {
               <p className="text-sm text-gray-400 mt-1">Try another day</p>
             </div>
           ) : (
-            dealsGrouped.map(({ restaurant, activeDeals }) =>
-              activeDeals.map((deal) => (
-                <DealCard key={deal.id} restaurant={restaurant} deal={deal} />
-              ))
-            )
+            <>
+              <div className="mb-3 text-xs text-gray-500">
+                <span className="inline-flex items-center gap-1.5">
+                  <svg className="w-3 h-3 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Orange = time-limited
+                </span>
+                <span className="mx-2">•</span>
+                <span>Click for details</span>
+              </div>
+              {dealsGrouped.map(({ restaurant, activeDeals }) =>
+                activeDeals.map((deal) => (
+                  <DealCard key={deal.id} restaurant={restaurant} deal={deal} />
+                ))
+              )}
+            </>
           )}
         </div>
 
@@ -101,6 +91,12 @@ export default function Home() {
               {' • '}
               <span>Lethbridge, AB</span>
             </div>
+            <p className="text-gray-600">
+              Missing a deal or restaurant?{' '}
+              <a href="mailto:support@lunoh.com" className="text-gray-900 hover:underline">
+                support@lunoh.com
+              </a>
+            </p>
             <p className="text-gray-400">
               Verify with restaurants. Info may be outdated.
             </p>

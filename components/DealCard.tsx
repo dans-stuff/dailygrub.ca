@@ -15,12 +15,15 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
 
   const handleClick = () => {
     if (!isExpanded) {
+      // Track with full restaurant and deal details
       posthog.capture('deal_opened', {
         deal_id: deal.id,
         deal_title: deal.title,
         restaurant_id: restaurant.id,
         restaurant_name: restaurant.name,
         deal_type: deal.type,
+        has_price: !!deal.price,
+        is_time_limited: deal.startHour !== undefined || deal.endHour !== undefined,
       });
     }
     setIsExpanded(!isExpanded);
@@ -28,9 +31,9 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
 
   const getDealTimeInfo = () => {
     if (deal.startHour !== undefined && deal.endHour !== undefined) {
-      return `${formatHour(deal.startHour)} - ${formatHour(deal.endHour)}`;
+      return `${formatHour(deal.startHour)}-${formatHour(deal.endHour)}`;
     } else if (deal.startHour !== undefined) {
-      return `${formatHour(deal.startHour)} onwards`;
+      return `${formatHour(deal.startHour)}+`;
     }
     return null;
   };
@@ -38,49 +41,36 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
   const timeInfo = getDealTimeInfo();
   const isTimeLimited = deal.startHour !== undefined || deal.endHour !== undefined;
 
-  const getTypeIcon = () => {
-    if (deal.type === 'food') {
-      return (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-        </svg>
-      );
-    } else if (deal.type === 'drink') {
-      return (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-      );
-    }
-    return (
-      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-      </svg>
-    );
-  };
-
   return (
     <div
       onClick={handleClick}
-      className={`border rounded-lg p-3 cursor-pointer transition-all ${
+      className={`border rounded-lg p-4 cursor-pointer transition-all ${
         isTimeLimited
-          ? 'border-orange-200 bg-orange-50/30 hover:border-orange-400 hover:bg-orange-50/50'
-          : 'border-gray-200 bg-white hover:border-gray-400'
+          ? 'border-orange-200 bg-orange-50/30 hover:border-orange-400 hover:bg-orange-50/50 hover:shadow-sm'
+          : 'border-gray-200 bg-white hover:border-gray-400 hover:shadow-sm'
       }`}
     >
       <div className="flex items-start gap-3">
-        {/* Icon */}
-        <div className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center ${
-          isTimeLimited ? 'bg-orange-100 text-orange-700' : 'bg-gray-100 text-gray-600'
-        }`}>
-          {isTimeLimited ? (
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+        {/* Left side - Icon or Price */}
+        <div className="flex-shrink-0">
+          {deal.price ? (
+            <div className="bg-green-100 text-green-800 rounded-lg px-3 py-2 min-w-[60px] text-center">
+              <div className="text-lg font-bold leading-none">{deal.price}</div>
+            </div>
           ) : (
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
+            <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
+              isTimeLimited ? 'bg-orange-100 text-orange-700' : 'bg-gray-100 text-gray-600'
+            }`}>
+              {isTimeLimited ? (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              )}
+            </div>
           )}
         </div>
 
@@ -88,13 +78,16 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-2">
             <div className="flex-1 min-w-0">
-              <div className="flex items-baseline gap-2 flex-wrap">
-                <h3 className="font-semibold text-gray-900">{deal.title}</h3>
-                {deal.price && (
-                  <span className="text-sm font-bold text-green-700">{deal.price}</span>
+              <h3 className="font-bold text-gray-900 leading-tight">{deal.title}</h3>
+              <div className="flex items-center gap-2 mt-0.5">
+                <p className="text-sm text-gray-600">{restaurant.name}</p>
+                {timeInfo && (
+                  <>
+                    <span className="text-gray-300">•</span>
+                    <span className="text-sm font-medium text-orange-700">{timeInfo}</span>
+                  </>
                 )}
               </div>
-              <p className="text-xs text-gray-500 mt-0.5">{restaurant.name}</p>
             </div>
 
             {/* Expand arrow */}
@@ -112,33 +105,17 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
             </div>
           </div>
 
-          {/* Tags - always same height to prevent layout shift */}
-          <div className="flex items-center gap-1.5 mt-1.5 min-h-[20px]">
-            {timeInfo && (
-              <span className="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 bg-white/80 text-orange-700 rounded border border-orange-200">
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                {timeInfo}
-              </span>
-            )}
-            <span className="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 bg-gray-100 text-gray-600 rounded">
-              {getTypeIcon()}
-              <span>{deal.type === 'both' ? 'Food & Drink' : deal.type.charAt(0).toUpperCase() + deal.type.slice(1)}</span>
-            </span>
-          </div>
+          <p className="text-sm text-gray-700 mt-2 leading-relaxed">{deal.summary}</p>
 
-          <p className="text-sm text-gray-700 mt-2">{deal.summary}</p>
-
-          {/* Expanded content - uses max-height for smooth animation without layout shift */}
+          {/* Expanded content */}
           <div
             className={`grid transition-all duration-200 ${
-              isExpanded ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'
+              isExpanded ? 'grid-rows-[1fr] opacity-100 mt-3' : 'grid-rows-[0fr] opacity-0'
             }`}
           >
             <div className="overflow-hidden">
-              <div className="pt-2 border-t border-gray-200">
-                <p className="text-sm text-gray-600">{deal.description}</p>
+              <div className="pt-3 border-t border-gray-200">
+                <p className="text-sm text-gray-600 leading-relaxed">{deal.description}</p>
               </div>
             </div>
           </div>
