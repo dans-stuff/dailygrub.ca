@@ -172,8 +172,17 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
               {/* Restaurant name secondary */}
               <div className="flex items-center gap-1.5 sm:gap-2 mt-1 flex-wrap">
                 <p className="text-sm text-gray-500 truncate">{restaurant.name}</p>
-                <span className="text-xs px-2 py-0.5 bg-blue-50 text-blue-700 rounded whitespace-nowrap capitalize">
-                  {restaurant.type}
+                {restaurant.type === 'sponsored' && (
+                  <span className="text-xs px-2 py-0.5 bg-amber-50 text-amber-700 rounded whitespace-nowrap font-medium">
+                    Sponsored
+                  </span>
+                )}
+                <span className={`text-xs px-2 py-0.5 rounded whitespace-nowrap ${
+                  restaurant.type === 'local'
+                    ? 'bg-emerald-50 text-emerald-700 font-medium'
+                    : 'bg-gray-50 text-gray-500'
+                }`}>
+                  {restaurant.type === 'local' ? 'Local' : 'Chain'}
                 </span>
                 {timeInfo && (
                   <>
