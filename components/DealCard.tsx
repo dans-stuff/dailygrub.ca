@@ -8,9 +8,11 @@ import { formatHour } from '@/lib/deals';
 interface DealCardProps {
   restaurant: Restaurant;
   deal: Deal;
+  cityName?: string;
+  citySlug?: string;
 }
 
-export function DealCard({ restaurant, deal }: DealCardProps) {
+export function DealCard({ restaurant, deal, cityName, citySlug }: DealCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {
@@ -18,11 +20,15 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
       posthog.capture('deal_opened', {
         deal_id: deal.id,
         deal_title: deal.title,
+        deal_summary: deal.summary,
         restaurant_id: restaurant.id,
         restaurant_name: restaurant.name,
         deal_type: deal.type,
         has_price: !!deal.price,
+        price: deal.price || null,
         is_time_limited: deal.startHour !== undefined || deal.endHour !== undefined,
+        city_name: cityName || null,
+        city_slug: citySlug || null,
       });
     }
     setIsExpanded(!isExpanded);
@@ -146,7 +152,7 @@ export function DealCard({ restaurant, deal }: DealCardProps) {
   return (
     <div
       onClick={handleClick}
-      className="bg-white border border-gray-200 rounded-lg p-4 cursor-pointer hover:border-gray-400 hover:shadow-sm transition-all"
+      className="bg-white border border-gray-200 rounded-lg p-4 cursor-pointer hover:border-gray-900 hover:shadow-md transition-all duration-150 active:scale-[0.99]"
     >
       <div className="flex items-start gap-3">
         {/* Icon */}

@@ -1,7 +1,31 @@
-import { Deal, Restaurant, DealsData } from '@/types/deals';
+import { Deal, Restaurant, DealsData, City } from '@/types/deals';
 import dealsDataRaw from '@/data/deals.json';
 
 const dealsData = dealsDataRaw as DealsData;
+
+/**
+ * Get all available cities
+ */
+export function getCities(): Array<{ slug: string; name: string; province: string; dealCount: number }> {
+  return Object.entries(dealsData.cities).map(([slug, city]) => {
+    const dealCount = city.restaurants.reduce((sum, restaurant) => {
+      return sum + restaurant.deals.filter(deal => deal.isActive).length;
+    }, 0);
+    return {
+      slug,
+      name: city.name,
+      province: city.province,
+      dealCount
+    };
+  });
+}
+
+/**
+ * Get city data by slug
+ */
+export function getCity(citySlug: string): City | null {
+  return dealsData.cities[citySlug] || null;
+}
 
 /**
  * Get current date/time in Lethbridge timezone (America/Edmonton)
@@ -53,15 +77,18 @@ export function isDealActive(deal: Deal, date: Date): boolean {
 }
 
 /**
- * Get all active deals for a given date/time
+ * Get all active deals for a given city and date/time
  */
-export function getActiveDeals(date: Date = getLethbridgeTime()): Array<{
+export function getActiveDeals(citySlug: string, date: Date = getLethbridgeTime()): Array<{
   restaurant: Restaurant;
   deal: Deal;
 }> {
+  const city = getCity(citySlug);
+  if (!city) return [];
+
   const activeDeals: Array<{ restaurant: Restaurant; deal: Deal }> = [];
 
-  dealsData.restaurants.forEach((restaurant) => {
+  city.restaurants.forEach((restaurant) => {
     restaurant.deals.forEach((deal) => {
       if (isDealActive(deal, date)) {
         activeDeals.push({ restaurant, deal });
@@ -73,15 +100,18 @@ export function getActiveDeals(date: Date = getLethbridgeTime()): Array<{
 }
 
 /**
- * Get deals grouped by restaurant for a given date/time
+ * Get deals grouped by restaurant for a given city and date/time
  */
-export function getDealsGroupedByRestaurant(date: Date = getLethbridgeTime()): Array<{
+export function getDealsGroupedByRestaurant(citySlug: string, date: Date = getLethbridgeTime()): Array<{
   restaurant: Restaurant;
   activeDeals: Deal[];
 }> {
+  const city = getCity(citySlug);
+  if (!city) return [];
+
   const grouped = new Map<string, { restaurant: Restaurant; activeDeals: Deal[] }>();
 
-  dealsData.restaurants.forEach((restaurant) => {
+  city.restaurants.forEach((restaurant) => {
     const activeDeals = restaurant.deals.filter((deal) => isDealActive(deal, date));
     if (activeDeals.length > 0) {
       grouped.set(restaurant.id, { restaurant, activeDeals });

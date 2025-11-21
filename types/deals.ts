@@ -20,6 +20,14 @@ export interface Restaurant {
   deals: Deal[];
 }
 
-export interface DealsData {
+export interface City {
+  name: string;
+  province: string;
   restaurants: Restaurant[];
+}
+
+export interface DealsData {
+  cities: {
+    [citySlug: string]: City;
+  };
 }
