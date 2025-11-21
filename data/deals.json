@@ -113,29 +113,54 @@
             },
             {
               "id": "telegraph-tacos-tue",
-              "title": "Half-Price Tacos",
-              "summary": "Half-price tacos + drink specials",
-              "description": "Taco Tuesday featuring half-price tacos all day. Choose from chicken, beef, pork, or fish tacos served on soft flour or crispy corn tortillas with fresh toppings, salsa verde, and lime. Pair with drink specials: margaritas $8 or craft lager pints $6. Tacos ordered individually or in sets of 3. Dine-in or takeout.",
+              "title": "Taco Tuesday",
+              "summary": "Half-price tacos, $8 margaritas, $6 lagers",
+              "description": "Taco Tuesday featuring half-price tacos all day. Choose from chicken, beef, pork, or fish tacos served on soft flour or crispy corn tortillas with fresh toppings, salsa verde, and lime. Pair with Booze Buy drink specials: margaritas $8 or craft lager pints $6. Tacos ordered individually or in sets of 3. Dine-in or takeout.",
               "type": "both",
+              "price": "Half-price tacos, $8 margaritas, $6 lagers",
               "dayOfWeek": 2,
               "isActive": true
             },
             {
-              "id": "telegraph-ribs-thu",
-              "title": "Ribs Special",
-              "summary": "Thursday ribs special",
-              "description": "Thursday ribs special all day. Full or half rack of slow-cooked St. Louis-style pork ribs, fall-off-the-bone tender and glazed with house-made BBQ sauce. Served with your choice of two sides: fries, coleslaw, mac and cheese, or seasonal vegetables. Add extra BBQ sauce on the side. Dine-in only.",
-              "type": "food",
+              "id": "telegraph-irish-wed",
+              "title": "Irish Wednesday",
+              "summary": "Half-price ribs, 25% off Guinness, $5 Jameson",
+              "description": "Irish Wednesday featuring BBQ ribs at half price served with a pint of Guinness (25% off) and a shot of Jameson for $5. Slow-cooked ribs fall-off-the-bone tender and glazed with house-made BBQ sauce. Celebrate mid-week with this Irish-inspired combo special. Dine-in only.",
+              "type": "both",
+              "price": "Half-price ribs, 25% off Guinness, $5 Jameson",
+              "dayOfWeek": 3,
+              "isActive": true
+            },
+            {
+              "id": "telegraph-nachos-thu",
+              "title": "Thirsty Thursday",
+              "summary": "Half-price nachos, $8 mules",
+              "description": "Thirsty Thursday featuring classic nachos at half price paired with crafted Moscow Mules for $8. Nachos loaded with cheese, jalapeños, tomatoes, green onions, sour cream, and salsa. Choice of toppings available. Perfect combo for Thursday night. Dine-in only.",
+              "type": "both",
+              "price": "Half-price nachos, $8 mules",
               "dayOfWeek": 4,
               "isActive": true
             },
             {
               "id": "telegraph-whiskey-fri",
-              "title": "Whiskey Specials",
-              "summary": "Whiskey specials all night",
-              "description": "Friday whiskey night featuring specials on select whiskey, bourbon, and rye. Choose from Canadian, American, Scotch, and Irish varieties. Available neat, on the rocks, or in classic cocktails like Old Fashioned, Whiskey Sour, or Manhattan. Rotating selection of featured bottles at discounted prices. Dine-in only.",
+              "title": "Friday Feeling",
+              "summary": "25% off whiskey after 7pm, $5 bartender shot",
+              "description": "Friday Feeling - kick off the weekend with 25% off all whiskey varieties after 7pm and $5 bartender's choice shot. Choose from Canadian, American, Scotch, and Irish whiskey, bourbon, and rye. Available neat, on the rocks, or in classic cocktails like Old Fashioned, Whiskey Sour, or Manhattan. Rotating selection. Dine-in only.",
               "type": "drink",
+              "price": "25% off whiskey after 7pm, $5 shot",
               "dayOfWeek": 5,
+              "startHour": 19,
+              "isActive": true
+            },
+            {
+              "id": "telegraph-whiskey-sat",
+              "title": "Saturday Spirits",
+              "summary": "25% off whiskey after 7pm, $5 shots",
+              "description": "Saturday Spirits - keep the weekend spirit alive with 25% off whiskey and $5 shots after 7pm. Same great whiskey selection and bartender's choice shots as Friday. Perfect for Saturday night out. Dine-in only.",
+              "type": "drink",
+              "price": "25% off whiskey after 7pm, $5 shot",
+              "dayOfWeek": 6,
+              "startHour": 19,
               "isActive": true
             }
           ]
@@ -147,36 +172,40 @@
             {
               "id": "bp-pizza-monday",
               "title": "Pizza Monday",
-              "summary": "Pizza specials all day",
-              "description": "Pizza Monday specials all day on select pizzas. Choose from individual pizzas or share a large. Options include Pepperoni, Hawaiian, Deluxe, Meat Lovers, Vegetarian, BBQ Chicken, and more. Hand-pressed dough with premium toppings and signature pizza sauce. Customize with extra toppings available. Dine-in, takeout, or delivery. Available at both Lethbridge locations.",
+              "summary": "$10 individual pizzas",
+              "description": "Pizza Monday specials all day - $10 individual pizzas (signature recipes or create your own with up to 4 toppings). Options include Pepperoni, Hawaiian, Deluxe, Meat Lovers, Vegetarian, BBQ Chicken, and more. Hand-pressed dough with premium toppings and signature pizza sauce. Dine-in only. Available at both Lethbridge locations.",
               "type": "food",
+              "price": "$10",
               "dayOfWeek": 1,
               "isActive": true
             },
             {
               "id": "bp-pasta-tuesday",
               "title": "Pasta Tuesday",
-              "summary": "Pasta specials all day",
-              "description": "Pasta Tuesday specials all day on select pasta dishes. Choose from Spaghetti, Penne, Fettuccine Alfredo, Lasagna, Baked Seven Cheese Ravioli, Jambalaya Fettuccine, and more. All pasta dishes served with garlic toast. Add chicken, shrimp, or Italian sausage for extra protein. Dine-in, takeout, or delivery. Available at both Lethbridge locations.",
+              "summary": "Pasta starting at $11.99",
+              "description": "Pasta Tuesday specials all day starting at $11.99 on select pasta dishes. Choose from Spaghetti, Penne, Fettuccine Alfredo, Lasagna, Baked Seven Cheese Ravioli, Jambalaya Fettuccine, and more. All pasta dishes served with garlic toast. Add chicken, shrimp, or Italian sausage for extra protein. Dine-in only. Available at both Lethbridge locations.",
               "type": "food",
+              "price": "From $11.99",
               "dayOfWeek": 2,
               "isActive": true
             },
             {
               "id": "bp-wing-wednesday",
               "title": "Wing Wednesday",
-              "summary": "Wing specials all day",
-              "description": "Wing Wednesday specials all day on bone-in and boneless wings. Choose from over a dozen sauces and dry rubs including Buffalo, Honey Garlic, BBQ, Teriyaki, Thai Chili, Hot, Medium, Mild, Salt & Pepper, Cajun, Lemon Pepper, and more. Served with celery, carrots, and ranch or blue cheese dip. Available in different sizes. Dine-in, takeout, or delivery. Available at both Lethbridge locations.",
+              "summary": "50% off starter wings",
+              "description": "Wing Wednesday - 50% off starter wings all day. Choose from over a dozen sauces and dry rubs including Buffalo, Honey Garlic, BBQ, Teriyaki, Thai Chili, Hot, Medium, Mild, Salt & Pepper, Cajun, Lemon Pepper, and more. Served with celery, carrots, and ranch or blue cheese dip. Available in different sizes (10, 20, or 30 wings). Dine-in only. Available at both Lethbridge locations.",
               "type": "food",
+              "price": "50% off",
               "dayOfWeek": 3,
               "isActive": true
             },
             {
               "id": "bp-appy-thursday",
               "title": "Appy Thursday",
-              "summary": "Appetizer specials all day",
-              "description": "Appetizer Thursday specials all day on select appetizers. Choose from Spinach Dip, Potato Skins, Chicken Fingers, Nachos, Mozzarella Sticks, Onion Rings, Quesadillas, Baked Three Cheese Dip, and more. Perfect for sharing or as a meal. Dine-in, takeout, or delivery. Available at both Lethbridge locations.",
+              "summary": "Buy 2 apps, get 3rd FREE",
+              "description": "Appetizer Thursday - Buy 2 appetizers, get the 3rd FREE all day. Choose from Spinach Dip, Potato Skins, Chicken Fingers, Nachos, Mozzarella Sticks, Onion Rings, Quesadillas, Baked Three Cheese Dip, and more. Perfect for sharing or as a meal. Dine-in only. Available at both Lethbridge locations.",
               "type": "food",
+              "price": "Buy 2 get 1 FREE",
               "dayOfWeek": 4,
               "isActive": true
             }
@@ -187,21 +216,25 @@
           "name": "Duke Pub",
           "deals": [
             {
-              "id": "duke-wing-night-tue",
-              "title": "Wing Night",
-              "summary": "Wing night + $0.50 tacos",
-              "description": "Tuesday wing night featuring discounted wings in your choice of sauce: Buffalo, BBQ, Honey Garlic, Teriyaki, Hot, Medium, Mild, or Dry Cajun. Served with celery, carrots, and dip. Plus $0.50 tacos available all night - choose from seasoned beef or chicken with toppings. Popular student night. Dine-in only.",
-              "type": "food",
+              "id": "duke-taco-tuesday",
+              "title": "Toonie Taco Tuesday",
+              "summary": "$2 tacos after 2pm",
+              "description": "Tuesday special featuring $2 Toonie Tacos after 2pm - choose from seasoned beef or chicken with toppings. Sub shrimp for +$2. Plus drink specials: $5 Corona bottles and $6 Paloma cocktails. Popular student night near University of Lethbridge campus. Dine-in only.",
+              "type": "both",
+              "price": "$2 tacos",
               "dayOfWeek": 2,
+              "startHour": 14,
               "isActive": true
             },
             {
               "id": "duke-wing-wednesday",
               "title": "Wing Wednesday",
-              "summary": "Busiest wing night in town",
-              "description": "Wing Wednesday - the busiest and most popular wing night in Lethbridge. Massive discounts on wings in all sauces: Buffalo, BBQ, Honey Garlic, Teriyaki, Hot, Medium, Mild, or Dry Cajun. Served with celery, carrots, and ranch or blue cheese. Very popular with University of Lethbridge students. Arrive early or expect a wait. Dine-in only.",
-              "type": "food",
+              "summary": "79¢ wings after 2pm",
+              "description": "Wing Wednesday - 79¢ per wing (bone-in or boneless) after 2pm with purchase of a beverage. 10 wings per order. Choose from Buffalo, BBQ, Honey Garlic, Teriyaki, Hot, Medium, Mild, or Dry Cajun. No dip or veggies included. Plus drink specials: $5.75 Domestic Draft (Canadian/Kokanee) or $6.25 Premium Domestic (Rickards Red/Blue Moon) 16oz. Very popular with University of Lethbridge students. Arrive early or expect a wait. Dine-in only.",
+              "type": "both",
+              "price": "79¢/wing",
               "dayOfWeek": 3,
+              "startHour": 14,
               "isActive": true
             }
           ]
@@ -566,9 +599,10 @@
             {
               "id": "mikes-happiest-hours",
               "title": "Happiest Hours",
-              "summary": "2-5pm & 9pm-close daily",
-              "description": "Happiest Hours daily from 2-5pm featuring discounted appetizers and drinks. Featured appetizers include wings, nachos, spinach dip, chicken fingers, and loaded fries. Drink specials on draft beer, house wine, and select cocktails. Casual steakhouse atmosphere great for socializing. Also available 9pm-close for late night value. Dine-in only.",
+              "summary": "Bites & Booze from $5",
+              "description": "Happiest Hours daily 2-5pm featuring Bites & Booze from $5. Menu includes: Garlic Parmesan Fries ($5), Mikes Loaded Fries ($6), Bruschetta 4pc ($7), Caesar Salad ($8), miniMikes with bacon ($9), Chicken Bites ($9), Double Fries Poutine ($11), Crispy Panko Shrimp 2 dozen ($13), Hot Lobster Dunk ($13), Cajun Chicken Sandwich with fries ($13), Steak Frites ($25). Drink specials: wines from $5, draft beers $7, well highballs $5. Casual steakhouse atmosphere. Dine-in only.",
               "type": "both",
+              "price": "From $5",
               "daysOfWeek": [
                 0,
                 1,
@@ -585,9 +619,10 @@
             {
               "id": "mikes-happiest-hours-late",
               "title": "Happiest Hours Late",
-              "summary": "9pm-close daily",
-              "description": "Late night Happiest Hours daily from 9pm to close featuring the same great food and drink specials as afternoon happy hour. Perfect for night owls, late dinners, or ending your evening with appetizers and drinks. Featured items include wings, nachos, spinach dip, chicken fingers, plus drink specials. Dine-in only.",
+              "summary": "Same menu 9pm-close",
+              "description": "Late night Happiest Hours daily from 9pm to close featuring the same great food and drink specials from $5. Same menu as afternoon happy hour: Garlic Parmesan Fries ($5), Mikes Loaded Fries ($6), Bruschetta ($7), Caesar Salad ($8), miniMikes ($9), Chicken Bites ($9), Double Fries Poutine ($11), Crispy Panko Shrimp ($13), Hot Lobster Dunk ($13), Cajun Chicken Sandwich ($13), Steak Frites ($25). Perfect for night owls and late dinners. Dine-in only.",
               "type": "both",
+              "price": "From $5",
               "daysOfWeek": [
                 0,
                 1,
