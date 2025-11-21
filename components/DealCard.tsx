@@ -207,6 +207,13 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
           >
             <div className="overflow-hidden">
               <div className="pt-3 border-t border-gray-200">
+                {deal.price && (
+                  <div className="mb-2">
+                    <span className="inline-block px-3 py-1.5 bg-emerald-50 text-emerald-700 font-bold text-sm rounded-md">
+                      {deal.price}
+                    </span>
+                  </div>
+                )}
                 <p className="text-sm text-gray-600 leading-relaxed">{deal.description}</p>
               </div>
             </div>

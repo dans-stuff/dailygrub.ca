@@ -109,6 +109,7 @@
               "type": "both",
               "price": "$17",
               "dayOfWeek": 1,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -119,6 +120,7 @@
               "type": "both",
               "price": "Half-price tacos, $8 margaritas, $6 lagers",
               "dayOfWeek": 2,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -129,6 +131,7 @@
               "type": "both",
               "price": "Half-price ribs, 25% off Guinness, $5 Jameson",
               "dayOfWeek": 3,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -139,6 +142,7 @@
               "type": "both",
               "price": "Half-price nachos, $8 mules",
               "dayOfWeek": 4,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -150,6 +154,7 @@
               "price": "25% off whiskey after 7pm, $5 shot",
               "dayOfWeek": 5,
               "startHour": 19,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -161,6 +166,7 @@
               "price": "25% off whiskey after 7pm, $5 shot",
               "dayOfWeek": 6,
               "startHour": 19,
+              "lastVerified": "2025-11-21",
               "isActive": true
             }
           ]
@@ -177,6 +183,7 @@
               "type": "food",
               "price": "$10",
               "dayOfWeek": 1,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -187,6 +194,7 @@
               "type": "food",
               "price": "From $11.99",
               "dayOfWeek": 2,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -197,6 +205,7 @@
               "type": "food",
               "price": "50% off",
               "dayOfWeek": 3,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -207,6 +216,7 @@
               "type": "food",
               "price": "Buy 2 get 1 FREE",
               "dayOfWeek": 4,
+              "lastVerified": "2025-11-21",
               "isActive": true
             }
           ]
@@ -224,6 +234,7 @@
               "price": "$2 tacos",
               "dayOfWeek": 2,
               "startHour": 14,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -235,6 +246,7 @@
               "price": "79¢/wing",
               "dayOfWeek": 3,
               "startHour": 14,
+              "lastVerified": "2025-11-21",
               "isActive": true
             }
           ]
@@ -344,42 +356,51 @@
               "description": "Wednesday burger and brew special all day. Choose from classic beef burger, bacon cheeseburger, mushroom Swiss burger, or chicken burger served on a toasted brioche bun with lettuce, tomato, onion, pickles, and house sauce. Comes with fries or Caesar salad and a craft beer or domestic pint. Dine-in only. Available at both North & South locations.",
               "type": "both",
               "dayOfWeek": 3,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
               "id": "pops-wing-thursday",
               "title": "Wing Night",
-              "summary": "Wing specials all day",
-              "description": "Wing Thursday featuring discounted wings all day. Choose from bone-in or boneless tossed in your favorite sauce: Buffalo, Honey Garlic, BBQ, Teriyaki, Hot, Medium, Mild, Lemon Pepper, Cajun, or Thai Chili. Served with celery, carrots, and ranch or blue cheese dip. Order by the pound. Dine-in only. Available at both North & South locations.",
+              "summary": "49¢ wings",
+              "description": "Wing Thursday featuring 49¢ wings all day. Choose from bone-in or boneless tossed in your favorite sauce: Buffalo, Honey Garlic, BBQ, Teriyaki, Hot, Medium, Mild, Lemon Pepper, Cajun, or Thai Chili. Served with celery, carrots, and ranch or blue cheese dip. Order by the pound. Very popular - arrive early or expect a wait. Dine-in only. Available at both North & South locations.",
               "type": "food",
+              "price": "49¢/wing",
               "dayOfWeek": 4,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
               "id": "pops-fish-chips-fri",
               "title": "Fish & Chips Special",
-              "summary": "Fish & chips all day",
-              "description": "Friday fish and chips special all day. Beer-battered Atlantic cod filets fried golden and crispy, served with fresh-cut fries, coleslaw, tartar sauce, and lemon wedges. Two-piece or three-piece options available. Classic pub favorite perfect for Friday night. Dine-in or takeout. Available at both North & South locations.",
+              "summary": "$10.95 fish & chips",
+              "description": "Friday fish and chips special all day for $10.95. Beer-battered Atlantic cod filets fried golden and crispy, served with fresh-cut fries, coleslaw, tartar sauce, and lemon wedges. Two-piece or three-piece options available. Classic pub favorite perfect for Friday night. Dine-in or takeout. Available at both North & South locations.",
               "type": "food",
+              "price": "$10.95",
               "dayOfWeek": 5,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
               "id": "pops-pasta-saturday",
               "title": "Pasta Saturday",
-              "summary": "Pasta specials all day",
-              "description": "Pasta Saturday featuring discounted pasta dishes all day. Choose from Fettuccine Alfredo, Spaghetti Bolognese, Penne Arrabbiata, Carbonara, or Lasagna. All pasta dishes served with garlic toast and house salad. Add grilled chicken, shrimp, or Italian sausage for extra protein. Dine-in or takeout. Available at both North & South locations.",
+              "summary": "$9.75 build your own pasta",
+              "description": "Pasta Saturday featuring $9.75 build your own pasta all day. Choose your pasta style and sauce. Options include Fettuccine Alfredo, Spaghetti Bolognese, Penne Arrabbiata, Carbonara, or Lasagna. All pasta dishes served with garlic toast and house salad. Add grilled chicken, shrimp, or Italian sausage for extra protein. Dine-in or takeout. Available at both North & South locations.",
               "type": "food",
+              "price": "$9.75",
               "dayOfWeek": 6,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
               "id": "pops-steak-sunday",
               "title": "Steak Sunday",
-              "summary": "Top sirloin with all the fixings",
-              "description": "Steak Sunday featuring 8oz top sirloin cooked to your liking, served with crispy fries, onion rings, garlic toast, and seasonal vegetables. Topped with herb butter. Great value for a Sunday dinner. Add sautéed mushrooms or peppercorn sauce for extra flavor. Dine-in only. Available at both North & South locations.",
+              "summary": "$10.95 steak sandwich",
+              "description": "Steak Sunday featuring $10.95 steak sandwich special all day. Top sirloin steak served with fries, 2 onion rings, and warm garlic toast. Great value for a Sunday dinner. Topped with herb butter. Add sautéed mushrooms or peppercorn sauce for extra flavor. Dine-in only. Available at both North & South locations.",
               "type": "food",
+              "price": "$10.95",
               "dayOfWeek": 0,
+              "lastVerified": "2025-11-21",
               "isActive": true
             }
           ]
@@ -614,6 +635,7 @@
               ],
               "startHour": 14,
               "endHour": 17,
+              "lastVerified": "2025-11-21",
               "isActive": true
             },
             {
@@ -633,6 +655,7 @@
                 6
               ],
               "startHour": 21,
+              "lastVerified": "2025-11-21",
               "isActive": true
             }
           ]
@@ -711,20 +734,38 @@
           "name": "The Canadian Brewhouse",
           "deals": [
             {
-              "id": "brewhouse-daily",
-              "title": "Daily Specials",
-              "summary": "Specials every night",
-              "description": "Daily specials every night of the week featuring different themed promotions. Monday wing nights, Tuesday taco deals, Wednesday burger specials, and more rotating throughout the week. Extensive menu of Canadian pub favorites including poutine, burgers, wings, ribs, and shareables. Wide selection of draft beers, cocktails, and craft options. Unique venue features rooftop patio with city views and basement bowling alley for entertainment. Sports bar atmosphere with big screens. Dine-in or takeout.",
-              "type": "both",
-              "daysOfWeek": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-              ],
+              "id": "brewhouse-wing-wednesday",
+              "title": "Wing Wednesday",
+              "summary": "69¢ wings",
+              "description": "Wing Wednesday featuring 69¢ wings all day (minimum 10 wings per order = $6.90 for 10). Choose from dozens of sauces and dry rubs including Buffalo, Honey Garlic, BBQ, Teriyaki, Thai Chili, Hot, Medium, Mild, Salt & Pepper, Cajun, Lemon Pepper, and more. Bone-in or boneless available. Served with celery, carrots, and ranch or blue cheese dip. Sports bar atmosphere with big screens. Dine-in or takeout.",
+              "type": "food",
+              "price": "69¢/wing",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-11-21",
+              "isActive": true
+            },
+            {
+              "id": "brewhouse-pasta-thursday",
+              "title": "Pasta Thursday",
+              "summary": "$9.99 pasta",
+              "description": "Pasta Thursday featuring five plates of pasta available every Thursday, all day, for $9.99. Choose from various pasta styles and sauces. All pasta dishes served with garlic toast. Great value for pasta lovers. Unique venue features rooftop patio with city views and basement bowling alley for entertainment. Sports bar atmosphere. Dine-in or takeout.",
+              "type": "food",
+              "price": "$9.99",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-11-21",
+              "isActive": true
+            },
+            {
+              "id": "brewhouse-appy-friday",
+              "title": "Appy Hour Hat Trick",
+              "summary": "Buy 2 apps, get 3rd free",
+              "description": "Friday Appy Hour Hat Trick from 4pm-7pm - buy two appetizers and get the third for free. Choose from extensive menu of Canadian pub favorites including poutine, nachos, wings, sliders, and shareables. Perfect way to start the weekend. Sports bar atmosphere with big screens and rooftop patio. Dine-in only.",
+              "type": "food",
+              "price": "Buy 2 get 1 free",
+              "dayOfWeek": 5,
+              "startHour": 16,
+              "endHour": 19,
+              "lastVerified": "2025-11-21",
               "isActive": true
             }
           ]
