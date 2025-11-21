@@ -140,7 +140,7 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
   return (
     <div
       onClick={handleClick}
-      className="bg-white border border-gray-300 rounded-lg p-4 shadow-sm cursor-pointer hover:border-emerald-400 hover:shadow-md transition-all duration-150 active:scale-[0.99]"
+      className="group bg-white border border-gray-300 rounded-lg p-4 shadow-sm cursor-pointer hover:border-emerald-400 hover:shadow-md transition-all duration-150 active:scale-[0.99]"
     >
       <div className="flex items-start gap-3">
         {/* Icon */}
@@ -191,10 +191,14 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
             </div>
 
             {/* Details button */}
-            <div className="flex-shrink-0 flex items-center gap-1 sm:gap-1.5 text-xs text-emerald-600 font-medium">
-              <span className="hidden sm:inline">Details</span>
+            <div className={`flex-shrink-0 flex items-center gap-1 px-2 py-1 rounded text-xs font-medium transition-colors ${
+              isExpanded
+                ? 'bg-emerald-100 text-emerald-700'
+                : 'bg-gray-100 text-gray-600 group-hover:bg-emerald-50 group-hover:text-emerald-600'
+            }`}>
+              <span>{isExpanded ? 'Hide' : 'Details'}</span>
               <svg
-                className={`w-4 h-4 transition-transform duration-200 ${
+                className={`w-3.5 h-3.5 transition-transform duration-200 ${
                   isExpanded ? 'rotate-180' : ''
                 }`}
                 fill="none"
