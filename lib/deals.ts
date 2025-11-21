@@ -1,7 +1,90 @@
 import { Deal, Restaurant, DealsData, City } from '@/types/deals';
-import dealsDataRaw from '@/data/deals.json';
+import Papa from 'papaparse';
+// @ts-ignore - Raw loader for CSV file
+import dealsCsvRaw from '@/data/deals.csv';
 
-const dealsData = dealsDataRaw as DealsData;
+// CSV row type
+interface DealRow {
+  city_slug: string;
+  city_name: string;
+  city_province: string;
+  restaurant_id: string;
+  restaurant_name: string;
+  deal_id: string;
+  deal_title: string;
+  deal_summary: string;
+  deal_description: string;
+  deal_type: 'food' | 'drink' | 'both';
+  deal_price: string;
+  day_of_week: string;
+  days_of_week: string;
+  start_hour: string;
+  end_hour: string;
+  last_verified: string;
+  is_active: string;
+}
+
+// Parse CSV and build DealsData structure
+function loadDealsFromCSV(csvContent: string): DealsData {
+  const parsed = Papa.parse<DealRow>(csvContent, {
+    header: true,
+    skipEmptyLines: true,
+  });
+
+  const dealsData: DealsData = { cities: {} };
+
+  parsed.data.forEach((row) => {
+    const citySlug = row.city_slug;
+
+    // Initialize city if not exists
+    if (!dealsData.cities[citySlug]) {
+      dealsData.cities[citySlug] = {
+        name: row.city_name,
+        province: row.city_province,
+        restaurants: [],
+      };
+    }
+
+    const city = dealsData.cities[citySlug];
+
+    // Find or create restaurant
+    let restaurant = city.restaurants.find((r) => r.id === row.restaurant_id);
+    if (!restaurant) {
+      restaurant = {
+        id: row.restaurant_id,
+        name: row.restaurant_name,
+        deals: [],
+      };
+      city.restaurants.push(restaurant);
+    }
+
+    // Parse deal
+    const deal: Deal = {
+      id: row.deal_id,
+      title: row.deal_title,
+      summary: row.deal_summary,
+      description: row.deal_description,
+      type: row.deal_type,
+      isActive: row.is_active === 'true',
+    };
+
+    // Optional fields
+    if (row.deal_price) deal.price = row.deal_price;
+    if (row.day_of_week) deal.dayOfWeek = parseInt(row.day_of_week, 10);
+    if (row.days_of_week) {
+      deal.daysOfWeek = row.days_of_week.split(';').map((d) => parseInt(d, 10));
+    }
+    if (row.start_hour) deal.startHour = parseInt(row.start_hour, 10);
+    if (row.end_hour) deal.endHour = parseInt(row.end_hour, 10);
+    if (row.last_verified) deal.lastVerified = row.last_verified;
+
+    restaurant.deals.push(deal);
+  });
+
+  return dealsData;
+}
+
+const dealsData = loadDealsFromCSV(dealsCsvRaw);
 
 /**
  * Get all available cities

@@ -11,6 +11,7 @@ export interface Deal {
   daysOfWeek?: number[]; // for multi-day deals
   startHour?: number; // 0-23 for hourly deals
   endHour?: number; // 0-23 for hourly deals
+  lastVerified?: string; // ISO date string (YYYY-MM-DD)
   isActive: boolean;
 }
 
