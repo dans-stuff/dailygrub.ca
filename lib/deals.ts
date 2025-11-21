@@ -102,7 +102,11 @@ export function getActiveDeals(citySlug: string, date: Date = getLethbridgeTime(
 /**
  * Get deals grouped by restaurant for a given city and date/time
  */
-export function getDealsGroupedByRestaurant(citySlug: string, date: Date = getLethbridgeTime()): Array<{
+export function getDealsGroupedByRestaurant(
+  citySlug: string,
+  date: Date = getLethbridgeTime(),
+  showAll: boolean = false
+): Array<{
   restaurant: Restaurant;
   activeDeals: Deal[];
 }> {
@@ -112,7 +116,9 @@ export function getDealsGroupedByRestaurant(citySlug: string, date: Date = getLe
   const grouped = new Map<string, { restaurant: Restaurant; activeDeals: Deal[] }>();
 
   city.restaurants.forEach((restaurant) => {
-    const activeDeals = restaurant.deals.filter((deal) => isDealActive(deal, date));
+    const activeDeals = showAll
+      ? restaurant.deals.filter((deal) => deal.isActive)
+      : restaurant.deals.filter((deal) => isDealActive(deal, date));
     if (activeDeals.length > 0) {
       grouped.set(restaurant.id, { restaurant, activeDeals });
     }

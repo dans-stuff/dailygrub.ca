@@ -13,6 +13,7 @@ export default function CityPage() {
   const [selectedDay, setSelectedDay] = useState<number>(0);
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
   const [cityNotFound, setCityNotFound] = useState(false);
+  const [expandedDealId, setExpandedDealId] = useState<string | null>(null);
 
   const city = getCity(citySlug);
 
@@ -47,12 +48,15 @@ export default function CityPage() {
 
   // Create a date object for the selected day at current time
   const selectedDate = new Date(currentTime);
-  selectedDate.setDate(
-    selectedDate.getDate() + ((selectedDay - currentTime.getDay() + 7) % 7)
-  );
+  if (selectedDay !== -1) {
+    selectedDate.setDate(
+      selectedDate.getDate() + ((selectedDay - currentTime.getDay() + 7) % 7)
+    );
+  }
 
-  const dealsGrouped = getDealsGroupedByRestaurant(citySlug, selectedDate);
+  const dealsGrouped = getDealsGroupedByRestaurant(citySlug, selectedDate, selectedDay === -1);
   const isToday = selectedDay === currentTime.getDay();
+  const isAllDays = selectedDay === -1;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -64,7 +68,7 @@ export default function CityPage() {
             <span className="text-sm text-gray-500">• {city.name}</span>
           </div>
           <div className="flex items-center gap-2">
-            <p className="text-sm text-gray-600">{city.name} food & drink deals</p>
+            <p className="text-sm text-gray-600">Food & drink deals</p>
             <span className="text-gray-300">•</span>
             <Link href="/" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
               Change city
@@ -76,7 +80,7 @@ export default function CityPage() {
         <div className="mb-6">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-sm font-semibold text-gray-700">
-              {isToday ? "Today's Deals" : `${getDayName(selectedDay)}'s Deals`}
+              {isAllDays ? "All Deals" : isToday ? "Today's Deals" : `${getDayName(selectedDay)}'s Deals`}
             </h2>
             {dealsGrouped.length > 0 && (
               <span className="text-xs text-gray-500">
@@ -106,6 +110,8 @@ export default function CityPage() {
                   deal={deal}
                   cityName={city.name}
                   citySlug={citySlug}
+                  isExpanded={expandedDealId === deal.id}
+                  onToggle={() => setExpandedDealId(expandedDealId === deal.id ? null : deal.id)}
                 />
               ))
             )
