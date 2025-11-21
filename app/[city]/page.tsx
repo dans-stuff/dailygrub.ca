@@ -70,27 +70,23 @@ export default function CityPage() {
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">Daily Grub</h1>
             <span className="text-sm text-gray-500">• {city.name}</span>
           </div>
-          <div className="flex items-center gap-2 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap mb-3">
             <p className="text-sm text-gray-600">Food & drink deals</p>
             <span className="text-gray-300">•</span>
             <Link href="/" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
               Change city
             </Link>
           </div>
+          <p className="text-sm text-gray-600">
+            Missing a deal?{' '}
+            <a href="mailto:support@lunoh.com" className="text-gray-900 hover:underline font-medium">
+              Email us
+            </a>
+          </p>
         </header>
 
         {/* Day Selector */}
         <div className="mb-6">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-sm font-semibold text-gray-700">
-              {isAllDays ? "All Deals" : isToday ? "Today's Deals" : `${getDayName(selectedDay)}'s Deals`}
-            </h2>
-            {dealsGrouped.length > 0 && (
-              <span className="text-xs text-gray-500">
-                {dealsGrouped.reduce((acc, { activeDeals }) => acc + activeDeals.length, 0)} deals
-              </span>
-            )}
-          </div>
           <DaySelector selectedDay={selectedDay} onDayChange={setSelectedDay} />
         </div>
 
@@ -123,7 +119,10 @@ export default function CityPage() {
 
         {/* Footer */}
         <footer className="mt-12 pt-6 border-t border-gray-200 text-center text-xs sm:text-sm text-gray-500">
-          <div className="space-y-2.5">
+          <div className="space-y-3">
+            <p className="text-gray-600">
+              Restaurants sorted by: local spots with daily specials, then chains, then places with all-day deals.
+            </p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <Link href="/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 transition-colors">
                 Privacy
@@ -131,12 +130,6 @@ export default function CityPage() {
               <span className="text-gray-300">•</span>
               <span>{city.name}, {city.province}</span>
             </div>
-            <p className="text-gray-600">
-              Missing a deal or restaurant?{' '}
-              <a href="mailto:support@lunoh.com" className="text-gray-900 hover:underline break-all">
-                support@lunoh.com
-              </a>
-            </p>
             <p className="text-gray-400">
               Verify with restaurants. Info may be outdated.
             </p>
