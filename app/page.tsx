@@ -78,8 +78,8 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 text-center text-xs text-gray-500">
-          <div className="space-y-2">
+        <footer className="mt-12 text-center text-xs sm:text-sm text-gray-500">
+          <div className="space-y-2.5">
             <div>
               <Link href="/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 transition-colors">
                 Privacy
@@ -87,7 +87,7 @@ export default function Home() {
             </div>
             <p className="text-gray-600">
               Missing a deal or restaurant?{' '}
-              <a href="mailto:support@lunoh.com" className="text-gray-900 hover:underline">
+              <a href="mailto:support@lunoh.com" className="text-gray-900 hover:underline break-all">
                 support@lunoh.com
               </a>
             </p>

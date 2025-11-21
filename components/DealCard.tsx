@@ -164,18 +164,18 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-start justify-between gap-2">
+          <div className="flex items-start justify-between gap-2 sm:gap-3">
             <div className="flex-1 min-w-0">
               {/* Summary is the headline */}
-              <h3 className="font-bold text-gray-900 leading-tight">{deal.summary}</h3>
+              <h3 className="font-bold text-gray-900 leading-tight break-words">{deal.summary}</h3>
 
               {/* Restaurant name secondary */}
-              <div className="flex items-center gap-2 mt-1">
-                <p className="text-sm text-gray-500">{restaurant.name}</p>
+              <div className="flex items-center gap-1.5 sm:gap-2 mt-1 flex-wrap">
+                <p className="text-sm text-gray-500 truncate">{restaurant.name}</p>
                 {timeInfo && (
                   <>
                     <span className="text-gray-300">•</span>
-                    <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded">
+                    <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded whitespace-nowrap">
                       {timeInfo}
                     </span>
                   </>
@@ -184,8 +184,8 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
             </div>
 
             {/* Details button */}
-            <div className="flex-shrink-0 flex items-center gap-1.5 text-xs text-emerald-600 font-medium">
-              <span>Details</span>
+            <div className="flex-shrink-0 flex items-center gap-1 sm:gap-1.5 text-xs text-emerald-600 font-medium">
+              <span className="hidden sm:inline">Details</span>
               <svg
                 className={`w-4 h-4 transition-transform duration-200 ${
                   isExpanded ? 'rotate-180' : ''

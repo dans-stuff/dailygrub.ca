@@ -26,6 +26,11 @@ export default function CityPage() {
     }
   }, [city]);
 
+  // Reset expanded deal when day changes
+  useEffect(() => {
+    setExpandedDealId(null);
+  }, [selectedDay]);
+
   if (cityNotFound) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -61,11 +66,11 @@ export default function CityPage() {
       <div className="max-w-4xl mx-auto px-4 py-6 sm:py-8">
         {/* Header */}
         <header className="mb-6">
-          <div className="flex items-baseline gap-2 mb-1">
+          <div className="flex items-baseline gap-2 mb-1 flex-wrap">
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">Daily Grub</h1>
             <span className="text-sm text-gray-500">• {city.name}</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <p className="text-sm text-gray-600">Food & drink deals</p>
             <span className="text-gray-300">•</span>
             <Link href="/" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
@@ -117,18 +122,18 @@ export default function CityPage() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
-          <div className="space-y-2">
-            <div>
+        <footer className="mt-12 pt-6 border-t border-gray-200 text-center text-xs sm:text-sm text-gray-500">
+          <div className="space-y-2.5">
+            <div className="flex items-center justify-center gap-2 flex-wrap">
               <Link href="/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 transition-colors">
                 Privacy
               </Link>
-              {' • '}
+              <span className="text-gray-300">•</span>
               <span>{city.name}, {city.province}</span>
             </div>
             <p className="text-gray-600">
               Missing a deal or restaurant?{' '}
-              <a href="mailto:support@lunoh.com" className="text-gray-900 hover:underline">
+              <a href="mailto:support@lunoh.com" className="text-gray-900 hover:underline break-all">
                 support@lunoh.com
               </a>
             </p>

@@ -11,7 +11,7 @@ export function DaySelector({ selectedDay, onDayChange }: DaySelectorProps) {
   const days = [-1, 0, 1, 2, 3, 4, 5, 6]; // -1 for "All", then Sunday to Saturday
 
   return (
-    <div className="flex gap-2 overflow-x-auto pb-1">
+    <div className="flex flex-wrap gap-1.5 sm:gap-2">
       {days.map((day) => {
         const isSelected = selectedDay === day;
         const dayName = day === -1 ? 'All' : getDayName(day);
@@ -21,7 +21,7 @@ export function DaySelector({ selectedDay, onDayChange }: DaySelectorProps) {
           <button
             key={day}
             onClick={() => onDayChange(day)}
-            className={`flex-shrink-0 px-4 py-2 border rounded-lg text-sm font-medium transition-all duration-200 ${
+            className={`px-3 py-2 sm:px-4 border rounded-lg text-sm font-medium transition-all duration-200 min-w-[60px] sm:min-w-0 ${
               isSelected
                 ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm'
                 : 'bg-white text-gray-700 border-gray-200 hover:border-emerald-300 hover:shadow-sm active:scale-95'
