@@ -43,7 +43,16 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
     return null;
   };
 
+  const isDaySpecific = () => {
+    // Single day deal
+    if (deal.dayOfWeek !== undefined) return true;
+    // Specific days (not all 7)
+    if (deal.daysOfWeek && deal.daysOfWeek.length > 0 && deal.daysOfWeek.length < 7) return true;
+    return false;
+  };
+
   const timeInfo = getDealTimeInfo();
+  const isSingleDay = isDaySpecific();
 
   // Pick icon based on deal content
   const getIcon = () => {
@@ -183,6 +192,13 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
                     : 'bg-gray-50 text-gray-500'
                 }`}>
                   {restaurant.type === 'local' ? 'Local' : 'Chain'}
+                </span>
+                <span className={`text-xs px-2 py-0.5 rounded whitespace-nowrap ${
+                  isSingleDay
+                    ? 'bg-blue-50 text-blue-700 font-medium'
+                    : 'bg-gray-50 text-gray-500'
+                }`}>
+                  {isSingleDay ? 'Daily special' : 'Multi-day'}
                 </span>
                 {timeInfo && (
                   <>

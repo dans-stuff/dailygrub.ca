@@ -226,8 +226,8 @@ export function getDealsGroupedByRestaurant(
     chain: 2,
   };
 
-  // Sort by type, then day-specificity, then alphabetically
-  return Array.from(grouped.values()).sort((a, b) => {
+  // Sort restaurants by type, then day-specificity, then alphabetically
+  const sortedRestaurants = Array.from(grouped.values()).sort((a, b) => {
     // First: Sort by restaurant type
     const typeDiff = typePriority[a.restaurant.type] - typePriority[b.restaurant.type];
     if (typeDiff !== 0) return typeDiff;
@@ -241,6 +241,18 @@ export function getDealsGroupedByRestaurant(
     // Third: Sort alphabetically by name
     return a.restaurant.name.localeCompare(b.restaurant.name);
   });
+
+  // Sort deals within each restaurant (day-specific deals first)
+  return sortedRestaurants.map(group => ({
+    ...group,
+    activeDeals: group.activeDeals.sort((a, b) => {
+      const aIsSpecific = isDaySpecific(a);
+      const bIsSpecific = isDaySpecific(b);
+      if (aIsSpecific && !bIsSpecific) return -1;
+      if (!aIsSpecific && bIsSpecific) return 1;
+      return 0;
+    })
+  }));
 }
 
 /**
