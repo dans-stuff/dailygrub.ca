@@ -10,8 +10,11 @@ import { getDealsGroupedByRestaurant, getCurrentTime, getDayName, getCity } from
 export default function CityPage() {
   const params = useParams();
   const citySlug = params.city as string;
-  const [selectedDay, setSelectedDay] = useState<number>(0);
-  const [currentTime, setCurrentTime] = useState<Date>(new Date());
+
+  // Initialize with current day to avoid flash
+  const initialTime = getCurrentTime();
+  const [selectedDay, setSelectedDay] = useState<number>(initialTime.getDay());
+  const [currentTime, setCurrentTime] = useState<Date>(initialTime);
   const [cityNotFound, setCityNotFound] = useState(false);
   const [expandedDealId, setExpandedDealId] = useState<string | null>(null);
 
@@ -20,12 +23,7 @@ export default function CityPage() {
   useEffect(() => {
     if (!city) {
       setCityNotFound(true);
-      return;
     }
-
-    const currentTime = getCurrentTime();
-    setSelectedDay(currentTime.getDay());
-    setCurrentTime(currentTime);
   }, [city]);
 
   if (cityNotFound) {
