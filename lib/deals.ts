@@ -1,6 +1,16 @@
+/**
+ * Deals data layer for the static site.
+ *
+ * IMPORTANT: Runs at BUILD TIME only. Data is embedded in the JS bundle.
+ *
+ * Current: Reads from data/deals.csv (temporary)
+ * Future: Will fetch from Netlify Blob at build time
+ *
+ * See CLAUDE.md for architecture.
+ */
 import { Deal, Restaurant, DealsData, City, EnhancedDeal } from '@/types/deals';
 import Papa from 'papaparse';
-// @ts-ignore - Raw loader for CSV file
+// @ts-ignore - Raw loader imports CSV as string at build time
 import dealsCsvRaw from '@/data/deals.csv';
 
 // CSV row type
@@ -197,10 +207,13 @@ function enhanceDeal(deal: Deal): EnhancedDeal {
 
 /**
  * Get deals grouped by restaurant for a given city and date/time
- * Deals are enhanced with computed properties and restaurants are sorted by:
- * 1. Type: sponsored > local > chain
- * 2. Deal specificity: single-day > multi-day > all-day
- * 3. Alphabetically by name
+ * Deals are enhanced with computed properties and sorted by:
+ * 1. Sponsored deals first
+ * 2. Local single-day deals
+ * 3. Chain single-day deals
+ * 4. Local multi-day deals
+ * 5. Chain multi-day deals
+ * Within each category, sorted alphabetically by restaurant name
  */
 export function getDealsGroupedByRestaurant(
   citySlug: string,
@@ -213,15 +226,17 @@ export function getDealsGroupedByRestaurant(
   const city = getCity(citySlug);
   if (!city) return [];
 
-  const grouped = new Map<string, { restaurant: Restaurant; activeDeals: EnhancedDeal[] }>();
+  // Collect all deals as flat list with restaurant info
+  const allDeals: Array<{ restaurant: Restaurant; deal: EnhancedDeal }> = [];
 
   city.restaurants.forEach((restaurant) => {
-    const activeDeals = showAll
-      ? restaurant.deals.filter((deal) => deal.isActive).map(enhanceDeal)
-      : restaurant.deals.filter((deal) => isDealActive(deal, date)).map(enhanceDeal);
-    if (activeDeals.length > 0) {
-      grouped.set(restaurant.id, { restaurant, activeDeals });
-    }
+    const deals = showAll
+      ? restaurant.deals.filter((deal) => deal.isActive)
+      : restaurant.deals.filter((deal) => isDealActive(deal, date));
+
+    deals.forEach((deal) => {
+      allDeals.push({ restaurant, deal: enhanceDeal(deal) });
+    });
   });
 
   // Define sort order for restaurant types
@@ -231,45 +246,34 @@ export function getDealsGroupedByRestaurant(
     chain: 2,
   };
 
-  // Sort restaurants: sponsored first, then single-day (local > chain), then multi-day (local > chain)
-  const sortedRestaurants = Array.from(grouped.values()).sort((a, b) => {
-    // First: Sponsored always comes first
+  // Sort deals:
+  // 1. Sponsored first
+  // 2. Single-day local
+  // 3. Single-day chain
+  // 4. Multi-day local
+  // 5. Multi-day chain
+  // Within same category: alphabetically by restaurant name
+  allDeals.sort((a, b) => {
+    // Sponsored always first
     if (a.restaurant.type === 'sponsored' && b.restaurant.type !== 'sponsored') return -1;
     if (a.restaurant.type !== 'sponsored' && b.restaurant.type === 'sponsored') return 1;
 
-    // Second: Check if restaurants have single-day deals
-    const aHasSingleDay = a.activeDeals.some(deal => deal.isSingleDay);
-    const bHasSingleDay = b.activeDeals.some(deal => deal.isSingleDay);
-
-    // If both have single-day or both don't, sort by type (local > chain)
-    if (aHasSingleDay === bHasSingleDay) {
-      const typeDiff = typePriority[a.restaurant.type] - typePriority[b.restaurant.type];
-      if (typeDiff !== 0) return typeDiff;
-      return a.restaurant.name.localeCompare(b.restaurant.name);
-    }
-
     // Single-day deals come before multi-day
-    if (aHasSingleDay && !bHasSingleDay) return -1;
-    if (!aHasSingleDay && bHasSingleDay) return 1;
+    if (a.deal.isSingleDay && !b.deal.isSingleDay) return -1;
+    if (!a.deal.isSingleDay && b.deal.isSingleDay) return 1;
 
-    // Fallback: alphabetically
+    // Within same deal type (single or multi), local before chain
+    const typeDiff = typePriority[a.restaurant.type] - typePriority[b.restaurant.type];
+    if (typeDiff !== 0) return typeDiff;
+
+    // Same type and same deal specificity: alphabetically by restaurant name
     return a.restaurant.name.localeCompare(b.restaurant.name);
   });
 
-  // Sort deals within each restaurant (single-day first, then multi-day, then all-day)
-  return sortedRestaurants.map(group => ({
-    ...group,
-    activeDeals: group.activeDeals.sort((a, b) => {
-      // Single-day deals first
-      if (a.isSingleDay && !b.isSingleDay) return -1;
-      if (!a.isSingleDay && b.isSingleDay) return 1;
-
-      // Then day-specific multi-day deals
-      if (a.isDaySpecific && !b.isDaySpecific) return -1;
-      if (!a.isDaySpecific && b.isDaySpecific) return 1;
-
-      return 0;
-    })
+  // Convert back to grouped format (each deal as its own entry for rendering)
+  return allDeals.map(({ restaurant, deal }) => ({
+    restaurant,
+    activeDeals: [deal],
   }));
 }
 

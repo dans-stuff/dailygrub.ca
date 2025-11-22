@@ -22,10 +22,12 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
         deal_summary: deal.summary,
         restaurant_id: restaurant.id,
         restaurant_name: restaurant.name,
+        restaurant_type: restaurant.type,
         deal_type: deal.type,
         has_price: !!deal.price,
         price: deal.price || null,
         is_time_limited: deal.startHour !== undefined || deal.endHour !== undefined,
+        is_single_day: deal.isSingleDay,
         city_name: cityName || null,
         city_slug: citySlug || null,
       });

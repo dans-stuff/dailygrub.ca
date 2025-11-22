@@ -1,0 +1,22 @@
+# Cloudflare Workers configuration
+name = "dailygrub"
+main = "worker.ts"
+compatibility_date = "2024-09-23"
+workers_dev = true
+
+# Enable logging/observability
+[observability]
+enabled = true
+
+# Worker routes for dailygrub.ca
+[[routes]]
+pattern = "dailygrub.ca/*"
+zone_name = "dailygrub.ca"
+
+[[routes]]
+pattern = "www.dailygrub.ca/*"
+zone_name = "dailygrub.ca"
+
+[assets]
+directory = "./out"
+not_found_handling = "404-page"
