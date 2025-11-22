@@ -10,7 +10,7 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
       posthog.init('phc_PD5LJphnzIPIPmoNlAxxeiLWOYhNkKEamaH6SOtSkc6', {
         api_host: 'https://us.i.posthog.com',
         person_profiles: 'identified_only',
-        loaded: (posthog) => {
+        loaded: () => {
           if (process.env.NODE_ENV === 'development') {
             console.log('PostHog loaded');
           }

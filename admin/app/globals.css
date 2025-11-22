@@ -1,0 +1,78 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  body {
+    padding: 0.5rem !important;
+  }
+
+  main {
+    padding: 0.5rem !important;
+  }
+
+  /* Header adjusts to column on mobile */
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start !important;
+  }
+
+  /* Smaller text on mobile */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  /* Deal card rows stack on mobile */
+  .deal-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Form inputs full width on mobile */
+  input, select, textarea {
+    max-width: 100%;
+  }
+
+  /* Buttons smaller on mobile */
+  button {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Ensure viewport scaling */
+input, select, textarea {
+  font-size: 16px; /* Prevents zoom on iOS */
+}
+
+/* Touch-friendly tap targets */
+button, input[type="checkbox"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* Modal responsive */
+@media (max-width: 400px) {
+  .modal-content {
+    width: 95vw !important;
+    padding: 1rem !important;
+  }
+}

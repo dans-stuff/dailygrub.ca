@@ -1,8 +1,15 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Daily Grub Admin',
   description: 'Manage restaurant deals',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 export default function RootLayout({
@@ -12,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
+      <body style={{ padding: '1rem' }}>
         {children}
       </body>
     </html>

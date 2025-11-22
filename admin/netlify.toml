@@ -1,10 +1,8 @@
 [build]
-  base = "admin"
   command = "npm install && npm run build"
   publish = ".next"
 
 [dev]
-  base = "admin"
   command = "npm run dev"
   targetPort = 3002
   port = 8888

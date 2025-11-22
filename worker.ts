@@ -1,7 +1,7 @@
 // Worker for handling non-asset requests (404s, etc.)
 // Assets are served directly by Cloudflare - this only handles fallback
 
-export default {
+const worker = {
   async fetch(request: Request): Promise<Response> {
     const url = new URL(request.url);
 
@@ -26,3 +26,5 @@ export default {
     });
   },
 };
+
+export default worker;

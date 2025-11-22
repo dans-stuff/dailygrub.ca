@@ -56,13 +56,13 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">
-              What We Don't Do
+              What We Don&apos;t Do
             </h2>
             <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
-              <li>We don't collect personal information like names or email addresses</li>
-              <li>We don't sell or share your data with third parties</li>
-              <li>We don't track you across other websites</li>
-              <li>We don't store payment information (we don't process payments)</li>
+              <li>We don&apos;t collect personal information like names or email addresses</li>
+              <li>We don&apos;t sell or share your data with third parties</li>
+              <li>We don&apos;t track you across other websites</li>
+              <li>We don&apos;t store payment information (we don&apos;t process payments)</li>
             </ul>
           </section>
 
@@ -86,7 +86,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl font-semibold text-gray-900 mb-3">Contact</h2>
             <p className="text-gray-700 leading-relaxed">
               Daily Grub is a simple community resource for finding food deals in your city.
-              We're committed to keeping your data safe and your experience simple.
+              We&apos;re committed to keeping your data safe and your experience simple.
             </p>
           </section>
 

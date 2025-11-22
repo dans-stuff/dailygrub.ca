@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { DealCard } from '@/components/DealCard';
 import { DaySelector } from '@/components/DaySelector';
@@ -14,39 +14,29 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
   // Initialize with current day to avoid flash
   const initialTime = getCurrentTime();
   const [selectedDay, setSelectedDay] = useState<number>(initialTime.getDay());
-  const [currentTime, setCurrentTime] = useState<Date>(initialTime);
-  const [cityNotFound, setCityNotFound] = useState(false);
+  const [currentTime] = useState<Date>(initialTime);
   const [expandedDealId, setExpandedDealId] = useState<string | null>(null);
 
   const city = getCity(citySlug);
 
-  useEffect(() => {
-    if (!city) {
-      setCityNotFound(true);
-    }
-  }, [city]);
-
-  // Reset expanded deal when day changes
-  useEffect(() => {
+  // Handle day change and reset expanded deal
+  const handleDayChange = useCallback((day: number) => {
+    setSelectedDay(day);
     setExpandedDealId(null);
-  }, [selectedDay]);
+  }, []);
 
-  if (cityNotFound) {
+  if (!city) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-2">City not found</h1>
-          <p className="text-gray-600 mb-4">We don't have deals for this city yet.</p>
+          <p className="text-gray-600 mb-4">We don&apos;t have deals for this city yet.</p>
           <Link href="/" className="text-gray-900 hover:underline">
             Back to city selector
           </Link>
         </div>
       </div>
     );
-  }
-
-  if (!city) {
-    return null;
   }
 
   // Create a date object for the selected day at current time
@@ -57,7 +47,6 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
     );
   }
 
-  const isToday = selectedDay === currentTime.getDay();
   const isAllDays = selectedDay === -1;
   // Filter by day only (no time filtering)
   const dealsGrouped = getDealsGroupedByRestaurant(citySlug, selectedDate, isAllDays);
@@ -98,7 +87,7 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
 
         {/* Day Selector */}
         <div className="mb-6">
-          <DaySelector selectedDay={selectedDay} onDayChange={setSelectedDay} />
+          <DaySelector selectedDay={selectedDay} onDayChange={handleDayChange} />
         </div>
 
         {/* Deals List */}
