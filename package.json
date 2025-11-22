@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "deploy": "npm run build && npx wrangler deploy",
-    "preview": "npm run build && npx wrangler dev"
+    "preview": "npm run build && npx wrangler dev",
+    "sync": "./scripts/sync-deals.sh"
   },
   "dependencies": {
     "next": "16.0.3",
