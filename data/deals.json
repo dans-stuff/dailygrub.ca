@@ -12,58 +12,113 @@
             {
               "id": "oj-margaritas-tacos-mon",
               "title": "Margaritas & Tacos",
-              "summary": "Discounted margaritas & tacos",
-              "description": "Monday Margaritas & Tacos special all day. Featuring discounted classic margaritas and select taco options. Choose from chicken, beef, or fish tacos served with fresh toppings, salsa, and lime. Classic lime margaritas made with premium tequila. Dine-in only. Available at both North & West locations.",
+              "description": "Discounted margaritas and tacos all day Monday. Dine-in only. West: 8 Aquitania Blvd W, North: 323 Bluefox Boulevard N.",
               "type": "both",
-              "isActive": true,
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "oj-half-price-wings-tue",
               "title": "Half-Price Wings",
-              "summary": "50% off wings after 2pm",
-              "description": "Tuesday wings at 50% off starting at 2pm until close. Choose from classic, breaded, or boneless wings tossed in your choice of sauce: honey garlic, BBQ, hot, medium, mild, teriyaki, salt & pepper, or Thai chili. Served with celery, carrots, and ranch or blue cheese dip. Order by the pound or in baskets. Dine-in or takeout. Available at both North & West locations.",
+              "description": "50% off wings after 2pm. Dine-in or takeout. Both locations.",
               "type": "food",
-              "isActive": true,
               "dayOfWeek": 2,
               "startHour": 14,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "oj-half-price-wine-thu",
               "title": "Half-Price Wine",
-              "summary": "50% off wine all day",
-              "description": "Thursday wine special - 50% off all wines by the glass or bottle all day. Selection includes reds (Cabernet Sauvignon, Merlot, Pinot Noir), whites (Chardonnay, Pinot Grigio, Sauvignon Blanc), and rosé. Both domestic and imported options available. Perfect for date night or catching up with friends. Dine-in only. Available at both North & West locations.",
+              "description": "50% off wine by glass or bottle all day Thursday. Dine-in only. Both locations.",
               "type": "drink",
-              "isActive": true,
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "oj-sangria-sat",
-              "title": "Sangria Special",
-              "summary": "$2 off sangria",
-              "description": "Saturday sangria special - $2 off all sangria pitchers and glasses all day. Choose from classic red sangria or refreshing white sangria, both made with fresh fruit, premium wine, and a splash of brandy. Served over ice. Available by the glass or pitcher. Dine-in only. Available at both North & West locations.",
+              "title": "$2 Off Sangria",
+              "description": "$2 off sangria all day Saturday. Dine-in only. Both locations.",
               "type": "drink",
-              "isActive": true,
               "dayOfWeek": 6,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
+            }
+          ]
+        },
+        {
+          "id": "churchs-chicken",
+          "name": "Church's Chicken",
+          "type": "chain",
+          "deals": [
+            {
+              "id": "churchs-monday",
+              "title": "Signature Sandwich Monday",
+              "description": "Any Signature Sandwich $7.99 + tax. Both locations: 3751 Mayor Magrath Dr S & 890 Heritage Blvd W.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-11-22"
             },
             {
-              "id": "oj-weekend-brunch",
-              "title": "Weekend Brunch",
-              "summary": "Brunch till 3pm",
-              "description": "Weekend brunch menu available Saturday and Sunday from opening until 3pm. Features eggs benedict, pancakes, French toast, breakfast burritos, omelettes with your choice of fillings, and classic breakfast combos. Includes brunch cocktails like Caesar, Mimosa, and Bellini. Dine-in only. Available at both North & West locations.",
+              "id": "churchs-tuesday",
+              "title": "2pc Chicken Tuesday",
+              "description": "2pc Chicken (Leg & Thigh) $5.99 + tax. Both locations.",
               "type": "food",
-              "isActive": true,
-              "daysOfWeek": [
-                0,
-                6
-              ],
-              "startHour": 0,
-              "endHour": 15,
-              "lastVerified": "2025-11-21"
+              "dayOfWeek": 2,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "churchs-wednesday",
+              "title": "Signature Wrap Wednesday",
+              "description": "Any Signature Wrap $7.99 + tax. Both locations.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "churchs-thursday",
+              "title": "3pc Dark Meat Thursday",
+              "description": "3pc Chicken Dark Meat $6.99 + tax. Both locations.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "churchs-friday",
+              "title": "Tender Wrap Friday",
+              "description": "Tender Wrap $4.99 + tax. Both locations.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "churchs-saturday",
+              "title": "Churro Bites Saturday",
+              "description": "5pc Churro Bites $3.79 + tax. Both locations.",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "churchs-sunday",
+              "title": "Jalapeno Bombers Sunday",
+              "description": "3pc Jalapeno Bombers $2.99 + tax. Both locations.",
+              "type": "food",
+              "dayOfWeek": 0,
+              "lastVerified": "2025-11-22"
+            }
+          ]
+        },
+        {
+          "id": "mary-browns",
+          "name": "Mary Brown's",
+          "type": "chain",
+          "deals": [
+            {
+              "id": "mary-browns-monday",
+              "title": "Big Mary Monday",
+              "description": "Big Mary $3.99. 2414 Fairway Plaza Road S.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -75,22 +130,16 @@
             {
               "id": "onion-pints-riblets-mon",
               "title": "Pints & Riblets",
-              "summary": "$5.99 pints, $9.99 ribs",
-              "description": "Monday pints and riblets special all day. Original 16 or Onion Lager Pint for $5.99 and Ribs & Wings for $9.99. Tender ribs slow-cooked and basted with house BBQ sauce, served with fries and coleslaw. Great value for Monday night. Dine-in only.",
+              "description": "$5.99 pints (Original 16 or Onion Lager), $9.99 ribs & wings. Monday all day. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$5.99 pints, $9.99 ribs & wings",
               "dayOfWeek": 1,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "onion-paralyzers-lasagna-mon",
               "title": "Vodka Paralyzers & Lasagna",
-              "summary": "$5.99 paralyzers, $13.99 lasagna",
-              "description": "Monday and Tuesday special featuring Vodka Paralyzers for $5.99 and classic Baked Lasagna for $13.99. Lasagna made with layers of pasta, rich meat sauce, ricotta, mozzarella, and parmesan, baked until golden and served with garlic toast. Paralyzers made with vodka, Kahlúa, Coke, and cream. Dine-in only.",
+              "description": "$5.99 Vodka Paralyzers, $13.99 lasagna. Monday & Tuesday. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$5.99 paralyzers, $13.99 lasagna",
               "daysOfWeek": [
                 1,
                 2
@@ -100,11 +149,8 @@
             {
               "id": "onion-thirsty-thursday",
               "title": "Thirsty Thursday",
-              "summary": "Long Island Iced Tea & steak sandwich",
-              "description": "Thirsty Thursday featuring Long Island Iced Tea for $5.99 and Steak Sandwich for $16.99 all day. Tender steak sandwich served with your choice of side. Great value for Thursday night at The Onion. Dine-in only.",
+              "description": "$5.99 Long Island Iced Tea, $16.99 steak sandwich. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$5.99 Long Island, $16.99 steak sandwich",
               "dayOfWeek": 4,
               "lastVerified": "2025-11-21"
             }
@@ -118,67 +164,49 @@
             {
               "id": "telegraph-pork-lager-mon",
               "title": "Pulled Pork & Lager",
-              "summary": "Pulled pork sandwich + lager $17",
-              "description": "Monday special - $17 for a pulled pork sandwich paired with Russel Craft Lager. Slow-smoked pulled pork piled high on a toasted brioche bun, topped with coleslaw and crispy onion strings. Served with your choice of fries, salad, or coleslaw. Includes a full pint of Russel Craft Lager. Dine-in only.",
+              "description": "$17 pulled pork sandwich with Russel Craft Lager. Monday. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$17",
               "dayOfWeek": 1,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "telegraph-tacos-tue",
-              "title": "Taco Tuesday",
-              "summary": "Half-price tacos, $8 margaritas, $6 lagers",
-              "description": "Taco Tuesday featuring half-price tacos all day. Choose from chicken, beef, pork, or fish tacos served on soft flour or crispy corn tortillas with fresh toppings, salsa verde, and lime. Pair with Booze Buy drink specials: margaritas $8 or craft lager pints $6. Tacos ordered individually or in sets of 3. Dine-in or takeout.",
+              "title": "Half-Price Tacos",
+              "description": "Half-price tacos. $8 margaritas, $6 craft lagers. Dine-in or takeout.",
               "type": "both",
-              "isActive": true,
-              "price": "Half-price tacos, $8 margaritas, $6 lagers",
               "dayOfWeek": 2,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "telegraph-irish-wed",
-              "title": "Irish Wednesday",
-              "summary": "Half-price ribs & Irish drinks",
-              "description": "Irish Wednesday featuring BBQ ribs at half price served with a pint of Guinness (25% off) and a shot of Jameson for $5. Slow-cooked ribs fall-off-the-bone tender and glazed with house-made BBQ sauce. Celebrate mid-week with this Irish-inspired combo special. Dine-in only.",
+              "title": "Half-Price Ribs & $5 Jameson",
+              "description": "Half-price ribs, 25% off Guinness, $5 Jameson shots. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "Half-price ribs, 25% off Guinness, $5 Jameson",
               "dayOfWeek": 3,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "telegraph-nachos-thu",
-              "title": "Thirsty Thursday",
-              "summary": "Half-price nachos, $8 mules",
-              "description": "Thirsty Thursday featuring classic nachos at half price paired with crafted Moscow Mules for $8. Nachos loaded with cheese, jalapeños, tomatoes, green onions, sour cream, and salsa. Choice of toppings available. Perfect combo for Thursday night. Dine-in only.",
+              "title": "Half-Price Nachos & $8 Mules",
+              "description": "Half-price nachos, $8 Moscow Mules. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "Half-price nachos, $8 mules",
               "dayOfWeek": 4,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "telegraph-whiskey-fri",
-              "title": "Friday Feeling",
-              "summary": "25% off whiskey, $5 shots",
-              "description": "Friday Feeling - kick off the weekend with 25% off all whiskey varieties after 7pm and $5 bartender's choice shot. Choose from Canadian, American, Scotch, and Irish whiskey, bourbon, and rye. Available neat, on the rocks, or in classic cocktails like Old Fashioned, Whiskey Sour, or Manhattan. Rotating selection. Dine-in only.",
+              "title": "25% Off Whiskey & $5 Shots",
+              "description": "25% off whiskey, $5 shots after 7pm. Dine-in only.",
               "type": "drink",
-              "isActive": true,
-              "price": "25% off whiskey after 7pm, $5 shot",
               "dayOfWeek": 5,
               "startHour": 19,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "telegraph-whiskey-sat",
-              "title": "Saturday Spirits",
-              "summary": "25% off whiskey, $5 shots",
-              "description": "Saturday Spirits - keep the weekend spirit alive with 25% off whiskey and $5 shots after 7pm. Same great whiskey selection and bartender's choice shots as Friday. Perfect for Saturday night out. Dine-in only.",
+              "title": "25% Off Whiskey & $5 Shots",
+              "description": "25% off whiskey, $5 shots after 7pm. Dine-in only.",
               "type": "drink",
-              "isActive": true,
-              "price": "25% off whiskey after 7pm, $5 shot",
               "dayOfWeek": 6,
               "startHour": 19,
               "lastVerified": "2025-11-21"
@@ -192,69 +220,165 @@
           "deals": [
             {
               "id": "bp-pizza-monday",
-              "title": "Pizza Monday",
-              "summary": "$10 individual pizzas",
-              "description": "Pizza Monday specials all day - $10 individual pizzas (signature recipes or create your own with up to 4 toppings). Options include Pepperoni, Hawaiian, Deluxe, Meat Lovers, Vegetarian, BBQ Chicken, and more. Hand-pressed dough with premium toppings and signature pizza sauce. Dine-in only. Available at both Lethbridge locations.",
+              "title": "$10 Personal Pizzas",
+              "description": "$10 individual pizzas all day. Dine-in only. West: 10-14 Aquitania Blvd W, South: 2041 Mayor Magrath Dr S.",
               "type": "food",
-              "isActive": true,
-              "price": "$10",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "bp-pasta-tuesday",
-              "title": "Pasta Tuesday",
-              "summary": "Pasta starting at $11.99",
-              "description": "Pasta Tuesday specials all day starting at $11.99 on select pasta dishes. Choose from Spaghetti, Penne, Fettuccine Alfredo, Lasagna, Baked Seven Cheese Ravioli, Jambalaya Fettuccine, and more. All pasta dishes served with garlic toast. Add chicken, shrimp, or Italian sausage for extra protein. Dine-in only. Available at both Lethbridge locations.",
+              "title": "Pasta From $11.99",
+              "description": "Pasta starting at $11.99 all day. Dine-in only. Both locations.",
               "type": "food",
-              "isActive": true,
-              "price": "From $11.99",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "bp-wing-wednesday",
-              "title": "Wing Wednesday",
-              "summary": "50% off starter wings",
-              "description": "Wing Wednesday - 50% off starter wings all day. Choose from over a dozen sauces and dry rubs including Buffalo, Honey Garlic, BBQ, Teriyaki, Thai Chili, Hot, Medium, Mild, Salt & Pepper, Cajun, Lemon Pepper, and more. Served with celery, carrots, and ranch or blue cheese dip. Available in different sizes (10, 20, or 30 wings). Dine-in only. Available at both Lethbridge locations.",
+              "title": "Half-Price Wings",
+              "description": "50% off starter wings all day. Dine-in only. Both locations.",
               "type": "food",
-              "isActive": true,
-              "price": "50% off",
               "dayOfWeek": 3,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "bp-appy-thursday",
-              "title": "Appy Thursday",
-              "summary": "Buy 2 apps, get 3rd FREE",
-              "description": "Appetizer Thursday - Buy 2 appetizers, get the 3rd FREE all day. Choose from Spinach Dip, Potato Skins, Chicken Fingers, Nachos, Mozzarella Sticks, Onion Rings, Quesadillas, Baked Three Cheese Dip, and more. Perfect for sharing or as a meal. Dine-in only. Available at both Lethbridge locations.",
+              "title": "Buy 2 Apps, Get 1 Free",
+              "description": "Buy 2 appetizers, get 3rd FREE. Dine-in only. Both locations.",
               "type": "food",
-              "isActive": true,
-              "price": "Buy 2 get 1 FREE",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-21"
-            },
+              "lastVerified": "2025-11-22"
+            }
+          ]
+        },
+        {
+          "id": "canadian-brewhouse",
+          "name": "The Canadian Brewhouse",
+          "type": "chain",
+          "deals": [
             {
-              "id": "bp-cactus-friday",
-              "title": "Friday Cactus Cut",
-              "summary": "$2 off Cactus Cut Potatoes",
-              "description": "Friday special featuring $2 off Cactus Cut Potatoes all day. Crispy, golden potato wedges seasoned with signature Cactus Cut spices and served with your choice of dipping sauce. Perfect appetizer or side dish to share. Available for dine-in only at both Lethbridge locations.",
+              "id": "brewhouse-wing-wednesday",
+              "title": "69¢ Wings",
+              "description": "69¢ wings ALL DAY. 3521 Mayor Magrath Dr S.",
               "type": "food",
-              "isActive": true,
-              "price": "$2 off",
-              "dayOfWeek": 5,
-              "lastVerified": "2025-11-21"
+              "dayOfWeek": 3,
+              "lastVerified": "2025-11-22"
             },
             {
-              "id": "bp-fishbowl-friday",
-              "title": "Fishbowl Friday",
-              "summary": "$2 off all fishbowls",
-              "description": "Fishbowl Friday featuring $2 off all fishbowl drinks from open to close. Choose from signature fishbowl cocktails including margaritas, Long Island iced teas, and specialty mixed drinks served in oversized fishbowl glasses perfect for sharing. Available at participating Alberta locations. Dine-in only. Available at both Lethbridge locations.",
-              "type": "drink",
-              "isActive": true,
-              "price": "$2 off",
+              "id": "brewhouse-friday-appy",
+              "title": "Buy 2 Apps, Get 1 Free",
+              "description": "4-7PM: Buy 2 appetizers, get 3rd FREE. 3521 Mayor Magrath Dr S.",
+              "type": "food",
               "dayOfWeek": 5,
-              "lastVerified": "2025-11-21"
+              "startHour": 16,
+              "endHour": 19,
+              "lastVerified": "2025-11-22"
+            }
+          ]
+        },
+        {
+          "id": "hudsons-pub",
+          "name": "Hudsons Canada's Pub",
+          "type": "chain",
+          "deals": [
+            {
+              "id": "hudsons-wing-wednesday",
+              "title": "Half-Price Wings & $6 Draft",
+              "description": "50% off wings from 6PM to close. $6 draft. 904 2nd Ave S.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "startHour": 18,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "hudsons-happy-hour",
+              "title": "$5 Hi-Balls & Draft",
+              "description": "2-6PM weekdays: $5 hi-balls, $5 draft, $6 wine. Dine-in only.",
+              "type": "drink",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "startHour": 14,
+              "endHour": 18,
+              "lastVerified": "2025-11-22"
+            }
+          ]
+        },
+        {
+          "id": "moxies",
+          "name": "Moxies",
+          "type": "chain",
+          "deals": [
+            {
+              "id": "moxies-happy-hour",
+              "title": "$5 Drinks & $10 Cocktails",
+              "description": "2-5PM & 9PM-close daily. Drinks: highballs/beer/wine from $5, $6 Absolut Sippin' Sodas, $10 cocktails (Smoked Old Fashioned, Espresso Martini, Mojito, Moxies Mule), half-price select wine bottles. Food: $17 shareables (Roasted Tomatoes & Whipped Feta, Calamari and Shrimp), $19 Bacon Cheeseburger & Fries, $27 Steak Frites. 1621 3 Ave S.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "moxies-wine-wednesday",
+              "title": "Half-Price Wine Bottles",
+              "description": "Half-price wine bottles all day. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-11-22"
+            }
+          ]
+        },
+        {
+          "id": "mr-mikes",
+          "name": "MR MIKES",
+          "type": "chain",
+          "deals": [
+            {
+              "id": "mikes-happiest-hours",
+              "title": "$5 Bites & Drinks",
+              "description": "Daily 2-5PM: Bites from $5 (fries, bruschetta, sliders, shrimp, steak frites). Drinks: wine $5, draft $7, highballs $5. 203 13 Street S.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 14,
+              "endHour": 17,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "mikes-happiest-hours-late",
+              "title": "$5 Late Night Bites",
+              "description": "Daily 8PM-close: Same happy hour menu. Dine-in only.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 20,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -266,11 +390,8 @@
             {
               "id": "duke-taco-tuesday",
               "title": "Toonie Taco Tuesday",
-              "summary": "$2 tacos after 2pm",
-              "description": "Tuesday special featuring $2 Toonie Tacos after 2pm - choose from seasoned beef or chicken with toppings. Sub shrimp for +$2. Plus drink specials: $5 Corona bottles and $6 Paloma cocktails. Popular student night near University of Lethbridge campus. Dine-in only.",
+              "description": "$2 tacos after 2pm (beef or chicken). Shrimp +$2. $5 Coronas, $6 Palomas. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$2 tacos",
               "dayOfWeek": 2,
               "startHour": 14,
               "lastVerified": "2025-11-21"
@@ -278,11 +399,8 @@
             {
               "id": "duke-wing-wednesday",
               "title": "Wing Wednesday",
-              "summary": "79¢ wings after 2pm",
-              "description": "Wing Wednesday - 79¢ per wing (bone-in or boneless) after 2pm with purchase of a beverage. 10 wings per order. Choose from Buffalo, BBQ, Honey Garlic, Teriyaki, Hot, Medium, Mild, or Dry Cajun. No dip or veggies included. Plus drink specials: $5.75 Domestic Draft (Canadian/Kokanee) or $6.25 Premium Domestic (Rickards Red/Blue Moon) 16oz. Very popular with University of Lethbridge students. Arrive early or expect a wait. Dine-in only.",
+              "description": "79¢/wing after 2pm with beverage purchase. 10 wings/order. $5.75-$6.25 drafts. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "79¢/wing",
               "dayOfWeek": 3,
               "startHour": 14,
               "lastVerified": "2025-11-21"
@@ -296,24 +414,18 @@
           "deals": [
             {
               "id": "bar-one-taco-tue",
-              "title": "Taco Night",
-              "summary": "$4 tacos after 4pm",
-              "description": "Taco Tuesday featuring $4 tacos from 4pm to close. Choose from Chipotle Lime Chicken Tacos or Cajun Shrimp Tacos served in soft flour or crispy corn tortillas. Plus $5.25 Coronas. Great value for taco lovers. Dine-in only.",
+              "title": "$4 Tacos & $5 Coronas",
+              "description": "$4 tacos from 4pm. $5.25 Coronas. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$4 tacos, $5.25 Coronas",
               "dayOfWeek": 2,
               "startHour": 16,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "bar-one-wing-thu",
-              "title": "Wing Thursday",
-              "summary": "50% off wings after 4pm",
-              "description": "Wing Thursday featuring 50% off wings from 4pm to close, plus $6 House Draft. Choose from bone-in or boneless wings tossed in your choice of sauce: Salt & Pepper, Lemon Pepper, Hot, BBQ, Honey Garlic, Bourbon, Sweet Chili, Spicy Southern Barbeque, or Teriyaki. Served with celery, carrots, and ranch or blue cheese dipping sauce. Dine-in only.",
+              "title": "Half-Price Wings & $6 Draft",
+              "description": "50% off wings from 4pm. $6 house draft. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "50% off wings, $6 draft",
               "dayOfWeek": 4,
               "startHour": 16,
               "lastVerified": "2025-11-21"
@@ -327,12 +439,19 @@
           "deals": [
             {
               "id": "taco-time-tuesday",
-              "title": "Taco Tuesday",
-              "summary": "Discounted tacos",
-              "description": "Taco Tuesday specials featuring discounted tacos all day. Choose from seasoned ground beef, grilled chicken, or refried bean tacos. Served in crispy corn or soft flour tortillas with lettuce, cheese, tomatoes, and signature sauces. Available in combos with sides and drinks. Dine-in, takeout, or drive-thru. Available at all Lethbridge locations.",
+              "title": "Unlimited $2 Tacos",
+              "description": "Unlimited $2 tacos every Tuesday (beef or veggie, crispy or soft). Dine-in or takeout. All Lethbridge locations: 13th St, Fairway Plaza, Park Place Mall.",
               "type": "food",
-              "isActive": true,
-              "dayOfWeek": 2
+              "dayOfWeek": 2,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "taco-time-thursday",
+              "title": "BOGO Half-Price Burritos",
+              "description": "Buy one burrito, get 2nd half price on Thursdays. Dine-in or takeout. All Lethbridge locations.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -343,50 +462,50 @@
           "deals": [
             {
               "id": "blanco-taco-tuesday",
-              "title": "Taco Tuesday",
-              "summary": "1/2 price classic, $5 off premium",
-              "description": "Taco Tuesdaze at Blanco Cantina featuring 1/2 price classic tacos and $5 off premium tacos with beverage purchase. Classic: mojo pork, crispy fish, chicken tinga, braised beef, garlic mushroom, baja shrimp. Premium: diablo shrimp, pinche gringo, bulgogi steak, crispy cauliflower, jalisco hot chicken, quesabirria. Served with cabbage, onion, cilantro, jalapeño. Vibrant cantina atmosphere. Dine-in only.",
+              "title": "Half-Price Tacos",
+              "description": "Half-price classic tacos, $5 off premium tacos with beverage purchase. 319 6th Street South.",
               "type": "food",
-              "isActive": true,
-              "price": "1/2 price classic, $5 off premium",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "blanco-happy-hour",
+              "title": "$3.50 Tacos & Half-Price Tequila",
+              "description": "2-5PM & 9PM-close daily: $7 margaritas, $7 select beers, $3.50 classic tacos, half-price all tequila (including top shelf). Dine-in only. 319 6th Street S.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "lastVerified": "2025-11-22"
             }
           ]
         },
         {
-          "id": "streats-west",
-          "name": "Streats West",
+          "id": "streats-kitchen",
+          "name": "Streats Kitchen",
           "type": "local",
           "deals": [
             {
-              "id": "streats-fish-tacos-tue",
-              "title": "Fish Tacos",
-              "summary": "$3 fish tacos",
-              "description": "Tuesday fish tacos for only $3 each. Crispy battered or grilled fish on soft flour tortillas with fresh cabbage slaw, pico de gallo, lime crema, and cilantro. Made with fresh Pacific cod. Order as many as you want. Great value for taco lovers. Available all day Tuesday. Dine-in or takeout.",
+              "id": "streats-fish-tuesday",
+              "title": "$3.50 Fish or Fries",
+              "description": "$3.50 per piece of fish OR $3.50 regular fries on Tuesday. In-store only. West: 550 University Dr W Unit 22, South: 3735 Mayor Magrath Dr S.",
               "type": "food",
-              "isActive": true,
-              "price": "$3",
-              "dayOfWeek": 2
-            },
-            {
-              "id": "streats-fish-chips-tue",
-              "title": "Fish & Chips",
-              "summary": "$3.50 fish, $3.50 chips",
-              "description": "Tuesday fish and chips deal featuring $3.50 per piece of fish and $3.50 for chips. Crispy beer-battered Pacific cod served golden brown with fresh-cut fries. Build your own plate - order as many pieces as you like. Served with tartar sauce and lemon. Amazing value for quality fish and chips. Available all day Tuesday. Dine-in or takeout.",
-              "type": "food",
-              "isActive": true,
-              "price": "$3.50/fish, $3.50/chips",
-              "dayOfWeek": 2
+              "dayOfWeek": 2,
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "streats-taco-thursday",
-              "title": "Taco Thursday",
-              "summary": "Discounted tacos",
-              "description": "Taco Thursday featuring discounted tacos all day. Choose from seasoned beef, grilled chicken, pork carnitas, or grilled vegetables. Served on soft flour or crispy corn tortillas with fresh toppings, salsa, and lime. Build your own taco bowl or order traditional tacos. Dine-in or takeout.",
+              "title": "$4.20 Tacos",
+              "description": "$4.20 tacos every Thursday. In-store only. Both locations.",
               "type": "food",
-              "isActive": true,
-              "dayOfWeek": 4
+              "dayOfWeek": 4,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -397,12 +516,11 @@
           "deals": [
             {
               "id": "steel-vines-tuesday",
-              "title": "Tuesday Discount",
-              "summary": "Tuesday specials on food & drinks",
-              "description": "Tuesday discount on select menu items all day. Modern gastropub featuring elevated comfort food and craft cocktails. Discount applies to featured appetizers, mains, and select drinks. Check with server for today's Tuesday specials. Stylish industrial atmosphere with exposed brick and steel accents. Dine-in only.",
-              "type": "both",
-              "isActive": true,
-              "dayOfWeek": 2
+              "title": "10% Off Meals",
+              "description": "10% off meals on Tuesday. Dine-in only. 332 5th St South. Hours: Thu-Sat 5pm-10pm.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -412,58 +530,61 @@
           "type": "local",
           "deals": [
             {
-              "id": "pops-burger-brew-wed",
-              "title": "Burger & Brew Special",
-              "summary": "Burger + beer combo",
-              "description": "Wednesday burger and brew special all day. Choose from classic beef burger, bacon cheeseburger, mushroom Swiss burger, or chicken burger served on a toasted brioche bun with lettuce, tomato, onion, pickles, and house sauce. Comes with fries or Caesar salad and a craft beer or domestic pint. Dine-in only. Available at both North & South locations.",
+              "id": "pops-steak-monday",
+              "title": "$10.95 Steak Sandwich",
+              "description": "$10.95 steak sandwich (top sirloin, fries, 2 onion rings, garlic toast). $2 off Caesars. Dine-in only. North: 1475 St Edward Blvd N, South: 1516 9 Ave S.",
               "type": "both",
-              "isActive": true,
+              "dayOfWeek": 1,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "pops-mexi-monday",
+              "title": "$4 Tacos & $5 Cervezas",
+              "description": "$4 Cantina Tacos, $5 Cervezas, $6 Margaritas & Palomas. Dine-in only. Both locations.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "pops-thirsty-tuesday",
+              "title": "$3.95 Fries & Half-Price Highballs",
+              "description": "$3.95 basket of fries, half-price 1oz highballs. Dine-in only. Both locations.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "pops-burger-wed",
+              "title": "$9.95 Build-a-Burger",
+              "description": "$9.95 build-a-burger with fries. $2.95 Bobby C Draft (14oz). Dine-in only. Both locations.",
+              "type": "both",
               "dayOfWeek": 3,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "pops-wing-thursday",
-              "title": "Wing Night",
-              "summary": "49¢ wings",
-              "description": "Wing Thursday featuring 49¢ wings all day. Choose from bone-in or boneless tossed in your favorite sauce: Buffalo, Honey Garlic, BBQ, Teriyaki, Hot, Medium, Mild, Lemon Pepper, Cajun, or Thai Chili. Served with celery, carrots, and ranch or blue cheese dip. Order by the pound. Very popular - arrive early or expect a wait. Dine-in only. Available at both North & South locations.",
-              "type": "food",
-              "isActive": true,
-              "price": "49¢/wing",
+              "title": "Half-Price Wings & $15 Jugs",
+              "description": "Half-price wings after 2pm with beverage purchase. $15 jugs of Bobby C Draft (60oz). Very popular - arrive early. Dine-in only. Both locations.",
+              "type": "both",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-21"
+              "startHour": 14,
+              "lastVerified": "2025-11-22"
             },
             {
-              "id": "pops-fish-chips-fri",
-              "title": "Fish & Chips Special",
-              "summary": "$10.95 fish & chips",
-              "description": "Friday fish and chips special all day for $10.95. Beer-battered Atlantic cod filets fried golden and crispy, served with fresh-cut fries, coleslaw, tartar sauce, and lemon wedges. Two-piece or three-piece options available. Classic pub favorite perfect for Friday night. Dine-in or takeout. Available at both North & South locations.",
-              "type": "food",
-              "isActive": true,
-              "price": "$10.95",
+              "id": "pops-fish-friday",
+              "title": "$10.95 Fish & Chips",
+              "description": "$10.95 fish & chips. 99¢/oz house wine (5oz, 9oz, 32oz). $2 off bottles of domestic beer. Dine-in or takeout. Both locations.",
+              "type": "both",
               "dayOfWeek": 5,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             },
             {
               "id": "pops-pasta-saturday",
-              "title": "Pasta Saturday",
-              "summary": "$9.75 build your own pasta",
-              "description": "Pasta Saturday featuring $9.75 build your own pasta all day. Choose your pasta style and sauce. Options include Fettuccine Alfredo, Spaghetti Bolognese, Penne Arrabbiata, Carbonara, or Lasagna. All pasta dishes served with garlic toast and house salad. Add grilled chicken, shrimp, or Italian sausage for extra protein. Dine-in or takeout. Available at both North & South locations.",
-              "type": "food",
-              "isActive": true,
-              "price": "$9.75",
+              "title": "$9.75 Build-Your-Own Pasta",
+              "description": "$9.75 build your own pasta (choose pasta & sauce). $14.95 mini jug highballs (4oz). Dine-in or takeout. Both locations.",
+              "type": "both",
               "dayOfWeek": 6,
-              "lastVerified": "2025-11-21"
-            },
-            {
-              "id": "pops-steak-sunday",
-              "title": "Steak Sunday",
-              "summary": "$10.95 steak sandwich",
-              "description": "Steak Sunday featuring $10.95 steak sandwich special all day. Top sirloin steak served with fries, 2 onion rings, and warm garlic toast. Great value for a Sunday dinner. Topped with herb butter. Add sautéed mushrooms or peppercorn sauce for extra flavor. Dine-in only. Available at both North & South locations.",
-              "type": "food",
-              "isActive": true,
-              "price": "$10.95",
-              "dayOfWeek": 0,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -473,46 +594,64 @@
           "type": "local",
           "deals": [
             {
-              "id": "honkers-daily-specials",
-              "title": "Daily Specials",
-              "summary": "Rotating food specials",
-              "description": "Daily food specials Monday through Wednesday from 2pm to close. Rotating menu featuring pub classics like burgers, sandwiches, wings, and mains at discounted prices. Check the board or ask your server for today's featured specials. Great value for weekday afternoons and evenings. Dine-in only.",
+              "id": "honkers-half-wings",
+              "title": "Half-Price Wings",
+              "description": "Half-price wings. Mon-Wed 2pm-close, Fri-Sat 2pm-6pm. Dine-in only. 2808 5 Ave N.",
               "type": "food",
-              "isActive": true,
               "daysOfWeek": [
                 1,
                 2,
-                3
-              ],
-              "startHour": 14
-            },
-            {
-              "id": "honkers-happy-hour-weekday",
-              "title": "Happy Hour Bevies",
-              "summary": "Drink specials",
-              "description": "Happy hour beverage specials Monday through Wednesday from 2pm to close. Discounted draft beer, domestic bottles, well drinks, and house wine. Perfect for after-work drinks or watching the game. Extended happy hour runs all the way to closing. Dine-in only.",
-              "type": "drink",
-              "isActive": true,
-              "daysOfWeek": [
-                1,
-                2,
-                3
-              ],
-              "startHour": 14
-            },
-            {
-              "id": "honkers-happy-hour-weekend",
-              "title": "Happy Hour",
-              "summary": "Fri-Sat 2pm-6pm happy appy specials",
-              "description": "Weekend happy hour Friday and Saturday from 2pm to 6pm featuring happy hour appetizer specials. Choose from wings, nachos, sliders, potato skins, mozzarella sticks, and more at discounted prices. Pair with drink specials for the perfect start to your weekend. Dine-in only.",
-              "type": "both",
-              "isActive": true,
-              "daysOfWeek": [
+                3,
                 5,
                 6
               ],
               "startHour": 14,
-              "endHour": 18
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "honkers-nachos",
+              "title": "$12 Personal Nachos",
+              "description": "$11.99 personal nachos. Mon-Wed 2pm-close, Fri-Sat 2pm-6pm. Dine-in only.",
+              "type": "food",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                5,
+                6
+              ],
+              "startHour": 14,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "honkers-highball-jugs",
+              "title": "$22 Highball Jugs",
+              "description": "$22 well highball mini jugs. Mon-Wed & Fri-Sat 2pm-close. Dine-in only.",
+              "type": "drink",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                5,
+                6
+              ],
+              "startHour": 14,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "honkers-burger-combo",
+              "title": "$19.99 Burger & Drink Combo",
+              "description": "$19.99 combo: Hand-crafted 6oz burger with fries + choice of domestic beer, 1oz well highball, 16oz pint of draft, or 5oz glass of house wine. Mon-Wed 2pm-close, Fri-Sat 2pm-close. Dine-in only. 2808 5 Ave N.",
+              "type": "both",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                5,
+                6
+              ],
+              "startHour": 14,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -523,85 +662,12 @@
           "deals": [
             {
               "id": "ten-ten-wings",
-              "title": "Wing Night",
-              "summary": "$9/lb wings",
-              "description": "Wing night every Wednesday and Friday featuring $9/pound wings all night. Choose from bone-in or boneless tossed in classic pub sauces: Buffalo, BBQ, Honey Garlic, Teriyaki, Hot, Medium, Mild, or Dry Cajun. Served with celery, carrots, and ranch or blue cheese dip. Local neighborhood pub atmosphere. Dine-in only with purchase of a beverage.",
+              "title": "$9/lb Wings",
+              "description": "$9/lb wings Wednesday & Friday. Beverage purchase required. Dine-in only.",
               "type": "food",
-              "isActive": true,
-              "price": "$9/lb",
               "daysOfWeek": [
                 3,
                 5
-              ]
-            }
-          ]
-        },
-        {
-          "id": "firestone",
-          "name": "Firestone Restaurant",
-          "type": "local",
-          "deals": [
-            {
-              "id": "firestone-brunch",
-              "title": "Weekend Brunch",
-              "summary": "Sat-Sun 7am-2pm",
-              "description": "Weekend brunch Saturday and Sunday from 7am to 2pm. Full brunch menu featuring eggs benedict, pancake stacks, French toast, breakfast skillets, omelettes, avocado toast, breakfast sandwiches, and classic breakfast combos. Fresh-baked pastries and specialty coffee drinks. Family-friendly atmosphere. Dine-in or takeout.",
-              "type": "food",
-              "isActive": true,
-              "daysOfWeek": [
-                0,
-                6
-              ],
-              "startHour": 7,
-              "endHour": 14
-            },
-            {
-              "id": "firestone-desserts-dark",
-              "title": "Desserts After Dark",
-              "summary": "Discounted desserts after 8pm",
-              "description": "Desserts After Dark Sunday through Thursday from 8pm to close. Discounted premium cheesecakes, layer cakes, tortes, brownies, and specialty desserts. Pair with specialty espresso drinks, cappuccinos, lattes, or affogatos. Perfect late-night sweet treat or date night dessert. Cozy atmosphere ideal for lingering. Dine-in only.",
-              "type": "food",
-              "isActive": true,
-              "daysOfWeek": [
-                0,
-                1,
-                2,
-                3,
-                4
-              ],
-              "startHour": 20
-            }
-          ]
-        },
-        {
-          "id": "italian-table",
-          "name": "Italian Table",
-          "type": "local",
-          "deals": [
-            {
-              "id": "italian-sunday-brunch",
-              "title": "Sunday Brunch",
-              "summary": "Italian-inspired brunch",
-              "description": "Sunday brunch featuring Italian-inspired brunch dishes all day. Menu includes frittatas, Italian Benedict with prosciutto and poached eggs, ricotta pancakes, tiramisu French toast, breakfast pizza, caprese omelettes, and continental options. Pair with Mimosas, Bellinis, or Italian espresso drinks. Elegant casual atmosphere. Dine-in only.",
-              "type": "food",
-              "isActive": true,
-              "dayOfWeek": 0
-            },
-            {
-              "id": "italian-happy-hour",
-              "title": "Happy Hour",
-              "summary": "Discounted appetizers & drinks",
-              "description": "Daily happy hour features discounted appetizers and drinks. Featured items include bruschetta, calamari, arancini, caprese salad, and Italian meatballs. Drink specials on house wine, prosecco, select cocktails, and Italian beer. Perfect for pre-dinner drinks or casual evening out. Check with server for daily times. Dine-in only.",
-              "type": "both",
-              "isActive": true,
-              "daysOfWeek": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
               ]
             }
           ]
@@ -613,91 +679,9 @@
           "deals": [
             {
               "id": "water-tower-cocktail-hour",
-              "title": "Cocktail Hour",
-              "summary": "20% off cocktails & beer 2-5pm",
-              "description": "Daily cocktail hour from 2pm to 5pm featuring 20% off all cocktails and beer. Extensive cocktail menu includes classics, signature creations, and seasonal features. Draft and bottled beer selection from local and international breweries. Upscale gastropub atmosphere with riverside views. Perfect for after-work drinks or weekend relaxation. Dine-in only.",
+              "title": "20% Off Cocktails & Beer Daily 2-5pm",
+              "description": "20% off cocktails & beer daily 2-5pm. Dine-in only.",
               "type": "drink",
-              "isActive": true,
-              "daysOfWeek": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-              ],
-              "startHour": 14,
-              "endHour": 17
-            }
-          ]
-        },
-        {
-          "id": "the-keg",
-          "name": "The Keg Steakhouse",
-          "type": "chain",
-          "deals": [
-            {
-              "id": "keg-happy-hour-weekday",
-              "title": "Happy Hour",
-              "summary": "Happy hour menu from $10",
-              "description": "Happy hour specials: Mon-Fri 3-5pm. $10 garlic cheese toast, $15 tuna tartare, $15 three pepper wings, $20 Keg burger + fries, $24 prime rib sandwich.",
-              "type": "both",
-              "isActive": true,
-              "daysOfWeek": [
-                1,
-                2,
-                3,
-                4,
-                5
-              ],
-              "startHour": 15,
-              "endHour": 17
-            },
-            {
-              "id": "keg-happy-hour-late-weekday",
-              "title": "Late Night Happy Hour",
-              "summary": "Happy hour menu from $10",
-              "description": "Late night happy hour: Sun-Thu 9pm-close. $10 garlic cheese toast, $15 tuna tartare, $15 three pepper wings, $20 Keg burger + fries, $24 prime rib sandwich.",
-              "type": "both",
-              "isActive": true,
-              "daysOfWeek": [
-                0,
-                1,
-                2,
-                3,
-                4
-              ],
-              "startHour": 21
-            },
-            {
-              "id": "keg-happy-hour-late-weekend",
-              "title": "Late Night Happy Hour",
-              "summary": "Happy hour menu from $10",
-              "description": "Late night happy hour: Fri-Sat 10pm-close. $10 garlic cheese toast, $15 tuna tartare, $15 three pepper wings, $20 Keg burger + fries, $24 prime rib sandwich.",
-              "type": "both",
-              "isActive": true,
-              "daysOfWeek": [
-                5,
-                6
-              ],
-              "startHour": 22
-            }
-          ]
-        },
-        {
-          "id": "mr-mikes",
-          "name": "MR MIKES",
-          "type": "chain",
-          "deals": [
-            {
-              "id": "mikes-happiest-hours",
-              "title": "Happiest Hours",
-              "summary": "Bites & Booze from $5",
-              "description": "Happiest Hours daily 2-5pm featuring Bites & Booze from $5. Menu includes: Garlic Parmesan Fries ($5), Mikes Loaded Fries ($6), Bruschetta 4pc ($7), Caesar Salad ($8), miniMikes with bacon ($9), Chicken Bites ($9), Double Fries Poutine ($11), Crispy Panko Shrimp 2 dozen ($13), Hot Lobster Dunk ($13), Cajun Chicken Sandwich with fries ($13), Steak Frites ($25). Drink specials: wines from $5, draft beers $7, well highballs $5. Casual steakhouse atmosphere. Dine-in only.",
-              "type": "both",
-              "isActive": true,
-              "price": "From $5",
               "daysOfWeek": [
                 0,
                 1,
@@ -709,42 +693,20 @@
               ],
               "startHour": 14,
               "endHour": 17,
-              "lastVerified": "2025-11-21"
-            },
-            {
-              "id": "mikes-happiest-hours-late",
-              "title": "Happiest Hours Late",
-              "summary": "Same menu 9pm-close",
-              "description": "Late night Happiest Hours daily from 9pm to close featuring the same great food and drink specials from $5. Same menu as afternoon happy hour: Garlic Parmesan Fries ($5), Mikes Loaded Fries ($6), Bruschetta ($7), Caesar Salad ($8), miniMikes ($9), Chicken Bites ($9), Double Fries Poutine ($11), Crispy Panko Shrimp ($13), Hot Lobster Dunk ($13), Cajun Chicken Sandwich ($13), Steak Frites ($25). Perfect for night owls and late dinners. Dine-in only.",
-              "type": "both",
-              "isActive": true,
-              "price": "From $5",
-              "daysOfWeek": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-              ],
-              "startHour": 21,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2025-11-22"
             }
           ]
         },
         {
-          "id": "rivaaz",
-          "name": "Rivaaz Indian Pizza & Cuisine",
-          "type": "local",
+          "id": "the-keg",
+          "name": "The Keg Steakhouse",
+          "type": "chain",
           "deals": [
             {
-              "id": "rivaaz-lunch-special",
-              "title": "Lunch Special",
-              "summary": "Lunch combos & curries",
-              "description": "Lunch special Monday through Friday from 11am to 4pm featuring discounted Indian cuisine and pizza combinations. Choose from curry dishes (butter chicken, tikka masala, vindaloo), biryani, tandoori specialties, or fusion Indian pizzas. Served with naan bread or rice. Authentic flavors and generous portions. Great value for lunch. Dine-in only.",
-              "type": "food",
-              "isActive": true,
+              "id": "keg-happy-hour-weekday",
+              "title": "Apps From $10",
+              "description": "Mon-Fri 3-5pm: $10 garlic toast, $15 tuna tartare, $15 wings, $20 burger, $24 prime rib sandwich.",
+              "type": "both",
               "daysOfWeek": [
                 1,
                 2,
@@ -752,8 +714,36 @@
                 4,
                 5
               ],
-              "startHour": 11,
-              "endHour": 16
+              "startHour": 15,
+              "endHour": 17,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "keg-happy-hour-late-weekday",
+              "title": "Late Night Bites From $10",
+              "description": "Sun-Thu 9pm-close: Same happy hour menu from $10.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "startHour": 21,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "keg-happy-hour-late-weekend",
+              "title": "Late Night Bites From $10",
+              "description": "Fri-Sat 10pm-close: Same happy hour menu from $10.",
+              "type": "both",
+              "daysOfWeek": [
+                5,
+                6
+              ],
+              "startHour": 22,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -764,12 +754,9 @@
           "deals": [
             {
               "id": "dono-lunch-special",
-              "title": "Lunch Specials",
-              "summary": "~$20 combo deals",
-              "description": "Weekday lunch specials Monday through Friday from 11am to 2pm with combo deals around $20. Includes choice of sushi rolls, sashimi, nigiri, or donburi bowls paired with miso soup, salad, and edamame or gyoza. Popular combos include California rolls, spicy tuna, salmon sashimi, chicken teriyaki bowl, and tempura selections. Fresh ingredients prepared daily. Dine-in or takeout.",
+              "title": "$17.50-$20 Lunch Combos",
+              "description": "$17.50-$20 combo deals Mon-Fri 11am-2pm. Dine-in or takeout.",
               "type": "food",
-              "isActive": true,
-              "price": "~$20",
               "daysOfWeek": [
                 1,
                 2,
@@ -778,7 +765,8 @@
                 5
               ],
               "startHour": 11,
-              "endHour": 14
+              "endHour": 14,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -788,62 +776,40 @@
           "type": "local",
           "deals": [
             {
-              "id": "two-guys-daily",
-              "title": "Daily Specials",
-              "summary": "Daily pizza, wing & beer specials",
-              "description": "Daily specials Tuesday through Sunday on food and drinks. Famous for throwback pizzas at throwback prices featuring classic recipes from the 90s. Different specials each day of the week including wing nights, pasta specials, and pizza deals. Happy hour drink specials. Extensive selection of over 90 craft beers on tap and in bottles from local and international breweries. Lively sports bar atmosphere. Dine-in or takeout.",
+              "id": "two-guys-tuesday",
+              "title": "BOGO 50% Off Tacos",
+              "description": "BOGO 50% off takeout/delivery. 25% off taco items dine-in.",
               "type": "both",
-              "isActive": true,
-              "daysOfWeek": [
-                2,
-                3,
-                4,
-                5,
-                6,
-                0
-              ]
-            }
-          ]
-        },
-        {
-          "id": "canadian-brewhouse",
-          "name": "The Canadian Brewhouse",
-          "type": "chain",
-          "deals": [
+              "dayOfWeek": 2,
+              "lastVerified": "2025-11-22"
+            },
             {
-              "id": "brewhouse-wing-wednesday",
-              "title": "Wing Wednesday",
-              "summary": "69¢ wings",
-              "description": "Wing Wednesday featuring 69¢ wings all day (minimum 10 wings per order = $6.90 for 10). Choose from dozens of sauces and dry rubs including Buffalo, Honey Garlic, BBQ, Teriyaki, Thai Chili, Hot, Medium, Mild, Salt & Pepper, Cajun, Lemon Pepper, and more. Bone-in or boneless available. Served with celery, carrots, and ranch or blue cheese dip. Sports bar atmosphere with big screens. Dine-in or takeout.",
-              "type": "food",
-              "isActive": true,
-              "price": "69¢/wing",
+              "id": "two-guys-wednesday",
+              "title": "25% Off Wings",
+              "description": "25% off wings and hoppy beers 8pm-close. Beverage purchase required. Dine-in only.",
+              "type": "both",
               "dayOfWeek": 3,
-              "lastVerified": "2025-11-21"
+              "startHour": 20,
+              "lastVerified": "2025-11-22"
             },
             {
-              "id": "brewhouse-pasta-thursday",
-              "title": "Pasta Thursday",
-              "summary": "$9.99 pasta",
-              "description": "Pasta Thursday featuring five plates of pasta available every Thursday, all day, for $9.99. Choose from various pasta styles and sauces. All pasta dishes served with garlic toast. Great value for pasta lovers. Unique venue features rooftop patio with city views and basement bowling alley for entertainment. Sports bar atmosphere. Dine-in or takeout.",
-              "type": "food",
-              "isActive": true,
-              "price": "$9.99",
-              "dayOfWeek": 4,
-              "lastVerified": "2025-11-21"
+              "id": "two-guys-weekend",
+              "title": "25% Off Craft Beers",
+              "description": "Fri-Sat: 25% off Alberta craft beers, appy hour deals. Dine-in only.",
+              "type": "both",
+              "daysOfWeek": [
+                5,
+                6
+              ],
+              "lastVerified": "2025-11-22"
             },
             {
-              "id": "brewhouse-appy-friday",
-              "title": "Appy Hour Hat Trick",
-              "summary": "Buy 2 apps, get 3rd free",
-              "description": "Friday Appy Hour Hat Trick from 4pm-7pm - buy two appetizers and get the third for free. Choose from extensive menu of Canadian pub favorites including poutine, nachos, wings, sliders, and shareables. Perfect way to start the weekend. Sports bar atmosphere with big screens and rooftop patio. Dine-in only.",
-              "type": "food",
-              "isActive": true,
-              "price": "Buy 2 get 1 free",
-              "dayOfWeek": 5,
-              "startHour": 16,
-              "endHour": 19,
-              "lastVerified": "2025-11-21"
+              "id": "two-guys-sunday",
+              "title": "25% Off Calzones & $4 Beers",
+              "description": "25% off calzones, $4 paper bag beers. Dine-in or takeout.",
+              "type": "both",
+              "dayOfWeek": 0,
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -854,12 +820,9 @@
           "deals": [
             {
               "id": "kingsmen-happy-hour",
-              "title": "Daily Happy Hour",
-              "summary": "$5 drinks 3-6pm Mon-Fri",
-              "description": "Happy Hour Monday through Friday 3pm-6pm. Highballs $5.95, 5oz House Wine $5, 14oz Knight Life Lager $5, Domestic Beer $6.25 (Canadian, Coors Light, Budweiser, Bud Light, Pilsner, Kokanee). Great weekday deals on drinks. Dine-in only.",
+              "title": "Drinks From $5",
+              "description": "Mon-Fri 3-6pm: Highballs $5.95, wine $5, lager $5, domestic $6.25. Dine-in only.",
               "type": "drink",
-              "isActive": true,
-              "price": "$5-$6.25",
               "daysOfWeek": [
                 1,
                 2,
@@ -873,82 +836,87 @@
             },
             {
               "id": "kingsmen-monday",
-              "title": "Monday Specials",
-              "summary": "1/2 price pints & $10.50 Yorkies",
-              "description": "Monday specials all day: 1/2 price English Pints (2 selections - ask server), Big Stuffed Yorkies $10.50 (classic, butter chicken, bangers & mash, shepherd's pie, vegetarian), and 1/2 price kids meals. Classic British pub fare at great prices. Dine-in only.",
+              "title": "Half-Price Pints & $10.50 Yorkies",
+              "description": "1/2 price English pints, $10.50 stuffed Yorkies, 1/2 price kids meals. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$10.50 Yorkies",
               "dayOfWeek": 1,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "kingsmen-tuesday",
-              "title": "Tuesday Fish & Chips",
-              "summary": "$5 off fish & chips, 1/2 price highballs",
-              "description": "Tuesday specials: $5 off 2pc Fish & Chips, $2 off 1pc Fish & Chips, plus 1/2 price highballs (29ml/1oz). Classic British fish and chips with discounted drinks. Dine-in only.",
+              "title": "$2-$5 Off Fish & Chips",
+              "description": "$2-$5 off fish & chips, 1/2 price highballs. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$2-$5 off fish & chips",
               "dayOfWeek": 2,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "kingsmen-wednesday",
-              "title": "Wing Wednesday",
-              "summary": "1/2 price wings after 2pm",
-              "description": "Wednesday wing special: 1/2 price 7pc chicken wings after 2pm. Dine-in only, beverage purchase required. Dip or veg not included. Also $2 off all Tipple cocktails. Great mid-week deal on wings.",
+              "title": "Half-Price Wings",
+              "description": "1/2 price wings (7pc) after 2pm with beverage. $2 off cocktails. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "1/2 price wings",
               "dayOfWeek": 3,
               "startHour": 14,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "kingsmen-thursday",
-              "title": "Cocktails & Mussels Thursday",
-              "summary": "$5 off cocktails & mussels",
-              "description": "Thursday specials after 2pm: $5 off cocktails and mussels (dine-in only). Plus house wine at 95¢/oz (32¢/ml). Perfect for seafood and drink lovers. Dine-in only.",
+              "title": "$5 Off Cocktails & Mussels",
+              "description": "$5 off cocktails & mussels after 2pm. Wine 95¢/oz. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$5 off, 95¢/oz wine",
               "dayOfWeek": 4,
               "startHour": 14,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "kingsmen-friday",
-              "title": "Friday Specials",
-              "summary": "$10 cod bites & mac n cheese",
-              "description": "Friday specials: $10 Buffalo Cod Bites and $10 Mac n Cheese (add-ons not included). Plus discounts on smoked cocktails. Great end-of-week pub grub deals. Dine-in only.",
+              "title": "$10 Cod Bites & Mac n Cheese",
+              "description": "$10 Buffalo Cod Bites, $10 Mac n Cheese. Dine-in only.",
               "type": "food",
-              "isActive": true,
-              "price": "$10",
               "dayOfWeek": 5,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "kingsmen-saturday",
-              "title": "Saturday Wine & Apps",
-              "summary": "1/2 price wine bottles, 20% off apps",
-              "description": "Saturday specials: 1/2 price bottles of wine all day, plus 20% off Brit Bites (all appetizers, add-ons not included). Perfect for sharing with friends. Dine-in only.",
+              "title": "Half-Price Wine & 20% Off Apps",
+              "description": "1/2 price wine bottles, 20% off appetizers. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "1/2 price wine, 20% off apps",
               "dayOfWeek": 6,
               "lastVerified": "2025-11-21"
             },
             {
               "id": "kingsmen-sunday",
-              "title": "Sunday Roast",
-              "summary": "$18.95 roast beef dinner",
-              "description": "Sunday Roast Beef Dinner for $18.95. Tender pot roast beef with house made Yorkshire pudding, garlic mashed potatoes, gravy & seasonal veggies. Also $5 off jug of Knight Life Lager (60oz/1775ml) and $2 off Caesars. Classic Sunday roast. Dine-in only.",
+              "title": "$18.95 Roast Beef Dinner",
+              "description": "$18.95 roast beef dinner with Yorkshire pudding. $5 off lager jug, $2 off Caesars. Dine-in only.",
               "type": "both",
-              "isActive": true,
-              "price": "$18.95",
               "dayOfWeek": 0,
               "lastVerified": "2025-11-21"
+            }
+          ]
+        },
+        {
+          "id": "holiday-bowl",
+          "name": "Holiday Bowl",
+          "type": "local",
+          "deals": [
+            {
+              "id": "holiday-bowl-pizza-tuesday",
+              "title": "Half-Price Large Pizzas",
+              "description": "Half price large pizzas 6pm-10pm. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "startHour": 18,
+              "endHour": 22,
+              "lastVerified": "2025-11-22"
+            },
+            {
+              "id": "holiday-bowl-sunday",
+              "title": "$7 Pizza & $7 Beer Jugs",
+              "description": "$7 for 2-topping 8\" pizza, $7 for 32oz mini jug of Moosehead. After 7pm. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 0,
+              "startHour": 19,
+              "lastVerified": "2025-11-22"
             }
           ]
         }
