@@ -1,140 +1,172 @@
 # Daily Grub - Architecture
 
-## Two Deployments, One Codebase
+## Static Site (Cloudflare Workers)
 
-1. **Static Viewer** (dailygrub.ca) - Cloudflare Workers
-   - Fully pre-compiled, no server
-   - All deals baked into JS bundle at build time
+- Pre-compiled Next.js static site
+- Deals baked into JS bundle at build time
+- Deployed to dailygrub.ca via Cloudflare Workers
 
-2. **Admin App** (dailygrub-admin-ui-8a4f28e5.netlify.app) - Netlify
-   - Dynamic Next.js for deal CRUD
-   - Reads/writes Netlify Blob
+## Data Storage
 
-## Data Storage: Netlify Blobs
-
-The **only database** is a Netlify Blob containing all deals (JSON).
+Single source of truth: **`data/deals.json`** (committed to repo)
 
 ```
-┌─────────────────┐      ┌─────────────────┐      ┌─────────────────┐
-│    Admin App    │ ───> │  Netlify Blob   │ <─── │   npm run sync  │
-│    (Netlify)    │write │   (deals.json)  │ read │   (downloads)   │
-└─────────────────┘      └─────────────────┘      └─────────────────┘
-                                                          │
-                                                          v
-                                                   ┌─────────────────┐
-                                                   │ data/deals.json │
-                                                   └─────────────────┘
-                                                          │
-                                                          v
-                                                   ┌─────────────────┐
-                                                   │  npm run build  │
-                                                   │  npm run deploy │
-                                                   └─────────────────┘
+┌─────────────────┐      ┌─────────────────┐
+│ data/deals.json │ ───> │  npm run build  │
+│  (edit directly)│      │  npm run deploy │
+└─────────────────┘      └─────────────────┘
+                                │
+                                v
+                         ┌─────────────────┐
+                         │  dailygrub.ca   │
+                         │  (Cloudflare)   │
+                         └─────────────────┘
 ```
 
 ## Commands
 
 | Command | Purpose |
 |---------|---------|
-| `npm run sync` | Download blob from Netlify to `data/deals.json` |
-| `npm run build` | Static export to `./out/` |
-| `npm run preview` | Build + wrangler dev (port 8787) - test static site |
+| `npm run dev` | Local dev server |
+| `npm run build` | Build static site to `./out/` |
+| `npm run preview` | Build + wrangler dev (port 8787) |
 | `npm run deploy` | Build + deploy to Cloudflare |
 
-## Key Files
+## Data Schema
 
-- `data/deals.json` - Deal data (synced from Netlify Blob)
-- `lib/deals.ts` - Loads deals JSON, runs at build time only
-- `scripts/sync-deals.sh` - Downloads blob from admin API
-- `admin/` - Admin app source (separate Next.js app)
-
-## Admin App
-
-**Current state:** Basic textarea editor with Load/Save/Upload/Download buttons.
-
-**Planned UI:**
-
-### Navigation Structure
-```
-/ (home)
-├── Cities list
-│   └── [city] - Restaurants list
-│       └── [restaurant] - Deals list
-│           └── [deal] - Deal editor
-```
-
-### City List (`/`)
-- List of cities with deal counts
-- "+ Add City" button
-- Click city to view restaurants
-
-### Restaurant List (`/[city]`)
-- Breadcrumb: Cities > Lethbridge
-- List of restaurants with deal counts
-- "+ Add Restaurant" button
-- Restaurant type indicator (local/chain/sponsored)
-- Click restaurant to view deals
-
-### Deals List (`/[city]/[restaurant]`)
-- Breadcrumb: Cities > Lethbridge > Original Joe's
-- List of deals with summary info
-- "+ Add Deal" button
-- Deal cards showing:
-  - Title, summary
-  - Day(s) active
-  - Time range (if applicable)
-  - Active/inactive toggle
-
-### Deal Editor (`/[city]/[restaurant]/[deal]`)
-- Form fields:
-  - Title (text)
-  - Summary (text)
-  - Description (textarea)
-  - Type (food/drink/both)
-  - Price (optional text)
-  - Day selection:
-    - Single day picker (Sun-Sat)
-    - OR multi-day checkboxes
-    - OR "All days" toggle
-  - Time range (optional):
-    - Start hour (0-23 dropdown)
-    - End hour (0-23 dropdown)
-  - Last verified (date picker)
-  - Active (toggle)
-- Save / Delete buttons
-- Changes save to blob immediately
-
-### Data Types (from `types/deals.ts`)
 ```typescript
-interface Deal {
-  id: string;
-  title: string;
-  summary: string;
-  description: string;
-  type: 'food' | 'drink' | 'both';
-  price?: string;
-  dayOfWeek?: number;      // 0-6 for single-day
-  daysOfWeek?: number[];   // for multi-day
-  startHour?: number;      // 0-23
-  endHour?: number;        // 0-23
-  lastVerified?: string;   // YYYY-MM-DD
-  isActive: boolean;
-}
-
-interface Restaurant {
-  id: string;
-  name: string;
-  type: 'local' | 'chain' | 'sponsored';
-  deals: Deal[];
-}
-
-interface City {
-  name: string;
-  province: string;
-  restaurants: Restaurant[];
-}
-
 interface DealsData {
   cities: { [citySlug: string]: City };
 }
+
+interface City {
+  name: string;           // "Lethbridge"
+  province: string;       // "AB"
+  restaurants: Restaurant[];
+}
+
+interface Restaurant {
+  id: string;             // "original-joes"
+  name: string;           // "Original Joe's"
+  type: 'sponsored' | 'exclusive' | 'local' | 'chain';
+  deals: Deal[];
+}
+
+interface Deal {
+  id: string;             // "oj-taco-tuesday"
+  title: string;          // "Taco Tuesday"
+  description: string;    // Full details
+  type: 'food' | 'drink' | 'both';
+  dayOfWeek?: number;     // 0-6 (Sun-Sat) for single day
+  daysOfWeek?: number[];  // [1,2,3] for multi-day
+  startHour?: number;     // 0-23
+  endHour?: number;       // 0-23
+  lastVerified?: string;  // "2025-01-15"
+}
 ```
+
+## Key Files
+
+- `data/deals.json` - Deal data (source of truth)
+- `lib/deals.ts` - Loads deals for static build
+- `types/deals.ts` - TypeScript interfaces
+- `research/{city-slug}.md` - Research & verification evidence per city
+
+---
+
+## Research & Verification Pipeline
+
+### Overview
+
+Every deal in production (`data/deals.json`) must trace back to a source URL in its city's research document (`research/{city-slug}.md`). The pipeline:
+
+```
+research/{city-slug}.md   →   data/deals.json   →   npm run build   →   site
+(evidence & backlog)          (production data)      (static export)
+```
+
+### File Locations
+
+| File | Purpose |
+|------|---------|
+| `research/{city-slug}.md` | Per-city research doc: backlog, restaurant evidence, source URLs, research log |
+| `research/{city-slug}-raw-*.md` | Read-only historical research dumps (preserved for reference) |
+| `data/deals.json` | Production deal data (single source of truth for the site) |
+
+### Research Document Format
+
+Each `research/{city-slug}.md` follows this structure:
+
+```markdown
+# {City Name} Research
+
+## Backlog
+<!-- Prioritized work items: fixes, new restaurants to add, re-verification needed -->
+- [ ] Fix: {description}
+- [ ] Add: {restaurant} — {reason}
+- [ ] Re-verify: {restaurant} — last verified {date}
+
+## Restaurants
+
+### {Restaurant Name}
+- **Status:** `in-production` | `researched` | `not-in-city` | `closed` | `no-deals-found`
+- **Production ID:** `{id}` (if in-production, matches deals.json)
+- **Address:** {address}
+- **Website:** {url}
+- **Type:** `local` | `chain`
+- **Phone:** {phone} (if known)
+
+| Deal | Days | Time | Source URL | Verified |
+|------|------|------|------------|----------|
+| {title} | {days} | {hours or "All day"} | {url} | {YYYY-MM-DD} |
+
+## Research Log
+| Date | Action | Result |
+|------|--------|--------|
+```
+
+### Verification Standards
+
+- **Primary source required:** Every deal in production must have a source URL (restaurant website, official social media, or reputable directory like eatreddeer.ca)
+- **Staleness threshold:** Deals older than 90 days from `lastVerified` should be flagged for re-verification in the backlog
+- **Every deal in `deals.json` must have:** `lastVerified` date and a corresponding entry with source URL in the research doc
+- **Every restaurant in `deals.json` should have:** `website` field (flag missing ones in backlog)
+- **Rumors and unverified leads** go in the research doc (with notes) but NOT in `deals.json` — track them for future verification
+- **When uncertain:** flag for human verification in the backlog rather than guessing. The user can check websites, Facebook, call restaurants, etc.
+- **Verification means checking the primary source directly** — not relying on cached/secondary data. If a web fetch shows different info than what's in production, the production data needs correction
+
+### Session Workflow
+
+1. **Read backlog** — open `research/{city-slug}.md`, check prioritized items
+2. **Do work** — research, verify, or fix items from the backlog
+3. **Update both files** — add evidence to research doc, update `deals.json` if promoting to production
+4. **Update backlog** — check off completed items, add any new items discovered
+5. **Commit** — changes to research doc and deals.json together
+
+### Cross-Reference Rules
+
+- Every restaurant in `deals.json` has a matching section in `research/{city-slug}.md` with status `in-production`
+- Every deal in production has a source URL in the research doc
+- The research doc's production ID matches the restaurant's `id` in `deals.json`
+
+### Common Workflows
+
+**New city:**
+1. Create `research/{city-slug}.md` with empty backlog and restaurant sections
+2. Research restaurants, populate research doc with evidence
+3. When ready, add city to `deals.json` and promote verified restaurants
+
+**New restaurant (existing city):**
+1. Add restaurant section to research doc with status `researched`
+2. Populate deals table with source URLs
+3. When verified, add to `deals.json`, update status to `in-production`, record production ID
+
+**Re-verification:**
+1. Check source URLs — are deals still listed?
+2. Update `lastVerified` in both research doc and `deals.json`
+3. Remove or update deals that are no longer offered
+
+**Stale sweep:**
+1. Query deals where `lastVerified` is older than 90 days
+2. Add re-verification items to backlog
+3. Work through backlog in priority order

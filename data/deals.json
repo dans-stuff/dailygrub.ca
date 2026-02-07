@@ -8,6 +8,8 @@
           "id": "original-joes",
           "name": "Original Joe's",
           "type": "chain",
+          "address": "8 Aquitania Blvd W & 323 Bluefox Blvd N",
+          "website": "https://www.originaljoes.ca",
           "deals": [
             {
               "id": "oj-margaritas-tacos-mon",
@@ -48,6 +50,8 @@
           "id": "churchs-chicken",
           "name": "Church's Chicken",
           "type": "chain",
+          "address": "3751 Mayor Magrath Dr S & 890 Heritage Blvd W",
+          "website": "https://churchstexaschicken.com",
           "deals": [
             {
               "id": "churchs-monday",
@@ -111,6 +115,8 @@
           "id": "mary-browns",
           "name": "Mary Brown's",
           "type": "chain",
+          "address": "2414 Fairway Plaza Rd S",
+          "website": "https://marybrowns.com",
           "deals": [
             {
               "id": "mary-browns-monday",
@@ -126,6 +132,8 @@
           "id": "the-onion",
           "name": "The Onion Bar & Grill",
           "type": "local",
+          "address": "1702 23rd St N",
+          "website": "https://www.onionbarandgrill.com",
           "deals": [
             {
               "id": "onion-pints-riblets-mon",
@@ -160,56 +168,58 @@
           "id": "telegraph-taphouse",
           "name": "Telegraph Taphouse",
           "type": "local",
+          "address": "310 6 St S",
+          "website": "https://www.taphouse.pub",
           "deals": [
             {
               "id": "telegraph-pork-lager-mon",
               "title": "Pulled Pork & Lager",
-              "description": "$17 pulled pork sandwich with Russel Craft Lager. Monday. Dine-in only.",
+              "description": "$17 pulled pork sandwich with 16oz Russell Craft Lager. Monday. Dine-in only.",
               "type": "both",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "telegraph-tacos-tue",
               "title": "Half-Price Tacos",
-              "description": "Half-price tacos. $8 margaritas, $6 craft lagers. Dine-in or takeout.",
+              "description": "Half-price tacos with alcohol purchase. $8 margaritas, $6 lagers. Dine-in only.",
               "type": "both",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "telegraph-irish-wed",
               "title": "Half-Price Ribs & $5 Jameson",
-              "description": "Half-price ribs, 25% off Guinness, $5 Jameson shots. Dine-in only.",
+              "description": "Half-price ribs with alcohol purchase. 25% off Guinness, $5 Jameson shots. Dine-in only.",
               "type": "both",
               "dayOfWeek": 3,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "telegraph-nachos-thu",
               "title": "Half-Price Nachos & $8 Mules",
-              "description": "Half-price nachos, $8 Moscow Mules. Dine-in only.",
+              "description": "Half-price nachos with alcohol purchase. $8 Moscow Mules. Dine-in only.",
               "type": "both",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "telegraph-whiskey-fri",
               "title": "25% Off Whiskey & $5 Shots",
-              "description": "25% off whiskey, $5 shots after 7pm. Dine-in only.",
+              "description": "25% off whiskey, bartender's choice shot $5 after 7pm. Dine-in only.",
               "type": "drink",
               "dayOfWeek": 5,
               "startHour": 19,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "telegraph-whiskey-sat",
               "title": "25% Off Whiskey & $5 Shots",
-              "description": "25% off whiskey, $5 shots after 7pm. Dine-in only.",
+              "description": "25% off whiskey, bartender's choice shot $5 after 7pm. Dine-in only.",
               "type": "drink",
               "dayOfWeek": 6,
               "startHour": 19,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -217,6 +227,8 @@
           "id": "boston-pizza",
           "name": "Boston Pizza",
           "type": "chain",
+          "address": "10-14 Aquitania Blvd W & 2041 Mayor Magrath Dr S",
+          "website": "https://bostonpizza.com",
           "deals": [
             {
               "id": "bp-pizza-monday",
@@ -256,6 +268,8 @@
           "id": "canadian-brewhouse",
           "name": "The Canadian Brewhouse",
           "type": "chain",
+          "address": "3521 Mayor Magrath Dr S",
+          "website": "https://thecanadianbrewhouse.com",
           "deals": [
             {
               "id": "brewhouse-wing-wednesday",
@@ -281,6 +295,8 @@
           "id": "hudsons-pub",
           "name": "Hudsons Canada's Pub",
           "type": "chain",
+          "address": "904 2 Ave S",
+          "website": "https://hudsonscanadaspub.com",
           "deals": [
             {
               "id": "hudsons-wing-wednesday",
@@ -313,6 +329,8 @@
           "id": "moxies",
           "name": "Moxies",
           "type": "chain",
+          "address": "1621 3 Ave S",
+          "website": "https://moxies.com",
           "deals": [
             {
               "id": "moxies-happy-hour",
@@ -344,6 +362,8 @@
           "id": "mr-mikes",
           "name": "MR MIKES",
           "type": "chain",
+          "address": "203 13 St S",
+          "website": "https://mrmikes.ca",
           "deals": [
             {
               "id": "mikes-happiest-hours",
@@ -386,7 +406,26 @@
           "id": "duke-pub",
           "name": "Duke Pub",
           "type": "local",
+          "address": "132 Columbia Blvd W",
+          "website": "https://dukepub.ca",
           "deals": [
+            {
+              "id": "duke-sunday",
+              "title": "Sunday Happy Hour",
+              "description": "All day: $6 Classic Caesar, $5 house wine (5oz), $10.95 steak sandwich. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "duke-monday",
+              "title": "$9.95 Build-a-Burger",
+              "description": "$9.95 build-a-burger after 2pm. $5 vodka soda, $5 feature craft tap (10oz). Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "startHour": 14,
+              "lastVerified": "2026-02-06"
+            },
             {
               "id": "duke-taco-tuesday",
               "title": "Toonie Taco Tuesday",
@@ -394,7 +433,7 @@
               "type": "both",
               "dayOfWeek": 2,
               "startHour": 14,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "duke-wing-wednesday",
@@ -403,7 +442,31 @@
               "type": "both",
               "dayOfWeek": 3,
               "startHour": 14,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "duke-thursday",
+              "title": "30¢ Perogies",
+              "description": "30¢ perogies (10/order). $4 Duke Lager (16oz), $5 vodka lemonade. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "duke-friday",
+              "title": "$10.95 Fish & Chips",
+              "description": "$10.95 fish & chips. $4.25 domestic beer bottles, $5 Vizzy seltzers. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "duke-saturday",
+              "title": "$11.95 Hangover Breakfast & 25% Off Pizza",
+              "description": "$11.95 hangover breakfast (until 2pm), 25% off thin crust pizza. $4.25 hi-balls. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -411,6 +474,8 @@
           "id": "bar-one",
           "name": "Bar One",
           "type": "local",
+          "address": "421 Mayor Magrath Dr S",
+          "website": "https://baronecanada.com",
           "deals": [
             {
               "id": "bar-one-taco-tue",
@@ -436,6 +501,8 @@
           "id": "taco-time",
           "name": "Taco Time",
           "type": "chain",
+          "address": "537 13 St N, 2436 Fairway Plaza Rd S & Park Place Mall",
+          "website": "https://tacotimecanada.com",
           "deals": [
             {
               "id": "taco-time-tuesday",
@@ -459,19 +526,45 @@
           "id": "blanco-cantina",
           "name": "Blanco Cantina",
           "type": "local",
+          "address": "319 6th St S",
+          "website": "https://www.blancocantina.ca",
           "deals": [
             {
+              "id": "blanco-margarita-monday",
+              "title": "Margarita Monday",
+              "description": "$7 margaritas all day. Dine-in only. 319 6th Street S.",
+              "type": "drink",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
               "id": "blanco-taco-tuesday",
-              "title": "Half-Price Tacos",
-              "description": "Half-price classic tacos, $5 off premium tacos with beverage purchase. 319 6th Street South.",
+              "title": "Taco Tuesdaze",
+              "description": "Half-price classic tacos all day and night. Dine-in only. 319 6th Street S.",
               "type": "food",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "blanco-thirsty-thursday",
+              "title": "Thirsty Thursday",
+              "description": "Half-price Patron tequila, $7 Corona draft (50cl). Dine-in only. 319 6th Street S.",
+              "type": "drink",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "blanco-cerveza-sunday",
+              "title": "Cerveza Sundays",
+              "description": "$5 bottles of Corona, Corona Light, and Catrinas Lager (16oz). Dine-in only. 319 6th Street S.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "blanco-happy-hour",
-              "title": "$3.50 Tacos & Half-Price Tequila",
-              "description": "2-5PM & 9PM-close daily: $7 margaritas, $7 select beers, $3.50 classic tacos, half-price all tequila (including top shelf). Dine-in only. 319 6th Street S.",
+              "title": "$3.50 Tacos & $7 Margaritas",
+              "description": "2-5pm & 9pm-close daily: $7 margaritas, $3.50 classic tacos, half-price all tequila. Dine-in only. 319 6th Street S.",
               "type": "both",
               "daysOfWeek": [
                 0,
@@ -482,7 +575,7 @@
                 5,
                 6
               ],
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -490,6 +583,8 @@
           "id": "streats-kitchen",
           "name": "Streats Kitchen",
           "type": "local",
+          "address": "550 University Dr W & 3735 Mayor Magrath Dr S",
+          "website": "https://streatskitchens.com",
           "deals": [
             {
               "id": "streats-fish-tuesday",
@@ -513,6 +608,8 @@
           "id": "steel-and-vines",
           "name": "Steel & Vines",
           "type": "local",
+          "address": "332 5th St S",
+          "website": "https://steelandvines.com",
           "deals": [
             {
               "id": "steel-vines-tuesday",
@@ -528,6 +625,8 @@
           "id": "pops-taphouse",
           "name": "Pop's Taphouse",
           "type": "local",
+          "address": "1475 St Edward Blvd N & 1516 9 Ave S",
+          "website": "https://popstaphouse.com",
           "deals": [
             {
               "id": "pops-steak-monday",
@@ -535,7 +634,7 @@
               "description": "$10.95 steak sandwich (top sirloin, fries, 2 onion rings, garlic toast). $2 off Caesars. Dine-in only. North: 1475 St Edward Blvd N, South: 1516 9 Ave S.",
               "type": "both",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "pops-mexi-monday",
@@ -543,7 +642,7 @@
               "description": "$4 Cantina Tacos, $5 Cervezas, $6 Margaritas & Palomas. Dine-in only. Both locations.",
               "type": "both",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "pops-thirsty-tuesday",
@@ -551,7 +650,7 @@
               "description": "$3.95 basket of fries, half-price 1oz highballs. Dine-in only. Both locations.",
               "type": "both",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "pops-burger-wed",
@@ -559,7 +658,7 @@
               "description": "$9.95 build-a-burger with fries. $2.95 Bobby C Draft (14oz). Dine-in only. Both locations.",
               "type": "both",
               "dayOfWeek": 3,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "pops-wing-thursday",
@@ -568,7 +667,7 @@
               "type": "both",
               "dayOfWeek": 4,
               "startHour": 14,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "pops-fish-friday",
@@ -576,7 +675,7 @@
               "description": "$10.95 fish & chips. 99¢/oz house wine (5oz, 9oz, 32oz). $2 off bottles of domestic beer. Dine-in or takeout. Both locations.",
               "type": "both",
               "dayOfWeek": 5,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "pops-pasta-saturday",
@@ -584,7 +683,7 @@
               "description": "$9.75 build your own pasta (choose pasta & sauce). $14.95 mini jug highballs (4oz). Dine-in or takeout. Both locations.",
               "type": "both",
               "dayOfWeek": 6,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -592,41 +691,13 @@
           "id": "honkers-pub",
           "name": "Honkers Pub",
           "type": "local",
+          "address": "2808 5 Ave N",
+          "website": "https://honkerspub.com",
           "deals": [
             {
-              "id": "honkers-half-wings",
-              "title": "Half-Price Wings",
-              "description": "Half-price wings. Mon-Wed 2pm-close, Fri-Sat 2pm-6pm. Dine-in only. 2808 5 Ave N.",
-              "type": "food",
-              "daysOfWeek": [
-                1,
-                2,
-                3,
-                5,
-                6
-              ],
-              "startHour": 14,
-              "lastVerified": "2025-11-22"
-            },
-            {
-              "id": "honkers-nachos",
-              "title": "$12 Personal Nachos",
-              "description": "$11.99 personal nachos. Mon-Wed 2pm-close, Fri-Sat 2pm-6pm. Dine-in only.",
-              "type": "food",
-              "daysOfWeek": [
-                1,
-                2,
-                3,
-                5,
-                6
-              ],
-              "startHour": 14,
-              "lastVerified": "2025-11-22"
-            },
-            {
-              "id": "honkers-highball-jugs",
-              "title": "$22 Highball Jugs",
-              "description": "$22 well highball mini jugs. Mon-Wed & Fri-Sat 2pm-close. Dine-in only.",
+              "id": "honkers-happy-hour",
+              "title": "Happy Hour From $5.95",
+              "description": "Mon-Wed & Fri-Sat 2pm-close: domestic beer & 1oz well highballs $5.95, Spectrum 16oz $6.95, 5oz house wine $5.95. Dine-in only.",
               "type": "drink",
               "daysOfWeek": [
                 1,
@@ -636,22 +707,57 @@
                 6
               ],
               "startHour": 14,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
-              "id": "honkers-burger-combo",
-              "title": "$19.99 Burger & Drink Combo",
-              "description": "$19.99 combo: Hand-crafted 6oz burger with fries + choice of domestic beer, 1oz well highball, 16oz pint of draft, or 5oz glass of house wine. Mon-Wed 2pm-close, Fri-Sat 2pm-close. Dine-in only. 2808 5 Ave N.",
+              "id": "honkers-monday",
+              "title": "$3 Off Veal Cutlets",
+              "description": "$3 off two-piece veal cutlets. Dine-in only. 2808 5 Ave N.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "honkers-tuesday",
+              "title": "$18.99 Steak Sandwich",
+              "description": "6oz sirloin steak sandwich with fries, soup or mashed $18.99. $2 off 1oz vodka paralyzer. Dine-in only.",
               "type": "both",
-              "daysOfWeek": [
-                1,
-                2,
-                3,
-                5,
-                6
-              ],
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "honkers-wednesday",
+              "title": "$19.99 Chef Choice Burger",
+              "description": "Chef Choice Burger with fries, soup or mashed $19.99. 5-8pm: bucket of beer (4) $22, half-price select wine bottles. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "honkers-thursday",
+              "title": "$10.99 Cadillac Wings",
+              "description": "Cadillac of Wings (10) $10.99 from 2pm-close. In-house only. 2808 5 Ave N.",
+              "type": "food",
+              "dayOfWeek": 4,
               "startHour": 14,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "honkers-friday",
+              "title": "$3 Off Fish & Chips",
+              "description": "$3 off two-piece beer-battered fish & chips. 5-8pm: bucket of beer (4) $22. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "honkers-saturday",
+              "title": "$22 Well Highball Mini Jugs",
+              "description": "Well highball mini jugs $22 from 2pm-close. Breakfast/brunch menu until 2pm. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 6,
+              "startHour": 14,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -659,6 +765,7 @@
           "id": "ten-ten-pub",
           "name": "Ten Ten Pub",
           "type": "local",
+          "address": "1010 Mayor Magrath Dr S",
           "deals": [
             {
               "id": "ten-ten-wings",
@@ -668,7 +775,8 @@
               "daysOfWeek": [
                 3,
                 5
-              ]
+              ],
+              "lastVerified": "2025-11-22"
             }
           ]
         },
@@ -676,6 +784,8 @@
           "id": "water-tower",
           "name": "Water Tower Grill",
           "type": "local",
+          "address": "103 Mayor Magrath Dr S",
+          "website": "https://www.thewatertowergrill.ca",
           "deals": [
             {
               "id": "water-tower-cocktail-hour",
@@ -701,6 +811,8 @@
           "id": "the-keg",
           "name": "The Keg Steakhouse",
           "type": "chain",
+          "address": "1717 Mayor Magrath Dr S",
+          "website": "https://www.thekeg.com",
           "deals": [
             {
               "id": "keg-happy-hour-weekday",
@@ -751,6 +863,7 @@
           "id": "dono-sushi",
           "name": "Dono Sushi",
           "type": "local",
+          "address": "1009 Mayor Magrath Dr S",
           "deals": [
             {
               "id": "dono-lunch-special",
@@ -774,6 +887,8 @@
           "id": "two-guys-pizza",
           "name": "Two Guys & A Pizza Place",
           "type": "local",
+          "address": "316 11th St S",
+          "website": "https://twoguyspizza.ca",
           "deals": [
             {
               "id": "two-guys-tuesday",
@@ -817,11 +932,13 @@
           "id": "kingsmen",
           "name": "Kingsmen",
           "type": "local",
+          "address": "2012 Mayor Magrath Dr S",
+          "website": "https://kingsmen.ca",
           "deals": [
             {
               "id": "kingsmen-happy-hour",
               "title": "Drinks From $5",
-              "description": "Mon-Fri 3-6pm: Highballs $5.95, wine $5, lager $5, domestic $6.25. Dine-in only.",
+              "description": "Mon-Fri 3-6pm: Highballs $5.95, house wine $5 (5oz), 14oz Nightlife Lager $5, domestic beer $6.25. Dine-in only.",
               "type": "drink",
               "daysOfWeek": [
                 1,
@@ -832,65 +949,63 @@
               ],
               "startHour": 15,
               "endHour": 18,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "kingsmen-monday",
               "title": "Half-Price Pints & $10.50 Yorkies",
-              "description": "1/2 price English pints, $10.50 stuffed Yorkies, 1/2 price kids meals. Dine-in only.",
+              "description": "Half-price English pints, $10.50 big stuffed Yorkies, half-price kids meals. Dine-in only.",
               "type": "both",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "kingsmen-tuesday",
               "title": "$2-$5 Off Fish & Chips",
-              "description": "$2-$5 off fish & chips, 1/2 price highballs. Dine-in only.",
+              "description": "$5 off 2pc fish & chips, $2 off 1pc fish & chips. Half-price highballs. Dine-in only.",
               "type": "both",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "kingsmen-wednesday",
               "title": "Half-Price Wings",
-              "description": "1/2 price wings (7pc) after 2pm with beverage. $2 off cocktails. Dine-in only.",
-              "type": "both",
+              "description": "Half-price 7pc chicken wings. Dine-in only.",
+              "type": "food",
               "dayOfWeek": 3,
-              "startHour": 14,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "kingsmen-thursday",
               "title": "$5 Off Cocktails & Mussels",
-              "description": "$5 off cocktails & mussels after 2pm. Wine 95¢/oz. Dine-in only.",
+              "description": "$5 off cocktails & mussels. 95¢/oz house wine. Dine-in only.",
               "type": "both",
               "dayOfWeek": 4,
-              "startHour": 14,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "kingsmen-friday",
               "title": "$10 Cod Bites & Mac n Cheese",
-              "description": "$10 Buffalo Cod Bites, $10 Mac n Cheese. Dine-in only.",
-              "type": "food",
+              "description": "$10 Buffalo Cod Bites, $10 Mac n Cheese. 20% off smoked cocktails. Dine-in only.",
+              "type": "both",
               "dayOfWeek": 5,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "kingsmen-saturday",
-              "title": "Half-Price Wine & 20% Off Apps",
-              "description": "1/2 price wine bottles, 20% off appetizers. Dine-in only.",
+              "title": "Half-Price Wine & 20% Off Brit Bites",
+              "description": "Half-price bottles of wine, 20% off Brit Bites (appetizers). Dine-in only.",
               "type": "both",
               "dayOfWeek": 6,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "kingsmen-sunday",
               "title": "$18.95 Roast Beef Dinner",
-              "description": "$18.95 roast beef dinner with Yorkshire pudding. $5 off lager jug, $2 off Caesars. Dine-in only.",
+              "description": "$18.95 roast beef dinner with Yorkshire pudding. $5 off jug of Nightlife Lager, $2 off Caesars. Dine-in only.",
               "type": "both",
               "dayOfWeek": 0,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -898,6 +1013,8 @@
           "id": "holiday-bowl",
           "name": "Holiday Bowl",
           "type": "local",
+          "address": "2825 2nd Ave S",
+          "website": "https://holidaybowl.ca",
           "deals": [
             {
               "id": "holiday-bowl-pizza-tuesday",
@@ -917,6 +1034,912 @@
               "dayOfWeek": 0,
               "startHour": 19,
               "lastVerified": "2025-11-22"
+            }
+          ]
+        },
+        {
+          "id": "marble-slab-creamery",
+          "name": "Marble Slab Creamery",
+          "type": "chain",
+          "address": "2037 Mayor Magrath Dr S & 550 University Dr W",
+          "website": "https://www.marbleslab.ca",
+          "deals": [
+            {
+              "id": "marble-slab-monday",
+              "title": "BOGO Free Floats",
+              "description": "Buy one float, get one free on Monday.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-12-02"
+            },
+            {
+              "id": "marble-slab-tuesday",
+              "title": "$5 Ice Cream Sandwich",
+              "description": "$5 ice cream sandwich on Tuesday.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-12-02"
+            },
+            {
+              "id": "marble-slab-wednesday",
+              "title": "BOGO $2 Small Cones/Cups",
+              "description": "Buy one small cone or cup, get one for $2 on Wednesday.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-02"
+            },
+            {
+              "id": "marble-slab-thursday",
+              "title": "15% Off Crumble",
+              "description": "15% off crumble on Thursday.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-02"
+            },
+            {
+              "id": "marble-slab-friday",
+              "title": "BOGO 50% Off Half-Litres",
+              "description": "Buy one pre-packed half litre of ice cream, get one 50% off on Friday.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2025-12-02"
+            },
+            {
+              "id": "marble-slab-saturday",
+              "title": "BOGO 50% Off Gummies",
+              "description": "Buy one pack of gummies, get one 50% off on Saturday.",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2025-12-02"
+            },
+            {
+              "id": "marble-slab-sunday",
+              "title": "$7.49 Milkshake",
+              "description": "$7.49 milkshake on Sunday.",
+              "type": "food",
+              "dayOfWeek": 0,
+              "lastVerified": "2025-12-02"
+            }
+          ]
+        },
+        {
+          "id": "wow-eats",
+          "name": "Wow Eats",
+          "type": "local",
+          "address": "2025 Mayor Magrath Dr S",
+          "deals": [
+            {
+              "id": "wow-eats-monday",
+              "title": "25% Off Donuts",
+              "description": "25% off donuts on Monday. 2025 Mayor Magrath Dr S.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-12-14"
+            },
+            {
+              "id": "wow-eats-tuesday",
+              "title": "25% Off Chicken",
+              "description": "25% off chicken on Tuesday. 2025 Mayor Magrath Dr S.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-12-14"
+            },
+            {
+              "id": "wow-eats-wednesday",
+              "title": "25% Off Burgers",
+              "description": "25% off burgers on Wednesday. 2025 Mayor Magrath Dr S.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-14"
+            },
+            {
+              "id": "wow-eats-thursday",
+              "title": "25% Off Korean Rice Bowls",
+              "description": "25% off Korean rice bowls on Thursday. 2025 Mayor Magrath Dr S.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-14"
+            },
+            {
+              "id": "wow-eats-friday",
+              "title": "25% Off Katsu",
+              "description": "25% off katsu on Friday. 2025 Mayor Magrath Dr S.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2025-12-14"
+            }
+          ]
+        }
+      ]
+    },
+    "red-deer": {
+      "name": "Red Deer",
+      "province": "AB",
+      "restaurants": [
+        {
+          "id": "the-hideout",
+          "name": "The Hideout - Eats & Beats",
+          "type": "local",
+          "address": "411 Lantern Street",
+          "website": "https://the-hideout.com/",
+          "deals": [
+            {
+              "id": "hideout-mexicana-monday",
+              "title": "Mexicana Monday",
+              "description": "$3 OFF tacos, nachos, quesadillas, southwest taco salad. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hideout-bogo-appy-tuesday",
+              "title": "BOGO Appy Night",
+              "description": "Buy appetizer, get 2nd half price. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hideout-wing-wednesday",
+              "title": "Wing Night",
+              "description": "99¢ wings (11 flavours, minimum 10 wings). Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hideout-curry-mussels-thursday",
+              "title": "Curry Mussels & Burgers",
+              "description": "$14.75 Curry Mussel Bowl, $13 Hideout Burgers. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hideout-prime-rib-friday",
+              "title": "Prime Rib Night",
+              "description": "8oz Prime Rib $39 starting at 5PM. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "startHour": 17,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hideout-pasta-saturday",
+              "title": "Pasta Special",
+              "description": "$3 OFF any pasta order. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hideout-bogo-pizza-sunday",
+              "title": "BOGO Pizza",
+              "description": "Buy one pizza, get 2nd half price. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 0,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hideout-happy-hour",
+              "title": "Happy Hour",
+              "description": "3-6PM daily: $5.95 cocktails, wine, draught, hi-balls. Dine-in only.",
+              "type": "drink",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 15,
+              "endHour": 18,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hideout-lunch-special",
+              "title": "Lunch Special",
+              "description": "Mon-Fri 11AM-2PM: $16.75 steak sandwich, $10 wine. Dine-in only.",
+              "type": "both",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "startHour": 11,
+              "endHour": 14,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "bos-bar",
+          "name": "Bo's Bar and Stage",
+          "type": "local",
+          "address": "2310 50 Ave",
+          "website": "https://bosbar.com/",
+          "deals": [
+            {
+              "id": "bos-wing-wednesday",
+              "title": "Wing Night",
+              "description": "30¢/wing (minimum 10 wings). CHEAPEST wings in Red Deer. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "bos-taco-thursday",
+              "title": "Taco Special",
+              "description": "Taco special Thursday. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "bos-happy-hour",
+              "title": "Happy Hour",
+              "description": "Mon-Fri 2:30-5:30PM: $2 off Winterlust items & cocktails. Dine-in only.",
+              "type": "drink",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "startHour": 14,
+              "endHour": 17,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "taco-loft",
+          "name": "Taco Loft",
+          "type": "local",
+          "address": "4924B 50 Street (Ross Street Patio)",
+          "website": "https://www.tacoloft.ca/",
+          "deals": [
+            {
+              "id": "taco-loft-tuesday",
+              "title": "Taco Tuesday",
+              "description": "$2.22/taco, Mini Tacos Night. 100% gluten-free menu. Dine-in or takeout.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "occams-razor",
+          "name": "Occam's Razor",
+          "type": "local",
+          "address": "105-4916 50 Street",
+          "website": "https://occamsrazor.ca/",
+          "deals": [
+            {
+              "id": "occams-wing-thursday",
+              "title": "$5 Wings",
+              "description": "Marinated and smoked wings Thursday. Wed-Thu 4:30-10PM, Fri-Sat 4:30-midnight, Sun-Tue CLOSED. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "cilantro-and-chive",
+          "name": "Cilantro & Chive",
+          "type": "local",
+          "address": "1927 50th Avenue",
+          "website": "https://cilantroandchive.ca/reddeer/",
+          "deals": [
+            {
+              "id": "cilantro-margarita-mac-monday",
+              "title": "Margarita & Mac n Cheese",
+              "description": "Margarita Flights & signature Mac n Cheese all day. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "cilantro-poutine-beer-tuesday",
+              "title": "Poutine & Beer",
+              "description": "Six signature Poutines and Flights of Craft Beer all day. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "cilantro-prime-rib-wednesday",
+              "title": "Prime Rib Night",
+              "description": "Slow roasted AAA Alberta Prime Rib after 4PM with fingerling potatoes, Yorkshire pudding, vegetables. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "startHour": 16,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "cilantro-yorkshire-thursday",
+              "title": "Stuffed Yorkshire Puddings",
+              "description": "3 Yorkshire puddings stuffed with AAA Alberta prime rib, horseradish aioli, au jus. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "original-joes",
+          "name": "Original Joe's",
+          "type": "chain",
+          "address": "4720 51st Avenue",
+          "website": "https://www.originaljoes.ca",
+          "deals": [
+            {
+              "id": "oj-half-price-wings-tue",
+              "title": "Half-Price Wings",
+              "description": "50% off wings after 2PM. Dine-in or takeout.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "startHour": 14,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "canadian-brewhouse-rd",
+          "name": "The Canadian Brewhouse",
+          "type": "chain",
+          "address": "12 Conway St",
+          "website": "https://thecanadianbrewhouse.com",
+          "deals": [
+            {
+              "id": "brewhouse-wing-wednesday-rd",
+              "title": "69¢ Wing Wednesday",
+              "description": "69¢ wings all day Wednesday. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "montana-bbq-rd",
+          "name": "Montana's BBQ & Bar",
+          "type": "chain",
+          "address": "2004 50th Ave",
+          "website": "https://montanas.ca",
+          "deals": [
+            {
+              "id": "montana-half-price-wings-monday-rd",
+              "title": "Half-Price Wings",
+              "description": "Half-price 8-piece chicken wings with beverage purchase. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "montana-taco-tuesday-rd",
+              "title": "$5 Taco Tuesday",
+              "description": "$5 taco with beverage purchase. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "montana-ayce-ribs-wednesday-rd",
+              "title": "All-You-Can-Eat Ribs",
+              "description": "All-You-Can-Eat pork ribs with 2 sides and cornbread. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "taco-time-rd",
+          "name": "Taco Time",
+          "type": "chain",
+          "address": "3321 50 Avenue & 6702 Golden West Ave & 4747 67 St",
+          "website": "https://tacotimecanada.com",
+          "deals": [
+            {
+              "id": "taco-time-tuesday-rd",
+              "title": "$2 Taco Tuesday",
+              "description": "Unlimited $2 tacos every Tuesday. Dine-in or takeout. All Red Deer locations.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "state-and-main-rd",
+          "name": "State & Main",
+          "type": "chain",
+          "address": "3020 22nd Street",
+          "website": "https://stateandmain.ca",
+          "deals": [
+            {
+              "id": "state-wing-wednesday-rd",
+              "title": "Half-Price Wings",
+              "description": "Half-price wings OR 49¢/wing after 2PM. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "startHour": 14,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "boston-pizza-rd",
+          "name": "Boston Pizza",
+          "type": "chain",
+          "address": "7494 50 Ave & 3215 Gaetz Ave",
+          "website": "https://bostonpizza.com",
+          "deals": [
+            {
+              "id": "bp-pizza-monday-rd",
+              "title": "$10 Pizzas",
+              "description": "$10 signature or create-your-own pizzas (up to 4 toppings). Dine-in only. North: 7494 50 Ave, South: 3215 Gaetz Ave.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "bp-pasta-tuesday-rd",
+              "title": "Pasta From $10.99",
+              "description": "Pasta specials starting at $10.99 all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "bp-wing-wednesday-rd",
+              "title": "Wing Wednesday",
+              "description": "Wing Wednesday — pricing varies by location. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "bp-appy-thursday-rd",
+              "title": "Buy 2 Apps, Get 1 Free",
+              "description": "Buy 2 appetizers, get 3rd FREE. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "bp-cactus-cut-friday-rd",
+              "title": "$2 Off Cactus Cut Potatoes",
+              "description": "$2 off Cactus Cut Potatoes on Friday. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "east-side-marios-rd",
+          "name": "East Side Mario's",
+          "type": "chain",
+          "address": "2004 50 Avenue",
+          "website": "https://eastsidemarios.com",
+          "deals": [
+            {
+              "id": "esm-pasta-wednesday-rd",
+              "title": "Buy 1 Pasta, Take 1 Home Free",
+              "description": "Buy one pasta, take one home FREE with beverage purchase. Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "esm-amore-thursday-rd",
+              "title": "Amore for Two $50",
+              "description": "3-course Italian feast for 2 with 2 beverages for $50. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "esm-daily-draught-rd",
+              "title": "$3.99 Draught & Wine",
+              "description": "$3.99 domestic draught and house wine all day with entree or pasta purchase.",
+              "type": "drink",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "same-old-daves-rd",
+          "name": "Same Old Dave's",
+          "type": "local",
+          "address": "5020 47 Ave",
+          "deals": [
+            {
+              "id": "daves-rib-thursday-rd",
+              "title": "$20 Full Rack Ribs",
+              "description": "Full rack of ribs with 2 sides for $20. Dine-in only. Open Tue-Sun 4-8pm, closed Mon.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "stacked-pancake-rd",
+          "name": "Stacked Pancake & Breakfast House",
+          "type": "local",
+          "address": "2004 50 Avenue",
+          "website": "https://stackedpancakehouse.ca",
+          "deals": [
+            {
+              "id": "stacked-early-bird-rd",
+              "title": "Early Bird Breakfast",
+              "description": "7-9am weekdays: 2 eggs, bacon/ham/sausage, homefries, toast. Dine-in only. Open 7am-3pm daily.",
+              "type": "food",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "startHour": 7,
+              "endHour": 9,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "stacked-lunch-special-rd",
+              "title": "$17.99 Lunch Specials",
+              "description": "Lunch specials $17.99, dine-in only. Taxes extra.",
+              "type": "food",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "cora-rd",
+          "name": "Cora Breakfast and Lunch",
+          "type": "chain",
+          "address": "6858 Gaetz Ave, Unit 3",
+          "website": "https://chezcora.com",
+          "deals": [
+            {
+              "id": "cora-early-morning-rd",
+              "title": "$5.55 Early Morning Special",
+              "description": "Before 8am: 2 eggs, 3 bacon strips, toast, pan-fried potatoes, coffee for $5.55. Mon-Sat 6am-3pm, Sun 7am-3pm.",
+              "type": "food",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "endHour": 8,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "triple-os-rd",
+          "name": "Triple O's",
+          "type": "chain",
+          "address": "130-3115 50 Avenue",
+          "website": "https://tripleos.com",
+          "deals": [
+            {
+              "id": "triple-os-monday-rd",
+              "title": "$7.99 Spicy Ultimate Crunch",
+              "description": "Spicy Ultimate Crunch burger $7.99. Available at participating locations.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "triple-os-tuesday-rd",
+              "title": "$7.99 Original Burger",
+              "description": "Original Burger $7.99 on Triple O Tuesday. Available at participating locations.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "triple-os-wednesday-rd",
+              "title": "$7.99 Crispy Cod Burger",
+              "description": "Crispy Cod Burger $7.99. Available at participating locations.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "tandoor-n-flame-rd",
+          "name": "Tandoor N Flame",
+          "type": "local",
+          "address": "Unit 108, 4807 50 Ave",
+          "website": "https://tandoornflame.ca",
+          "deals": [
+            {
+              "id": "tandoor-lunch-buffet-rd",
+              "title": "Lunch Buffet",
+              "description": "Lunch buffet 11am-2pm on Mon/Wed/Fri. Rotating curries, naan, biryani, salads, desserts.",
+              "type": "food",
+              "daysOfWeek": [
+                1,
+                3,
+                5
+              ],
+              "startHour": 11,
+              "endHour": 14,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "arrae-patisserie-rd",
+          "name": "Arrae Patisserie",
+          "type": "local",
+          "address": "#11 3701 50 Ave",
+          "website": "https://arraepatisserie.ca",
+          "deals": [
+            {
+              "id": "arrae-cakelet-tuesday-rd",
+              "title": "$2.50 Cakelet Tuesday",
+              "description": "Rotating flavor cakelet $2.50 on Tuesday. Tue-Fri 7:30am-5:30pm, Sat 8am-5pm.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "arrae-canele-friday-rd",
+              "title": "$4.95 Canele Friday",
+              "description": "Vanilla and rum-flavored canele pastry $4.95 on Friday.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "arrae-pain-raisins-saturday-rd",
+              "title": "$5.50 Pain aux Raisins Saturday",
+              "description": "Pain aux Raisins Danish with pastry cream $5.50 on Saturday.",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "the-keg-rd",
+          "name": "The Keg Steakhouse",
+          "type": "chain",
+          "address": "6365 50 Ave",
+          "website": "https://www.thekeg.com",
+          "deals": [
+            {
+              "id": "keg-happy-hour-weekday-rd",
+              "title": "Apps From $10",
+              "description": "Mon-Fri 3-5pm: $10 garlic toast, $15 tuna tartare, $15 wings, $20 burger, $24 prime rib sandwich. 6365 50 Ave.",
+              "type": "both",
+              "daysOfWeek": [1, 2, 3, 4, 5],
+              "startHour": 15,
+              "endHour": 17,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "keg-happy-hour-late-weekday-rd",
+              "title": "Late Night Bites From $10",
+              "description": "Sun-Thu 9pm-close: Same happy hour menu from $10.",
+              "type": "both",
+              "daysOfWeek": [0, 1, 2, 3, 4],
+              "startHour": 21,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "keg-happy-hour-late-weekend-rd",
+              "title": "Late Night Bites From $10",
+              "description": "Fri-Sat 10pm-close: Same happy hour menu from $10.",
+              "type": "both",
+              "daysOfWeek": [5, 6],
+              "startHour": 22,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "moxies-rd",
+          "name": "Moxies",
+          "type": "chain",
+          "address": "2828 Gaetz Ave",
+          "website": "https://moxies.com",
+          "deals": [
+            {
+              "id": "moxies-happy-hour-rd",
+              "title": "$5 Drinks & $10 Cocktails",
+              "description": "2-5PM & 9PM-close daily. Drinks: highballs/beer/wine from $5, $6 Absolut Sippin' Sodas, $10 cocktails (Smoked Old Fashioned, Espresso Martini, Mojito, Moxies Mule), half-price select wine bottles. Food: $17 shareables, $19 Bacon Cheeseburger & Fries, $27 Steak Frites. 2828 Gaetz Ave.",
+              "type": "both",
+              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "moxies-wine-wednesday-rd",
+              "title": "Half-Price Wine Bottles",
+              "description": "Half-price wine bottles all day. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "mr-mikes-rd",
+          "name": "MR MIKES",
+          "type": "chain",
+          "address": "6701 Gaetz Ave",
+          "website": "https://mrmikes.ca",
+          "deals": [
+            {
+              "id": "mikes-happiest-hours-rd",
+              "title": "$5 Bites & Drinks",
+              "description": "Daily 2-5PM: Bites from $5 (fries, bruschetta, sliders, shrimp, steak frites). Drinks: wine $5, draft $7, highballs $5. 6701 Gaetz Ave.",
+              "type": "both",
+              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "startHour": 14,
+              "endHour": 17,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "mikes-happiest-hours-late-rd",
+              "title": "$5 Late Night Bites",
+              "description": "Daily 8PM-close: Same happy hour menu. Dine-in only.",
+              "type": "both",
+              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "startHour": 20,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "hudsons-rd",
+          "name": "Hudsons Canada's Pub",
+          "type": "chain",
+          "address": "4900 50 St",
+          "website": "https://hudsonscanadaspub.com",
+          "deals": [
+            {
+              "id": "hudsons-wing-wednesday-rd",
+              "title": "Half-Price Wings & $6 Draft",
+              "description": "50% off wings from 6PM to close. $6 draft. 4900 50 St.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "startHour": 18,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "hudsons-happy-hour-rd",
+              "title": "$5 Hi-Balls & Draft",
+              "description": "2-6PM weekdays: $5 hi-balls, $5 draft, $6 wine. Dine-in only.",
+              "type": "drink",
+              "daysOfWeek": [1, 2, 3, 4, 5],
+              "startHour": 14,
+              "endHour": 18,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "mary-browns-rd",
+          "name": "Mary Brown's",
+          "type": "chain",
+          "address": "6858 50 Ave, Suite 2",
+          "website": "https://marybrowns.com",
+          "deals": [
+            {
+              "id": "mary-browns-monday-rd",
+              "title": "Big Mary Monday",
+              "description": "Big Mary $3.99. 6858 50 Ave, Suite 2.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "chillabongs-rd",
+          "name": "Chillabong's Bar & Grill",
+          "type": "local",
+          "address": "18-69 Dunlop Street",
+          "website": "https://chillabongs.ca",
+          "deals": [
+            {
+              "id": "chillabongs-wing-wednesday-rd",
+              "title": "Wing Night",
+              "description": "Wing Wednesday specials. Dine-in only. 18-69 Dunlop Street.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "chillabongs-guinness-thursday-rd",
+              "title": "Cheap Guinness Thursday",
+              "description": "Discounted Guinness on Thursday. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 4,
+              "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "chillabongs-happy-hour-rd",
+              "title": "Happy Hour",
+              "description": "Daily 4-7pm drink specials. Dine-in only.",
+              "type": "drink",
+              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "startHour": 16,
+              "endHour": 19,
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "butter-chicken-hut-rd",
+          "name": "Butter Chicken Hut",
+          "type": "local",
+          "address": "4909 49 St #104",
+          "deals": [
+            {
+              "id": "bch-lunch-special-rd",
+              "title": "$12 Lunch Special",
+              "description": "$12 lunch special with curries, naan, salad, sauces. Tue-Sat 11am-11pm, Sun 12-11pm, closed Mon.",
+              "type": "food",
+              "daysOfWeek": [0, 2, 3, 4, 5, 6],
+              "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "indian-flame-rd",
+          "name": "Indian Flame & Pizza",
+          "type": "local",
+          "address": "130-3 Ironside St",
+          "website": "https://indianflame.ca",
+          "deals": [
+            {
+              "id": "indian-flame-lunch-buffet-rd",
+              "title": "Lunch Buffet",
+              "description": "Daily lunch buffet 11am-2pm with multiple curries, naan, desserts. 130-3 Ironside St.",
+              "type": "food",
+              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "startHour": 11,
+              "endHour": 14,
+              "lastVerified": "2025-12-16"
             }
           ]
         }
