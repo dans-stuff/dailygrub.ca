@@ -18,7 +18,7 @@ const dealsData: DealsData = dealsJson as DealsData;
 export function getCities(): Array<{ slug: string; name: string; province: string; dealCount: number }> {
   return Object.entries(dealsData.cities).map(([slug, city]) => {
     const dealCount = city.restaurants.reduce((sum, restaurant) => {
-      return sum + restaurant.deals.filter(deal => deal.isActive).length;
+      return sum + restaurant.deals.length;
     }, 0);
     return {
       slug,
@@ -51,8 +51,6 @@ export const getLethbridgeTime = getCurrentTime;
  * Check if a deal is active for the given day (ignores time)
  */
 export function isDealActive(deal: Deal, date: Date): boolean {
-  if (!deal.isActive) return false;
-
   const dayOfWeek = date.getDay(); // 0-6
 
   // Check if deal is valid for the day
@@ -145,7 +143,7 @@ export function getDealsGroupedByRestaurant(
 
   city.restaurants.forEach((restaurant) => {
     const deals = showAll
-      ? restaurant.deals.filter((deal) => deal.isActive)
+      ? restaurant.deals
       : restaurant.deals.filter((deal) => isDealActive(deal, date));
 
     deals.forEach((deal) => {
@@ -156,28 +154,42 @@ export function getDealsGroupedByRestaurant(
   // Define sort order for restaurant types
   const typePriority: Record<string, number> = {
     sponsored: 0,
-    local: 1,
-    chain: 2,
+    exclusive: 1,
+    local: 2,
+    chain: 3,
   };
 
   // Sort deals:
-  // 1. Sponsored first
-  // 2. Single-day local
-  // 3. Single-day chain
-  // 4. Multi-day local
-  // 5. Multi-day chain
+  // 1. Sponsored first (always)
+  // 2. Exclusive second (always)
+  // 3. Single-day local
+  // 4. Single-day chain
+  // 5. Multi-day local
+  // 6. Multi-day chain
   // Within same category: alphabetically by restaurant name
   allDeals.sort((a, b) => {
-    // Sponsored always first
-    if (a.restaurant.type === 'sponsored' && b.restaurant.type !== 'sponsored') return -1;
-    if (a.restaurant.type !== 'sponsored' && b.restaurant.type === 'sponsored') return 1;
+    const aType = a.restaurant.type;
+    const bType = b.restaurant.type;
 
-    // Single-day deals come before multi-day
+    // Sponsored and Exclusive always come first (in that order)
+    const aIsPremium = aType === 'sponsored' || aType === 'exclusive';
+    const bIsPremium = bType === 'sponsored' || bType === 'exclusive';
+
+    if (aIsPremium && !bIsPremium) return -1;
+    if (!aIsPremium && bIsPremium) return 1;
+    if (aIsPremium && bIsPremium) {
+      // Both premium: sponsored before exclusive
+      const typeDiff = typePriority[aType] - typePriority[bType];
+      if (typeDiff !== 0) return typeDiff;
+      return a.restaurant.name.localeCompare(b.restaurant.name);
+    }
+
+    // For non-premium: single-day deals come before multi-day
     if (a.deal.isSingleDay && !b.deal.isSingleDay) return -1;
     if (!a.deal.isSingleDay && b.deal.isSingleDay) return 1;
 
     // Within same deal type (single or multi), local before chain
-    const typeDiff = typePriority[a.restaurant.type] - typePriority[b.restaurant.type];
+    const typeDiff = typePriority[aType] - typePriority[bType];
     if (typeDiff !== 0) return typeDiff;
 
     // Same type and same deal specificity: alphabetically by restaurant name

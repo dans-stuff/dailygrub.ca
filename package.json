@@ -8,10 +8,10 @@
     "start": "next start",
     "lint": "eslint",
     "deploy": "npm run build && npx wrangler deploy",
-    "preview": "npm run build && npx wrangler dev",
-    "sync": "./scripts/sync-deals.sh"
+    "preview": "npm run build && npx wrangler dev"
   },
   "dependencies": {
+    "lucide-react": "^0.554.0",
     "next": "16.0.3",
     "papaparse": "^5.5.3",
     "posthog-js": "^1.297.2",
@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4",
-    "wrangler": "^4",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/papaparse": "^5.5.0",
@@ -30,6 +29,7 @@
     "eslint-config-next": "16.0.3",
     "raw-loader": "^4.0.2",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4"
   }
 }

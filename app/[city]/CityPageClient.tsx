@@ -4,17 +4,16 @@ import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { DealCard } from '@/components/DealCard';
 import { DaySelector } from '@/components/DaySelector';
-import { getDealsGroupedByRestaurant, getCurrentTime, getCity } from '@/lib/deals';
+import { getDealsGroupedByRestaurant, getCity } from '@/lib/deals';
 
 interface CityPageClientProps {
   citySlug: string;
 }
 
 export default function CityPageClient({ citySlug }: CityPageClientProps) {
-  // Initialize with current day to avoid flash
-  const initialTime = getCurrentTime();
-  const [selectedDay, setSelectedDay] = useState<number>(initialTime.getDay());
-  const [currentTime] = useState<Date>(initialTime);
+  // Lazy initializer - runs once on client mount, uses user's local timezone
+  const [today] = useState(() => new Date().getDay());
+  const [selectedDay, setSelectedDay] = useState(() => new Date().getDay());
   const [expandedDealId, setExpandedDealId] = useState<string | null>(null);
 
   const city = getCity(citySlug);
@@ -39,12 +38,11 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
     );
   }
 
-  // Create a date object for the selected day at current time
-  const selectedDate = new Date(currentTime);
+  // Create a date object for the selected day
+  const now = new Date();
+  const selectedDate = new Date(now);
   if (selectedDay !== -1) {
-    selectedDate.setDate(
-      selectedDate.getDate() + ((selectedDay - currentTime.getDay() + 7) % 7)
-    );
+    selectedDate.setDate(now.getDate() + ((selectedDay - today + 7) % 7));
   }
 
   const isAllDays = selectedDay === -1;
@@ -59,8 +57,9 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
           <div className="flex items-start justify-between gap-4 mb-1">
             <div>
               <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-0.5">Daily Grub</h1>
+              <p className="text-sm text-gray-500 mb-1">Cheap eats every day of the week</p>
               <div className="flex items-baseline gap-2 flex-wrap mb-1">
-                <p className="text-sm text-gray-600">Food & drink deals in</p>
+                <p className="text-sm text-gray-600">Deals in</p>
                 <Link
                   href="/"
                   className="inline-flex items-center gap-1 text-sm font-medium text-gray-900 hover:text-emerald-600 transition-colors group"
@@ -87,7 +86,7 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
 
         {/* Day Selector */}
         <div className="mb-6">
-          <DaySelector selectedDay={selectedDay} onDayChange={handleDayChange} />
+          <DaySelector selectedDay={selectedDay} today={today} onDayChange={handleDayChange} />
         </div>
 
         {/* Deals List */}
@@ -121,7 +120,7 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
         <footer className="mt-12 pt-6 border-t border-gray-300 text-center text-xs sm:text-sm text-gray-500">
           <div className="space-y-3">
             <p className="text-gray-600">
-              Restaurants sorted to prioritize local places and one day deals.
+              Deals are sorted by sponsored, exclusive, then local over chain, with daily specials first. Always confirm deals directly with the restaurant.
             </p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <Link href="/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-700 transition-colors">
@@ -150,9 +149,6 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
                 FB
               </a>
             </div>
-            <p className="text-gray-400">
-              Verify with restaurants. Info may be outdated.
-            </p>
           </div>
         </footer>
       </div>

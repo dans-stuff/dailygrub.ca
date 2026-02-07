@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Daily Grub - Daily Restaurant Specials & Happy Hours",
-  description: "Never miss a deal. Find daily specials, happy hours, wing nights, and taco Tuesdays at local restaurants. Updated daily with verified prices.",
+  description: "Cheap eats every day of the week. Find daily specials, happy hours, wing nights, and taco Tuesdays at local restaurants.",
   keywords: ["restaurant deals", "daily specials", "happy hour", "wing night", "taco tuesday", "food deals", "cheap eats", "Alberta", "Canada"],
   openGraph: {
     title: "Daily Grub - Daily Restaurant Specials & Happy Hours",
