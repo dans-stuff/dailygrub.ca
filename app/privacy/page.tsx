@@ -1,8 +1,11 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy - Daily Grub',
+  title: 'Privacy Policy',
   description: 'Privacy policy for Daily Grub',
+  alternates: {
+    canonical: '/privacy',
+  },
 };
 
 export default function PrivacyPolicy() {

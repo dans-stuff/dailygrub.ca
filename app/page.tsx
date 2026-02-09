@@ -1,8 +1,34 @@
 import Link from 'next/link';
-import { getCities } from '@/lib/deals';
+import { getCities, PROVINCE_NAMES } from '@/lib/deals';
+
+function getHomeJsonLd(cities: Array<{ slug: string; name: string; province: string; dealCount: number }>) {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Daily Grub",
+      url: "https://dailygrub.ca",
+      description: "Find restaurant happy hours, daily specials, wing nights, and taco Tuesdays across Canada.",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "Cities with Restaurant Deals",
+      numberOfItems: cities.length,
+      itemListElement: cities.map((city, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://dailygrub.ca/${city.slug}`,
+        name: `${city.name}, ${city.province}`,
+      })),
+    },
+  ];
+}
 
 export default function Home() {
   const cities = getCities();
+  const jsonLd = getHomeJsonLd(cities);
+  const totalDeals = cities.reduce((sum, c) => sum + c.dealCount, 0);
 
   // Group cities by province
   const citiesByProvince = cities.reduce((acc, city) => {
@@ -13,30 +39,27 @@ export default function Home() {
     return acc;
   }, {} as Record<string, typeof cities>);
 
-  const provinceNames: Record<string, string> = {
-    'AB': 'Alberta',
-    'BC': 'British Columbia',
-    'ON': 'Ontario',
-    'QC': 'Quebec',
-    'MB': 'Manitoba',
-    'SK': 'Saskatchewan',
-    'NS': 'Nova Scotia',
-    'NB': 'New Brunswick',
-    'NL': 'Newfoundland and Labrador',
-    'PE': 'Prince Edward Island',
-    'NT': 'Northwest Territories',
-    'YT': 'Yukon',
-    'NU': 'Nunavut',
-  };
-
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <div className="max-w-2xl w-full">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Daily Grub</h1>
-          <p className="text-base text-gray-600">Find daily specials and happy hours in your city</p>
-        </div>
+    <>
+      {jsonLd.map((ld, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
+        />
+      ))}
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+        <div className="max-w-2xl w-full">
+          {/* Header */}
+          <div className="text-center mb-8">
+            <p className="text-sm font-medium text-gray-500 mb-1">Daily Grub</p>
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
+              Restaurant Happy Hours &amp; Daily Specials
+            </h1>
+            <p className="text-base text-gray-600">
+              Browse {totalDeals} food and drink deals — wing nights, taco Tuesdays, happy hours, and more — at restaurants across Canada.
+            </p>
+          </div>
 
         {/* City Selector */}
         <div className="bg-white border border-gray-300 rounded-lg shadow-sm overflow-hidden">
@@ -49,7 +72,7 @@ export default function Home() {
                 {/* Province Header */}
                 <div className="px-6 py-3 bg-gray-50 border-b border-gray-300">
                   <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
-                    {provinceNames[provinceCode] || provinceCode}
+                    {PROVINCE_NAMES[provinceCode] || provinceCode}
                   </h3>
                 </div>
                 {/* Cities in Province */}
@@ -91,7 +114,8 @@ export default function Home() {
             </Link>
           </div>
         </footer>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

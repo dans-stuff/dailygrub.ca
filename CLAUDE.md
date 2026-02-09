@@ -76,14 +76,30 @@ interface Deal {
 
 ## Research & Verification Pipeline
 
+### Cardinal Rules
+
+**The research compendium (`research/{city-slug}.md`) is the permanent institutional memory of this project.** Every rumor, every confirmed fact, every dead end, every human verification, every removal decision — all of it lives in the research docs forever. The compendium only grows. It never shrinks.
+
+1. **Research doc FIRST, deals.json SECOND.** Never put information into `deals.json` without first recording evidence, source, and reasoning in the research doc. If it's not in the compendium, it doesn't exist.
+2. **Never delete information from research docs.** Statuses change (`in-production` → `removed`), notes get appended, but content is never deleted. Old deal tables stay with a "previously known deals" label. Removal reasons are documented. Dead ends are recorded so they are never re-investigated.
+3. **No circular work.** Every session must build on prior sessions. Before researching any restaurant, check if it already exists in the research doc. If we already debunked it, learned it's closed, or decided to remove it — that decision and its reasoning must be in the doc so we never repeat the work.
+4. **Record everything.** Search snippets, social media mentions, word of mouth, in-person observations, phone calls, website checks, failed website fetches, price discrepancies, conflicting sources — all of it goes into the compendium with dates and sources. High information density.
+5. **Incremental building.** The goal is a nationwide compendium of every restaurant deal in Canada, built 5 minutes at a time. Every session should leave the research docs richer than it found them, even if no deals.json changes are made.
+
 ### Overview
 
-Every deal in production (`data/deals.json`) must trace back to a source URL in its city's research document (`research/{city-slug}.md`). The pipeline:
+Every deal in production (`data/deals.json`) must trace back to a source in its city's research document (`research/{city-slug}.md`). The research pipeline is layered — cast a wide net, then refine:
 
 ```
-research/{city-slug}.md   →   data/deals.json   →   npm run build   →   site
-(evidence & backlog)          (production data)      (static export)
+Leads & Rumors          →   Restaurants (researched)   →   data/deals.json   →   site
+(gossip, tips, snippets)    (verified with sources)        (production data)     (static)
 ```
+
+**Layer 1 — Leads & Rumors:** Every restaurant gossip, hint, search snippet, social media mention, or secondhand tip gets captured here. Cast the widest possible net. Nothing is too speculative for this layer.
+
+**Layer 2 — Restaurants (researched):** Leads that have been investigated with primary sources. Deals have source URLs but may need human verification before promotion.
+
+**Layer 3 — Production (`deals.json`):** Fully verified deals with source URLs, `lastVerified` dates, and cross-referenced entries in the research doc.
 
 ### File Locations
 
@@ -106,10 +122,19 @@ Each `research/{city-slug}.md` follows this structure:
 - [ ] Add: {restaurant} — {reason}
 - [ ] Re-verify: {restaurant} — last verified {date}
 
+## Leads & Rumors
+<!-- Unverified tips, search snippets, secondhand mentions, overheard gossip.
+     NOT confirmed — exists to build a pool of possibilities for future research.
+     Bubble up promising leads to Backlog → Restaurants → Production. -->
+
+| Restaurant / Lead | What We Heard | Where We Heard It | Date Noted | Status |
+|-------------------|---------------|-------------------|------------|--------|
+| {name or tip} | {what was claimed} | {source: search snippet, social media, word of mouth, etc.} | {YYYY-MM-DD} | Unverified / Promising / Debunked / Promoted |
+
 ## Restaurants
 
 ### {Restaurant Name}
-- **Status:** `in-production` | `researched` | `not-in-city` | `closed` | `no-deals-found`
+- **Status:** `in-production` | `researched` | `removed` | `not-in-city` | `closed` | `no-deals-found`
 - **Production ID:** `{id}` (if in-production, matches deals.json)
 - **Address:** {address}
 - **Website:** {url}
@@ -127,27 +152,33 @@ Each `research/{city-slug}.md` follows this structure:
 
 ### Verification Standards
 
-- **Primary source required:** Every deal in production must have a source URL (restaurant website, official social media, or reputable directory like eatreddeer.ca)
+- **Primary source required:** Every deal in production must have a source (restaurant website, official social media, reputable directory, or `human (in-person)` / `human (verified from website)` with date)
 - **Staleness threshold:** Deals older than 90 days from `lastVerified` should be flagged for re-verification in the backlog
-- **Every deal in `deals.json` must have:** `lastVerified` date and a corresponding entry with source URL in the research doc
+- **Every deal in `deals.json` must have:** `lastVerified` date and a corresponding entry with source in the research doc
 - **Every restaurant in `deals.json` should have:** `website` field (flag missing ones in backlog)
-- **Rumors and unverified leads** go in the research doc (with notes) but NOT in `deals.json` — track them for future verification
+- **Rumors and unverified leads** go in the Leads & Rumors table — capture EVERYTHING (search snippets, social media mentions, word of mouth, directory listings, tourism site mentions). The goal is a huge pool of possibilities per city.
+- **Promoting leads:** When a lead is investigated and confirmed with a primary source, move it to a Restaurants section with status `researched`. Update the lead's status to `Promoted`.
 - **When uncertain:** flag for human verification in the backlog rather than guessing. The user can check websites, Facebook, call restaurants, etc.
 - **Verification means checking the primary source directly** — not relying on cached/secondary data. If a web fetch shows different info than what's in production, the production data needs correction
+- **Source types:** `{website URL}` for web sources, `human (in-person)` for user's physical visit, `human (in-person photo)` for photographed evidence, `human (verified from website)` for user reading a JS-heavy site we can't fetch, `human` for general user confirmation. Always include the date.
 
 ### Session Workflow
 
 1. **Read backlog** — open `research/{city-slug}.md`, check prioritized items
 2. **Do work** — research, verify, or fix items from the backlog
-3. **Update both files** — add evidence to research doc, update `deals.json` if promoting to production
-4. **Update backlog** — check off completed items, add any new items discovered
-5. **Commit** — changes to research doc and deals.json together
+3. **Update research doc FIRST** — add all evidence, sources, findings, decisions, and reasoning to the research doc. This is non-negotiable. The research doc is updated before or simultaneously with deals.json, never after.
+4. **Update `deals.json` SECOND** — only after the research doc has the evidence
+5. **Update backlog** — check off completed items, add any new items discovered during the session
+6. **Update research log** — append dated entries for every action taken this session
+7. **Commit** — changes to research doc and deals.json together
 
 ### Cross-Reference Rules
 
 - Every restaurant in `deals.json` has a matching section in `research/{city-slug}.md` with status `in-production`
-- Every deal in production has a source URL in the research doc
+- Every deal in production has a source in the research doc (URL, `human (in-person)`, etc.)
 - The research doc's production ID matches the restaurant's `id` in `deals.json`
+- The research doc contains ALL restaurants ever investigated — including `removed`, `closed`, `debunked`, and `no-deals-found` — so no work is ever repeated
+- `deals.json` is a strict subset of the research docs. The research docs are the superset of all knowledge.
 
 ### Common Workflows
 
@@ -164,7 +195,15 @@ Each `research/{city-slug}.md` follows this structure:
 **Re-verification:**
 1. Check source URLs — are deals still listed?
 2. Update `lastVerified` in both research doc and `deals.json`
-3. Remove or update deals that are no longer offered
+3. If deals changed, update the research doc note with what changed and why, then update deals.json
+
+**Removing a restaurant from production:**
+1. **DO NOT delete the restaurant section from the research doc.** Change status to `removed`.
+2. Add a bold removal notice with: date, who decided (user/system), the exact reason in their words, and the former production ID.
+3. Relabel the deal table as "Previously known deals (no longer in production)."
+4. Add a "History" note summarizing the full lifecycle: when added, what sources existed, why removed, and guidance for future investigators who might encounter this restaurant again.
+5. Remove from `deals.json`.
+6. Log the removal in the research log with reasoning.
 
 **Stale sweep:**
 1. Query deals where `lastVerified` is older than 90 days

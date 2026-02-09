@@ -13,6 +13,25 @@ import dealsJson from '@/data/deals.json';
 const dealsData: DealsData = dealsJson as DealsData;
 
 /**
+ * Province code to full name mapping
+ */
+export const PROVINCE_NAMES: Record<string, string> = {
+  AB: "Alberta",
+  BC: "British Columbia",
+  SK: "Saskatchewan",
+  MB: "Manitoba",
+  ON: "Ontario",
+  QC: "Quebec",
+  NS: "Nova Scotia",
+  NB: "New Brunswick",
+  NL: "Newfoundland and Labrador",
+  PE: "Prince Edward Island",
+  NT: "Northwest Territories",
+  YT: "Yukon",
+  NU: "Nunavut",
+};
+
+/**
  * Get all available cities
  */
 export function getCities(): Array<{ slug: string; name: string; province: string; dealCount: number }> {

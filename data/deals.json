@@ -17,7 +17,7 @@
               "description": "Discounted margaritas and tacos all day Monday. Dine-in only. West: 8 Aquitania Blvd W, North: 323 Bluefox Boulevard N.",
               "type": "both",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "oj-half-price-wings-tue",
@@ -26,7 +26,7 @@
               "type": "food",
               "dayOfWeek": 2,
               "startHour": 14,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "oj-half-price-wine-thu",
@@ -34,7 +34,7 @@
               "description": "50% off wine by glass or bottle all day Thursday. Dine-in only. Both locations.",
               "type": "drink",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "oj-sangria-sat",
@@ -42,7 +42,7 @@
               "description": "$2 off sangria all day Saturday. Dine-in only. Both locations.",
               "type": "drink",
               "dayOfWeek": 6,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -59,7 +59,7 @@
               "description": "Any Signature Sandwich $7.99 + tax. Both locations: 3751 Mayor Magrath Dr S & 890 Heritage Blvd W.",
               "type": "food",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "churchs-tuesday",
@@ -67,7 +67,7 @@
               "description": "2pc Chicken (Leg & Thigh) $5.99 + tax. Both locations.",
               "type": "food",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "churchs-wednesday",
@@ -75,7 +75,7 @@
               "description": "Any Signature Wrap $7.99 + tax. Both locations.",
               "type": "food",
               "dayOfWeek": 3,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "churchs-thursday",
@@ -83,7 +83,7 @@
               "description": "3pc Chicken Dark Meat $6.99 + tax. Both locations.",
               "type": "food",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "churchs-friday",
@@ -91,7 +91,7 @@
               "description": "Tender Wrap $4.99 + tax. Both locations.",
               "type": "food",
               "dayOfWeek": 5,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "churchs-saturday",
@@ -107,7 +107,7 @@
               "description": "3pc Jalapeno Bombers $2.99 + tax. Both locations.",
               "type": "food",
               "dayOfWeek": 0,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -121,10 +121,10 @@
             {
               "id": "mary-browns-monday",
               "title": "Big Mary Monday",
-              "description": "Big Mary $3.99. 2414 Fairway Plaza Road S.",
+              "description": "Big Mary $4.99. 2414 Fairway Plaza Road S.",
               "type": "food",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -136,31 +136,68 @@
           "website": "https://www.onionbarandgrill.com",
           "deals": [
             {
-              "id": "onion-pints-riblets-mon",
-              "title": "Pints & Riblets",
-              "description": "$5.99 pints (Original 16 or Onion Lager), $9.99 ribs & wings. Monday all day. Dine-in only.",
+              "id": "onion-happy-hour",
+              "title": "Happy Hour",
+              "description": "3\u20136pm & 9\u201311pm daily. Dine-in only.",
+              "type": "drink",
+              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "onion-mon",
+              "title": "Monday Specials",
+              "description": "Original 16 or Onion Lager pint $5.99. Ribs & wings $9.99. Dine-in only.",
               "type": "both",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
             },
             {
-              "id": "onion-paralyzers-lasagna-mon",
-              "title": "Vodka Paralyzers & Lasagna",
-              "description": "$5.99 Vodka Paralyzers, $13.99 lasagna. Monday & Tuesday. Dine-in only.",
+              "id": "onion-tue",
+              "title": "Tuesday Specials",
+              "description": "Vodka Paralyzers $5.99. Baked Lasagna $13.99. Dine-in only.",
               "type": "both",
-              "daysOfWeek": [
-                1,
-                2
-              ],
-              "lastVerified": "2025-11-21"
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
             },
             {
-              "id": "onion-thirsty-thursday",
-              "title": "Thirsty Thursday",
-              "description": "$5.99 Long Island Iced Tea, $16.99 steak sandwich. Dine-in only.",
+              "id": "onion-wed",
+              "title": "Wednesday Specials",
+              "description": "Long Island Iced Tea $5.99. Steak Sandwich $16.99. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "onion-thu",
+              "title": "Thursday Specials",
+              "description": "Bottled wine half price. Burger & Onion Pint $17.99. Dine-in only.",
               "type": "both",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "onion-fri",
+              "title": "Friday Specials",
+              "description": "House wine 5oz $4. 2pc Fish & Chips $19.99. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "onion-sat",
+              "title": "Saturday Specials",
+              "description": "Famous Caesars $5.99. Pork Cutlets $19.99. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "onion-sun",
+              "title": "Sunday Specials",
+              "description": "Onion Prosecco Mimosa $5.99. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -236,7 +273,7 @@
               "description": "$10 individual pizzas all day. Dine-in only. West: 10-14 Aquitania Blvd W, South: 2041 Mayor Magrath Dr S.",
               "type": "food",
               "dayOfWeek": 1,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "bp-pasta-tuesday",
@@ -244,7 +281,7 @@
               "description": "Pasta starting at $11.99 all day. Dine-in only. Both locations.",
               "type": "food",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "bp-wing-wednesday",
@@ -252,7 +289,7 @@
               "description": "50% off starter wings all day. Dine-in only. Both locations.",
               "type": "food",
               "dayOfWeek": 3,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "bp-appy-thursday",
@@ -260,7 +297,31 @@
               "description": "Buy 2 appetizers, get 3rd FREE. Dine-in only. Both locations.",
               "type": "food",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-cactus-friday",
+              "title": "$2 Off Cactus Cut Potatoes",
+              "description": "$2 off Cactus Cut Potatoes all day Friday. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-bandera-saturday",
+              "title": "$3 Off Bandera Bread",
+              "description": "$3 off Bandera Bread all day Saturday. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-burger-sunday",
+              "title": "$2 Off Boston-Sized Burgers",
+              "description": "$2 off Boston-Sized Burgers all day Sunday. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -272,22 +333,61 @@
           "website": "https://thecanadianbrewhouse.com",
           "deals": [
             {
-              "id": "brewhouse-wing-wednesday",
-              "title": "69¢ Wings",
-              "description": "69¢ wings ALL DAY. 3521 Mayor Magrath Dr S.",
-              "type": "food",
-              "dayOfWeek": 3,
-              "lastVerified": "2025-11-22"
+              "id": "brewhouse-mon-dry-rib",
+              "title": "Dry Rib Monday",
+              "description": "$9.99 cracked pepper & sea salt dry ribs. $1.50 off Michelob Ultra tankards. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
             },
             {
-              "id": "brewhouse-friday-appy",
-              "title": "Buy 2 Apps, Get 1 Free",
-              "description": "4-7PM: Buy 2 appetizers, get 3rd FREE. 3521 Mayor Magrath Dr S.",
-              "type": "food",
+              "id": "brewhouse-tue-taco",
+              "title": "Taco Tuesday",
+              "description": "$3.99 tacos. $5.99 spicy mango margarita, $6.25 Corona, $24.99 Corona buckets. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "brewhouse-wed-wings",
+              "title": "Wing Wednesday",
+              "description": "69\u00a2 wings all day \u2014 regular, boneless, or cauliflower. $10.99 all beers on tap. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "brewhouse-thu-pasta",
+              "title": "Pasta Thursday",
+              "description": "$12.99 pasta dishes. 50% more wine (9oz for 6oz price). $2 off Stella Artois tankards. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "brewhouse-fri-prime-rib",
+              "title": "Fired Up Friday",
+              "description": "Prime rib with sides \u2014 $22.99 (8oz) or $26.99 (12oz). $1 off Coors Light tankards, $5.99 White Claw cans, $23.99 White Claw buckets. Dine-in only.",
+              "type": "both",
               "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "brewhouse-sat-ribeye",
+              "title": "Ribeye Saturday",
+              "description": "Ribeye & shrimp with sides \u2014 $27.99 (12oz) or $36.99 (20oz). 4pm\u2013close. $1.50 off Blue Moon tankards, $4.99 Jager shots. $1 off Caesars open\u20132pm. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 6,
               "startHour": 16,
-              "endHour": 19,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "brewhouse-sun-pizza",
+              "title": "Pizza Sunday",
+              "description": "$9.99 two-topping 8\" pizza. $49.99 16\" pizza + 2 wing orders. $1 off Bud/Bud Light tankards, $7.99 double highballs. $1 off Caesars open\u20132pm. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -299,19 +399,10 @@
           "website": "https://hudsonscanadaspub.com",
           "deals": [
             {
-              "id": "hudsons-wing-wednesday",
-              "title": "Half-Price Wings & $6 Draft",
-              "description": "50% off wings from 6PM to close. $6 draft. 904 2nd Ave S.",
-              "type": "both",
-              "dayOfWeek": 3,
-              "startHour": 18,
-              "lastVerified": "2025-11-22"
-            },
-            {
               "id": "hudsons-happy-hour",
-              "title": "$5 Hi-Balls & Draft",
-              "description": "2-6PM weekdays: $5 hi-balls, $5 draft, $6 wine. Dine-in only.",
-              "type": "drink",
+              "title": "Happy Hour",
+              "description": "Mon-Fri 2-6pm: food from $5, drinks from $5. 904 2nd Ave S.",
+              "type": "both",
               "daysOfWeek": [
                 1,
                 2,
@@ -321,7 +412,80 @@
               ],
               "startHour": 14,
               "endHour": 18,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "hudsons-late-night",
+              "title": "Late Night Happy Hour",
+              "description": "Daily 9pm-late: same happy hour menu. 904 2nd Ave S.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 21,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "hudsons-all-day-thursday",
+              "title": "All Day Happy Hour & $5 Smash Burger",
+              "description": "All day happy hour Thursday. $5 Student Smash Burger 7pm-midnight. 904 2nd Ave S.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "hudsons-maritime-monday",
+              "title": "Maritime Mondays",
+              "description": "$12 Coconut Shrimp, $14.99 Fish & Chips, $6.75 Keith's. 6pm-close. 904 2nd Ave S.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "startHour": 18,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "hudsons-taps-tenders-tuesday",
+              "title": "Taps & Tenders",
+              "description": "$6 Rotating Taps, $7 Chicken Tenders. 6pm-close. 904 2nd Ave S.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "startHour": 18,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "hudsons-wing-wednesday",
+              "title": "Wing Wednesday",
+              "description": "50% off wings, $6 House Draft. Open to close. 904 2nd Ave S.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "hudsons-steak-sip-weekend",
+              "title": "Steak & Sip",
+              "description": "$32 Prairie Top Sirloin with wine or draft, $2 off Signature Cocktails. Fri-Sat 6-9pm. 904 2nd Ave S.",
+              "type": "both",
+              "daysOfWeek": [
+                5,
+                6
+              ],
+              "startHour": 18,
+              "endHour": 21,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "hudsons-tailgate-sunday",
+              "title": "Tailgate Sundays",
+              "description": "$6 Caesars, $10 Breakfast, $10 Tankards, $12 Wings. Open-9pm. 904 2nd Ave S.",
+              "type": "both",
+              "dayOfWeek": 0,
+              "endHour": 21,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -346,7 +510,7 @@
                 5,
                 6
               ],
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "moxies-wine-wednesday",
@@ -354,7 +518,7 @@
               "description": "Half-price wine bottles all day. Dine-in only.",
               "type": "drink",
               "dayOfWeek": 3,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -381,12 +545,12 @@
               ],
               "startHour": 14,
               "endHour": 17,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "mikes-happiest-hours-late",
               "title": "$5 Late Night Bites",
-              "description": "Daily 8PM-close: Same happy hour menu. Dine-in only.",
+              "description": "Daily 9PM-close: Same happy hour menu. Dine-in only.",
               "type": "both",
               "daysOfWeek": [
                 0,
@@ -397,8 +561,8 @@
                 5,
                 6
               ],
-              "startHour": 20,
-              "lastVerified": "2025-11-22"
+              "startHour": 21,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -438,7 +602,7 @@
             {
               "id": "duke-wing-wednesday",
               "title": "Wing Wednesday",
-              "description": "79¢/wing after 2pm with beverage purchase. 10 wings/order. $5.75-$6.25 drafts. Dine-in only.",
+              "description": "79\u00a2/wing after 2pm with beverage purchase. 10 wings/order. $5.75-$6.25 drafts. Dine-in only.",
               "type": "both",
               "dayOfWeek": 3,
               "startHour": 14,
@@ -446,8 +610,8 @@
             },
             {
               "id": "duke-thursday",
-              "title": "30¢ Perogies",
-              "description": "30¢ perogies (10/order). $4 Duke Lager (16oz), $5 vodka lemonade. Dine-in only.",
+              "title": "30\u00a2 Perogies",
+              "description": "30\u00a2 perogies (10/order). $4 Duke Lager (16oz), $5 vodka lemonade. Dine-in only.",
               "type": "both",
               "dayOfWeek": 4,
               "lastVerified": "2026-02-06"
@@ -479,21 +643,54 @@
           "deals": [
             {
               "id": "bar-one-taco-tue",
-              "title": "$4 Tacos & $5 Coronas",
-              "description": "$4 tacos from 4pm. $5.25 Coronas. Dine-in only.",
+              "title": "$4 Tacos & $5.25 Coronas",
+              "description": "$4 tacos (Chipotle Lime Chicken or Cajun Shrimp) and $5.25 Coronas from 4pm. Dine-in only. 421 Mayor Magrath Dr S.",
               "type": "both",
               "dayOfWeek": 2,
               "startHour": 16,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-wine-wed",
+              "title": "Wine Wednesday",
+              "description": "$1 off 8oz wine glasses, $5 off bottles (red, white, rosé). Dine-in only. 421 Mayor Magrath Dr S.",
+              "type": "drink",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-07"
             },
             {
               "id": "bar-one-wing-thu",
-              "title": "Half-Price Wings & $6 Draft",
-              "description": "50% off wings from 4pm. $6 house draft. Dine-in only.",
+              "title": "50% Off Wings & $6 Draft",
+              "description": "50% off wings (8 flavors) and $6 house draft from 4pm. Dine-in only. 421 Mayor Magrath Dr S.",
               "type": "both",
               "dayOfWeek": 4,
               "startHour": 16,
-              "lastVerified": "2025-11-21"
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-drinks-fri",
+              "title": "$7.50 Double Highballs & $6 Draft",
+              "description": "$7.50 double highballs (house liquor only) and $6 house draft (16oz). Dine-in only. 421 Mayor Magrath Dr S.",
+              "type": "drink",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-wing-sat",
+              "title": "50% Off Wings & $6 Draft",
+              "description": "50% off wings (8 flavors) and $6 house draft from 4pm. Dine-in only. 421 Mayor Magrath Dr S.",
+              "type": "both",
+              "dayOfWeek": 6,
+              "startHour": 16,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-caesar-sun",
+              "title": "$5 Caesars",
+              "description": "$5 Caesars all day. Double for +$4. Dine-in only. 421 Mayor Magrath Dr S.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-07"
             }
           ]
         },
@@ -510,7 +707,7 @@
               "description": "Unlimited $2 tacos every Tuesday (beef or veggie, crispy or soft). Dine-in or takeout. All Lethbridge locations: 13th St, Fairway Plaza, Park Place Mall.",
               "type": "food",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "taco-time-thursday",
@@ -518,7 +715,7 @@
               "description": "Buy one burrito, get 2nd half price on Thursdays. Dine-in or takeout. All Lethbridge locations.",
               "type": "food",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -592,7 +789,7 @@
               "description": "$3.50 per piece of fish OR $3.50 regular fries on Tuesday. In-store only. West: 550 University Dr W Unit 22, South: 3735 Mayor Magrath Dr S.",
               "type": "food",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "streats-taco-thursday",
@@ -600,7 +797,7 @@
               "description": "$4.20 tacos every Thursday. In-store only. Both locations.",
               "type": "food",
               "dayOfWeek": 4,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -614,10 +811,25 @@
             {
               "id": "steel-vines-tuesday",
               "title": "10% Off Meals",
-              "description": "10% off meals on Tuesday. Dine-in only. 332 5th St South. Hours: Thu-Sat 5pm-10pm.",
+              "description": "10% off meals on Tuesday. Dine-in only. 332 5th St South. Hours: Tue-Sat.",
               "type": "food",
               "dayOfWeek": 2,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "steel-vines-happy-hour",
+              "title": "Cocktail Happy Hour",
+              "description": "Glass pours on special daily until 6pm. Dine-in only. 332 5th St South. Hours: Tue-Sat.",
+              "type": "drink",
+              "daysOfWeek": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "endHour": 18,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -672,7 +884,7 @@
             {
               "id": "pops-fish-friday",
               "title": "$10.95 Fish & Chips",
-              "description": "$10.95 fish & chips. 99¢/oz house wine (5oz, 9oz, 32oz). $2 off bottles of domestic beer. Dine-in or takeout. Both locations.",
+              "description": "$10.95 fish & chips. 99\u00a2/oz house wine (5oz, 9oz, 32oz). $2 off bottles of domestic beer. Dine-in or takeout. Both locations.",
               "type": "both",
               "dayOfWeek": 5,
               "lastVerified": "2026-02-06"
@@ -762,25 +974,6 @@
           ]
         },
         {
-          "id": "ten-ten-pub",
-          "name": "Ten Ten Pub",
-          "type": "local",
-          "address": "1010 Mayor Magrath Dr S",
-          "deals": [
-            {
-              "id": "ten-ten-wings",
-              "title": "$9/lb Wings",
-              "description": "$9/lb wings Wednesday & Friday. Beverage purchase required. Dine-in only.",
-              "type": "food",
-              "daysOfWeek": [
-                3,
-                5
-              ],
-              "lastVerified": "2025-11-22"
-            }
-          ]
-        },
-        {
           "id": "water-tower",
           "name": "Water Tower Grill",
           "type": "local",
@@ -789,8 +982,8 @@
           "deals": [
             {
               "id": "water-tower-cocktail-hour",
-              "title": "20% Off Cocktails & Beer Daily 2-5pm",
-              "description": "20% off cocktails & beer daily 2-5pm. Dine-in only.",
+              "title": "20% Off Cocktails Daily 2-5pm",
+              "description": "20% off cocktails daily 2-5pm. Dine-in only.",
               "type": "drink",
               "daysOfWeek": [
                 0,
@@ -803,7 +996,7 @@
               ],
               "startHour": 14,
               "endHour": 17,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -828,7 +1021,7 @@
               ],
               "startHour": 15,
               "endHour": 17,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "keg-happy-hour-late-weekday",
@@ -843,7 +1036,7 @@
                 4
               ],
               "startHour": 21,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "keg-happy-hour-late-weekend",
@@ -855,7 +1048,7 @@
                 6
               ],
               "startHour": 22,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -867,63 +1060,17 @@
           "deals": [
             {
               "id": "dono-lunch-special",
-              "title": "$17.50-$20 Lunch Combos",
-              "description": "$17.50-$20 combo deals Mon-Fri 11am-2pm. Dine-in or takeout.",
+              "title": "~$20 Lunch Combos",
+              "description": "Lunch combos ~$20 Mon/Wed-Fri 11am-2pm. Closed Tuesdays. Dine-in or takeout.",
               "type": "food",
               "daysOfWeek": [
                 1,
-                2,
                 3,
                 4,
                 5
               ],
               "startHour": 11,
               "endHour": 14,
-              "lastVerified": "2025-11-22"
-            }
-          ]
-        },
-        {
-          "id": "two-guys-pizza",
-          "name": "Two Guys & A Pizza Place",
-          "type": "local",
-          "address": "316 11th St S",
-          "website": "https://twoguyspizza.ca",
-          "deals": [
-            {
-              "id": "two-guys-tuesday",
-              "title": "BOGO 50% Off Tacos",
-              "description": "BOGO 50% off takeout/delivery. 25% off taco items dine-in.",
-              "type": "both",
-              "dayOfWeek": 2,
-              "lastVerified": "2025-11-22"
-            },
-            {
-              "id": "two-guys-wednesday",
-              "title": "25% Off Wings",
-              "description": "25% off wings and hoppy beers 8pm-close. Beverage purchase required. Dine-in only.",
-              "type": "both",
-              "dayOfWeek": 3,
-              "startHour": 20,
-              "lastVerified": "2025-11-22"
-            },
-            {
-              "id": "two-guys-weekend",
-              "title": "25% Off Craft Beers",
-              "description": "Fri-Sat: 25% off Alberta craft beers, appy hour deals. Dine-in only.",
-              "type": "both",
-              "daysOfWeek": [
-                5,
-                6
-              ],
-              "lastVerified": "2025-11-22"
-            },
-            {
-              "id": "two-guys-sunday",
-              "title": "25% Off Calzones & $4 Beers",
-              "description": "25% off calzones, $4 paper bag beers. Dine-in or takeout.",
-              "type": "both",
-              "dayOfWeek": 0,
               "lastVerified": "2025-11-22"
             }
           ]
@@ -978,7 +1125,7 @@
             {
               "id": "kingsmen-thursday",
               "title": "$5 Off Cocktails & Mussels",
-              "description": "$5 off cocktails & mussels. 95¢/oz house wine. Dine-in only.",
+              "description": "$5 off cocktails & mussels. 95\u00a2/oz house wine. Dine-in only.",
               "type": "both",
               "dayOfWeek": 4,
               "lastVerified": "2026-02-06"
@@ -1019,21 +1166,21 @@
             {
               "id": "holiday-bowl-pizza-tuesday",
               "title": "Half-Price Large Pizzas",
-              "description": "Half price large pizzas 6pm-10pm. Dine-in only.",
+              "description": "All large pizzas half price 6pm-10pm. Dine-in or take-out.",
               "type": "food",
               "dayOfWeek": 2,
               "startHour": 18,
               "endHour": 22,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "holiday-bowl-sunday",
-              "title": "$7 Pizza & $7 Beer Jugs",
-              "description": "$7 for 2-topping 8\" pizza, $7 for 32oz mini jug of Moosehead. After 7pm. Dine-in only.",
+              "title": "Sunday Sevens",
+              "description": "$7 for any 2-topping 8\" pizza, $7 for 32oz mini jug of Moosehead. Also $7 for 2 games of bowling (shoe rental not included). After 7pm.",
               "type": "both",
               "dayOfWeek": 0,
               "startHour": 19,
-              "lastVerified": "2025-11-22"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -1050,7 +1197,7 @@
               "description": "Buy one float, get one free on Monday.",
               "type": "food",
               "dayOfWeek": 1,
-              "lastVerified": "2025-12-02"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "marble-slab-tuesday",
@@ -1058,7 +1205,7 @@
               "description": "$5 ice cream sandwich on Tuesday.",
               "type": "food",
               "dayOfWeek": 2,
-              "lastVerified": "2025-12-02"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "marble-slab-wednesday",
@@ -1066,7 +1213,7 @@
               "description": "Buy one small cone or cup, get one for $2 on Wednesday.",
               "type": "food",
               "dayOfWeek": 3,
-              "lastVerified": "2025-12-02"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "marble-slab-thursday",
@@ -1074,7 +1221,7 @@
               "description": "15% off crumble on Thursday.",
               "type": "food",
               "dayOfWeek": 4,
-              "lastVerified": "2025-12-02"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "marble-slab-friday",
@@ -1082,7 +1229,7 @@
               "description": "Buy one pre-packed half litre of ice cream, get one 50% off on Friday.",
               "type": "food",
               "dayOfWeek": 5,
-              "lastVerified": "2025-12-02"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "marble-slab-saturday",
@@ -1090,7 +1237,7 @@
               "description": "Buy one pack of gummies, get one 50% off on Saturday.",
               "type": "food",
               "dayOfWeek": 6,
-              "lastVerified": "2025-12-02"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "marble-slab-sunday",
@@ -1098,7 +1245,7 @@
               "description": "$7.49 milkshake on Sunday.",
               "type": "food",
               "dayOfWeek": 0,
-              "lastVerified": "2025-12-02"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -1114,7 +1261,7 @@
               "description": "25% off donuts on Monday. 2025 Mayor Magrath Dr S.",
               "type": "food",
               "dayOfWeek": 1,
-              "lastVerified": "2025-12-14"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "wow-eats-tuesday",
@@ -1122,7 +1269,7 @@
               "description": "25% off chicken on Tuesday. 2025 Mayor Magrath Dr S.",
               "type": "food",
               "dayOfWeek": 2,
-              "lastVerified": "2025-12-14"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "wow-eats-wednesday",
@@ -1130,7 +1277,7 @@
               "description": "25% off burgers on Wednesday. 2025 Mayor Magrath Dr S.",
               "type": "food",
               "dayOfWeek": 3,
-              "lastVerified": "2025-12-14"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "wow-eats-thursday",
@@ -1138,7 +1285,7 @@
               "description": "25% off Korean rice bowls on Thursday. 2025 Mayor Magrath Dr S.",
               "type": "food",
               "dayOfWeek": 4,
-              "lastVerified": "2025-12-14"
+              "lastVerified": "2026-02-06"
             },
             {
               "id": "wow-eats-friday",
@@ -1146,7 +1293,83 @@
               "description": "25% off katsu on Friday. 2025 Mayor Magrath Dr S.",
               "type": "food",
               "dayOfWeek": 5,
-              "lastVerified": "2025-12-14"
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "sisters-pub",
+          "name": "Sisters Pub & Grill",
+          "type": "local",
+          "address": "814 2 Ave S",
+          "website": "https://sisterspubandgrill.com",
+          "deals": [
+            {
+              "id": "sisters-monday",
+              "title": "$7 Draft Pints & 25% Off Appies",
+              "description": "$7 draft pints all day. 25% off appies 4pm-close. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "sisters-tuesday",
+              "title": "$7 Craft Tall Boys & Ribs",
+              "description": "$7 craft tall boys and bone-in ribs. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "sisters-wednesday",
+              "title": "$7 Coors Pints & Half-Price Wings",
+              "description": "$7 Coors Banquet pints. Half-price wings from 4pm. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "startHour": 16,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "sisters-thursday",
+              "title": "Half-Price Wine & 25% Off Appies",
+              "description": "Half-price wine bottles, $7 Bud Light pints. 25% off appies 4pm-close. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "sisters-friday",
+              "title": "$25.50 Beer Buckets & $7 Pints",
+              "description": "$25.50 domestic beer buckets, $7 Bow River Amber pints. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "sisters-saturday",
+              "title": "Double Caesars & Steak Sandwich",
+              "description": "$11.25 double Caesars, $11.25 double highballs, $18.75 steak sandwich. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "sisters-happy-hour",
+              "title": "Daily Happy Hour",
+              "description": "Happy hour 2-5pm daily. Dine-in only.",
+              "type": "drink",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 14,
+              "endHour": 17,
+              "lastVerified": "2026-02-06"
             }
           ]
         }
@@ -1182,7 +1405,7 @@
             {
               "id": "hideout-wing-wednesday",
               "title": "Wing Night",
-              "description": "99¢ wings (11 flavours, minimum 10 wings). Dine-in only.",
+              "description": "99\u00a2 wings (11 flavours, minimum 10 wings). Dine-in only.",
               "type": "food",
               "dayOfWeek": 3,
               "lastVerified": "2025-12-16"
@@ -1266,7 +1489,7 @@
             {
               "id": "bos-wing-wednesday",
               "title": "Wing Night",
-              "description": "30¢/wing (minimum 10 wings). CHEAPEST wings in Red Deer. Dine-in only.",
+              "description": "30\u00a2/wing (minimum 10 wings). CHEAPEST wings in Red Deer. Dine-in only.",
               "type": "food",
               "dayOfWeek": 3,
               "lastVerified": "2025-12-16"
@@ -1319,7 +1542,6 @@
           "name": "Occam's Razor",
           "type": "local",
           "address": "105-4916 50 Street",
-          "website": "https://occamsrazor.ca/",
           "deals": [
             {
               "id": "occams-wing-thursday",
@@ -1355,39 +1577,71 @@
               "lastVerified": "2025-12-16"
             },
             {
-              "id": "cilantro-prime-rib-wednesday",
-              "title": "Prime Rib Night",
-              "description": "Slow roasted AAA Alberta Prime Rib after 4PM with fingerling potatoes, Yorkshire pudding, vegetables. Dine-in only.",
-              "type": "food",
+              "id": "cilantro-pub-night-wednesday",
+              "title": "Pub Night & Pints",
+              "description": "Pub Night & Pints after 4PM. Dine-in only.",
+              "type": "both",
               "dayOfWeek": 3,
               "startHour": 16,
-              "lastVerified": "2025-12-16"
+              "lastVerified": "2026-02-06"
             },
             {
-              "id": "cilantro-yorkshire-thursday",
-              "title": "Stuffed Yorkshire Puddings",
-              "description": "3 Yorkshire puddings stuffed with AAA Alberta prime rib, horseradish aioli, au jus. Dine-in only.",
+              "id": "cilantro-fish-chips-thursday",
+              "title": "Fish & Chips",
+              "description": "Fish & Chips Thursday. Dine-in only.",
               "type": "food",
               "dayOfWeek": 4,
-              "lastVerified": "2025-12-16"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
         {
-          "id": "original-joes",
+          "id": "original-joes-rd",
           "name": "Original Joe's",
           "type": "chain",
           "address": "4720 51st Avenue",
           "website": "https://www.originaljoes.ca",
           "deals": [
             {
-              "id": "oj-half-price-wings-tue",
+              "id": "oj-margaritas-mon-rd",
+              "title": "$2 Off Margaritas",
+              "description": "$2 off margaritas all day Monday. Dine-in only. 4720 51st Ave.",
+              "type": "drink",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "oj-half-price-wings-tue-rd",
               "title": "Half-Price Wings",
-              "description": "50% off wings after 2PM. Dine-in or takeout.",
+              "description": "50% off wings after 2pm. Dine-in or takeout. 4720 51st Ave.",
               "type": "food",
               "dayOfWeek": 2,
               "startHour": 14,
-              "lastVerified": "2025-12-16"
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "oj-half-price-wine-thu-rd",
+              "title": "Half-Price Wine Bottles",
+              "description": "Half-price wine bottles all day Thursday. Dine-in only. 4720 51st Ave.",
+              "type": "drink",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "oj-sangria-sat-rd",
+              "title": "$2 Off Sangria",
+              "description": "$2 off sangria all day Saturday. Dine-in only. 4720 51st Ave.",
+              "type": "drink",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "oj-caesar-sun-rd",
+              "title": "$1 Off Caesars",
+              "description": "$1 off Caesars all day Sunday. Dine-in only. 4720 51st Ave.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -1400,8 +1654,8 @@
           "deals": [
             {
               "id": "brewhouse-wing-wednesday-rd",
-              "title": "69¢ Wing Wednesday",
-              "description": "69¢ wings all day Wednesday. Dine-in only.",
+              "title": "69\u00a2 Wing Wednesday",
+              "description": "69\u00a2 wings all day Wednesday. Dine-in only.",
               "type": "food",
               "dayOfWeek": 3,
               "lastVerified": "2025-12-16"
@@ -1462,17 +1716,67 @@
           "id": "state-and-main-rd",
           "name": "State & Main",
           "type": "chain",
-          "address": "3020 22nd Street",
+          "address": "3020 22nd Street & 6702 Golden West Ave",
           "website": "https://stateandmain.ca",
           "deals": [
             {
+              "id": "state-monday-rd",
+              "title": "$2 Off Margaritas & $1 Off Corona Draft",
+              "description": "$2 off Tommy's or Spicy Honey Margarita (2oz). Corona draft (50cl) $1 off. Dine-in only. Both locations.",
+              "type": "drink",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "state-tuesday-rd",
+              "title": "$1 Off Banded Peak Draft",
+              "description": "Banded Peak Southern Aspect IPA (16oz) or seasonal draft (16oz) $1 off. Dine-in only. Both locations.",
+              "type": "drink",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-07"
+            },
+            {
               "id": "state-wing-wednesday-rd",
-              "title": "Half-Price Wings",
-              "description": "Half-price wings OR 49¢/wing after 2PM. Dine-in only.",
-              "type": "food",
+              "title": "Half-Price Wings & $1 Off Draft",
+              "description": "Half-price wings (1lb, 6 flavours) after 2pm. Lawn Mower Yard Lager draft (16oz) $1 off all day. Dine-in only. Both locations.",
+              "type": "both",
               "dayOfWeek": 3,
               "startHour": 14,
-              "lastVerified": "2025-12-16"
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "state-wine-thursday-rd",
+              "title": "Wine Deals",
+              "description": "Wine by the glass $1 off (5oz/8oz). Wine by the bottle half price. By-the-bottle-only wines 25% off. Dine-in only. Both locations.",
+              "type": "drink",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "state-sangria-saturday-rd",
+              "title": "$2 Off White Sangria",
+              "description": "$2 off White Sangria (3.5oz). Dine-in only. Both locations.",
+              "type": "drink",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "state-sunday-rd",
+              "title": "$2 Off Signature Caesar & $1 Off Radler",
+              "description": "$2 off Signature Caesar (vodka or gin, 2oz). Churchill Radler draft (16oz) $1 off. Dine-in only. Both locations.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "state-happy-hour-rd",
+              "title": "Happy Hour",
+              "description": "Daily 2-5pm & 9pm-close. Food from $7.50 (fish taco, truffle fries, dumplings, calamari). Drinks from $6 (house wine, draft $7, cocktails from $11). Dine-in only. Both locations.",
+              "type": "both",
+              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "startHour": 14,
+              "endHour": 17,
+              "lastVerified": "2026-02-07"
             }
           ]
         },
@@ -1493,8 +1797,8 @@
             },
             {
               "id": "bp-pasta-tuesday-rd",
-              "title": "Pasta From $10.99",
-              "description": "Pasta specials starting at $10.99 all day. Dine-in only. Both locations.",
+              "title": "Pasta From $11.99",
+              "description": "Pasta specials starting at $11.99 all day. Dine-in only. Both locations.",
               "type": "food",
               "dayOfWeek": 2,
               "lastVerified": "2025-12-16"
@@ -1502,7 +1806,7 @@
             {
               "id": "bp-wing-wednesday-rd",
               "title": "Wing Wednesday",
-              "description": "Wing Wednesday — pricing varies by location. Dine-in only. Both locations.",
+              "description": "Wing Wednesday \u2014 pricing varies by location. Dine-in only. Both locations.",
               "type": "food",
               "dayOfWeek": 3,
               "lastVerified": "2025-12-16"
@@ -1522,6 +1826,22 @@
               "type": "food",
               "dayOfWeek": 5,
               "lastVerified": "2025-12-16"
+            },
+            {
+              "id": "bp-bandera-saturday-rd",
+              "title": "$3 Off Bandera Bread",
+              "description": "$3 off Bandera Bread all day Saturday. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-burger-sunday-rd",
+              "title": "$2 Off Boston-Sized Burgers",
+              "description": "$2 off Boston-Sized Burgers all day Sunday. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -1750,7 +2070,13 @@
               "title": "Apps From $10",
               "description": "Mon-Fri 3-5pm: $10 garlic toast, $15 tuna tartare, $15 wings, $20 burger, $24 prime rib sandwich. 6365 50 Ave.",
               "type": "both",
-              "daysOfWeek": [1, 2, 3, 4, 5],
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
               "startHour": 15,
               "endHour": 17,
               "lastVerified": "2025-12-16"
@@ -1760,7 +2086,13 @@
               "title": "Late Night Bites From $10",
               "description": "Sun-Thu 9pm-close: Same happy hour menu from $10.",
               "type": "both",
-              "daysOfWeek": [0, 1, 2, 3, 4],
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
               "startHour": 21,
               "lastVerified": "2025-12-16"
             },
@@ -1769,7 +2101,10 @@
               "title": "Late Night Bites From $10",
               "description": "Fri-Sat 10pm-close: Same happy hour menu from $10.",
               "type": "both",
-              "daysOfWeek": [5, 6],
+              "daysOfWeek": [
+                5,
+                6
+              ],
               "startHour": 22,
               "lastVerified": "2025-12-16"
             }
@@ -1787,7 +2122,15 @@
               "title": "$5 Drinks & $10 Cocktails",
               "description": "2-5PM & 9PM-close daily. Drinks: highballs/beer/wine from $5, $6 Absolut Sippin' Sodas, $10 cocktails (Smoked Old Fashioned, Espresso Martini, Mojito, Moxies Mule), half-price select wine bottles. Food: $17 shareables, $19 Bacon Cheeseburger & Fries, $27 Steak Frites. 2828 Gaetz Ave.",
               "type": "both",
-              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
               "lastVerified": "2025-12-16"
             },
             {
@@ -1812,7 +2155,15 @@
               "title": "$5 Bites & Drinks",
               "description": "Daily 2-5PM: Bites from $5 (fries, bruschetta, sliders, shrimp, steak frites). Drinks: wine $5, draft $7, highballs $5. 6701 Gaetz Ave.",
               "type": "both",
-              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
               "startHour": 14,
               "endHour": 17,
               "lastVerified": "2025-12-16"
@@ -1820,39 +2171,84 @@
             {
               "id": "mikes-happiest-hours-late-rd",
               "title": "$5 Late Night Bites",
-              "description": "Daily 8PM-close: Same happy hour menu. Dine-in only.",
+              "description": "Daily 9PM-close: Same happy hour menu. Dine-in only.",
               "type": "both",
-              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
-              "startHour": 20,
-              "lastVerified": "2025-12-16"
-            }
-          ]
-        },
-        {
-          "id": "hudsons-rd",
-          "name": "Hudsons Canada's Pub",
-          "type": "chain",
-          "address": "4900 50 St",
-          "website": "https://hudsonscanadaspub.com",
-          "deals": [
-            {
-              "id": "hudsons-wing-wednesday-rd",
-              "title": "Half-Price Wings & $6 Draft",
-              "description": "50% off wings from 6PM to close. $6 draft. 4900 50 St.",
-              "type": "both",
-              "dayOfWeek": 3,
-              "startHour": 18,
-              "lastVerified": "2025-12-16"
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 21,
+              "lastVerified": "2026-02-06"
             },
             {
-              "id": "hudsons-happy-hour-rd",
-              "title": "$5 Hi-Balls & Draft",
-              "description": "2-6PM weekdays: $5 hi-balls, $5 draft, $6 wine. Dine-in only.",
+              "id": "mikes-sun-drinks-rd",
+              "title": "Sunday Caesars & Mimosas",
+              "description": "Bacon & Spiked Caesars $8, mimosas $5 (until 2pm), Molson Canadian bottles $6. 6701 Gaetz Ave.",
               "type": "drink",
-              "daysOfWeek": [1, 2, 3, 4, 5],
-              "startHour": 14,
-              "endHour": 18,
-              "lastVerified": "2025-12-16"
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-mon-drinks-rd",
+              "title": "$9 Margaritas",
+              "description": "Margarita or Coconut Margarita $9 all day Monday. 6701 Gaetz Ave.",
+              "type": "drink",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-tue-drinks-rd",
+              "title": "$5 Miller/Coors & $8 Cocktails",
+              "description": "Miller Lite & Coors Light $5, all classic cocktails $8. 6701 Gaetz Ave.",
+              "type": "drink",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-wed-drinks-rd",
+              "title": "Wine Wednesday",
+              "description": "$5 off half-litre, $10 off bottle (750ml). 6701 Gaetz Ave.",
+              "type": "drink",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-thu-drinks-rd",
+              "title": "$7 Draft Thursday",
+              "description": "All-day draft beer 550ml $7 (Molson Canadian, Coors Light, Blue Moon). 6701 Gaetz Ave.",
+              "type": "drink",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-fri-sat-drinks-rd",
+              "title": "$5 Jameson & Fireball Shots",
+              "description": "Jameson & Fireball shots $5 Friday & Saturday. 6701 Gaetz Ave.",
+              "type": "drink",
+              "daysOfWeek": [5, 6],
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-sat-mimosas-rd",
+              "title": "Weekend Mimosas $5",
+              "description": "Mimosas $5 (3oz) until 2pm Saturday. 6701 Gaetz Ave.",
+              "type": "drink",
+              "dayOfWeek": 6,
+              "endHour": 14,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "mikes-sat-madri-rd",
+              "title": "$1 Off Madri Excepcional",
+              "description": "Madri Excepcional $1 off (450ml or 473ml tall can) all day Saturday. 6701 Gaetz Ave.",
+              "type": "drink",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-07"
             }
           ]
         },
@@ -1866,10 +2262,10 @@
             {
               "id": "mary-browns-monday-rd",
               "title": "Big Mary Monday",
-              "description": "Big Mary $3.99. 6858 50 Ave, Suite 2.",
+              "description": "Big Mary $4.99. 6858 50 Ave, Suite 2.",
               "type": "food",
               "dayOfWeek": 1,
-              "lastVerified": "2025-12-16"
+              "lastVerified": "2026-02-06"
             }
           ]
         },
@@ -1901,7 +2297,15 @@
               "title": "Happy Hour",
               "description": "Daily 4-7pm drink specials. Dine-in only.",
               "type": "drink",
-              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
               "startHour": 16,
               "endHour": 19,
               "lastVerified": "2025-12-16"
@@ -1919,7 +2323,14 @@
               "title": "$12 Lunch Special",
               "description": "$12 lunch special with curries, naan, salad, sauces. Tue-Sat 11am-11pm, Sun 12-11pm, closed Mon.",
               "type": "food",
-              "daysOfWeek": [0, 2, 3, 4, 5, 6],
+              "daysOfWeek": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
               "lastVerified": "2025-12-16"
             }
           ]
@@ -1936,10 +2347,958 @@
               "title": "Lunch Buffet",
               "description": "Daily lunch buffet 11am-2pm with multiple curries, naan, desserts. 130-3 Ironside St.",
               "type": "food",
-              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
               "startHour": 11,
               "endHour": 14,
               "lastVerified": "2025-12-16"
+            }
+          ]
+        },
+        {
+          "id": "blowers-grafton-rd",
+          "name": "Blowers & Grafton",
+          "type": "chain",
+          "address": "2079 50 Ave",
+          "website": "https://blowersgrafton.com/red-deer/",
+          "deals": [
+            {
+              "id": "bg-monday-rd",
+              "title": "$5 Off Pizza & $1 Off Lager",
+              "description": "$5 off any pizza, $1 off Grafton Street Lager (14oz). Dine-in only. 2079 50 Ave.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bg-music-bingo-rd",
+              "title": "Music Bingo: $4 Hi-Balls & Beer",
+              "description": "Monday Music Bingo night with $4 hi-balls and beer. Dine-in only. 2079 50 Ave.",
+              "type": "drink",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bg-tuesday-rd",
+              "title": "$4 Off Fish & Chips",
+              "description": "$4 off Fish & Chips, $1 off Grafton Street Amber (14oz). Dine-in only. 2079 50 Ave.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bg-wednesday-rd",
+              "title": "$2 Off Cocktails & Donair",
+              "description": "$2 off all cocktails, $2 off OG Halifax Donair (regular). Dine-in only. 2079 50 Ave.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bg-thursday-rd",
+              "title": "$2.50 Oysters & Half-Price Wine",
+              "description": "Oysters $2.50 each or $15 half-dozen. 50% off wine bottles. Dine-in only. 2079 50 Ave.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bg-sunday-rd",
+              "title": "$2 Off Caesars, Garlic Fingers & Nachos",
+              "description": "$2 off all Caesars (1oz), $2 off Selfie Garlic Fingers, $3 off Selfie Nachos. Dine-in only. 2079 50 Ave.",
+              "type": "both",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bg-hali-hour-rd",
+              "title": "Hali Hour",
+              "description": "Food from $5, drinks from $5. Daily 2-5pm & 9pm-close. Dine-in only. 2079 50 Ave.",
+              "type": "both",
+              "daysOfWeek": [0, 1, 2, 3, 4, 5, 6],
+              "lastVerified": "2026-02-07"
+            }
+          ]
+        }
+      ]
+    },
+    "medicine-hat": {
+      "name": "Medicine Hat",
+      "province": "AB",
+      "restaurants": [
+        {
+          "id": "boston-pizza-mh",
+          "name": "Boston Pizza",
+          "type": "chain",
+          "address": "500-1751 Strachan Rd SE & 2500 Box Springs Blvd NW",
+          "website": "https://bostonpizza.com",
+          "deals": [
+            {
+              "id": "bp-pizza-monday-mh",
+              "title": "$10 Individual Pizzas",
+              "description": "$10 individual pizzas all day. Dine-in only. Strachan: 500-1751 Strachan Rd SE, Box Springs: 2500 Box Springs Blvd NW.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-pasta-tuesday-mh",
+              "title": "Pasta From $11.99",
+              "description": "Pasta starting at $11.99 all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-wing-wednesday-mh",
+              "title": "50% Off Starter Wings",
+              "description": "50% off starter wings all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-appy-thursday-mh",
+              "title": "Buy 2 Apps, Get 3rd Free",
+              "description": "Buy 2 appetizers, get 3rd free all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-cactus-friday-mh",
+              "title": "$2 Off Cactus Cut Potatoes",
+              "description": "$2 off Cactus Cut Potatoes all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-bandera-saturday-mh",
+              "title": "$3 Off Bandera Bread",
+              "description": "$3 off Bandera Bread all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-burger-sunday-mh",
+              "title": "$2 Off Boston-Sized Burgers",
+              "description": "$2 off Boston-Sized Burgers all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-appy-hour-weekday-mh",
+              "title": "Appy Hour",
+              "description": "Drinks & apps from $4. Mon-Thu 2-5pm & 9pm-close. Dine-in only.",
+              "type": "both",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "startHour": 14,
+              "endHour": 17,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-appy-hour-weekend-mh",
+              "title": "Appy Hour",
+              "description": "Drinks & apps from $4. Fri-Sun 9pm-close. Dine-in only.",
+              "type": "both",
+              "daysOfWeek": [
+                5,
+                6,
+                0
+              ],
+              "startHour": 21,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "bar-one-mh",
+          "name": "Bar One",
+          "type": "chain",
+          "address": "1-35 Paul Stober Dr SE",
+          "website": "https://baronecanada.com",
+          "deals": [
+            {
+              "id": "bar-one-tacos-tue-mh",
+              "title": "$4 Tacos & $5.25 Coronas",
+              "description": "$4 tacos (Chipotle Lime Chicken or Cajun Shrimp) and $5.25 Coronas from 4pm. Dine-in only. 1-35 Paul Stober Dr SE.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "startHour": 16,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-wine-wed-mh",
+              "title": "Wine Wednesday",
+              "description": "$1 off 8oz wine glasses, $5 off bottles (red, white, rosé). Dine-in only. 1-35 Paul Stober Dr SE.",
+              "type": "drink",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-wings-thu-mh",
+              "title": "50% Off Wings & $6 House Draft",
+              "description": "50% off wings (8 flavors) and $6 house draft from 4pm. Dine-in only. 1-35 Paul Stober Dr SE.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "startHour": 16,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-drinks-fri-mh",
+              "title": "$7.50 Double Highballs & $6 Draft",
+              "description": "$7.50 double highballs (house liquor only) and $6 house draft (16oz). Dine-in only. 1-35 Paul Stober Dr SE.",
+              "type": "drink",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-wing-sat-mh",
+              "title": "50% Off Wings & $6 Draft",
+              "description": "50% off wings (8 flavors) and $6 house draft from 4pm. Dine-in only. 1-35 Paul Stober Dr SE.",
+              "type": "both",
+              "dayOfWeek": 6,
+              "startHour": 16,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-caesar-sun-mh",
+              "title": "$5 Caesars",
+              "description": "$5 Caesars all day. Double for +$4. Dine-in only. 1-35 Paul Stober Dr SE.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-07"
+            }
+          ]
+        },
+        {
+          "id": "dayz-off-pub-mh",
+          "name": "Dayz Off Pub",
+          "type": "local",
+          "address": "640 Kingsway Ave SE",
+          "website": "https://www.dayzoffpub.com",
+          "deals": [
+            {
+              "id": "dayz-wings-mon-mh",
+              "title": "Wings & Bottles Monday",
+              "description": "Wings $8.95/lb + $4.75 domestic bottles after 2pm. 640 Kingsway Ave SE.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "startHour": 14,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "dayz-burger-tue-mh",
+              "title": "Burger & Pint Tuesday",
+              "description": "Cheeseburger & pint $13.75 + $4.50 domestic highballs after 2pm. 640 Kingsway Ave SE.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "startHour": 14,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "dayz-wings-wed-mh",
+              "title": "Wing Wednesday",
+              "description": "Wings $8.95/lb (25+ flavors) after 2pm. 640 Kingsway Ave SE.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "startHour": 14,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "dayz-steak-thu-mh",
+              "title": "Steak Sandwich & Wine Thursday",
+              "description": "Steak sandwich $9.95 + $5.50 wine or Caesar all day. 640 Kingsway Ave SE.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "dayz-fish-fri-mh",
+              "title": "Fish & Chips Friday",
+              "description": "Fish & chips + 5 beer bucket $20.95 all day. 640 Kingsway Ave SE.",
+              "type": "both",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "dayz-breakfast-weekend-mh",
+              "title": "Weekend Breakfast",
+              "description": "Hot breakfast 11am-3pm Saturday & Sunday. 640 Kingsway Ave SE.",
+              "type": "food",
+              "daysOfWeek": [
+                6,
+                0
+              ],
+              "startHour": 11,
+              "endHour": 15,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "moxies-mh",
+          "name": "Moxies",
+          "type": "chain",
+          "address": "3090 Dunmore Rd",
+          "website": "https://moxies.com",
+          "deals": [
+            {
+              "id": "moxies-happy-hour-mh",
+              "title": "$5 Drinks & $10 Cocktails",
+              "description": "2-5pm & 9pm-close daily. Drinks: highballs/beer/wine from $5, $10 cocktails (Smoked Old Fashioned, Espresso Martini, Mojito, Moxies Mule), half-price select wine bottles. Food: $17 shareables, $19 Bacon Cheeseburger & Fries, $27 Steak Frites. 3090 Dunmore Rd.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "earls-mh",
+          "name": "Earls Kitchen + Bar",
+          "type": "chain",
+          "address": "3215 Dunmore Rd SE",
+          "website": "https://earls.ca",
+          "deals": [
+            {
+              "id": "earls-mon-mh",
+              "title": "Monday — Margaritas & Corona",
+              "description": "$5 off all margaritas, $2 off Corona Draft. 3215 Dunmore Rd SE.",
+              "type": "drink",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "earls-tue-mh",
+              "title": "Tuesday — Half-Off Wine Bottles",
+              "description": "Half-off all bottles of wine. 3215 Dunmore Rd SE.",
+              "type": "drink",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "earls-wed-mh",
+              "title": "Wednesday — Wings & Rhino Draft",
+              "description": "$5 off wings, $3 off Rhino Draft. 3pm until close. 3215 Dunmore Rd SE.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "startHour": 15,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "earls-thu-sat-mh",
+              "title": "Half-Off Nitro Espresso Martini",
+              "description": "Half-off Nitro Espresso Martini. Thu-Sat. 3215 Dunmore Rd SE.",
+              "type": "drink",
+              "daysOfWeek": [
+                4,
+                5,
+                6
+              ],
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "mucho-burrito-mh",
+          "name": "Mucho Burrito",
+          "type": "chain",
+          "address": "1941 Strachan Rd SE",
+          "website": "https://muchoburrito.com",
+          "deals": [
+            {
+              "id": "mucho-twofer-tue-mh",
+              "title": "Two-for Tuesday",
+              "description": "2 small burritos + 2 chips & salsa + 2 drinks for $22.95. 1941 Strachan Rd SE.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "rosscos-mh",
+          "name": "Rossco's Wing House",
+          "type": "local",
+          "address": "115-3215 Dunmore Rd SE",
+          "website": "https://www.rosscospub.ca",
+          "deals": [
+            {
+              "id": "rosscos-happy-hour-mh",
+              "title": "Happy Hour",
+              "description": "Tue-Sat 3-6pm. Apps $10, domestic draft pints $4.95, 1oz highballs $4.95, Caesars/Paralyzers/Long Islands $5.25, Rossco's Lager pints $4.25. 115-3215 Dunmore Rd SE.",
+              "type": "both",
+              "daysOfWeek": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 15,
+              "endHour": 18,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "rosscos-tue-mh",
+              "title": "Tuesday Specials",
+              "description": "Fettuccine Alfredo $12.95. Domestic bottled beer $5.75. 115-3215 Dunmore Rd SE.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "rosscos-wed-mh",
+              "title": "Wing Wednesday",
+              "description": "95¢ wings dine-in or take-out. Homemade chicken bites 1lb $15.95. Selected pints $5.95. 115-3215 Dunmore Rd SE.",
+              "type": "both",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "rosscos-thu-mh",
+              "title": "Thursday Specials",
+              "description": "All in-house beef & chicken burgers $15.95 with choice of side. 2oz bar highballs $8.95, Miller Lite pints $5.95. 115-3215 Dunmore Rd SE.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "rosscos-fri-mh",
+              "title": "Friday Specials",
+              "description": "8oz fish & chips with coleslaw $15.95. Steak sandwich $16.95. Select draft schooners $12.95, select wines $6.95. 115-3215 Dunmore Rd SE.",
+              "type": "both",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "rosscos-sat-mh",
+              "title": "Saturday Specials",
+              "description": "95¢ wings dine-in or take-out. Chicken bites 1lb $15.95. Brunch 11:30am-2:30pm. Select draft schooners $12.95, sangria $6.95. 115-3215 Dunmore Rd SE.",
+              "type": "both",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "rosscos-sun-mh",
+              "title": "Sunday Specials",
+              "description": "Caesar salad $12.00. Brunch 11:30am-2:30pm. All draft pints $5.95, Caesars/Long Islands/Paralyzers $5.95. 115-3215 Dunmore Rd SE.",
+              "type": "both",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "rosscos-lunch-mh",
+              "title": "Lunch Specials",
+              "description": "Tue-Fri 11:30am-2pm. Soup & sandwich $9.75, cheeseburger & fries $9.95. 115-3215 Dunmore Rd SE.",
+              "type": "food",
+              "daysOfWeek": [
+                2,
+                3,
+                4,
+                5
+              ],
+              "startHour": 11,
+              "endHour": 14,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "rosscos-jugs-mh",
+              "title": "Daily Jugs",
+              "description": "All day, every day. Rossco's Lager jugs $15, Coors Light/Canadian/Miller Lite jugs $17. 115-3215 Dunmore Rd SE.",
+              "type": "drink",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "local-public-mh",
+          "name": "LOCAL Public Eatery",
+          "type": "chain",
+          "address": "579 3rd St SE",
+          "website": "https://localpubliceatery.com",
+          "deals": [
+            {
+              "id": "local-happy-hour-mh",
+              "title": "Happy Hour",
+              "description": "Mon-Sat 2-5pm. Fish taco $6, pork tacos $10, perogies $10, fried chicken $13.50, nachos $15, wings $16, burger w/ fries $17. House lager $4.25, draft $5.25, rail highballs $5, wine $2 off, cocktails from $9. 579 3rd St SE.",
+              "type": "both",
+              "daysOfWeek": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 14,
+              "endHour": 17,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "local-late-night-mh",
+              "title": "Late Night Happy Hour",
+              "description": "Same happy hour menu. Sun-Thu 9pm-close, Fri-Sat 10pm-close. 579 3rd St SE.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "startHour": 21,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "local-late-night-fri-sat-mh",
+              "title": "Late Night Happy Hour (Fri-Sat)",
+              "description": "Same happy hour menu. Fri-Sat 10pm-close. 579 3rd St SE.",
+              "type": "both",
+              "daysOfWeek": [
+                5,
+                6
+              ],
+              "startHour": 22,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "elements-lounge-mh",
+          "name": "Elements Lounge",
+          "type": "local",
+          "address": "1051 Ross Glen Dr SE",
+          "website": "https://www.medhatlodge.com/elements-restaurant-bar/",
+          "deals": [
+            {
+              "id": "elements-happy-hour-mh",
+              "title": "Happy Hour",
+              "description": "$5.50 domestic beer, highballs, Cu Lager 16oz, house wine 6oz. Daily 2-6pm. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "drink",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 14,
+              "endHour": 18,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-late-night-mh",
+              "title": "Late Night Happy Hour",
+              "description": "$5.50 domestic beer, highballs, Cu Lager 16oz, house wine 6oz. Sun-Thu 9pm-close. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "drink",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "startHour": 21,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-mon-mh",
+              "title": "Monday Burger Special",
+              "description": "Burger special $12.99. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-tue-mh",
+              "title": "Tuesday Steak Sandwich",
+              "description": "Steak sandwich & fries $12.99. 6oz wine $6.25. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "both",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-wed-mh",
+              "title": "Wing Wednesday",
+              "description": "$0.50 wing special from 3pm. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "food",
+              "dayOfWeek": 3,
+              "startHour": 15,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-thu-mh",
+              "title": "Thursday — 3 Apps for $30",
+              "description": "Choose 3 appetizers for $30. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-fri-mh",
+              "title": "Friday Fish & Chips",
+              "description": "Fish & chips $12.99. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-sat-mh",
+              "title": "Saturday BBQ Ribs",
+              "description": "BBQ pork ribs + fries $19.99. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-sun-mh",
+              "title": "Caesar Sunday",
+              "description": "$5 Caesar Sunday. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "elements-tacos-mh",
+              "title": "All You Can Eat Tacos",
+              "description": "All you can eat tacos $17.99. Sol beer $6 or bucket of 5 for $30. Lime margarita $6. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        }
+      ]
+    },
+    "grande-prairie": {
+      "name": "Grande Prairie",
+      "province": "AB",
+      "restaurants": [
+        {
+          "id": "boston-pizza-gp",
+          "name": "Boston Pizza",
+          "type": "chain",
+          "address": "12117 100 St & 11250 Westgate Dr",
+          "website": "https://bostonpizza.com",
+          "deals": [
+            {
+              "id": "bp-pizza-monday-gp",
+              "title": "$10 Individual Pizzas",
+              "description": "$10 individual pizzas all day. Dine-in only. Downtown: 12117 100 St, Westgate: 11250 Westgate Dr.",
+              "type": "food",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-pasta-tuesday-gp",
+              "title": "Pasta From $11.99",
+              "description": "Pasta starting at $11.99 all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-wing-wednesday-gp",
+              "title": "50% Off Starter Wings",
+              "description": "50% off starter wings all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-appy-thursday-gp",
+              "title": "Buy 2 Apps, Get 3rd Free",
+              "description": "Buy 2 appetizers, get 3rd free all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-cactus-friday-gp",
+              "title": "$2 Off Cactus Cut Potatoes",
+              "description": "$2 off Cactus Cut Potatoes all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-bandera-saturday-gp",
+              "title": "$3 Off Bandera Bread",
+              "description": "$3 off Bandera Bread all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bp-burger-sunday-gp",
+              "title": "$2 Off Boston-Sized Burgers",
+              "description": "$2 off Boston-Sized Burgers all day. Dine-in only. Both locations.",
+              "type": "food",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "mr-mikes-gp",
+          "name": "MR MIKES",
+          "type": "chain",
+          "address": "10214 116 Ave",
+          "website": "https://mrmikes.ca",
+          "deals": [
+            {
+              "id": "mikes-happiest-hours-gp",
+              "title": "$5 Bites & Drinks",
+              "description": "Daily 2-5PM: Bites from $5 (fries, bruschetta, sliders, shrimp, steak frites). Drinks: wine $5, draft $7, highballs $5. 10214 116 Ave.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 14,
+              "endHour": 17,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-happiest-hours-late-gp",
+              "title": "$5 Late Night Bites",
+              "description": "Daily 9PM-close: Same happy hour menu. Dine-in only.",
+              "type": "both",
+              "daysOfWeek": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "startHour": 21,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-sun-gp",
+              "title": "Sunday Specials",
+              "description": "Bacon & Spiked Caesars $8, mimosas $5 (until 2pm), Molson Canadian bottles $6.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-mon-gp",
+              "title": "Monday Margaritas",
+              "description": "Margaritas and coconut margaritas $9 each.",
+              "type": "drink",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-tue-gp",
+              "title": "Tuesday Specials",
+              "description": "Miller Lite and Coors Light bottles $5, classic cocktails $8.",
+              "type": "drink",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-wed-gp",
+              "title": "Wine Wednesday",
+              "description": "$5 off half-litre wine bottles, $10 off 750ml bottles.",
+              "type": "drink",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-thu-gp",
+              "title": "Thursday Draft",
+              "description": "Draft beer 550ml $7 (Molson Canadian, Coors Light, Blue Moon).",
+              "type": "drink",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "mikes-fri-sat-gp",
+              "title": "Friday & Saturday Shots",
+              "description": "Jameson and Fireball shots $5.",
+              "type": "drink",
+              "daysOfWeek": [
+                5,
+                6
+              ],
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "bar-one-gp",
+          "name": "Bar One",
+          "type": "chain",
+          "address": "11401 100 St (Sandman Hotel)",
+          "website": "https://baronecanada.com",
+          "deals": [
+            {
+              "id": "bar-one-tacos-tue-gp",
+              "title": "$4 Tacos & $5.25 Coronas",
+              "description": "$4 tacos (Chipotle Lime Chicken or Cajun Shrimp) and $5.25 Coronas from 4pm. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "startHour": 16,
+              "lastVerified": "2026-02-07"
+            },
+            {
+              "id": "bar-one-wine-wed-gp",
+              "title": "Wine Wednesday",
+              "description": "$1 off 8oz glasses, $5 off bottles (red, white, rosé). Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bar-one-wings-thu-gp",
+              "title": "50% Off Wings & $6 Draft",
+              "description": "50% off wings (8 flavors incl S&P, Hot, BBQ, Teriyaki) and $6 house draft from 4pm. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 4,
+              "startHour": 16,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bar-one-drinks-fri-gp",
+              "title": "Friday Drinks",
+              "description": "$7.50 double highballs (house liquor) and $6 house draft (16oz). Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bar-one-wings-sat-gp",
+              "title": "Saturday Wings & Draft",
+              "description": "50% off wings and $6 house draft from 4pm. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 6,
+              "startHour": 16,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "bar-one-caesar-sun-gp",
+              "title": "Caesar Sunday",
+              "description": "$5 Caesars all day. Double for +$4. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
+            }
+          ]
+        },
+        {
+          "id": "wing-n-it-gp",
+          "name": "Wing'n It",
+          "type": "local",
+          "address": "10312 67th Ave",
+          "website": "https://wingnit.ca",
+          "deals": [
+            {
+              "id": "wingnit-mon-gp",
+              "title": "BOGO 50% Off Apps & $17.98 Pitchers",
+              "description": "Buy one app, get second 50% off (equal/lesser, excl platter). Domestic pitchers $17.98. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 1,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "wingnit-tue-gp",
+              "title": "$14 Wraps & Wine Specials",
+              "description": "BLT Chicken/Caesar/Steak wrap with fries $14. House wine $1/oz, domestic pints $6, premium pints $7. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 2,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "wingnit-wed-gp",
+              "title": "$10 Single Wings",
+              "description": "Single order of wings $10 (non-breaded +$3). Dine-in only.",
+              "type": "food",
+              "dayOfWeek": 3,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "wingnit-thu-gp",
+              "title": "$4.98 Bar Rail & $7.98 Draft",
+              "description": "Bar rail drinks $4.98, 23oz domestic draft $7.98. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 4,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "wingnit-fri-gp",
+              "title": "$13.48 Burgers & $6.88 Sangrias",
+              "description": "Classic Burger or Runway Chicken Sandwich with fries $13.48. Sangrias $6.88. Dine-in only.",
+              "type": "both",
+              "dayOfWeek": 5,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "wingnit-sat-gp",
+              "title": "$9.98 Top Gun Cocktail & $4.78 Shooters",
+              "description": "Top Gun Cocktail (34oz domestic draft) $9.98. Shooters $4.78. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 6,
+              "lastVerified": "2026-02-06"
+            },
+            {
+              "id": "wingnit-sun-gp",
+              "title": "$5 Domestic Bottles & Caesars",
+              "description": "Domestic bottles $5, Caesars $5. Dine-in only.",
+              "type": "drink",
+              "dayOfWeek": 0,
+              "lastVerified": "2026-02-06"
             }
           ]
         }
