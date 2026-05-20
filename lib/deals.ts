@@ -1,12 +1,5 @@
-/**
- * Deals data layer for the static site.
- *
- * IMPORTANT: Runs at BUILD TIME only. Data is embedded in the JS bundle.
- *
- * Reads from data/deals.json (synced from Netlify Blob via `npm run sync`)
- *
- * See CLAUDE.md for architecture.
- */
+// Build-time data layer. Reads data/deals.json (generated from cities/** by
+// scripts/build-deals.mjs). Embedded in the JS bundle; no runtime data fetch.
 import { Deal, Restaurant, DealsData, City, EnhancedDeal } from '@/types/deals';
 import dealsJson from '@/data/deals.json';
 
