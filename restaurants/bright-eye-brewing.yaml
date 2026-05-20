@@ -1,4 +1,3 @@
-id: bright-eye-brewing
 name: Bright Eye Brewing
 type: local
 website: https://brighteyebrewing.com
@@ -6,17 +5,16 @@ cities:
   kamloops:
     address: 292 Tranquille Road, Kamloops, BC
 deals:
-  - id: bright-kam-hoppy-hour
-    title: Hoppy Hour
+  - title: Hoppy Hour
     description: Shoestring fries with dip $9, Throwback Burger with fries $13, Margherita pizza $13.50, Cheese pizza $13. Sleeves $5, pints $6.50, margaritas $10. Daily 2-5pm and 8pm-close.
     type: both
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 14
     endHour: 17
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6

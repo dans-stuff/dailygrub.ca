@@ -1,4 +1,3 @@
-id: the-onion-bar-and-grill
 name: The Onion Bar & Grill
 type: local
 website: https://www.onionbarandgrill.com
@@ -6,50 +5,49 @@ cities:
   lethbridge:
     address: 1702 23rd St N
 deals:
-  - id: onion-happy-hour
-    title: Happy Hour
+  - title: Happy Hour
     description: 3–6pm & 9–11pm daily. Dine-in only.
     type: drink
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-  - id: onion-mon
-    title: Monday Specials
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
+  - title: Monday Specials
     description: Original 16 or Onion Lager pint $5.99. Ribs & wings $9.99. Dine-in only.
     type: both
-    dayOfWeek: 1
-  - id: onion-tue
-    title: Tuesday Specials
+    days:
+      - Monday
+  - title: Tuesday Specials
     description: Vodka Paralyzers $5.99. Baked Lasagna $13.99. Dine-in only.
     type: both
-    dayOfWeek: 2
-  - id: onion-wed
-    title: Wednesday Specials
+    days:
+      - Tuesday
+  - title: Wednesday Specials
     description: Long Island Iced Tea $5.99. Steak Sandwich $16.99. Dine-in only.
     type: both
-    dayOfWeek: 3
-  - id: onion-thu
-    title: Thursday Specials
+    days:
+      - Wednesday
+  - title: Thursday Specials
     description: Bottled wine half price. Burger & Onion Pint $17.99. Dine-in only.
     type: both
-    dayOfWeek: 4
-  - id: onion-fri
-    title: Friday Specials
+    days:
+      - Thursday
+  - title: Friday Specials
     description: House wine 5oz $4. 2pc Fish & Chips $19.99. Dine-in only.
     type: both
-    dayOfWeek: 5
-  - id: onion-sat
-    title: Saturday Specials
+    days:
+      - Friday
+  - title: Saturday Specials
     description: Famous Caesars $5.99. Pork Cutlets $19.99. Dine-in only.
     type: both
-    dayOfWeek: 6
-  - id: onion-sun
-    title: Sunday Specials
+    days:
+      - Saturday
+  - title: Sunday Specials
     description: Onion Prosecco Mimosa $5.99. Dine-in only.
     type: drink
-    dayOfWeek: 0
+    days:
+      - Sunday

@@ -1,4 +1,3 @@
-id: kelly-obryans
 name: Kelly O'Bryan's
 type: chain
 website: https://www.kobcob.com/locations/vernon/
@@ -6,37 +5,36 @@ cities:
   vernon:
     address: 4215 32nd St, Vernon, BC
 deals:
-  - id: kob-vernon-happy-hour
-    title: Happy Hour
+  - title: Happy Hour
     description: Draft $6.75, double drinks $9.25, discounted appies ($12-$16). Daily 2-5pm and 9pm-close.
     type: both
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 14
     endHour: 17
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-  - id: kob-vernon-prime-rib-mon
-    title: $10 Off Prime Rib
+  - title: $10 Off Prime Rib
     description: $10 off prime rib dinner on Monday.
     type: food
-    dayOfWeek: 1
-  - id: kob-vernon-burger-wed
-    title: $20 Burger & Beer
+    days:
+      - Monday
+  - title: $20 Burger & Beer
     description: $20 burger and beer on Wednesday. Also half-price wine.
     type: both
-    dayOfWeek: 3
-  - id: kob-vernon-beef-dip-thu
-    title: $19 Prime Rib Beef Dip
+    days:
+      - Wednesday
+  - title: $19 Prime Rib Beef Dip
     description: $19 prime rib beef dip on Thursday.
     type: food
-    dayOfWeek: 4
-  - id: kob-vernon-roast-sun
-    title: $27 Roast Beef Dinner
+    days:
+      - Thursday
+  - title: $27 Roast Beef Dinner
     description: $27 roast beef dinner on Sunday.
     type: food
-    dayOfWeek: 0
+    days:
+      - Sunday

@@ -1,4 +1,3 @@
-id: cabeza-grande
 name: Cabeza Grande
 type: local
 website: https://cabeza-grande.com/cochrane-alberta-restaurant/
@@ -6,23 +5,23 @@ cities:
   cochrane:
     address: Heritage Hills, Cochrane, AB
 deals:
-  - id: cg-coch-marg-mon
-    title: Margarita Monday
+  - title: Margarita Monday
     description: 20% off all margaritas on Monday.
     type: drink
-    dayOfWeek: 1
-  - id: cg-coch-taco-tue
-    title: Taco Tuesday
+    days:
+      - Monday
+  - title: Taco Tuesday
     description: Discounted tacos on Tuesday.
     type: food
-    dayOfWeek: 2
-  - id: cg-coch-wings-wed
-    title: Wing Wednesday
+    days:
+      - Tuesday
+  - title: Wing Wednesday
     description: 25% off wings on Wednesday.
     type: food
-    dayOfWeek: 3
-  - id: cg-coch-flights-fri
-    title: Flight Friday
+    days:
+      - Wednesday
+  - title: Flight Friday
     description: 15% off tequila flights on Friday.
     type: drink
-    dayOfWeek: 5
+    days:
+      - Friday

@@ -1,4 +1,3 @@
-id: triple-os
 name: Triple O's
 type: chain
 website: https://tripleos.com
@@ -6,18 +5,18 @@ cities:
   red-deer:
     address: 130-3115 50 Avenue
 deals:
-  - id: triple-os-monday
-    title: $7.99 Spicy Ultimate Crunch
+  - title: $7.99 Spicy Ultimate Crunch
     description: Spicy Ultimate Crunch burger $7.99. Available at participating locations.
     type: food
-    dayOfWeek: 1
-  - id: triple-os-tuesday
-    title: $7.99 Original Burger
+    days:
+      - Monday
+  - title: $7.99 Original Burger
     description: Original Burger $7.99 on Triple O Tuesday. Available at participating locations.
     type: food
-    dayOfWeek: 2
-  - id: triple-os-wednesday
-    title: $7.99 Crispy Cod Burger
+    days:
+      - Tuesday
+  - title: $7.99 Crispy Cod Burger
     description: Crispy Cod Burger $7.99. Available at participating locations.
     type: food
-    dayOfWeek: 3
+    days:
+      - Wednesday

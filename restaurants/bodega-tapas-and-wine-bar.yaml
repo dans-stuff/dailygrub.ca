@@ -1,4 +1,3 @@
-id: bodega-tapas-and-wine-bar
 name: Bodega Tapas & Wine Bar
 type: local
 website: https://www.bodegabysabor.ca/st-albert/
@@ -6,25 +5,25 @@ cities:
   st-albert:
     address: 1 Hebert Rd
 deals:
-  - id: bodega-tuesday
-    title: Tapas Tuesday
+  - title: Tapas Tuesday
     description: Bottle of wine + 3 chef's choice tapas. All day Tuesday. 1 Hebert Rd.
     type: both
-    dayOfWeek: 2
-  - id: bodega-wednesday
-    title: Wine Wednesday
+    days:
+      - Tuesday
+  - title: Wine Wednesday
     description: Half-price all wines. All day Wednesday. 1 Hebert Rd.
     type: drink
-    dayOfWeek: 3
-  - id: bodega-thursday
-    title: 8 for 88 Thursday
+    days:
+      - Wednesday
+  - title: 8 for 88 Thursday
     description: 8 feature tapas + bottle of feature wine for $88. All day Thursday. 1 Hebert Rd.
     type: both
-    dayOfWeek: 4
-  - id: bodega-sunday
-    title: Seafood Sunday
+    days:
+      - Thursday
+  - title: Seafood Sunday
     description: 3 tapas + main + dessert family style, $40/person (min 2 people). Sunday 4-9pm. 1 Hebert Rd.
     type: food
-    dayOfWeek: 0
+    days:
+      - Sunday
     startHour: 16
     endHour: 21

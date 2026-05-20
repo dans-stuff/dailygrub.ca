@@ -1,4 +1,3 @@
-id: kingsmen
 name: Kingsmen
 type: local
 website: https://kingsmen.ca
@@ -6,50 +5,49 @@ cities:
   lethbridge:
     address: 2012 Mayor Magrath Dr S
 deals:
-  - id: kingsmen-happy-hour
-    title: Drinks From $5
+  - title: Drinks From $5
     description: "Mon-Fri 3-6pm: Highballs $5.95, house wine $5 (5oz), 14oz Nightlife Lager $5, domestic beer $6.25. Dine-in only."
     type: drink
-    daysOfWeek:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
     startHour: 15
     endHour: 18
-  - id: kingsmen-monday
-    title: Half-Price Pints & $10.50 Yorkies
+  - title: Half-Price Pints & $10.50 Yorkies
     description: Half-price English pints, $10.50 big stuffed Yorkies, half-price kids meals. Dine-in only.
     type: both
-    dayOfWeek: 1
-  - id: kingsmen-tuesday
-    title: $2-$5 Off Fish & Chips
+    days:
+      - Monday
+  - title: $2-$5 Off Fish & Chips
     description: $5 off 2pc fish & chips, $2 off 1pc fish & chips. Half-price highballs. Dine-in only.
     type: both
-    dayOfWeek: 2
-  - id: kingsmen-wednesday
-    title: Half-Price Wings
+    days:
+      - Tuesday
+  - title: Half-Price Wings
     description: Half-price 7pc chicken wings. Dine-in only.
     type: food
-    dayOfWeek: 3
-  - id: kingsmen-thursday
-    title: $5 Off Cocktails & Mussels
+    days:
+      - Wednesday
+  - title: $5 Off Cocktails & Mussels
     description: $5 off cocktails & mussels. 95¢/oz house wine. Dine-in only.
     type: both
-    dayOfWeek: 4
-  - id: kingsmen-friday
-    title: $10 Cod Bites & Mac n Cheese
+    days:
+      - Thursday
+  - title: $10 Cod Bites & Mac n Cheese
     description: $10 Buffalo Cod Bites, $10 Mac n Cheese. 20% off smoked cocktails. Dine-in only.
     type: both
-    dayOfWeek: 5
-  - id: kingsmen-saturday
-    title: Half-Price Wine & 20% Off Brit Bites
+    days:
+      - Friday
+  - title: Half-Price Wine & 20% Off Brit Bites
     description: Half-price bottles of wine, 20% off Brit Bites (appetizers). Dine-in only.
     type: both
-    dayOfWeek: 6
-  - id: kingsmen-sunday
-    title: $18.95 Roast Beef Dinner
+    days:
+      - Saturday
+  - title: $18.95 Roast Beef Dinner
     description: $18.95 roast beef dinner with Yorkshire pudding. $5 off jug of Nightlife Lager, $2 off Caesars. Dine-in only.
     type: both
-    dayOfWeek: 0
+    days:
+      - Sunday

@@ -1,4 +1,3 @@
-id: mr-mikes
 name: MR MIKES
 type: chain
 website: https://mrmikes.ca
@@ -10,73 +9,70 @@ cities:
   red-deer:
     address: 6701 Gaetz Ave
 deals:
-  - id: mikes-happiest-hours
-    title: $5 Bites & Drinks
+  - title: $5 Bites & Drinks
     description: "Daily 2-5PM: Bites from $5 (fries, bruschetta, sliders, shrimp, steak frites). Drinks: wine $5, draft $7, highballs $5. 10214 116 Ave."
     type: both
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 14
     endHour: 17
-  - id: mikes-happiest-hours-late
-    title: $5 Late Night Bites
+  - title: $5 Late Night Bites
     description: "Daily 9PM-close: Same happy hour menu. Dine-in only."
     type: both
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 21
-  - id: mikes-sun
-    title: Sunday Caesars & Mimosas
+  - title: Sunday Caesars & Mimosas
     description: Bacon & Spiked Caesars $8, mimosas $5 (until 2pm), Molson Canadian bottles $6. Participating locations only.
     type: drink
-    dayOfWeek: 0
-  - id: mikes-mon
-    title: $9 Margaritas
+    days:
+      - Sunday
+  - title: $9 Margaritas
     description: Margarita or Coconut Margarita $9 all day Monday. Participating locations only.
     type: drink
-    dayOfWeek: 1
-  - id: mikes-tue
-    title: $5 Miller/Coors & $8 Cocktails
+    days:
+      - Monday
+  - title: $5 Miller/Coors & $8 Cocktails
     description: Miller Lite & Coors Light $5, all classic cocktails $8. Participating locations only.
     type: drink
-    dayOfWeek: 2
-  - id: mikes-wed
-    title: Wine Wednesday
+    days:
+      - Tuesday
+  - title: Wine Wednesday
     description: $5 off half-litre, $10 off bottle (750ml). Participating locations only.
     type: drink
-    dayOfWeek: 3
-  - id: mikes-thu
-    title: $7 Draft Thursday
+    days:
+      - Wednesday
+  - title: $7 Draft Thursday
     description: All-day draft beer 550ml $7 (Molson Canadian, Coors Light, Blue Moon). Participating locations only.
     type: drink
-    dayOfWeek: 4
-  - id: mikes-fri-sat
-    title: $5 Jameson & Fireball Shots
+    days:
+      - Thursday
+  - title: $5 Jameson & Fireball Shots
     description: Jameson & Fireball shots $5 Friday & Saturday. Participating locations only.
     type: drink
-    daysOfWeek:
-      - 5
-      - 6
-  - id: mikes-sat-mimosas
-    title: Weekend Mimosas $5
+    days:
+      - Friday
+      - Saturday
+  - title: Weekend Mimosas $5
     description: Mimosas $5 (3oz) until 2pm Saturday. Participating locations only.
     type: drink
-    dayOfWeek: 6
+    days:
+      - Saturday
     endHour: 14
-  - id: mikes-sat-madri
-    title: $1 Off Madri Excepcional
+  - title: $1 Off Madri Excepcional
     description: Madri Excepcional $1 off (450ml or 473ml tall can) all day Saturday. Participating locations only.
     type: drink
-    dayOfWeek: 6
+    days:
+      - Saturday

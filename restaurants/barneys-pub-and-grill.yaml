@@ -1,4 +1,3 @@
-id: barneys-pub-and-grill
 name: Barney's Pub & Grill
 type: local
 website: https://barneyspubleduc.com
@@ -6,38 +5,38 @@ cities:
   leduc:
     address: 5705 50 St, Leduc, AB
 deals:
-  - id: barneys-leduc-mon
-    title: Beer & Burger Monday
+  - title: Beer & Burger Monday
     description: Burgers $2 off, $7 featured craft 16oz, beer wall $0.45/oz.
     type: both
-    dayOfWeek: 1
-  - id: barneys-leduc-tue
-    title: Taco Tuesday
+    days:
+      - Monday
+  - title: Taco Tuesday
     description: $3 tacos (min 3), $1 off margaritas, $1 off Corona.
     type: both
-    dayOfWeek: 2
-  - id: barneys-leduc-wed
-    title: Wine & Pasta Wednesday
+    days:
+      - Tuesday
+  - title: Wine & Pasta Wednesday
     description: $2 off pastas, wine $1/oz, 20% off bottles.
     type: both
-    dayOfWeek: 3
-  - id: barneys-leduc-wings-thu
-    title: 75¢ Wings
+    days:
+      - Wednesday
+  - title: 75¢ Wings
     description: 75¢ wings with beverage purchase. Dine-in only. Thursday.
     type: food
-    dayOfWeek: 4
-  - id: barneys-leduc-fri
-    title: Friday Specials
+    days:
+      - Thursday
+  - title: Friday Specials
     description: "Roast beef dinner $24. Lunch: 6oz NY steak sandwich $18."
     type: food
-    dayOfWeek: 5
-  - id: barneys-leduc-sat
-    title: Saturday Specials
+    days:
+      - Friday
+  - title: Saturday Specials
     description: Roast beef dinner $24. Late night happy hour 9pm-close.
     type: both
-    dayOfWeek: 6
-  - id: barneys-leduc-sun
-    title: Sunday Specials
+    days:
+      - Saturday
+  - title: Sunday Specials
     description: Fish & chips $16, $2 off Caesars.
     type: both
-    dayOfWeek: 0
+    days:
+      - Sunday

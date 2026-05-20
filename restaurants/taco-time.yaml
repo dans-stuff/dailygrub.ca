@@ -1,4 +1,3 @@
-id: taco-time
 name: Taco Time
 type: chain
 website: https://tacotimecanada.com
@@ -8,13 +7,13 @@ cities:
   red-deer:
     address: 3321 50 Avenue & 6702 Golden West Ave & 4747 67 St
 deals:
-  - id: taco-time-tuesday
-    title: Unlimited $2 Tacos
+  - title: Unlimited $2 Tacos
     description: "Unlimited $2 tacos every Tuesday (beef or veggie, crispy or soft). Dine-in or takeout. All Lethbridge locations: 13th St, Fairway Plaza, Park Place Mall."
     type: food
-    dayOfWeek: 2
-  - id: taco-time-thursday
-    title: BOGO Half-Price Burritos
+    days:
+      - Tuesday
+  - title: BOGO Half-Price Burritos
     description: Buy one burrito, get 2nd half price on Thursdays. Dine-in or takeout. All Lethbridge locations.
     type: food
-    dayOfWeek: 4
+    days:
+      - Thursday

@@ -3,11 +3,6 @@
 #
 # Files starting with "_" (like this one) are ignored by the build and CI.
 # Lines starting with "#" are comments — delete or keep, your choice.
-#
-# Need help? See CONTRIBUTING.md or open a PR — a maintainer will help fix it up.
-
-# The restaurant's ID — must match the filename, lowercase with dashes.
-id: the-slice
 
 # How the restaurant is publicly known.
 name: The Slice
@@ -24,7 +19,7 @@ website: https://theslice.ca
 
 # Every city the restaurant operates in.
 # The key (e.g. "lethbridge") must already exist in cities.yaml.
-# "address:" is optional but helps locals find the place. Use "{}" if there's no per-city address.
+# "address:" is optional. Use "{}" if there's no per-city address.
 cities:
   lethbridge:
     address: 517 4 Ave S
@@ -34,15 +29,16 @@ cities:
 
 # The deals. Add as many as you want.
 deals:
-  - id: slice-wing-wed
-    title: Wing Wednesday
+  - title: Wing Wednesday
     description: Half-price wings all day. Dine-in only.
-    # food | drink | both
-    type: food
-    # 0 = Sunday, 1 = Monday, ..., 6 = Saturday
-    # Use "dayOfWeek:" for a single day, OR "daysOfWeek: [1, 2, 3]" for several.
-    # Omit both for an all-week deal.
-    dayOfWeek: 3
-    # Optional time window (24-hour clock, 0–23):
-    # startHour: 17
+    type: food          # food | drink | both
+    days: [Wednesday]   # one day, several, or omit the line for all week
+    # startHour: 17     # optional 24-hour window (0-23)
     # endHour: 21
+
+  - title: Happy Hour
+    description: $2 off all drinks, half-price apps.
+    type: both
+    days: [Monday, Tuesday, Wednesday, Thursday, Friday]
+    startHour: 15
+    endHour: 18

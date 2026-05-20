@@ -1,4 +1,3 @@
-id: rosscos-wing-house
 name: Rossco's Wing House
 type: local
 website: https://www.rosscospub.ca
@@ -6,68 +5,65 @@ cities:
   medicine-hat:
     address: 115-3215 Dunmore Rd SE
 deals:
-  - id: rosscos-happy-hour
-    title: Happy Hour
+  - title: Happy Hour
     description: Tue-Sat 3-6pm. Apps $10, domestic draft pints $4.95, 1oz highballs $4.95, Caesars/Paralyzers/Long Islands $5.25, Rossco's Lager pints $4.25. 115-3215 Dunmore Rd SE.
     type: both
-    daysOfWeek:
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 15
     endHour: 18
-  - id: rosscos-tue
-    title: Tuesday Specials
+  - title: Tuesday Specials
     description: Fettuccine Alfredo $12.95. Domestic bottled beer $5.75. 115-3215 Dunmore Rd SE.
     type: both
-    dayOfWeek: 2
-  - id: rosscos-wed
-    title: Wing Wednesday
+    days:
+      - Tuesday
+  - title: Wing Wednesday
     description: 95¢ wings dine-in or take-out. Homemade chicken bites 1lb $15.95. Selected pints $5.95. 115-3215 Dunmore Rd SE.
     type: both
-    dayOfWeek: 3
-  - id: rosscos-thu
-    title: Thursday Specials
+    days:
+      - Wednesday
+  - title: Thursday Specials
     description: All in-house beef & chicken burgers $15.95 with choice of side. 2oz bar highballs $8.95, Miller Lite pints $5.95. 115-3215 Dunmore Rd SE.
     type: both
-    dayOfWeek: 4
-  - id: rosscos-fri
-    title: Friday Specials
+    days:
+      - Thursday
+  - title: Friday Specials
     description: 8oz fish & chips with coleslaw $15.95. Steak sandwich $16.95. Select draft schooners $12.95, select wines $6.95. 115-3215 Dunmore Rd SE.
     type: both
-    dayOfWeek: 5
-  - id: rosscos-sat
-    title: Saturday Specials
+    days:
+      - Friday
+  - title: Saturday Specials
     description: 95¢ wings dine-in or take-out. Chicken bites 1lb $15.95. Brunch 11:30am-2:30pm. Select draft schooners $12.95, sangria $6.95. 115-3215 Dunmore Rd SE.
     type: both
-    dayOfWeek: 6
-  - id: rosscos-sun
-    title: Sunday Specials
+    days:
+      - Saturday
+  - title: Sunday Specials
     description: Caesar salad $12.00. Brunch 11:30am-2:30pm. All draft pints $5.95, Caesars/Long Islands/Paralyzers $5.95. 115-3215 Dunmore Rd SE.
     type: both
-    dayOfWeek: 0
-  - id: rosscos-lunch
-    title: Lunch Specials
+    days:
+      - Sunday
+  - title: Lunch Specials
     description: Tue-Fri 11:30am-2pm. Soup & sandwich $9.75, cheeseburger & fries $9.95. 115-3215 Dunmore Rd SE.
     type: food
-    daysOfWeek:
-      - 2
-      - 3
-      - 4
-      - 5
+    days:
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
     startHour: 11
     endHour: 14
-  - id: rosscos-jugs
-    title: Daily Jugs
+  - title: Daily Jugs
     description: All day, every day. Rossco's Lager jugs $15, Coors Light/Canadian/Miller Lite jugs $17. 115-3215 Dunmore Rd SE.
     type: drink
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday

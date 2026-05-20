@@ -1,4 +1,3 @@
-id: the-hideout-eats-and-beats
 name: The Hideout - Eats & Beats
 type: local
 website: https://the-hideout.com/
@@ -6,65 +5,63 @@ cities:
   red-deer:
     address: 411 Lantern Street
 deals:
-  - id: hideout-mexicana-monday
-    title: Mexicana Monday
+  - title: Mexicana Monday
     description: $3 OFF tacos, nachos, quesadillas, southwest taco salad. Dine-in only.
     type: food
-    dayOfWeek: 1
-  - id: hideout-bogo-appy-tuesday
-    title: BOGO Appy Night
+    days:
+      - Monday
+  - title: BOGO Appy Night
     description: Buy appetizer, get 2nd half price. Dine-in only.
     type: food
-    dayOfWeek: 2
-  - id: hideout-wing-wednesday
-    title: Wing Night
+    days:
+      - Tuesday
+  - title: Wing Night
     description: 99¢ wings (11 flavours, minimum 10 wings). Dine-in only.
     type: food
-    dayOfWeek: 3
-  - id: hideout-curry-mussels-thursday
-    title: Curry Mussels & Burgers
+    days:
+      - Wednesday
+  - title: Curry Mussels & Burgers
     description: $14.75 Curry Mussel Bowl, $13 Hideout Burgers. Dine-in only.
     type: food
-    dayOfWeek: 4
-  - id: hideout-prime-rib-friday
-    title: Prime Rib Night
+    days:
+      - Thursday
+  - title: Prime Rib Night
     description: 8oz Prime Rib $39 starting at 5PM. Dine-in only.
     type: food
-    dayOfWeek: 5
+    days:
+      - Friday
     startHour: 17
-  - id: hideout-pasta-saturday
-    title: Pasta Special
+  - title: Pasta Special
     description: $3 OFF any pasta order. Dine-in only.
     type: food
-    dayOfWeek: 6
-  - id: hideout-bogo-pizza-sunday
-    title: BOGO Pizza
+    days:
+      - Saturday
+  - title: BOGO Pizza
     description: Buy one pizza, get 2nd half price. Dine-in only.
     type: food
-    dayOfWeek: 0
-  - id: hideout-happy-hour
-    title: Happy Hour
+    days:
+      - Sunday
+  - title: Happy Hour
     description: "3-6PM daily: $5.95 cocktails, wine, draught, hi-balls. Dine-in only."
     type: drink
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 15
     endHour: 18
-  - id: hideout-lunch-special
-    title: Lunch Special
+  - title: Lunch Special
     description: "Mon-Fri 11AM-2PM: $16.75 steak sandwich, $10 wine. Dine-in only."
     type: both
-    daysOfWeek:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
     startHour: 11
     endHour: 14

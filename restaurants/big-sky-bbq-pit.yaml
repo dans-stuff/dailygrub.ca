@@ -1,4 +1,3 @@
-id: big-sky-bbq-pit
 name: Big Sky BBQ Pit
 type: local
 website: https://bigskybbq.ca
@@ -6,47 +5,46 @@ cities:
   okotoks:
     address: Okotoks, AB
 deals:
-  - id: bigsky-happy-hour
-    title: Happy Hour
+  - title: Happy Hour
     description: Drink specials daily from 2pm to close. Dine-in only.
     type: drink
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 14
-  - id: bigsky-sunday
-    title: Sunday Ribs & Caesars
+  - title: Sunday Ribs & Caesars
     description: $1 off Caesars + Full Rack St. Louis Ribs $25.99. All day Sunday.
     type: both
-    dayOfWeek: 0
-  - id: bigsky-tuesday
-    title: Taco Tuesday
+    days:
+      - Sunday
+  - title: Taco Tuesday
     description: $1 off Peach Sunrise Sangria + Tacos $5. All day Tuesday.
     type: both
-    dayOfWeek: 2
-  - id: bigsky-wednesday
-    title: Wing & Wine Wednesday
+    days:
+      - Tuesday
+  - title: Wing & Wine Wednesday
     description: Half-price wine + wing night from 5pm. Wednesday.
     type: both
-    dayOfWeek: 3
+    days:
+      - Wednesday
     startHour: 17
-  - id: bigsky-thursday
-    title: Meatza Pizza & Draft Thursday
+  - title: Meatza Pizza & Draft Thursday
     description: $1 off draft pints + Meatza Pizza $25.99. All day Thursday.
     type: both
-    dayOfWeek: 4
-  - id: bigsky-friday
-    title: Brisket Friday
+    days:
+      - Thursday
+  - title: Brisket Friday
     description: Brisket Beef Dip $22.99, $1 off Margaritas & Landshark. All day Friday.
     type: both
-    dayOfWeek: 5
-  - id: bigsky-saturday
-    title: Saturday Drink Specials
+    days:
+      - Friday
+  - title: Saturday Drink Specials
     description: $1 off Corona, Texas Tipsy, and Big Sky Shafts. All day Saturday.
     type: drink
-    dayOfWeek: 6
+    days:
+      - Saturday

@@ -1,4 +1,3 @@
-id: central-social-hall
 name: Central Social Hall
 type: local
 website: https://centralsocialhall.com/location-menus/st-albert-menu/
@@ -6,35 +5,34 @@ cities:
   st-albert:
     address: "#280, 525 St Albert Trail"
 deals:
-  - id: csh-happy-hour
-    title: Weekday Happy Hour
+  - title: Weekday Happy Hour
     description: "$4 Central Black Label Lager, $6 Miller Lite Draft & wells, $7 wine, $8-$10 cocktails. Food $9-$15. Mon-Fri 3-6pm & 9pm-close. #280, 525 St Albert Trail."
     type: both
-    daysOfWeek:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
     startHour: 15
     endHour: 18
-  - id: csh-monday
-    title: Super Bowl Monday
+  - title: Super Bowl Monday
     description: "$20 buckets of 4 Miller Lite + $5 off signature bowls. All day Monday. #280, 525 St Albert Trail."
     type: both
-    dayOfWeek: 1
-  - id: csh-tuesday
-    title: Wine Tuesday
+    days:
+      - Monday
+  - title: Wine Tuesday
     description: "Half-price bottles of wine. All day Tuesday. #280, 525 St Albert Trail."
     type: drink
-    dayOfWeek: 2
-  - id: csh-wednesday
-    title: Half-Price Wing Wednesday
+    days:
+      - Tuesday
+  - title: Half-Price Wing Wednesday
     description: "Half-price wings. All day Wednesday. #280, 525 St Albert Trail."
     type: food
-    dayOfWeek: 3
-  - id: csh-thursday
-    title: Steak & Craft Thursday
+    days:
+      - Wednesday
+  - title: Steak & Craft Thursday
     description: "Half-price steak sandwiches until 3pm + $6 Alberta craft beers all day. Thursday. #280, 525 St Albert Trail."
     type: both
-    dayOfWeek: 4
+    days:
+      - Thursday

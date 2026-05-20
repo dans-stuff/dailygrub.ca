@@ -1,4 +1,3 @@
-id: taco-loft
 name: Taco Loft
 type: local
 website: https://www.tacoloft.ca/
@@ -6,8 +5,8 @@ cities:
   red-deer:
     address: 4924B 50 Street (Ross Street Patio)
 deals:
-  - id: taco-loft-tuesday
-    title: Taco Tuesday
+  - title: Taco Tuesday
     description: $2.22/taco, Mini Tacos Night. 100% gluten-free menu. Dine-in or takeout.
     type: food
-    dayOfWeek: 2
+    days:
+      - Tuesday

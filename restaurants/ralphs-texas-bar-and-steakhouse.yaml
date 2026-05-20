@@ -1,4 +1,3 @@
-id: ralphs-texas-bar-and-steakhouse
 name: Ralph's Texas Bar & Steakhouse
 type: local
 website: https://www.ralphsbar.com
@@ -6,28 +5,28 @@ cities:
   medicine-hat:
     address: 1249 Trans Canada Way SE, Medicine Hat, AB
 deals:
-  - id: ralphs-mh-pints-mon
-    title: $6 Brewery Pints
+  - title: $6 Brewery Pints
     description: $6 local brewery pints all day Monday.
     type: drink
-    dayOfWeek: 1
-  - id: ralphs-mh-schooners-tue
-    title: $7 Ralph's Schooners
+    days:
+      - Monday
+  - title: $7 Ralph's Schooners
     description: $7 schooners of Ralph's beer all day Tuesday.
     type: drink
-    dayOfWeek: 2
-  - id: ralphs-mh-wings-wed
-    title: Half-Price Wings
+    days:
+      - Tuesday
+  - title: Half-Price Wings
     description: Half-price wings all day Wednesday.
     type: food
-    dayOfWeek: 3
-  - id: ralphs-mh-steak-lobster-thu
-    title: Steak & Lobster Thursday
+    days:
+      - Wednesday
+  - title: Steak & Lobster Thursday
     description: Steak & lobster $29.95 plus $4 highballs. Mechanical bull in nightclub (no cover).
     type: both
-    dayOfWeek: 4
-  - id: ralphs-mh-lunch-fri
-    title: Friday Lunch Feature
+    days:
+      - Thursday
+  - title: Friday Lunch Feature
     description: Rotating lunch feature $10.95 (e.g. soup + sandwich combo).
     type: food
-    dayOfWeek: 5
+    days:
+      - Friday

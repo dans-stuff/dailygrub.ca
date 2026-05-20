@@ -1,4 +1,3 @@
-id: churchs-chicken
 name: Church's Chicken
 type: chain
 website: https://churchstexaschicken.com
@@ -6,38 +5,38 @@ cities:
   lethbridge:
     address: 3751 Mayor Magrath Dr S & 890 Heritage Blvd W
 deals:
-  - id: churchs-monday
-    title: Signature Sandwich Monday
+  - title: Signature Sandwich Monday
     description: "Any Signature Sandwich $7.99 + tax. Both locations: 3751 Mayor Magrath Dr S & 890 Heritage Blvd W."
     type: food
-    dayOfWeek: 1
-  - id: churchs-tuesday
-    title: 2pc Chicken Tuesday
+    days:
+      - Monday
+  - title: 2pc Chicken Tuesday
     description: 2pc Chicken (Leg & Thigh) $5.99 + tax. Both locations.
     type: food
-    dayOfWeek: 2
-  - id: churchs-wednesday
-    title: Signature Wrap Wednesday
+    days:
+      - Tuesday
+  - title: Signature Wrap Wednesday
     description: Any Signature Wrap $7.99 + tax. Both locations.
     type: food
-    dayOfWeek: 3
-  - id: churchs-thursday
-    title: 3pc Dark Meat Thursday
+    days:
+      - Wednesday
+  - title: 3pc Dark Meat Thursday
     description: 3pc Chicken Dark Meat $6.99 + tax. Both locations.
     type: food
-    dayOfWeek: 4
-  - id: churchs-friday
-    title: Tender Wrap Friday
+    days:
+      - Thursday
+  - title: Tender Wrap Friday
     description: Tender Wrap $4.99 + tax. Both locations.
     type: food
-    dayOfWeek: 5
-  - id: churchs-saturday
-    title: Churro Bites Saturday
+    days:
+      - Friday
+  - title: Churro Bites Saturday
     description: 5pc Churro Bites $3.79 + tax. Both locations.
     type: food
-    dayOfWeek: 6
-  - id: churchs-sunday
-    title: Jalapeno Bombers Sunday
+    days:
+      - Saturday
+  - title: Jalapeno Bombers Sunday
     description: 3pc Jalapeno Bombers $2.99 + tax. Both locations.
     type: food
-    dayOfWeek: 0
+    days:
+      - Sunday

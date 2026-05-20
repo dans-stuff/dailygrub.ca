@@ -1,32 +1,31 @@
-id: wow-eats
 name: Wow Eats
 type: local
 cities:
   lethbridge:
     address: 2025 Mayor Magrath Dr S
 deals:
-  - id: wow-eats-monday
-    title: 25% Off Donuts
+  - title: 25% Off Donuts
     description: 25% off donuts on Monday. 2025 Mayor Magrath Dr S.
     type: food
-    dayOfWeek: 1
-  - id: wow-eats-tuesday
-    title: 25% Off Chicken
+    days:
+      - Monday
+  - title: 25% Off Chicken
     description: 25% off chicken on Tuesday. 2025 Mayor Magrath Dr S.
     type: food
-    dayOfWeek: 2
-  - id: wow-eats-wednesday
-    title: 25% Off Burgers
+    days:
+      - Tuesday
+  - title: 25% Off Burgers
     description: 25% off burgers on Wednesday. 2025 Mayor Magrath Dr S.
     type: food
-    dayOfWeek: 3
-  - id: wow-eats-thursday
-    title: 25% Off Korean Rice Bowls
+    days:
+      - Wednesday
+  - title: 25% Off Korean Rice Bowls
     description: 25% off Korean rice bowls on Thursday. 2025 Mayor Magrath Dr S.
     type: food
-    dayOfWeek: 4
-  - id: wow-eats-friday
-    title: 25% Off Katsu
+    days:
+      - Thursday
+  - title: 25% Off Katsu
     description: 25% off katsu on Friday. 2025 Mayor Magrath Dr S.
     type: food
-    dayOfWeek: 5
+    days:
+      - Friday

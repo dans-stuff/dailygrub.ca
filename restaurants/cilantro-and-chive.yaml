@@ -1,4 +1,3 @@
-id: cilantro-and-chive
 name: Cilantro & Chive
 type: local
 website: https://cilantroandchive.ca/reddeer/
@@ -6,24 +5,24 @@ cities:
   red-deer:
     address: 1927 50th Avenue
 deals:
-  - id: cilantro-margarita-mac-monday
-    title: Margarita & Mac n Cheese
+  - title: Margarita & Mac n Cheese
     description: Margarita Flights & signature Mac n Cheese all day. Dine-in only.
     type: both
-    dayOfWeek: 1
-  - id: cilantro-poutine-beer-tuesday
-    title: Poutine & Beer
+    days:
+      - Monday
+  - title: Poutine & Beer
     description: Six signature Poutines and Flights of Craft Beer all day. Dine-in only.
     type: both
-    dayOfWeek: 2
-  - id: cilantro-pub-night-wednesday
-    title: Pub Night & Pints
+    days:
+      - Tuesday
+  - title: Pub Night & Pints
     description: Pub Night & Pints after 4PM. Dine-in only.
     type: both
-    dayOfWeek: 3
+    days:
+      - Wednesday
     startHour: 16
-  - id: cilantro-fish-chips-thursday
-    title: Fish & Chips
+  - title: Fish & Chips
     description: Fish & Chips Thursday. Dine-in only.
     type: food
-    dayOfWeek: 4
+    days:
+      - Thursday

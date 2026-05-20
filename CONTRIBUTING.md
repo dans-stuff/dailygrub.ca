@@ -1,46 +1,47 @@
 # Contributing
 
-The short version is in the [README](README.md#-help-out-no-coding-needed). This file covers the details.
+Every restaurant on [dailygrub.ca](https://dailygrub.ca) is a single YAML file in [`restaurants/`](restaurants). To help out:
 
-## Schema reference
+## To **fix or add a deal**
 
-Every restaurant is a single YAML file in [`restaurants/`](restaurants). The fully commented schema lives in [`restaurants/_TEMPLATE.yaml`](restaurants/_TEMPLATE.yaml).
+1. Open the restaurant's file in [`restaurants/`](restaurants).
+2. Click the ✏️ pencil to edit it on GitHub.
+3. Add or change a deal in the `deals:` list.
+4. Scroll down, click **Propose changes**. You've opened a PR.
 
-Required fields:
+## To **add a new restaurant**
 
-- `id` — kebab-case, must match the filename (without `.yaml`)
-- `name` — how the restaurant is publicly known
-- `type` — `local` | `chain` (`sponsored` / `exclusive` are maintainer-only)
-- `cities` — at least one entry; each key must exist in [`cities.yaml`](cities.yaml)
-- `deals` — at least one deal
+Copy [`restaurants/_TEMPLATE.yaml`](restaurants/_TEMPLATE.yaml), save it with the restaurant's name (e.g. `the-slice.yaml`), fill in the blanks. The template explains every field inline.
 
-Each deal needs:
+## To **add a new city**
 
-- `id` (unique within the file), `title`, `description`
-- `type` — `food` | `drink` | `both`
+Add an entry to [`cities.yaml`](cities.yaml):
 
-Optional:
-
-- `website` (restaurant level)
-- `address` per city under `cities.<slug>.address`
-- `dayOfWeek` (0=Sun, 6=Sat) **or** `daysOfWeek: [1, 2, 3]` — omit both for all-week
-- `startHour` / `endHour` — 0-23
-
-## Sources matter
-
-We don't merge deal changes without a source — a restaurant website, an official social post, a recent in-person photo, or "called them on YYYY-MM-DD." That's the one strict rule.
-
-## Local dev
-
-```bash
-cd site
-npm install
-npm run dev
-npm test
+```yaml
+saskatoon:
+  name: Saskatoon
+  province: SK
 ```
 
-`site/public/deals.json` is generated — never edit it by hand.
+Then a restaurant can use it under `cities:`.
+
+## A deal looks like
+
+```yaml
+- title: Wing Wednesday
+  description: Half-price wings all day. Dine-in only.
+  type: food                # food | drink | both
+  days: [Wednesday]         # one day, several, or omit for all week
+  startHour: 17             # optional 24-hour window
+  endHour: 21
+```
+
+Required: `title`, `description`, `type`. Everything else is optional.
+
+## Source required
+
+We won't merge a deal change without a source — a link, a recent photo, or "saw it in-person on YYYY-MM-DD". The PR template asks for it.
 
 ## License
 
-By contributing you agree your contributions are released under the project's licenses: **AGPL-3.0** for code, **ODbL 1.0** for data.
+Contributions are released under the project's licenses: **AGPL-3.0** (code) and **ODbL 1.0** (data).

@@ -1,4 +1,3 @@
-id: marble-slab-creamery
 name: Marble Slab Creamery
 type: chain
 website: https://www.marbleslab.ca
@@ -6,38 +5,38 @@ cities:
   lethbridge:
     address: 2037 Mayor Magrath Dr S & 550 University Dr W
 deals:
-  - id: marble-slab-monday
-    title: BOGO Free Floats
+  - title: BOGO Free Floats
     description: Buy one float, get one free on Monday.
     type: food
-    dayOfWeek: 1
-  - id: marble-slab-tuesday
-    title: $5 Ice Cream Sandwich
+    days:
+      - Monday
+  - title: $5 Ice Cream Sandwich
     description: $5 ice cream sandwich on Tuesday.
     type: food
-    dayOfWeek: 2
-  - id: marble-slab-wednesday
-    title: BOGO $2 Small Cones/Cups
+    days:
+      - Tuesday
+  - title: BOGO $2 Small Cones/Cups
     description: Buy one small cone or cup, get one for $2 on Wednesday.
     type: food
-    dayOfWeek: 3
-  - id: marble-slab-thursday
-    title: 15% Off Crumble
+    days:
+      - Wednesday
+  - title: 15% Off Crumble
     description: 15% off crumble on Thursday.
     type: food
-    dayOfWeek: 4
-  - id: marble-slab-friday
-    title: BOGO 50% Off Half-Litres
+    days:
+      - Thursday
+  - title: BOGO 50% Off Half-Litres
     description: Buy one pre-packed half litre of ice cream, get one 50% off on Friday.
     type: food
-    dayOfWeek: 5
-  - id: marble-slab-saturday
-    title: BOGO 50% Off Gummies
+    days:
+      - Friday
+  - title: BOGO 50% Off Gummies
     description: Buy one pack of gummies, get one 50% off on Saturday.
     type: food
-    dayOfWeek: 6
-  - id: marble-slab-sunday
-    title: $7.49 Milkshake
+    days:
+      - Saturday
+  - title: $7.49 Milkshake
     description: $7.49 milkshake on Sunday.
     type: food
-    dayOfWeek: 0
+    days:
+      - Sunday

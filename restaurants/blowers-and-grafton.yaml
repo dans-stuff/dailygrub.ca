@@ -1,4 +1,3 @@
-id: blowers-and-grafton
 name: Blowers & Grafton
 type: chain
 website: https://blowersgrafton.com/lethbridge/
@@ -12,42 +11,41 @@ cities:
   red-deer:
     address: 2079 50 Ave
 deals:
-  - id: bg-monday
-    title: Pizza Monday
+  - title: Pizza Monday
     description: $5 off any pizza + $1 off Grafton Street Lager 14oz. All day Monday. 3720 Mayor Magrath Dr S.
     type: both
-    dayOfWeek: 1
-  - id: bg-tuesday
-    title: Fish & Chips Tuesday
+    days:
+      - Monday
+  - title: Fish & Chips Tuesday
     description: $4 off fish & chips + $1 off Grafton Street Amber 14oz. All day Tuesday. 3720 Mayor Magrath Dr S.
     type: both
-    dayOfWeek: 2
-  - id: bg-wednesday
-    title: Cocktail & Donair Wednesday
+    days:
+      - Tuesday
+  - title: Cocktail & Donair Wednesday
     description: $2 off all cocktails + $3 off OG Halifax Donair (Regular). All day Wednesday. 3720 Mayor Magrath Dr S.
     type: both
-    dayOfWeek: 3
-  - id: bg-thursday
-    title: Oyster & Wine Thursday
+    days:
+      - Wednesday
+  - title: Oyster & Wine Thursday
     description: Oysters $2.50 each / $15 half-dozen + 50% off wine bottles. All day Thursday. 3720 Mayor Magrath Dr S.
     type: both
-    dayOfWeek: 4
-  - id: bg-sunday
-    title: Caesar & Snack Sunday
+    days:
+      - Thursday
+  - title: Caesar & Snack Sunday
     description: $2 off all Caesars (1oz) + $2 off Selfie Garlic Fingers + $3 off Selfie Nachos. All day Sunday. 3720 Mayor Magrath Dr S.
     type: both
-    dayOfWeek: 0
-  - id: bg-hali-hour
-    title: Hali Hour
+    days:
+      - Sunday
+  - title: Hali Hour
     description: Food from $5, drinks from $5. Daily 2-5pm & 9pm-close. Dine-in only. 3720 Mayor Magrath Dr S.
     type: both
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 14
     endHour: 17

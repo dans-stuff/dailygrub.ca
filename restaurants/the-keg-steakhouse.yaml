@@ -1,4 +1,3 @@
-id: the-keg-steakhouse
 name: The Keg Steakhouse
 type: chain
 website: https://www.thekeg.com
@@ -8,34 +7,31 @@ cities:
   red-deer:
     address: 6365 50 Ave
 deals:
-  - id: keg-happy-hour-weekday
-    title: Apps From $10
+  - title: Apps From $10
     description: "Mon-Fri 3-5pm: $10 garlic toast, $15 tuna tartare, $15 wings, $20 burger, $24 prime rib sandwich."
     type: both
-    daysOfWeek:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
     startHour: 15
     endHour: 17
-  - id: keg-happy-hour-late-weekday
-    title: Late Night Bites From $10
+  - title: Late Night Bites (Weeknights)
     description: "Sun-Thu 9pm-close: Same happy hour menu from $10."
     type: both
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
     startHour: 21
-  - id: keg-happy-hour-late-weekend
-    title: Late Night Bites From $10
+  - title: Late Night Bites (Weekends)
     description: "Fri-Sat 10pm-close: Same happy hour menu from $10."
     type: both
-    daysOfWeek:
-      - 5
-      - 6
+    days:
+      - Friday
+      - Saturday
     startHour: 22

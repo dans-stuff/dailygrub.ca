@@ -1,4 +1,3 @@
-id: sisters-pub-and-grill
 name: Sisters Pub & Grill
 type: local
 website: https://sisterspubandgrill.com
@@ -6,48 +5,47 @@ cities:
   lethbridge:
     address: 814 2 Ave S
 deals:
-  - id: sisters-monday
-    title: $7 Draft Pints & 25% Off Appies
+  - title: $7 Draft Pints & 25% Off Appies
     description: $7 draft pints all day. 25% off appies 4pm-close. Dine-in only.
     type: both
-    dayOfWeek: 1
-  - id: sisters-tuesday
-    title: $7 Craft Tall Boys & Ribs
+    days:
+      - Monday
+  - title: $7 Craft Tall Boys & Ribs
     description: $7 craft tall boys and bone-in ribs. Dine-in only.
     type: both
-    dayOfWeek: 2
-  - id: sisters-wednesday
-    title: $7 Coors Pints & Half-Price Wings
+    days:
+      - Tuesday
+  - title: $7 Coors Pints & Half-Price Wings
     description: $7 Coors Banquet pints. Half-price wings from 4pm. Dine-in only.
     type: both
-    dayOfWeek: 3
+    days:
+      - Wednesday
     startHour: 16
-  - id: sisters-thursday
-    title: Half-Price Wine & 25% Off Appies
+  - title: Half-Price Wine & 25% Off Appies
     description: Half-price wine bottles, $7 Bud Light pints. 25% off appies 4pm-close. Dine-in only.
     type: both
-    dayOfWeek: 4
-  - id: sisters-friday
-    title: $25.50 Beer Buckets & $7 Pints
+    days:
+      - Thursday
+  - title: $25.50 Beer Buckets & $7 Pints
     description: $25.50 domestic beer buckets, $7 Bow River Amber pints. Dine-in only.
     type: drink
-    dayOfWeek: 5
-  - id: sisters-saturday
-    title: Double Caesars & Steak Sandwich
+    days:
+      - Friday
+  - title: Double Caesars & Steak Sandwich
     description: $11.25 double Caesars, $11.25 double highballs, $19.50 steak sandwich. Dine-in only.
     type: both
-    dayOfWeek: 6
-  - id: sisters-happy-hour
-    title: Daily Happy Hour
+    days:
+      - Saturday
+  - title: Daily Happy Hour
     description: Happy hour 2-5pm daily. Dine-in only.
     type: drink
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 14
     endHour: 17

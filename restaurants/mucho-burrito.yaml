@@ -1,4 +1,3 @@
-id: mucho-burrito
 name: Mucho Burrito
 type: chain
 website: https://muchoburrito.com
@@ -6,8 +5,8 @@ cities:
   medicine-hat:
     address: 1941 Strachan Rd SE
 deals:
-  - id: mucho-twofer-tue
-    title: Two-for Tuesday
+  - title: Two-for Tuesday
     description: 2 small burritos + 2 chips & salsa + 2 drinks for $22.95. 1941 Strachan Rd SE.
     type: food
-    dayOfWeek: 2
+    days:
+      - Tuesday

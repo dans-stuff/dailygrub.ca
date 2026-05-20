@@ -1,4 +1,3 @@
-id: subway
 name: Subway
 type: chain
 website: https://www.subway.com/en-CA
@@ -21,38 +20,38 @@ cities:
   st-albert: {}
   vernon: {}
 deals:
-  - id: subway-mon
-    title: "Meal of the Day: Veggie Delite"
+  - title: "Meal of the Day: Veggie Delite"
     description: 6" Veggie Delite sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations.
     type: food
-    dayOfWeek: 1
-  - id: subway-tue
-    title: "Meal of the Day: Italian B.M.T."
+    days:
+      - Monday
+  - title: "Meal of the Day: Italian B.M.T."
     description: 6" Italian B.M.T. sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations.
     type: food
-    dayOfWeek: 2
-  - id: subway-wed
-    title: "Meal of the Day: Cold Cut Combo"
+    days:
+      - Tuesday
+  - title: "Meal of the Day: Cold Cut Combo"
     description: 6" Cold Cut Combo sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations.
     type: food
-    dayOfWeek: 3
-  - id: subway-thu
-    title: "Meal of the Day: Black Forest Ham"
+    days:
+      - Wednesday
+  - title: "Meal of the Day: Black Forest Ham"
     description: 6" Black Forest Ham sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations.
     type: food
-    dayOfWeek: 4
-  - id: subway-fri
-    title: "Meal of the Day: Tuna"
+    days:
+      - Thursday
+  - title: "Meal of the Day: Tuna"
     description: 6" Tuna sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations.
     type: food
-    dayOfWeek: 5
-  - id: subway-sat
-    title: "Meal of the Day: Turkey Breast"
+    days:
+      - Friday
+  - title: "Meal of the Day: Turkey Breast"
     description: 6" Turkey Breast sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations.
     type: food
-    dayOfWeek: 6
-  - id: subway-sun
-    title: "Meal of the Day: Sweet Onion Chicken Teriyaki"
+    days:
+      - Saturday
+  - title: "Meal of the Day: Sweet Onion Chicken Teriyaki"
     description: 6" Sweet Onion Chicken Teriyaki sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations.
     type: food
-    dayOfWeek: 0
+    days:
+      - Sunday

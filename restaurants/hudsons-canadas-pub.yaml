@@ -1,4 +1,3 @@
-id: hudsons-canadas-pub
 name: Hudsons Canada's Pub
 type: chain
 website: https://hudsonscanadaspub.com
@@ -6,65 +5,62 @@ cities:
   lethbridge:
     address: 904 2 Ave S
 deals:
-  - id: hudsons-happy-hour
-    title: Happy Hour
+  - title: Happy Hour
     description: "Mon-Fri 2-6pm: food from $5, drinks from $5. 904 2nd Ave S."
     type: both
-    daysOfWeek:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
     startHour: 14
     endHour: 18
-  - id: hudsons-late-night
-    title: Late Night Happy Hour
+  - title: Late Night Happy Hour
     description: "Daily 9pm-late: same happy hour menu. 904 2nd Ave S."
     type: both
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 21
-  - id: hudsons-all-day-thursday
-    title: All Day Happy Hour & $5 Smash Burger
+  - title: All Day Happy Hour & $5 Smash Burger
     description: All day happy hour Thursday. $5 Student Smash Burger 7pm-midnight. 904 2nd Ave S.
     type: both
-    dayOfWeek: 4
-  - id: hudsons-maritime-monday
-    title: Maritime Mondays
+    days:
+      - Thursday
+  - title: Maritime Mondays
     description: $12 Coconut Shrimp, $14.99 Fish & Chips, $6.75 Keith's. 6pm-close. 904 2nd Ave S.
     type: both
-    dayOfWeek: 1
+    days:
+      - Monday
     startHour: 18
-  - id: hudsons-taps-tenders-tuesday
-    title: Taps & Tenders
+  - title: Taps & Tenders
     description: $6 Rotating Taps, $7 Chicken Tenders. 6pm-close. 904 2nd Ave S.
     type: both
-    dayOfWeek: 2
+    days:
+      - Tuesday
     startHour: 18
-  - id: hudsons-wing-wednesday
-    title: Wing Wednesday
+  - title: Wing Wednesday
     description: 50% off wings, $6 House Draft. Open to close. 904 2nd Ave S.
     type: both
-    dayOfWeek: 3
-  - id: hudsons-steak-sip-weekend
-    title: Steak & Sip
+    days:
+      - Wednesday
+  - title: Steak & Sip
     description: $32 Prairie Top Sirloin with wine or draft, $2 off Signature Cocktails. Fri-Sat 6-9pm. 904 2nd Ave S.
     type: both
-    daysOfWeek:
-      - 5
-      - 6
+    days:
+      - Friday
+      - Saturday
     startHour: 18
     endHour: 21
-  - id: hudsons-tailgate-sunday
-    title: Tailgate Sundays
+  - title: Tailgate Sundays
     description: $6 Caesars, $10 Breakfast, $10 Tankards, $12 Wings. Open-9pm. 904 2nd Ave S.
     type: both
-    dayOfWeek: 0
+    days:
+      - Sunday
     endHour: 21

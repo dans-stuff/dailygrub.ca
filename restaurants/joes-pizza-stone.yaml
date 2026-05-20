@@ -1,4 +1,3 @@
-id: joes-pizza-stone
 name: Joe's Pizza Stone
 type: local
 website: http://www.joespizzastone.ca
@@ -6,44 +5,41 @@ cities:
   grande-prairie:
     address: 105-11308 100 St, Grande Prairie, AB
 deals:
-  - id: jps-gp-wings-wed
-    title: Wing Wednesday
+  - title: Wing Wednesday
     description: $1.00/wing, minimum 10 wings.
     type: food
-    dayOfWeek: 3
-  - id: jps-gp-2med-pizza
-    title: 2 Medium 2-Topping Pizzas
+    days:
+      - Wednesday
+  - title: 2 Medium 2-Topping Pizzas
     description: "Pick up special: 2 medium 2-topping pizzas for $25."
     type: food
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-  - id: jps-gp-dinner-for-2
-    title: Dinner for 2
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
+  - title: Dinner for 2
     description: Dinner for 2 for $22.
     type: food
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-  - id: jps-gp-lg-pepperoni
-    title: Large Pepperoni Pizza
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
+  - title: Large Pepperoni Pizza
     description: Large pepperoni pizza pickup for $13.
     type: food
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday

@@ -121,17 +121,20 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
             </div>
           ) : (
             dealsGrouped.map(({ restaurant, activeDeals }) =>
-              activeDeals.map((deal) => (
-                <DealCard
-                  key={deal.id}
-                  restaurant={restaurant}
-                  deal={deal}
-                  cityName={city.name}
-                  citySlug={citySlug}
-                  isExpanded={expandedDealId === deal.id}
-                  onToggle={() => setExpandedDealId(expandedDealId === deal.id ? null : deal.id)}
-                />
-              ))
+              activeDeals.map((deal) => {
+                const key = `${restaurant.name}::${deal.title}`;
+                return (
+                  <DealCard
+                    key={key}
+                    restaurant={restaurant}
+                    deal={deal}
+                    cityName={city.name}
+                    citySlug={citySlug}
+                    isExpanded={expandedDealId === key}
+                    onToggle={() => setExpandedDealId(expandedDealId === key ? null : key)}
+                  />
+                );
+              })
             )
           )}
         </div>

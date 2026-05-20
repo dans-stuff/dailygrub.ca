@@ -1,4 +1,3 @@
-id: texas-gate-bar-and-grill
 name: Texas Gate Bar & Grill
 type: local
 website: https://rockyviewhotel.ca
@@ -6,42 +5,40 @@ cities:
   cochrane:
     address: 304 1st Street West, Cochrane, AB
 deals:
-  - id: tg-coch-steak-sandwich
-    title: Steak Sandwich
+  - title: Steak Sandwich
     description: Daily steak sandwich $6.95 until 8pm.
     type: food
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     endHour: 20
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-  - id: tg-coch-wings-tue
-    title: $0.35 Jumbo Wings
+  - title: $0.35 Jumbo Wings
     description: $0.35 jumbo wings Tuesday 4-10pm.
     type: food
-    dayOfWeek: 2
+    days:
+      - Tuesday
     startHour: 16
     endHour: 22
-  - id: tg-coch-ribs-wed
-    title: Buck-A-Rib
+  - title: Buck-A-Rib
     description: St. Louis buck-a-rib Wednesday 4-10pm.
     type: food
-    dayOfWeek: 3
+    days:
+      - Wednesday
     startHour: 16
     endHour: 22
-  - id: tg-coch-kids
-    title: Kids All Dishes $5.95
+  - title: Kids All Dishes $5.95
     description: All kids dishes $5.95 including pop. Daily.
     type: food
-    daysOfWeek:
-      - 0
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday

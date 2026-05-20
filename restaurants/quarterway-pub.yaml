@@ -1,4 +1,3 @@
-id: quarterway-pub
 name: Quarterway Pub
 type: local
 website: https://quarterwaypub.ca
@@ -6,31 +5,30 @@ cities:
   nanaimo:
     address: 1431 Bowen Rd, Nanaimo, BC
 deals:
-  - id: qw-nan-hh
-    title: Happy Hour
+  - title: Happy Hour
     description: Happy hour Mon-Thu 2-4pm. Drink and food specials.
     type: both
-    daysOfWeek:
-      - 1
-      - 2
-      - 3
-      - 4
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
     startHour: 14
     endHour: 16
-  - id: qw-nan-wings-wed
-    title: 75¢ Wings
+  - title: 75¢ Wings
     description: 75¢ wings Wednesday 4-10pm.
     type: food
-    dayOfWeek: 3
+    days:
+      - Wednesday
     startHour: 16
     endHour: 22
-  - id: qw-nan-wine-thu
-    title: $5 Off Wine Bottles
+  - title: $5 Off Wine Bottles
     description: $5 off bottles of wine all day Thursday.
     type: drink
-    dayOfWeek: 4
-  - id: qw-nan-wings-sun
-    title: 10 Wings for $10
+    days:
+      - Thursday
+  - title: 10 Wings for $10
     description: 10 wings for $10 all day Sunday.
     type: food
-    dayOfWeek: 0
+    days:
+      - Sunday

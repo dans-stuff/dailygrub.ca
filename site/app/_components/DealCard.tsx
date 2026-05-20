@@ -17,9 +17,7 @@ export function DealCard({ restaurant, deal, cityName, citySlug, isExpanded, onT
   const handleClick = () => {
     if (!isExpanded) {
       posthog.capture('deal_opened', {
-        deal_id: deal.id,
         deal_title: deal.title,
-        restaurant_id: restaurant.id,
         restaurant_name: restaurant.name,
         restaurant_type: restaurant.type,
         deal_type: deal.type,

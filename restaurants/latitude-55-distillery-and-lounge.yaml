@@ -1,4 +1,3 @@
-id: latitude-55-distillery-and-lounge
 name: Latitude 55 Distillery & Lounge
 type: local
 website: https://latitude55.ca/pages/l55-lounge
@@ -6,21 +5,20 @@ cities:
   grande-prairie:
     address: 10030 102 Ave
 deals:
-  - id: lat55-happy-hour
-    title: Happy Hour
+  - title: Happy Hour
     description: $10 cocktails, $5 draft beer. Wed-Sat 4-6pm. Lounge only open Wed-Sat.
     type: drink
-    daysOfWeek:
-      - 3
-      - 4
-      - 5
-      - 6
+    days:
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 16
     endHour: 18
-  - id: lat55-wine-charcuterie-wed
-    title: Wine & Charcuterie Wednesday
+  - title: Wine & Charcuterie Wednesday
     description: Charcuterie board + bottle of wine for $50. Wednesdays 4-9pm. 10030 102 Ave (Old Firehall downtown).
     type: both
-    dayOfWeek: 3
+    days:
+      - Wednesday
     startHour: 16
     endHour: 21
