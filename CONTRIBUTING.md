@@ -55,7 +55,7 @@ Create `cities/<city-slug>/<restaurant-slug>.json`:
 
 Rules:
 - `id` must equal the filename (without `.json`) and be `kebab-case`.
-- `type` is one of `local`, `chain`, `sponsored`, `exclusive`.
+- `type` is one of `local`, `chain`, `sponsored`, or `exclusive`. Use `local` or `chain` for ordinary deals. `sponsored` and `exclusive` are reserved for restaurants that have arranged a partnership with the project — they sort to the top of the city page. Don't set these in a PR; a maintainer will.
 - Every deal needs `id`, `title`, `description`, `type` (`food`/`drink`/`both`), and `lastVerified` (`YYYY-MM-DD`).
 - Days are 0 (Sun) – 6 (Sat). Use `dayOfWeek` for one day, `daysOfWeek` for several. Omit for all-week.
 - Hours are 0–23. `startHour`/`endHour` are optional.
