@@ -1,13 +1,12 @@
 <!-- Thanks for contributing to dailygrub.ca! -->
 
 ## What's changing
-<!-- e.g. Adding Original Joe's to Lethbridge, fixing Taco Tuesday end time at Boston Pizza -->
 
 ## Source
-<!-- Required: link, screenshot, or "in-person visit on YYYY-MM-DD".
-     We won't merge deal changes without a source. -->
+<!-- A link, a screenshot, or "saw it in-person on YYYY-MM-DD".
+     We won't merge deal changes without one. -->
 
 ## Checklist
-- [ ] I edited only files under `restaurants/`, `cities.yaml`, or `research/`
-- [ ] Every deal I touched has a `lastVerified` date (today, in `YYYY-MM-DD`)
-- [ ] CI passes (validate → build → smoke → typecheck → lint → Next build)
+- [ ] Files I touched: `restaurants/*.yaml`, `cities.yaml`, or docs
+- [ ] Every deal I added/edited has a `lastVerified` date (today)
+- [ ] CI passes

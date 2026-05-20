@@ -5,9 +5,9 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import YAML from 'yaml';
 
-const root = new URL('..', import.meta.url).pathname;
-const restaurantsDir = join(root, 'restaurants');
-const citiesFile = join(root, 'cities.yaml');
+const repoRoot = new URL('../..', import.meta.url).pathname;
+const restaurantsDir = join(repoRoot, 'restaurants');
+const citiesFile = join(repoRoot, 'cities.yaml');
 
 const RESTAURANT_TYPES = new Set(['sponsored', 'exclusive', 'local', 'chain']);
 const DEAL_TYPES = new Set(['food', 'drink', 'both']);

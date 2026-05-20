@@ -6,10 +6,12 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 
 import { join } from 'node:path';
 import YAML from 'yaml';
 
-const root = new URL('..', import.meta.url).pathname;
-const restaurantsDir = join(root, 'restaurants');
-const citiesFile = join(root, 'cities.yaml');
-const outFile = join(root, 'public', 'deals.json');
+// site/ contains the code; the data (restaurants/, cities.yaml) lives at repo root.
+const siteRoot = new URL('..', import.meta.url).pathname;
+const repoRoot = new URL('../..', import.meta.url).pathname;
+const restaurantsDir = join(repoRoot, 'restaurants');
+const citiesFile = join(repoRoot, 'cities.yaml');
+const outFile = join(siteRoot, 'public', 'deals.json');
 
 const cities = YAML.parse(readFileSync(citiesFile, 'utf8'));
 const restaurantFiles = readdirSync(restaurantsDir)
@@ -47,7 +49,7 @@ for (const city of Object.values(out.cities)) {
   city.restaurants.sort((a, b) => a.name.localeCompare(b.name));
 }
 
-if (!existsSync(join(root, 'public'))) mkdirSync(join(root, 'public'), { recursive: true });
+if (!existsSync(join(siteRoot, 'public'))) mkdirSync(join(siteRoot, 'public'), { recursive: true });
 writeFileSync(outFile, JSON.stringify(out, null, 2) + '\n');
 console.log(
   `built public/deals.json: ${Object.keys(out.cities).length} cities, ${restaurantCount} restaurant entries, ${dealCount} deals`

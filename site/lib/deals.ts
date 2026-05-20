@@ -2,8 +2,48 @@
 // scripts/build-deals.mjs from restaurants/*.yaml + cities.yaml. The same file
 // is served at https://dailygrub.ca/deals.json for third-party reuse
 // (CC BY-SA 4.0; see LICENSE-DATA).
-import { Deal, Restaurant, DealsData, City, EnhancedDeal } from '@/types/deals';
 import dealsJson from '@/public/deals.json';
+
+export type DealItemType = 'food' | 'drink' | 'both';
+export type RestaurantType = 'sponsored' | 'exclusive' | 'local' | 'chain';
+
+export interface Deal {
+  id: string;
+  title: string;
+  description: string;
+  type: DealItemType;
+  dayOfWeek?: number;
+  daysOfWeek?: number[];
+  startHour?: number;
+  endHour?: number;
+  lastVerified?: string;
+}
+
+export interface EnhancedDeal extends Deal {
+  isSingleDay: boolean;
+  isDaySpecific: boolean;
+  timeInfo: string | null;
+}
+
+export interface Restaurant {
+  id: string;
+  name: string;
+  type: RestaurantType;
+  address?: string;
+  website?: string;
+  deals: Deal[];
+}
+
+export interface City {
+  name: string;
+  province: string;
+  website?: string;
+  restaurants: Restaurant[];
+}
+
+export interface DealsData {
+  cities: { [citySlug: string]: City };
+}
 
 const dealsData: DealsData = dealsJson as DealsData;
 

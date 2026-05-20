@@ -1,49 +1,61 @@
 # Daily Grub
 
-[**dailygrub.ca**](https://dailygrub.ca) — Canada's open, community-maintained directory of restaurant deals, happy hours, and daily specials.
+[**dailygrub.ca**](https://dailygrub.ca) — Canada's open directory of restaurant deals, happy hours, and daily specials. Community-maintained. No accounts. No ads. No tracking.
 
-No accounts. No ads. No tracking. A few hundred KB of static HTML served from the edge.
+## 👉 Help out (no coding needed)
 
-## 👉 Contribute (no coding needed)
+Everything you see on the site comes from one file per restaurant in [`restaurants/`](restaurants).
 
-| | |
-| --- | --- |
-| 🍔 [**Submit a deal**](../../issues/new?template=new-deal.yml) | An existing restaurant has a new happy hour or daily special you know about |
-| 🏪 [**Submit a new restaurant**](../../issues/new?template=new-restaurant.yml) | A restaurant that isn't on the site yet |
-| 🏙️ [**Add a new city**](../../issues/new?template=new-city.yml) | We don't cover your city yet — let's fix that |
-| 🛠️ [**Report a wrong or stale deal**](../../issues/new?template=correction.yml) | Something on the site is outdated or wrong |
+### To **fix or add a deal** at an existing restaurant
 
-Just answer the questions in plain English — a maintainer will turn your submission into a properly formatted entry. **You don't need to know Git, JSON, or YAML to help.**
+1. Browse [`restaurants/`](restaurants) and open the file for that restaurant (e.g. `subway.yaml`).
+2. Click the **pencil ✏️ icon** in the top right to edit it in your browser.
+3. Change the deal or add a new one in the `deals:` list. Set `lastVerified:` to today's date.
+4. Scroll down, write a one-line note ("update Subway Monday deal — saw it in store yesterday"), click **Propose changes**. That's a PR.
+5. CI checks it. A maintainer merges. The site auto-deploys within a minute.
 
-Comfortable editing files? See [**CONTRIBUTING.md**](CONTRIBUTING.md) — every restaurant is a single YAML file under [`restaurants/`](restaurants), and there's a fully commented [`_TEMPLATE.yaml`](restaurants/_TEMPLATE.yaml) you can copy.
+### To **add a new restaurant**
+
+1. Open [`restaurants/_TEMPLATE.yaml`](restaurants/_TEMPLATE.yaml) — every field is documented inline.
+2. Click **Copy raw file** (or the **Add file → Create new file** button in [`restaurants/`](restaurants)).
+3. Name your file after the restaurant, like `the-slice.yaml`. Paste, then fill in the blanks.
+4. Propose changes. CI checks it. A maintainer merges.
+
+### To **add a new city**
+
+Edit [`cities.yaml`](cities.yaml). Add an entry like:
+
+```yaml
+saskatoon:
+  name: Saskatoon
+  province: SK
+```
+
+That's it. Once a city exists, restaurants can reference it.
+
+---
 
 ## How it works
 
-- **Data lives in this repo as YAML.** One file per restaurant under [`restaurants/`](restaurants), plus [`cities.yaml`](cities.yaml).
-- **The site is static.** A build step assembles, validates, and ships everything to Cloudflare. The assembled dataset is also published at [`/deals.json`](https://dailygrub.ca/deals.json) for anyone to reuse.
-- **Every PR runs a full test gate**: schema validation → assembly → invariant smoke tests → TypeScript typecheck → ESLint → Next build. Broken submissions cannot be merged.
-- A maintainer reviews and merges. Cloudflare auto-deploys. There is no other infrastructure.
-
-City-by-city research and verification notes live in [`research/`](research/).
+- All data is YAML at the repo root: [`restaurants/*.yaml`](restaurants) and [`cities.yaml`](cities.yaml).
+- The website code lives under [`site/`](site).
+- On every push, a build step assembles the YAML into a single `deals.json`, embeds it in the static site, and deploys to Cloudflare. The same file is published at [`https://dailygrub.ca/deals.json`](https://dailygrub.ca/deals.json) for anyone to reuse.
+- Every PR runs schema validation, smoke tests, TypeScript, ESLint, and a full Next.js build. Broken submissions cannot be merged.
 
 ## License
 
-- **Code** — MIT. See [LICENSE](LICENSE).
-- **Deal data** (`restaurants/`, `cities.yaml`, the published `deals.json`) — Creative Commons Attribution-ShareAlike 4.0. See [LICENSE-DATA](LICENSE-DATA).
+This project is **strong copyleft**. If you publish a modified version — even as a network service — you must publish your changes under the same license.
 
-Anyone is free to reuse the dataset, including commercially, as long as they credit Daily Grub and share derivative datasets back under the same license.
+- **Code** ([`site/`](site)): GNU **AGPL-3.0** — see [`LICENSE`](LICENSE).
+- **Deal data** ([`restaurants/`](restaurants), [`cities.yaml`](cities.yaml), the published `deals.json`): **Open Database License (ODbL) 1.0** — see [`LICENSE-DATA`](LICENSE-DATA).
+
+You are free to use both commercially. You must credit Daily Grub and license derivatives under the same terms.
 
 ## Local development
 
 ```bash
+cd site
 npm install
-npm run dev               # validates + assembles, then runs Next.js
-npm test                  # full test gate CI runs (validate + build + smoke + typecheck)
-npm run build             # production build
+npm run dev    # local dev server at http://localhost:3000
+npm test       # full CI gate (validate → build → smoke → typecheck)
 ```
-
-`public/deals.json` is generated from `restaurants/*.yaml` + `cities.yaml` and is not committed.
-
-## Stack
-
-Next.js (static export) · TypeScript · Tailwind · Cloudflare Workers.

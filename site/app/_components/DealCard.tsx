@@ -1,6 +1,6 @@
 'use client';
 
-import { EnhancedDeal, Restaurant } from '@/types/deals';
+import { EnhancedDeal, Restaurant } from '@/lib/deals';
 import { posthog } from '@/lib/posthog';
 import { UtensilsCrossed, Martini, Sparkles, Megaphone, Star, MapPin, Building2, ExternalLink } from 'lucide-react';
 

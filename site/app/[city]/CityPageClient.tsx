@@ -2,8 +2,8 @@
 
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
-import { DealCard } from '@/components/DealCard';
-import { DaySelector } from '@/components/DaySelector';
+import { DealCard } from '@/app/_components/DealCard';
+import { DaySelector } from '@/app/_components/DaySelector';
 import { getDealsGroupedByRestaurant, getCity } from '@/lib/deals';
 
 interface CityPageClientProps {

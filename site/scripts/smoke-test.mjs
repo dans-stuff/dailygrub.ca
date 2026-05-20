@@ -4,8 +4,8 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const root = new URL('..', import.meta.url).pathname;
-const data = JSON.parse(readFileSync(join(root, 'public/deals.json'), 'utf8'));
+const siteRoot = new URL('..', import.meta.url).pathname;
+const data = JSON.parse(readFileSync(join(siteRoot, 'public/deals.json'), 'utf8'));
 
 const fails = [];
 const check = (cond, msg) => { if (!cond) fails.push(msg); };

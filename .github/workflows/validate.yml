@@ -5,6 +5,10 @@ on:
   push:
     branches: [main]
 
+defaults:
+  run:
+    working-directory: site
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -14,22 +18,17 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: site/package-lock.json
       - run: npm ci
-      # Data: schema, IDs, days/hours, lastVerified, city refs
       - name: Validate restaurants/*.yaml + cities.yaml
         run: npm run data:validate
-      # Data: assembly must succeed
       - name: Assemble public/deals.json
         run: npm run data:build
-      # Data: invariants on the assembled artifact
       - name: Smoke-test assembled artifact
-        run: node scripts/smoke-test.mjs
-      # Code: typecheck
+        run: npm run data:smoke-test
       - name: TypeScript typecheck
         run: npx tsc --noEmit
-      # Code: lint
       - name: ESLint
         run: npx eslint .
-      # Code: full production build (catches any import/schema mismatch)
       - name: Next build
         run: npm run build
