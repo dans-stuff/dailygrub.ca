@@ -30,13 +30,19 @@ export default function Home() {
   const jsonLd = getHomeJsonLd(cities);
   const totalDeals = cities.reduce((sum, c) => sum + c.dealCount, 0);
 
+  // Group by province; within each province, biggest cities first.
   const citiesByProvince = cities.reduce((acc, city) => {
-    if (!acc[city.province]) {
-      acc[city.province] = [];
-    }
-    acc[city.province].push(city);
+    (acc[city.province] ??= []).push(city);
     return acc;
   }, {} as Record<string, typeof cities>);
+  for (const list of Object.values(citiesByProvince)) {
+    list.sort((a, b) => b.dealCount - a.dealCount || a.name.localeCompare(b.name));
+  }
+  // Provinces ordered by total deals, biggest first.
+  const provincesOrdered = Object.entries(citiesByProvince).sort(
+    ([, a], [, b]) =>
+      b.reduce((s, c) => s + c.dealCount, 0) - a.reduce((s, c) => s + c.dealCount, 0)
+  );
 
   return (
     <>
@@ -60,8 +66,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* City Tiles by Province */}
-          {Object.entries(citiesByProvince).map(([provinceCode, provinceCities]) => (
+          {/* City Tiles by Province — biggest first */}
+          {provincesOrdered.map(([provinceCode, provinceCities]) => (
             <div key={provinceCode} className="mb-8">
               <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3 px-1">
                 {PROVINCE_NAMES[provinceCode] || provinceCode}
@@ -93,7 +99,7 @@ export default function Home() {
             <p className="text-gray-600">
               Missing your city or a deal?{' '}
               <a
-                href="https://github.com/dans-stuff/dailygrub.ca/blob/main/CONTRIBUTING.md"
+                href="https://github.com/dans-stuff/dailygrub.ca#-help-out-no-coding-needed"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-900 hover:text-emerald-600 font-medium transition-colors"
@@ -102,7 +108,7 @@ export default function Home() {
               </a>
             </p>
             <p className="text-xs text-gray-500">
-              Open source. Code is MIT; deal data is CC BY-SA 4.0 — free to reuse with attribution.
+              Open source. Code is AGPL-3.0; deal data is ODbL 1.0 — free to reuse with attribution and share-alike.
               The full dataset is available at{' '}
               <a
                 href="/deals.json"

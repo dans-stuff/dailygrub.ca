@@ -1,6 +1,6 @@
 # Daily Grub
 
-[**dailygrub.ca**](https://dailygrub.ca) — Canada's open directory of restaurant deals, happy hours, and daily specials. Community-maintained. No accounts. No ads. No tracking.
+[**dailygrub.ca**](https://dailygrub.ca) — Canada's open directory of restaurant deals, happy hours, and daily specials. Community-maintained, open source, free to use. Restaurants can sponsor priority placement; everything else is added by locals.
 
 ## 👉 Help out (no coding needed)
 

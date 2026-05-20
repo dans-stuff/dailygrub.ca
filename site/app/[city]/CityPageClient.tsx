@@ -77,7 +77,7 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
             <div className="text-right">
               <p className="text-xs text-gray-500 mb-0.5">Missing a deal?</p>
               <a
-                href="https://github.com/dans-stuff/dailygrub.ca/issues/new/choose"
+                href="https://github.com/dans-stuff/dailygrub.ca#-help-out-no-coding-needed"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-gray-900 hover:underline font-medium"
@@ -94,17 +94,13 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
             href={city.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="block mb-6 bg-emerald-50 border border-emerald-200 hover:border-emerald-400 rounded-lg px-4 py-3 transition-colors group"
+            className="block mb-6 bg-emerald-50 border border-emerald-200 hover:border-emerald-400 rounded-lg px-4 py-2.5 transition-colors text-sm text-emerald-800 hover:underline"
           >
-            <p className="text-sm font-semibold text-emerald-800 mb-0.5">
-              More from {city.name}
-            </p>
-            <p className="text-sm text-emerald-700">
-              Visit{' '}
-              <span className="font-medium group-hover:underline">
-                {city.website.replace(/^https?:\/\//, '').replace(/\/$/, '')} &rarr;
-              </span>
-            </p>
+            If you live in {city.name}, check out{' '}
+            <span className="font-semibold">
+              {city.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+            </span>{' '}
+            &rarr;
           </a>
         )}
 
