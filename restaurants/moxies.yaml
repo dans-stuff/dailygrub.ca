@@ -22,10 +22,8 @@ deals:
       - 4
       - 5
       - 6
-    lastVerified: 2026-02-06
   - id: moxies-wine-wednesday
     title: Half-Price Wine Bottles
     description: Half-price wine bottles all day. Dine-in only.
     type: drink
     dayOfWeek: 3
-    lastVerified: 2026-02-06

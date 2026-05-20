@@ -18,7 +18,6 @@ Each deal needs:
 
 - `id` (unique within the file), `title`, `description`
 - `type` — `food` | `drink` | `both`
-- `lastVerified` — `YYYY-MM-DD`, the date you (or the source) confirmed it
 
 Optional:
 

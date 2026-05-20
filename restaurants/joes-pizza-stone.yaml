@@ -11,12 +11,10 @@ deals:
     description: $1.00/wing, minimum 10 wings.
     type: food
     dayOfWeek: 3
-    lastVerified: 2026-02-15
   - id: jps-gp-2med-pizza
     title: 2 Medium 2-Topping Pizzas
     description: "Pick up special: 2 medium 2-topping pizzas for $25."
     type: food
-    lastVerified: 2026-02-15
     daysOfWeek:
       - 0
       - 1
@@ -29,7 +27,6 @@ deals:
     title: Dinner for 2
     description: Dinner for 2 for $22.
     type: food
-    lastVerified: 2026-02-15
     daysOfWeek:
       - 0
       - 1
@@ -42,7 +39,6 @@ deals:
     title: Large Pepperoni Pizza
     description: Large pepperoni pizza pickup for $13.
     type: food
-    lastVerified: 2026-02-15
     daysOfWeek:
       - 0
       - 1

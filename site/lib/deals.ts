@@ -16,7 +16,6 @@ export interface Deal {
   daysOfWeek?: number[];
   startHour?: number;
   endHour?: number;
-  lastVerified?: string;
 }
 
 export interface EnhancedDeal extends Deal {

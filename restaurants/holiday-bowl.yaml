@@ -13,11 +13,9 @@ deals:
     dayOfWeek: 2
     startHour: 18
     endHour: 22
-    lastVerified: 2026-02-06
   - id: holiday-bowl-sunday
     title: Sunday Sevens
     description: $7 for any 2-topping 8" pizza, $7 for 32oz mini jug of Moosehead. Also $7 for 2 games of bowling (shoe rental not included). After 7pm.
     type: both
     dayOfWeek: 0
     startHour: 19
-    lastVerified: 2026-02-06

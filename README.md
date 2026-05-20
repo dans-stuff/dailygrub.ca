@@ -10,7 +10,7 @@ Everything you see on the site comes from one file per restaurant in [`restauran
 
 1. Browse [`restaurants/`](restaurants) and open the file for that restaurant (e.g. `subway.yaml`).
 2. Click the **pencil ✏️ icon** in the top right to edit it in your browser.
-3. Change the deal or add a new one in the `deals:` list. Set `lastVerified:` to today's date.
+3. Change the deal or add a new one in the `deals:` list.
 4. Scroll down, write a one-line note ("update Subway Monday deal — saw it in store yesterday"), click **Propose changes**. That's a PR.
 5. CI checks it. A maintainer merges. The site auto-deploys within a minute.
 

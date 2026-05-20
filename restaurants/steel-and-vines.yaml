@@ -11,7 +11,6 @@ deals:
     description: "10% off meals on Tuesday. Dine-in only. 332 5th St South. Hours: Tue-Sat."
     type: food
     dayOfWeek: 2
-    lastVerified: 2026-02-06
   - id: steel-vines-happy-hour
     title: Cocktail Happy Hour
     description: "Glass pours on special daily until 6pm. Dine-in only. 332 5th St South. Hours: Tue-Sat."
@@ -23,4 +22,3 @@ deals:
       - 5
       - 6
     endHour: 18
-    lastVerified: 2026-02-06

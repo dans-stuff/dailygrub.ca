@@ -18,43 +18,36 @@ deals:
       - 6
     startHour: 15
     endHour: 18
-    lastVerified: 2026-02-06
   - id: rosscos-tue
     title: Tuesday Specials
     description: Fettuccine Alfredo $12.95. Domestic bottled beer $5.75. 115-3215 Dunmore Rd SE.
     type: both
     dayOfWeek: 2
-    lastVerified: 2026-02-06
   - id: rosscos-wed
     title: Wing Wednesday
     description: 95¢ wings dine-in or take-out. Homemade chicken bites 1lb $15.95. Selected pints $5.95. 115-3215 Dunmore Rd SE.
     type: both
     dayOfWeek: 3
-    lastVerified: 2026-02-06
   - id: rosscos-thu
     title: Thursday Specials
     description: All in-house beef & chicken burgers $15.95 with choice of side. 2oz bar highballs $8.95, Miller Lite pints $5.95. 115-3215 Dunmore Rd SE.
     type: both
     dayOfWeek: 4
-    lastVerified: 2026-02-06
   - id: rosscos-fri
     title: Friday Specials
     description: 8oz fish & chips with coleslaw $15.95. Steak sandwich $16.95. Select draft schooners $12.95, select wines $6.95. 115-3215 Dunmore Rd SE.
     type: both
     dayOfWeek: 5
-    lastVerified: 2026-02-06
   - id: rosscos-sat
     title: Saturday Specials
     description: 95¢ wings dine-in or take-out. Chicken bites 1lb $15.95. Brunch 11:30am-2:30pm. Select draft schooners $12.95, sangria $6.95. 115-3215 Dunmore Rd SE.
     type: both
     dayOfWeek: 6
-    lastVerified: 2026-02-06
   - id: rosscos-sun
     title: Sunday Specials
     description: Caesar salad $12.00. Brunch 11:30am-2:30pm. All draft pints $5.95, Caesars/Long Islands/Paralyzers $5.95. 115-3215 Dunmore Rd SE.
     type: both
     dayOfWeek: 0
-    lastVerified: 2026-02-06
   - id: rosscos-lunch
     title: Lunch Specials
     description: Tue-Fri 11:30am-2pm. Soup & sandwich $9.75, cheeseburger & fries $9.95. 115-3215 Dunmore Rd SE.
@@ -66,7 +59,6 @@ deals:
       - 5
     startHour: 11
     endHour: 14
-    lastVerified: 2026-02-06
   - id: rosscos-jugs
     title: Daily Jugs
     description: All day, every day. Rossco's Lager jugs $15, Coors Light/Canadian/Miller Lite jugs $17. 115-3215 Dunmore Rd SE.
@@ -79,4 +71,3 @@ deals:
       - 4
       - 5
       - 6
-    lastVerified: 2026-02-06

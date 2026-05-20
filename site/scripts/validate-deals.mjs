@@ -12,7 +12,6 @@ const citiesFile = join(repoRoot, 'cities.yaml');
 const RESTAURANT_TYPES = new Set(['sponsored', 'exclusive', 'local', 'chain']);
 const DEAL_TYPES = new Set(['food', 'drink', 'both']);
 const SLUG_RE = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 const errors = [];
 const err = (file, msg) => errors.push(`${file}: ${msg}`);
@@ -86,10 +85,6 @@ for (const f of readdirSync(restaurantsDir).filter((x) => x.endsWith('.yaml') &&
         if (d[k] !== undefined && (!Number.isInteger(d[k]) || d[k] < 0 || d[k] > 23))
           err(file, `${w}: ${k} must be 0-23`);
       }
-      const lv = d.lastVerified instanceof Date
-        ? d.lastVerified.toISOString().slice(0, 10)
-        : d.lastVerified;
-      if (!lv || !DATE_RE.test(lv)) err(file, `${w}: lastVerified required (YYYY-MM-DD)`);
     });
   }
 }

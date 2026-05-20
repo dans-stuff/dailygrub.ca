@@ -11,40 +11,33 @@ deals:
     description: Buy entree get second 50% off (lesser value). Domestic pitchers $16.98, house wine $6. Dine-in only.
     type: both
     dayOfWeek: 1
-    lastVerified: 2026-03-25
   - id: wingnit-tue
     title: Sandwich Day
     description: All sandwiches and wraps $15 with fries. Dine-in only.
     type: food
     dayOfWeek: 2
-    lastVerified: 2026-03-25
   - id: wingnit-wed
     title: $10 Single Wings
     description: Single wings $10, non-dusted +$3. Domestic draft 23oz $6.48. Dine-in only. Min 10 wings.
     type: both
     dayOfWeek: 3
-    lastVerified: 2026-03-25
   - id: wingnit-thu
     title: Burger Thursdays
     description: $5 off all burgers. Dine-in only.
     type: food
     dayOfWeek: 4
-    lastVerified: 2026-03-25
   - id: wingnit-fri
     title: Top Gun Friday
     description: 34oz domestic draft $8.98, domestic bottles $5. Dine-in only.
     type: drink
     dayOfWeek: 5
-    lastVerified: 2026-03-25
   - id: wingnit-sat
     title: Kids Meals Saturday
     description: Kids meals $6.98 with $12.98+ adult purchase. Dine-in only.
     type: food
     dayOfWeek: 6
-    lastVerified: 2026-03-25
   - id: wingnit-sun
     title: $5 Caesars
     description: $5 Caesars. Dine-in only.
     type: drink
     dayOfWeek: 0
-    lastVerified: 2026-03-25

@@ -17,16 +17,13 @@ deals:
     description: AYCE Fish & Chips (Wild Alaska Pollock or North Pacific Cod). Dine-in only. Tuesday all day. 10420 116 Ave Unit 101.
     type: food
     dayOfWeek: 2
-    lastVerified: 2026-02-28
   - id: joeys-dumpling-wed
     title: $1 Dumpling Wednesday
     description: $1 dumplings (choose dumpling and sauce). Wednesday all day. 10420 116 Ave Unit 101.
     type: food
     dayOfWeek: 3
-    lastVerified: 2026-02-28
   - id: joeys-taco-thu
     title: $4 Fish Taco Thursday
     description: $4 fish tacos. Thursday all day. 10420 116 Ave Unit 101.
     type: food
     dayOfWeek: 4
-    lastVerified: 2026-02-28

@@ -11,38 +11,32 @@ deals:
     description: $2 off Tommy's or Spicy Honey Margarita (2oz). Corona draft (50cl) $1 off. Dine-in only. Both locations.
     type: drink
     dayOfWeek: 1
-    lastVerified: 2026-02-07
   - id: state-tuesday
     title: $1 Off Banded Peak Draft
     description: Banded Peak Southern Aspect IPA (16oz) or seasonal draft (16oz) $1 off. Dine-in only. Both locations.
     type: drink
     dayOfWeek: 2
-    lastVerified: 2026-02-07
   - id: state-wing-wednesday
     title: Half-Price Wings & $1 Off Draft
     description: Half-price wings (1lb, 6 flavours) after 2pm. Lawn Mower Yard Lager draft (16oz) $1 off all day. Dine-in only. Both locations.
     type: both
     dayOfWeek: 3
     startHour: 14
-    lastVerified: 2026-02-07
   - id: state-wine-thursday
     title: Wine Deals
     description: Wine by the glass $1 off (5oz/8oz). Wine by the bottle half price. By-the-bottle-only wines 25% off. Dine-in only. Both locations.
     type: drink
     dayOfWeek: 4
-    lastVerified: 2026-02-07
   - id: state-sangria-saturday
     title: $2 Off White Sangria
     description: $2 off White Sangria (3.5oz). Dine-in only. Both locations.
     type: drink
     dayOfWeek: 6
-    lastVerified: 2026-02-07
   - id: state-sunday
     title: $2 Off Signature Caesar & $1 Off Radler
     description: $2 off Signature Caesar (vodka or gin, 2oz). Churchill Radler draft (16oz) $1 off. Dine-in only. Both locations.
     type: drink
     dayOfWeek: 0
-    lastVerified: 2026-02-07
   - id: state-happy-hour
     title: Happy Hour
     description: Daily 2-5pm & 9pm-close. Food from $7.50 (fish taco, truffle fries, dumplings, calamari). Drinks from $6 (house wine, draft $7, cocktails from $11). Dine-in only. Both locations.
@@ -57,4 +51,3 @@ deals:
       - 6
     startHour: 14
     endHour: 17
-    lastVerified: 2026-02-07

@@ -11,13 +11,11 @@ deals:
     description: Wing Wednesday specials. Dine-in only. 18-69 Dunlop Street.
     type: food
     dayOfWeek: 3
-    lastVerified: 2025-12-16
   - id: chillabongs-guinness-thursday
     title: Cheap Guinness Thursday
     description: Discounted Guinness on Thursday. Dine-in only.
     type: drink
     dayOfWeek: 4
-    lastVerified: 2025-12-16
   - id: chillabongs-happy-hour
     title: Happy Hour
     description: Daily 4-7pm drink specials. Dine-in only.
@@ -32,4 +30,3 @@ deals:
       - 6
     startHour: 16
     endHour: 19
-    lastVerified: 2025-12-16

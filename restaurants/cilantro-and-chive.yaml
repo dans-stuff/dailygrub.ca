@@ -11,23 +11,19 @@ deals:
     description: Margarita Flights & signature Mac n Cheese all day. Dine-in only.
     type: both
     dayOfWeek: 1
-    lastVerified: 2025-12-16
   - id: cilantro-poutine-beer-tuesday
     title: Poutine & Beer
     description: Six signature Poutines and Flights of Craft Beer all day. Dine-in only.
     type: both
     dayOfWeek: 2
-    lastVerified: 2025-12-16
   - id: cilantro-pub-night-wednesday
     title: Pub Night & Pints
     description: Pub Night & Pints after 4PM. Dine-in only.
     type: both
     dayOfWeek: 3
     startHour: 16
-    lastVerified: 2026-02-06
   - id: cilantro-fish-chips-thursday
     title: Fish & Chips
     description: Fish & Chips Thursday. Dine-in only.
     type: food
     dayOfWeek: 4
-    lastVerified: 2026-02-06

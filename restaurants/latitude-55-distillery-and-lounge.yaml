@@ -17,7 +17,6 @@ deals:
       - 6
     startHour: 16
     endHour: 18
-    lastVerified: 2026-02-28
   - id: lat55-wine-charcuterie-wed
     title: Wine & Charcuterie Wednesday
     description: Charcuterie board + bottle of wine for $50. Wednesdays 4-9pm. 10030 102 Ave (Old Firehall downtown).
@@ -25,4 +24,3 @@ deals:
     dayOfWeek: 3
     startHour: 16
     endHour: 21
-    lastVerified: 2026-02-28

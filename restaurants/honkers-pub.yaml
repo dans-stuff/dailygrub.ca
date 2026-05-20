@@ -18,42 +18,35 @@ deals:
       - 6
     startHour: 14
     endHour: 18
-    lastVerified: 2026-03-25
   - id: honkers-monday
     title: $3 Off Veal Cutlets
     description: $3 off two-piece veal cutlets + $2 off 1oz Caesar. Dine-in only. 2808 5 Ave N.
     type: both
     dayOfWeek: 1
-    lastVerified: 2026-03-25
   - id: honkers-tuesday
     title: $18.99 Steak Sandwich
     description: 6oz sirloin steak sandwich with fries, soup or mashed $18.99. $2 off 1oz vodka paralyzer. Dine-in only.
     type: both
     dayOfWeek: 2
-    lastVerified: 2026-03-25
   - id: honkers-wednesday
     title: $19.99 Chef Choice Burger
     description: "Chef Choice Burger with fries, soup or mashed $19.99. 5-8pm: bucket of beer (4) $22, half-price select wine bottles. Dine-in only."
     type: both
     dayOfWeek: 3
-    lastVerified: 2026-03-25
   - id: honkers-thursday
     title: $10.99 Cadillac Wings
     description: Cadillac of Wings (10) $10.99 from 2pm-close. In-house only. 2808 5 Ave N.
     type: food
     dayOfWeek: 4
     startHour: 14
-    lastVerified: 2026-03-25
   - id: honkers-friday
     title: $3 Off Fish & Chips
     description: "$3 off two-piece beer-battered fish & chips. 5-8pm: Bucket of Beer (4) $22 + 4oz Well Highball Mini Jugs $22. Dine-in only."
     type: both
     dayOfWeek: 5
-    lastVerified: 2026-03-25
   - id: honkers-saturday
     title: $22 Well Highball Mini Jugs
     description: Breakfast/Brunch from 9am. Well Highball Mini Jugs $22 2pm-close. Dine-in only.
     type: both
     dayOfWeek: 6
     startHour: 9
-    lastVerified: 2026-03-25

@@ -19,7 +19,6 @@ deals:
       - 5
       - 6
     startHour: 16
-    lastVerified: 2026-02-15
   - id: norsemen-free-ribs
     title: Free Pork Ribs
     description: Free pork ribs during happy hour. Monday & Friday. 6505 48 Ave.
@@ -28,7 +27,6 @@ deals:
       - 1
       - 5
     startHour: 16
-    lastVerified: 2026-02-15
   - id: norsemen-free-wings
     title: Free Chicken Wings
     description: Free chicken wings during happy hour. Tuesday & Thursday. 6505 48 Ave.
@@ -37,7 +35,6 @@ deals:
       - 2
       - 4
     startHour: 16
-    lastVerified: 2026-02-15
   - id: norsemen-soup-sandwich
     title: Soup & Sandwich $13.95
     description: Soup & Sandwich $13.95. Monday-Friday 11am-2pm. 6505 48 Ave.
@@ -50,7 +47,6 @@ deals:
       - 5
     startHour: 11
     endHour: 14
-    lastVerified: 2026-02-15
   - id: norsemen-breakfast
     title: Daily Breakfast $12.95
     description: Daily Breakfast $12.95. Monday-Friday 7-11am. 6505 48 Ave.
@@ -63,7 +59,6 @@ deals:
       - 5
     startHour: 7
     endHour: 11
-    lastVerified: 2026-02-15
   - id: norsemen-lunch-buffet
     title: Lunch Buffet $19.95
     description: Lunch Buffet $19.95. Weekdays 11am-2pm. 6505 48 Ave.
@@ -76,13 +71,11 @@ deals:
       - 5
     startHour: 11
     endHour: 14
-    lastVerified: 2026-02-15
   - id: norsemen-fish-friday
     title: Fresh Fish Friday
     description: Fresh Fish Friday — lunch buffet + dinner a la carte. All day Friday. 6505 48 Ave.
     type: food
     dayOfWeek: 5
-    lastVerified: 2026-02-15
   - id: norsemen-steak-sandwich
     title: Steak Sandwich Special
     description: 6oz steak sandwich with sides. Daily at lunchtime. 6505 48 Ave.
@@ -95,4 +88,3 @@ deals:
       - 4
       - 5
       - 6
-    lastVerified: 2026-02-15

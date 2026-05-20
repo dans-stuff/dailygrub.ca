@@ -19,42 +19,35 @@ deals:
       - 6
     startHour: 15
     endHour: 19
-    lastVerified: 2026-03-31
   - id: legends-leth-happy-hour-sunday
     title: All Day Happy Hour
     description: Well drinks $6, domestic bottles $6, 16oz draught $6.50. All day Sunday.
     type: drink
     dayOfWeek: 0
-    lastVerified: 2026-03-31
   - id: legends-leth-monday-pasta-pizza
     title: Pasta & Pizza Night
     description: Regular pasta $14.50, baked pasta $17. Small pizzas (#1–20) $12. Draught pints 16oz $7, Blue Moon pints $7. Starts at 5pm.
     type: both
     dayOfWeek: 1
     startHour: 17
-    lastVerified: 2026-03-31
   - id: legends-leth-tuesday-wings
     title: Wing Night
     description: Wings $7.50/order with beverage purchase. Mini jugs of draught (32oz) $12, mini jugs of hiballs (4oz) $19. Starts at 5pm.
     type: both
     dayOfWeek: 2
     startHour: 17
-    lastVerified: 2026-03-31
   - id: legends-leth-wednesday
     title: Wednesday Specials
     description: Hiballs $6.50 all night. Shots $6.50. Steak sandwich 6oz New York $18 with beverage purchase.
     type: both
     dayOfWeek: 3
-    lastVerified: 2026-03-31
   - id: legends-leth-friday
     title: Friday Mini Jugs
     description: Mini jugs of draught $12.
     type: drink
     dayOfWeek: 5
-    lastVerified: 2026-03-31
   - id: legends-leth-saturday
     title: Saturday Specials
     description: Blue Moon pints 16oz $7.50. Mini jugs of hiballs (4oz) $23.50. Premium tequila $7.50.
     type: drink
     dayOfWeek: 6
-    lastVerified: 2026-03-31

@@ -18,46 +18,38 @@ deals:
       - 5
     startHour: 14
     endHour: 18
-    lastVerified: 2026-02-28
   - id: oflanigans-sun-hh
     title: Sunday All-Day Happy Hour
     description: Select beer, highballs, and wine at happy hour prices plus appies $4.95-$12.95. All day Sunday.
     type: both
     dayOfWeek: 0
-    lastVerified: 2026-02-28
   - id: oflanigans-mon-chicken
     title: Crispy Chicken Sandwich Monday
     description: Crispy Chicken Sandwich $15.95 all day.
     type: food
     dayOfWeek: 1
-    lastVerified: 2026-02-28
   - id: oflanigans-tue-beefdip
     title: Beef Dip Tuesday
     description: Beef Dip $15.95 all day.
     type: food
     dayOfWeek: 2
-    lastVerified: 2026-02-28
   - id: oflanigans-wed-tacos-wings
     title: Taco & Wing Wednesday
     description: Beef Soft Taco $15.95 all day. Wings $0.89 each (10 per order) from 4pm.
     type: food
     dayOfWeek: 3
-    lastVerified: 2026-02-28
   - id: oflanigans-thu-burger
     title: Cheeseburger Thursday
     description: Classic Cheeseburger $15.95 all day.
     type: food
     dayOfWeek: 4
-    lastVerified: 2026-02-28
   - id: oflanigans-fri-steak
     title: NY Steak Friday
     description: 7oz NY Steak with fries, Caesar salad, garlic toast $21.95 all day.
     type: food
     dayOfWeek: 5
-    lastVerified: 2026-02-28
   - id: oflanigans-sat-fishnchips
     title: Fish & Chips Saturday
     description: Hand battered cod Fish & Chips $17.95 all day.
     type: food
     dayOfWeek: 6
-    lastVerified: 2026-02-28

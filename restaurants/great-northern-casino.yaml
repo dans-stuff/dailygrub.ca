@@ -13,7 +13,6 @@ deals:
     dayOfWeek: 1
     startHour: 16
     endHour: 22
-    lastVerified: 2026-02-28
   - id: gnc-ribs-tue
     title: Rib Tuesday
     description: 2 Can Dine ribs $38.95 or single $20 — two racks BBQ baby back ribs, potato wedges, Caesar salad, garlic toast. 4pm-10pm. 10910 107 Ave.
@@ -21,7 +20,6 @@ deals:
     dayOfWeek: 2
     startHour: 16
     endHour: 22
-    lastVerified: 2026-02-28
   - id: gnc-wings-wed
     title: Wing Wednesday
     description: Wings $9.50/lb — 10 flavors including Hot, Mild, Teriyaki, BBQ, Honey Garlic, Salt & Pepper. 4pm-10pm. 10910 107 Ave.
@@ -29,7 +27,6 @@ deals:
     dayOfWeek: 3
     startHour: 16
     endHour: 22
-    lastVerified: 2026-02-28
   - id: gnc-steak-thu
     title: Steak Thursday
     description: 2 Can Dine steak $35.95 or single $19 — two sirloin steaks, fries, Caesar salad, corn, garlic toast. 4pm-10pm. 10910 107 Ave.
@@ -37,7 +34,6 @@ deals:
     dayOfWeek: 4
     startHour: 16
     endHour: 22
-    lastVerified: 2026-02-28
   - id: gnc-seniors-buffet
     title: Senior's Buffet Wednesday
     description: Senior's buffet $12.95. 11am-1pm Wednesdays. 10910 107 Ave.
@@ -45,7 +41,6 @@ deals:
     dayOfWeek: 3
     startHour: 11
     endHour: 13
-    lastVerified: 2026-02-28
   - id: gnc-chef-special
     title: Daily Chef Special
     description: Daily chef special $14.95. 11am-9pm. 10910 107 Ave.
@@ -60,4 +55,3 @@ deals:
       - 6
     startHour: 11
     endHour: 21
-    lastVerified: 2026-02-28

@@ -99,7 +99,7 @@ export default function Home() {
             <p className="text-gray-600">
               Missing your city or a deal?{' '}
               <a
-                href="https://github.com/dans-stuff/dailygrub.ca#-help-out-no-coding-needed"
+                href="https://github.com/dans-stuff/dailygrub.ca?tab=contributing-ov-file"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-900 hover:text-emerald-600 font-medium transition-colors"

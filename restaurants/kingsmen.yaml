@@ -18,46 +18,38 @@ deals:
       - 5
     startHour: 15
     endHour: 18
-    lastVerified: 2026-02-06
   - id: kingsmen-monday
     title: Half-Price Pints & $10.50 Yorkies
     description: Half-price English pints, $10.50 big stuffed Yorkies, half-price kids meals. Dine-in only.
     type: both
     dayOfWeek: 1
-    lastVerified: 2026-02-06
   - id: kingsmen-tuesday
     title: $2-$5 Off Fish & Chips
     description: $5 off 2pc fish & chips, $2 off 1pc fish & chips. Half-price highballs. Dine-in only.
     type: both
     dayOfWeek: 2
-    lastVerified: 2026-02-06
   - id: kingsmen-wednesday
     title: Half-Price Wings
     description: Half-price 7pc chicken wings. Dine-in only.
     type: food
     dayOfWeek: 3
-    lastVerified: 2026-02-06
   - id: kingsmen-thursday
     title: $5 Off Cocktails & Mussels
     description: $5 off cocktails & mussels. 95¢/oz house wine. Dine-in only.
     type: both
     dayOfWeek: 4
-    lastVerified: 2026-02-06
   - id: kingsmen-friday
     title: $10 Cod Bites & Mac n Cheese
     description: $10 Buffalo Cod Bites, $10 Mac n Cheese. 20% off smoked cocktails. Dine-in only.
     type: both
     dayOfWeek: 5
-    lastVerified: 2026-02-06
   - id: kingsmen-saturday
     title: Half-Price Wine & 20% Off Brit Bites
     description: Half-price bottles of wine, 20% off Brit Bites (appetizers). Dine-in only.
     type: both
     dayOfWeek: 6
-    lastVerified: 2026-02-06
   - id: kingsmen-sunday
     title: $18.95 Roast Beef Dinner
     description: $18.95 roast beef dinner with Yorkshire pudding. $5 off jug of Nightlife Lager, $2 off Caesars. Dine-in only.
     type: both
     dayOfWeek: 0
-    lastVerified: 2026-02-06

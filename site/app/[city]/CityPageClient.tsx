@@ -77,7 +77,7 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
             <div className="text-right">
               <p className="text-xs text-gray-500 mb-0.5">Missing a deal?</p>
               <a
-                href="https://github.com/dans-stuff/dailygrub.ca#-help-out-no-coding-needed"
+                href="https://github.com/dans-stuff/dailygrub.ca?tab=contributing-ov-file"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-gray-900 hover:underline font-medium"

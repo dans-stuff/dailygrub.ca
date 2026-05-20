@@ -11,16 +11,13 @@ deals:
     description: Quarter chicken + 1/3 rack BBQ ribs, coleslaw, dinner roll, choice of side. $19.99 dine-in/takeout, $21.99 delivery. 5111 22nd Street.
     type: food
     dayOfWeek: 1
-    lastVerified: 2026-02-15
   - id: sc-2-can-dine-tuesday
     title: 2 Can Dine for $19.99
     description: 2 quarter chicken dinners with 2 beverages for $19.99. Dine-in only. 5111 22nd Street.
     type: both
     dayOfWeek: 2
-    lastVerified: 2026-02-15
   - id: sc-kids-free-wednesday
     title: Kids Eat Free Wednesday
     description: 1 free kids meal with adult entree purchase. Ages 10 & under. Dine-in only. 5111 22nd Street.
     type: food
     dayOfWeek: 3
-    lastVerified: 2026-02-15

@@ -11,19 +11,16 @@ deals:
     description: Bottle of wine + 3 chef's choice tapas. All day Tuesday. 1 Hebert Rd.
     type: both
     dayOfWeek: 2
-    lastVerified: 2026-02-15
   - id: bodega-wednesday
     title: Wine Wednesday
     description: Half-price all wines. All day Wednesday. 1 Hebert Rd.
     type: drink
     dayOfWeek: 3
-    lastVerified: 2026-02-15
   - id: bodega-thursday
     title: 8 for 88 Thursday
     description: 8 feature tapas + bottle of feature wine for $88. All day Thursday. 1 Hebert Rd.
     type: both
     dayOfWeek: 4
-    lastVerified: 2026-02-15
   - id: bodega-sunday
     title: Seafood Sunday
     description: 3 tapas + main + dessert family style, $40/person (min 2 people). Sunday 4-9pm. 1 Hebert Rd.
@@ -31,4 +28,3 @@ deals:
     dayOfWeek: 0
     startHour: 16
     endHour: 21
-    lastVerified: 2026-02-15

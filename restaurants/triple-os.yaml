@@ -11,16 +11,13 @@ deals:
     description: Spicy Ultimate Crunch burger $7.99. Available at participating locations.
     type: food
     dayOfWeek: 1
-    lastVerified: 2026-02-06
   - id: triple-os-tuesday
     title: $7.99 Original Burger
     description: Original Burger $7.99 on Triple O Tuesday. Available at participating locations.
     type: food
     dayOfWeek: 2
-    lastVerified: 2026-02-06
   - id: triple-os-wednesday
     title: $7.99 Crispy Cod Burger
     description: Crispy Cod Burger $7.99. Available at participating locations.
     type: food
     dayOfWeek: 3
-    lastVerified: 2026-02-06

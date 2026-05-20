@@ -8,5 +8,4 @@
 
 ## Checklist
 - [ ] Files I touched: `restaurants/*.yaml`, `cities.yaml`, or docs
-- [ ] Every deal I added/edited has a `lastVerified` date (today)
 - [ ] CI passes

@@ -11,10 +11,8 @@ deals:
     description: "$3.50 per piece of fish OR $3.50 regular fries on Tuesday. In-store only. West: 550 University Dr W Unit 22, South: 3735 Mayor Magrath Dr S."
     type: food
     dayOfWeek: 2
-    lastVerified: 2026-02-06
   - id: streats-taco-thursday
     title: $4.20 Tacos
     description: $4.20 tacos every Thursday. In-store only. Both locations.
     type: food
     dayOfWeek: 4
-    lastVerified: 2026-02-06

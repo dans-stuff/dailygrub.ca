@@ -11,22 +11,18 @@ deals:
     description: 20% off all margaritas on Monday.
     type: drink
     dayOfWeek: 1
-    lastVerified: 2026-02-15
   - id: cg-coch-taco-tue
     title: Taco Tuesday
     description: Discounted tacos on Tuesday.
     type: food
     dayOfWeek: 2
-    lastVerified: 2026-02-15
   - id: cg-coch-wings-wed
     title: Wing Wednesday
     description: 25% off wings on Wednesday.
     type: food
     dayOfWeek: 3
-    lastVerified: 2026-02-15
   - id: cg-coch-flights-fri
     title: Flight Friday
     description: 15% off tequila flights on Friday.
     type: drink
     dayOfWeek: 5
-    lastVerified: 2026-02-15

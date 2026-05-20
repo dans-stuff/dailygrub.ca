@@ -32,22 +32,9 @@ for (const [slug, city] of Object.entries(data.cities)) {
       check(typeof d.title === 'string' && d.title, `${slug}/${r.id}/${d.id}: title`);
       check(typeof d.description === 'string' && d.description, `${slug}/${r.id}/${d.id}: description`);
       check(['food', 'drink', 'both'].includes(d.type), `${slug}/${r.id}/${d.id}: deal type`);
-      check(/^\d{4}-\d{2}-\d{2}$/.test(d.lastVerified || ''), `${slug}/${r.id}/${d.id}: lastVerified`);
       const key = `${slug}/${r.id}/${d.id}`;
       check(!seenDealKey.has(key), `duplicate deal key ${key}`);
       seenDealKey.add(key);
-    }
-  }
-}
-
-// Staleness warning (not a failure)
-const today = new Date();
-const stale = [];
-for (const [slug, city] of Object.entries(data.cities)) {
-  for (const r of city.restaurants) {
-    for (const d of r.deals) {
-      const days = Math.floor((today - new Date(d.lastVerified)) / 86400000);
-      if (days > 180) stale.push(`${slug}/${r.id}/${d.id}: ${days}d old`);
     }
   }
 }
@@ -61,6 +48,3 @@ if (fails.length) {
 const cityCount = Object.keys(data.cities).length;
 const restaurantCount = Object.values(data.cities).reduce((s, c) => s + c.restaurants.length, 0);
 console.log(`✓ smoke-test passed: ${cityCount} cities, ${restaurantCount} restaurant entries, ${seenDealKey.size} deals`);
-if (stale.length) {
-  console.log(`⚠ ${stale.length} deal(s) over 180 days old — consider re-verifying`);
-}

@@ -12,7 +12,6 @@ deals:
     type: both
     startHour: 14
     endHour: 17
-    lastVerified: 2026-02-15
     daysOfWeek:
       - 0
       - 1
@@ -26,22 +25,18 @@ deals:
     description: $10 off prime rib dinner on Monday.
     type: food
     dayOfWeek: 1
-    lastVerified: 2026-02-15
   - id: kob-vernon-burger-wed
     title: $20 Burger & Beer
     description: $20 burger and beer on Wednesday. Also half-price wine.
     type: both
     dayOfWeek: 3
-    lastVerified: 2026-02-15
   - id: kob-vernon-beef-dip-thu
     title: $19 Prime Rib Beef Dip
     description: $19 prime rib beef dip on Thursday.
     type: food
     dayOfWeek: 4
-    lastVerified: 2026-02-15
   - id: kob-vernon-roast-sun
     title: $27 Roast Beef Dinner
     description: $27 roast beef dinner on Sunday.
     type: food
     dayOfWeek: 0
-    lastVerified: 2026-02-15

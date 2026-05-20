@@ -11,40 +11,33 @@ deals:
     description: "Any Signature Sandwich $7.99 + tax. Both locations: 3751 Mayor Magrath Dr S & 890 Heritage Blvd W."
     type: food
     dayOfWeek: 1
-    lastVerified: 2026-02-06
   - id: churchs-tuesday
     title: 2pc Chicken Tuesday
     description: 2pc Chicken (Leg & Thigh) $5.99 + tax. Both locations.
     type: food
     dayOfWeek: 2
-    lastVerified: 2026-02-06
   - id: churchs-wednesday
     title: Signature Wrap Wednesday
     description: Any Signature Wrap $7.99 + tax. Both locations.
     type: food
     dayOfWeek: 3
-    lastVerified: 2026-02-06
   - id: churchs-thursday
     title: 3pc Dark Meat Thursday
     description: 3pc Chicken Dark Meat $6.99 + tax. Both locations.
     type: food
     dayOfWeek: 4
-    lastVerified: 2026-02-06
   - id: churchs-friday
     title: Tender Wrap Friday
     description: Tender Wrap $4.99 + tax. Both locations.
     type: food
     dayOfWeek: 5
-    lastVerified: 2026-02-06
   - id: churchs-saturday
     title: Churro Bites Saturday
     description: 5pc Churro Bites $3.79 + tax. Both locations.
     type: food
     dayOfWeek: 6
-    lastVerified: 2025-11-22
   - id: churchs-sunday
     title: Jalapeno Bombers Sunday
     description: 3pc Jalapeno Bombers $2.99 + tax. Both locations.
     type: food
     dayOfWeek: 0
-    lastVerified: 2026-02-06

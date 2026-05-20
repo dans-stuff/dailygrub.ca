@@ -12,7 +12,6 @@ deals:
     type: both
     startHour: 14
     endHour: 17
-    lastVerified: 2026-02-28
     daysOfWeek:
       - 0
       - 1

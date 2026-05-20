@@ -11,7 +11,6 @@ deals:
     description: Daily steak sandwich $6.95 until 8pm.
     type: food
     endHour: 20
-    lastVerified: 2026-02-15
     daysOfWeek:
       - 0
       - 1
@@ -27,7 +26,6 @@ deals:
     dayOfWeek: 2
     startHour: 16
     endHour: 22
-    lastVerified: 2026-02-15
   - id: tg-coch-ribs-wed
     title: Buck-A-Rib
     description: St. Louis buck-a-rib Wednesday 4-10pm.
@@ -35,12 +33,10 @@ deals:
     dayOfWeek: 3
     startHour: 16
     endHour: 22
-    lastVerified: 2026-02-15
   - id: tg-coch-kids
     title: Kids All Dishes $5.95
     description: All kids dishes $5.95 including pop. Daily.
     type: food
-    lastVerified: 2026-02-15
     daysOfWeek:
       - 0
       - 1

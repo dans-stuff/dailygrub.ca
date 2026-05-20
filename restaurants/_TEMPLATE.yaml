@@ -4,7 +4,7 @@
 # Files starting with "_" (like this one) are ignored by the build and CI.
 # Lines starting with "#" are comments — delete or keep, your choice.
 #
-# Need help? See CONTRIBUTING.md or open an issue and a maintainer will help.
+# Need help? See CONTRIBUTING.md or open a PR — a maintainer will help fix it up.
 
 # The restaurant's ID — must match the filename, lowercase with dashes.
 id: the-slice
@@ -46,5 +46,3 @@ deals:
     # Optional time window (24-hour clock, 0–23):
     # startHour: 17
     # endHour: 21
-    # The date you confirmed this is still happening. Required.
-    lastVerified: 2026-05-19

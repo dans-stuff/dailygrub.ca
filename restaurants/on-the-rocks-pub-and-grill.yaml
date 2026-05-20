@@ -11,44 +11,37 @@ deals:
     description: Classic burger $16 plus Rickards Red $7.50.
     type: both
     dayOfWeek: 1
-    lastVerified: 2026-02-28
   - id: otr-kam-cod-tue
     title: Sriracha Cod Bites Tuesday
     description: Sriracha cod bites $14 plus Stanley Park Sesh Lager $7.50.
     type: both
     dayOfWeek: 2
-    lastVerified: 2026-02-28
   - id: otr-kam-wings-wed
     title: 89¢ Wing Wednesday
     description: 89¢ wings (min 10) plus Molson/Coors pints $6.50.
     type: both
     dayOfWeek: 3
-    lastVerified: 2026-02-28
   - id: otr-kam-ribs-thu
     title: Half Rack Ribs Thursday
     description: Half rack ribs $18 plus Belgian Moon $7.50.
     type: both
     dayOfWeek: 4
-    lastVerified: 2026-02-28
   - id: otr-kam-steak-fri
     title: Steak Sandwich Friday
     description: 6oz steak sandwich $18 plus half-price wine bottles.
     type: both
     dayOfWeek: 5
-    lastVerified: 2026-02-28
   - id: otr-kam-pasta-sat
     title: Pasta Saturday
     description: Pasta $16 plus Heineken/Michelob Ultra $8.
     type: both
     dayOfWeek: 6
-    lastVerified: 2026-02-28
   - id: otr-kam-lunch-special
     title: Daily Lunch Special
     description: Steak sandwich with fries/soup/salad $11.95 (6oz) or $16.95 (8oz) plus Old Style Pilsner sleeves $4.95. Daily 10am-2pm.
     type: both
     startHour: 10
     endHour: 14
-    lastVerified: 2026-02-28
     daysOfWeek:
       - 0
       - 1
