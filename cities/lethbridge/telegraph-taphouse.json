@@ -1,0 +1,51 @@
+{
+  "id": "telegraph-taphouse",
+  "name": "Telegraph Taphouse",
+  "type": "local",
+  "address": "310 6 St S",
+  "website": "https://www.taphouse.pub",
+  "deals": [
+    {
+      "id": "telegraph-tacos-tue",
+      "title": "Half-Price Tacos",
+      "description": "Half-price tacos with alcohol purchase. $8 margaritas, $6 lagers. Dine-in only.",
+      "type": "both",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "telegraph-irish-wed",
+      "title": "Half-Price Ribs & $5 Jameson",
+      "description": "Half-price ribs with alcohol purchase. 25% off Guinness, $5 Jameson shots. Dine-in only.",
+      "type": "both",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "telegraph-nachos-thu",
+      "title": "Half-Price Nachos & $8 Mules",
+      "description": "Half-price nachos with alcohol purchase. $8 Moscow Mules. Dine-in only.",
+      "type": "both",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "telegraph-whiskey-fri",
+      "title": "25% Off Whiskey & $5 Shots",
+      "description": "25% off whiskey, bartender's choice shot $5 after 7pm. Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 5,
+      "startHour": 19,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "telegraph-whiskey-sat",
+      "title": "25% Off Whiskey & $5 Shots",
+      "description": "25% off whiskey, bartender's choice shot $5 after 7pm. Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 6,
+      "startHour": 19,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

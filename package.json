@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run data:build && next dev",
     "build": "next build",
+    "prebuild": "npm run data:validate && npm run data:build",
     "start": "next start",
     "lint": "eslint",
+    "data:build": "node scripts/build-deals.mjs",
+    "data:validate": "node scripts/validate-deals.mjs",
     "deploy": "npm run build && npx wrangler deploy",
     "preview": "npm run build && npx wrangler dev"
   },

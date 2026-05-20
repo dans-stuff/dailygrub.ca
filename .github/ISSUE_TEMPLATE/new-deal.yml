@@ -1,0 +1,52 @@
+name: Submit a deal
+description: Tell us about a happy-hour, daily special, or recurring deal
+title: "[deal] <restaurant> — <city>"
+labels: ["deal-submission"]
+body:
+  - type: input
+    id: restaurant
+    attributes:
+      label: Restaurant name
+      placeholder: e.g. Original Joe's
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City
+      placeholder: e.g. Lethbridge, AB
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: Address
+      placeholder: Street, city, province
+  - type: input
+    id: website
+    attributes:
+      label: Website (or Facebook page)
+      placeholder: https://...
+  - type: textarea
+    id: deal
+    attributes:
+      label: The deal(s)
+      description: One per line. Include day(s), time window if any, and what's discounted.
+      placeholder: |
+        Tuesday: half-price wings after 2pm
+        Thursday: 50% off wine all day
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: How do you know? (link, photo, in-person visit + date)
+      description: Required for verification. A website link or a recent photo is ideal.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! A maintainer will turn this into a PR. If you want to open the PR
+        yourself, see [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) — it's just
+        one JSON file per restaurant.

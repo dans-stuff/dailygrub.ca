@@ -1,0 +1,25 @@
+{
+  "id": "taco-time",
+  "name": "Taco Time",
+  "type": "chain",
+  "address": "537 13 St N, 2436 Fairway Plaza Rd S & Park Place Mall",
+  "website": "https://tacotimecanada.com",
+  "deals": [
+    {
+      "id": "taco-time-tuesday",
+      "title": "Unlimited $2 Tacos",
+      "description": "Unlimited $2 tacos every Tuesday (beef or veggie, crispy or soft). Dine-in or takeout. All Lethbridge locations: 13th St, Fairway Plaza, Park Place Mall.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "taco-time-thursday",
+      "title": "BOGO Half-Price Burritos",
+      "description": "Buy one burrito, get 2nd half price on Thursdays. Dine-in or takeout. All Lethbridge locations.",
+      "type": "food",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

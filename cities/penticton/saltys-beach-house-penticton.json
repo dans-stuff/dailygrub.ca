@@ -1,0 +1,45 @@
+{
+  "id": "saltys-beach-house-penticton",
+  "name": "Salty's Beach House",
+  "type": "local",
+  "address": "Penticton, BC",
+  "website": "https://saltysbeachhouse.com",
+  "deals": [
+    {
+      "id": "saltys-pen-hh-food",
+      "title": "Happy Hour Food",
+      "description": "12 items: Yam Fries $9.50, Bistro Steak Frites $18, Prawn & Chips $16, Mango Bay Calamari $16, Honey Sriracha Chicken $14, Ahi Tuna Nachos $14, Rasta Pasta $14, Margherita Pizza $13, Hawaiian Chicken Sandwich $12, Prawn Toast $12, Sliders $11, Mini Margherita $10. Inside only. Daily 2-5pm and 9pm-close.",
+      "type": "food",
+      "startHour": 14,
+      "endHour": 17,
+      "lastVerified": "2026-02-28",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "saltys-pen-hh-drinks",
+      "title": "Happy Hour Drinks",
+      "description": "Well highballs $5, Sangria $6.50, Boat Drink $7, Beaches & Peaches $7.50, Moscow Mule $8, Espresso Martini $8, Captain's Wife $9, Margarita $10/$14, Parallel 49 14oz $5 / 18oz $8, Corona $8, half-price wine bottles. Inside only. Daily 2-5pm and 9pm-close.",
+      "type": "drink",
+      "startHour": 14,
+      "endHour": 17,
+      "lastVerified": "2026-02-28",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+}

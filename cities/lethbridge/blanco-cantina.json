@@ -1,0 +1,57 @@
+{
+  "id": "blanco-cantina",
+  "name": "Blanco Cantina",
+  "type": "local",
+  "address": "319 6th St S",
+  "website": "https://www.blancocantina.ca",
+  "deals": [
+    {
+      "id": "blanco-margarita-monday",
+      "title": "Margarita Monday",
+      "description": "$7.50 margaritas all day. Dine-in only. 319 6th Street S.",
+      "type": "drink",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "blanco-taco-tuesday",
+      "title": "Taco Tuesdaze",
+      "description": "Half-price classic tacos all day and night. Dine-in only. 319 6th Street S.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "blanco-thirsty-thursday",
+      "title": "Thirsty Thursday",
+      "description": "Half-price Patron tequila, $8 Corona (50cl). Dine-in only. 319 6th Street S.",
+      "type": "drink",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "blanco-cerveza-sunday",
+      "title": "Cerveza Sundays",
+      "description": "$5 Corona btl (330ml), $5 Corona Light btl (330ml), $5 Corona Cero (330ml), $25 Corona Buckets (5x330ml), $5 Catrina Lager (16oz). Dine-in only. 319 6th Street S.",
+      "type": "drink",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "blanco-happy-hour",
+      "title": "$3.50 Tacos & $7.50 Margaritas",
+      "description": "2-5pm & 9pm-close daily: $7.50 margaritas, $3.50 classic tacos, half-price all tequila. Dine-in only. 319 6th Street S.",
+      "type": "both",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "lastVerified": "2026-03-25"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Daily Grub",
+  "domain": "dailygrub.ca",
+  "tagline": "Canada's open directory of restaurant deals and happy hours.",
+  "description": "Find food and drink deals at restaurants across Canada. Community-maintained, open source, no ads.",
+  "repoUrl": "https://github.com/dans-stuff/dailygrub.ca",
+  "contactEmail": "",
+  "defaultCity": "lethbridge"
+}

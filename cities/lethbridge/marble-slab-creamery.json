@@ -1,0 +1,65 @@
+{
+  "id": "marble-slab-creamery",
+  "name": "Marble Slab Creamery",
+  "type": "chain",
+  "address": "2037 Mayor Magrath Dr S & 550 University Dr W",
+  "website": "https://www.marbleslab.ca",
+  "deals": [
+    {
+      "id": "marble-slab-monday",
+      "title": "BOGO Free Floats",
+      "description": "Buy one float, get one free on Monday.",
+      "type": "food",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "marble-slab-tuesday",
+      "title": "$5 Ice Cream Sandwich",
+      "description": "$5 ice cream sandwich on Tuesday.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "marble-slab-wednesday",
+      "title": "BOGO $2 Small Cones/Cups",
+      "description": "Buy one small cone or cup, get one for $2 on Wednesday.",
+      "type": "food",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "marble-slab-thursday",
+      "title": "15% Off Crumble",
+      "description": "15% off crumble on Thursday.",
+      "type": "food",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "marble-slab-friday",
+      "title": "BOGO 50% Off Half-Litres",
+      "description": "Buy one pre-packed half litre of ice cream, get one 50% off on Friday.",
+      "type": "food",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "marble-slab-saturday",
+      "title": "BOGO 50% Off Gummies",
+      "description": "Buy one pack of gummies, get one 50% off on Saturday.",
+      "type": "food",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "marble-slab-sunday",
+      "title": "$7.49 Milkshake",
+      "description": "$7.49 milkshake on Sunday.",
+      "type": "food",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

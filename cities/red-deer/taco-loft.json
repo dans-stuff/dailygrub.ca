@@ -1,0 +1,17 @@
+{
+  "id": "taco-loft",
+  "name": "Taco Loft",
+  "type": "local",
+  "address": "4924B 50 Street (Ross Street Patio)",
+  "website": "https://www.tacoloft.ca/",
+  "deals": [
+    {
+      "id": "taco-loft-tuesday",
+      "title": "Taco Tuesday",
+      "description": "$2.22/taco, Mini Tacos Night. 100% gluten-free menu. Dine-in or takeout.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2025-12-16"
+    }
+  ]
+}

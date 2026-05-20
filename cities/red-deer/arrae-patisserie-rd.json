@@ -1,0 +1,33 @@
+{
+  "id": "arrae-patisserie-rd",
+  "name": "Arrae Patisserie",
+  "type": "local",
+  "address": "#11 3701 50 Ave",
+  "website": "https://arraepatisserie.ca",
+  "deals": [
+    {
+      "id": "arrae-cakelet-tuesday-rd",
+      "title": "$2.50 Cakelet Tuesday",
+      "description": "Rotating flavor cakelet $2.50 on Tuesday. Tue-Fri 7:30am-5:30pm, Sat 8am-5pm.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "arrae-canele-friday-rd",
+      "title": "$4.95 Canele Friday",
+      "description": "Vanilla and rum-flavored canele pastry $4.95 on Friday.",
+      "type": "food",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "arrae-pain-raisins-saturday-rd",
+      "title": "$5.50 Pain aux Raisins Saturday",
+      "description": "Pain aux Raisins Danish with pastry cream $5.50 on Saturday.",
+      "type": "food",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

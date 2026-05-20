@@ -1,0 +1,83 @@
+{
+  "id": "match-eatery-vernon",
+  "name": "Match Eatery & Public House",
+  "type": "chain",
+  "address": "4900 Anderson Way, Vernon, BC",
+  "website": "https://matchpub.com/vernon/",
+  "deals": [
+    {
+      "id": "match-vernon-happy-hour",
+      "title": "Happy Hour",
+      "description": "$6.50 food items, half-price wine, $2 off craft beer, $1 off highballs. Daily 3-5:30pm and 9pm-close.",
+      "type": "both",
+      "startHour": 15,
+      "endHour": 17,
+      "lastVerified": "2026-02-15",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "match-vernon-fish-mon",
+      "title": "The Reel Deal Fish & Chips",
+      "description": "Fish & chips special all day Monday.",
+      "type": "food",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "match-vernon-tacos-tue",
+      "title": "Tacos & Tots Tuesday",
+      "description": "Food truck tacos & tots plus discounted Coronas and margaritas.",
+      "type": "both",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "match-vernon-pasta-wed",
+      "title": "Pasta Wednesday",
+      "description": "Discounted pasta plus cheezy fried ravioli.",
+      "type": "food",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "match-vernon-wings-thu",
+      "title": "Half-Price Wings Thursday",
+      "description": "Half-price game day wings plus discounted Bud.",
+      "type": "both",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "match-vernon-ribs-fri",
+      "title": "Baby Back Ribs Friday",
+      "description": "Baby back ribs plus discounted Stella Artois and Proper G&Ts.",
+      "type": "both",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "match-vernon-steak-sat",
+      "title": "Bistro Steak Frites Saturday",
+      "description": "Bistro steak frites plus discounted Stella Artois and Razzberry Lemonades.",
+      "type": "both",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "match-vernon-pizza-sun",
+      "title": "Pizza with Pizzazz Sunday",
+      "description": "Pizza special plus discounted Game Face Caesars.",
+      "type": "both",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-15"
+    }
+  ]
+}

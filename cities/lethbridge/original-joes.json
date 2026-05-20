@@ -1,0 +1,42 @@
+{
+  "id": "original-joes",
+  "name": "Original Joe's",
+  "type": "chain",
+  "address": "8 Aquitania Blvd W & 323 Bluefox Blvd N",
+  "website": "https://www.originaljoes.ca",
+  "deals": [
+    {
+      "id": "oj-margaritas-tacos-mon",
+      "title": "Margaritas & Tacos",
+      "description": "Discounted margaritas and tacos all day Monday. Dine-in only. West: 8 Aquitania Blvd W, North: 323 Bluefox Boulevard N.",
+      "type": "both",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "oj-half-price-wings-tue",
+      "title": "Half-Price Wings",
+      "description": "50% off wings after 2pm. Dine-in or takeout. Both locations.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "startHour": 14,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "oj-half-price-wine-thu",
+      "title": "Half-Price Wine",
+      "description": "50% off wine by glass or bottle all day Thursday. Dine-in only. Both locations.",
+      "type": "drink",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "oj-sangria-sat",
+      "title": "$2 Off Sangria",
+      "description": "$2 off sangria all day Saturday. Dine-in only. Both locations.",
+      "type": "drink",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

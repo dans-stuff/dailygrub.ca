@@ -1,109 +1,37 @@
 # Daily Grub
 
-Lethbridge's best food & drink deals in one place.
+[**dailygrub.ca**](https://dailygrub.ca) — Canada's open, community-maintained directory of restaurant deals, happy hours, and daily specials.
 
-## Features
+Time-aware filtering. No accounts. No ads. No tracking pixels. A few hundred KB of static HTML served from the edge.
 
-- Daily specials and happy hours for Lethbridge restaurants
-- Time-aware deal filtering (shows deals based on current day/time in Lethbridge timezone)
-- Clean, modern, responsive UI
-- PostHog analytics integration for tracking deal interactions
-- SEO-optimized with Next.js server-side rendering
+## How it works
 
-## Tech Stack
+- **Data lives in this repo.** One JSON file per restaurant under [`cities/`](data/cities).
+- **The site is static.** A build step assembles the per-restaurant files, validates them, and ships HTML/JS to Cloudflare.
+- **Anyone can contribute.** Open a PR or an issue. CI validates. A maintainer merges. Cloudflare auto-deploys. There is no other infrastructure.
 
-- Next.js 16 (App Router)
-- TypeScript
-- Tailwind CSS
-- PostHog Analytics
-- Deployed on Netlify
+## Contributing
 
-## Getting Started
+See [**CONTRIBUTING.md**](CONTRIBUTING.md). The short version: add or edit one file under `cities/<your-city>/<restaurant>.json`, open a PR with a source link. Or open an issue and a maintainer will do it for you.
 
-### Prerequisites
+City-by-city research and verification notes live in [`research/`](research/).
 
-- Node.js 18+ and npm
-
-### Installation
+## Local development
 
 ```bash
-# Install dependencies
 npm install
-
-# Create environment file
-cp .env.local.example .env.local
-
-# Add your PostHog credentials to .env.local
-# NEXT_PUBLIC_POSTHOG_KEY=your_key_here
-# NEXT_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com
+npm run dev          # validates + assembles data, then runs Next.js
+npm run data:validate
+npm run data:build   # regenerates data/deals.json from cities/**
+npm run build        # full production build
 ```
 
-### Development
+`data/deals.json` is a generated artifact — don't edit it directly.
 
-```bash
-# Run development server
-npm run dev
+## Stack
 
-# Open http://localhost:3000
-```
-
-### Build
-
-```bash
-# Create production build
-npm run build
-
-# Start production server
-npm start
-```
-
-## Data Structure
-
-Deals are stored in `/data/deals.json` with the following structure:
-
-```json
-{
-  "id": "unique-deal-id",
-  "title": "Deal Title",
-  "summary": "Short description",
-  "description": "Full description with details",
-  "type": "food" | "drink" | "both",
-  "price": "$10" (optional),
-  "dayOfWeek": 0-6 (optional, for single-day deals),
-  "daysOfWeek": [0,1,2] (optional, for multi-day deals),
-  "startHour": 14 (optional, for hourly deals),
-  "endHour": 18 (optional, for hourly deals),
-  "isActive": true
-}
-```
-
-## Deployment
-
-### Netlify
-
-1. Push to GitHub
-2. Connect repository to Netlify
-3. Set environment variables:
-   - `NEXT_PUBLIC_POSTHOG_KEY`
-   - `NEXT_PUBLIC_POSTHOG_HOST`
-4. Deploy
-
-Build settings are configured in `netlify.toml`.
-
-## Analytics
-
-Deal clicks are tracked in PostHog with the following event:
-
-```javascript
-posthog.capture('deal_opened', {
-  deal_id: string,
-  deal_title: string,
-  restaurant_id: string,
-  restaurant_name: string,
-  deal_type: 'food' | 'drink' | 'both'
-})
-```
+Next.js (static export) · TypeScript · Tailwind · Cloudflare Workers.
 
 ## License
 
-MIT
+MIT.

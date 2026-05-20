@@ -1,0 +1,41 @@
+{
+  "id": "stacked-pancake-rd",
+  "name": "Stacked Pancake & Breakfast House",
+  "type": "local",
+  "address": "2004 50 Avenue",
+  "website": "https://stackedpancakehouse.ca",
+  "deals": [
+    {
+      "id": "stacked-early-bird-rd",
+      "title": "Early Bird Breakfast",
+      "description": "7-9am weekdays: 2 eggs, bacon/ham/sausage, homefries, toast. Dine-in only. Open 7am-3pm daily.",
+      "type": "food",
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startHour": 7,
+      "endHour": 9,
+      "lastVerified": "2025-12-16"
+    },
+    {
+      "id": "stacked-lunch-special-rd",
+      "title": "$17.99 Lunch Specials",
+      "description": "Lunch specials $17.99, dine-in only. Taxes extra.",
+      "type": "food",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "lastVerified": "2025-12-16"
+    }
+  ]
+}

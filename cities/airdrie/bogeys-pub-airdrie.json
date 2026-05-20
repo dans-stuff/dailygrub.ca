@@ -1,0 +1,82 @@
+{
+  "id": "bogeys-pub-airdrie",
+  "name": "Bogey's Pub & Pizza",
+  "type": "local",
+  "address": "6-905 1st Ave SW",
+  "website": "https://www.bogeyspub.ca",
+  "deals": [
+    {
+      "id": "bogeys-sunday-airdrie",
+      "title": "Sunday All-Day Happy Hour",
+      "description": "Happy hour pricing all day Sunday. 6-905 1st Ave SW.",
+      "type": "drink",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bogeys-lunch-airdrie",
+      "title": "Steak, Spud & Mug Lunch",
+      "description": "Steak, Spud & Mug $12.95. Mon-Fri until 4pm. 6-905 1st Ave SW.",
+      "type": "both",
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endHour": 16,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bogeys-monday-airdrie",
+      "title": "Bud & Burger Monday",
+      "description": "Bud & Burger $15.95, Blue Moon pints $5.75. After 4pm Monday. 6-905 1st Ave SW.",
+      "type": "both",
+      "dayOfWeek": 1,
+      "startHour": 16,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bogeys-tuesday-airdrie",
+      "title": "Pizza Tuesday",
+      "description": "Pizza $3-$5 off, Canadian/Bud jugs $16.99. All day Tuesday. 6-905 1st Ave SW.",
+      "type": "both",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bogeys-wednesday-airdrie",
+      "title": "Wing Wednesday",
+      "description": "Wings $6.95/lb, Canadian/Bud pints $5.75. All day Wednesday. 6-905 1st Ave SW.",
+      "type": "both",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bogeys-thursday-airdrie",
+      "title": "Fish & Shrimp Thursday",
+      "description": "Fish & Chips $3 off, Jumbo Shrimp $0.69 each, Caesars $5.95. All day Thursday. 6-905 1st Ave SW.",
+      "type": "both",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bogeys-friday-airdrie",
+      "title": "Steak Sandwich Friday",
+      "description": "5oz Steak Sandwich + fries $9.95, Paralyzers/Long Island $5.50. After 4pm Friday. 6-905 1st Ave SW.",
+      "type": "both",
+      "dayOfWeek": 5,
+      "startHour": 16,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bogeys-saturday-airdrie",
+      "title": "Mexican Saturday",
+      "description": "Nachos + Mexican specials, Corona & tequila deals. All day Saturday. 6-905 1st Ave SW.",
+      "type": "both",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-02-15"
+    }
+  ]
+}

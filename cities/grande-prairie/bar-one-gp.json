@@ -1,0 +1,60 @@
+{
+  "id": "bar-one-gp",
+  "name": "Bar One",
+  "type": "chain",
+  "address": "11401 100 St (Sandman Hotel)",
+  "website": "https://baronecanada.com",
+  "deals": [
+    {
+      "id": "bar-one-tacos-tue-gp",
+      "title": "$4 Tacos & $5.25 Coronas",
+      "description": "$4 tacos (Chipotle Lime Chicken or Cajun Shrimp) and $5.25 Coronas from 4pm. Dine-in only.",
+      "type": "both",
+      "dayOfWeek": 2,
+      "startHour": 16,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bar-one-wine-wed-gp",
+      "title": "Wine Wednesday",
+      "description": "$1 off 8oz glasses, $5 off bottles (red, white, rosé). Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bar-one-wings-thu-gp",
+      "title": "50% Off Wings & $6 Draft",
+      "description": "50% off wings (8 flavors incl S&P, Hot, BBQ, Teriyaki) and $6 house draft from 4pm. Dine-in only.",
+      "type": "both",
+      "dayOfWeek": 4,
+      "startHour": 16,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bar-one-drinks-fri-gp",
+      "title": "Friday Drinks",
+      "description": "$7.50 double highballs (house liquor) and $6 house draft (16oz). Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bar-one-wings-sat-gp",
+      "title": "Saturday Wings & Draft",
+      "description": "50% off wings and $6 house draft from 4pm. Dine-in only.",
+      "type": "both",
+      "dayOfWeek": 6,
+      "startHour": 16,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bar-one-caesar-sun-gp",
+      "title": "Caesar Sunday",
+      "description": "$5 Caesars all day. Double for +$4. Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

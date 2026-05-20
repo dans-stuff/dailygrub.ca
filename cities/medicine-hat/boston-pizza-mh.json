@@ -1,0 +1,93 @@
+{
+  "id": "boston-pizza-mh",
+  "name": "Boston Pizza",
+  "type": "chain",
+  "address": "500-1751 Strachan Rd SE & 2500 Box Springs Blvd NW",
+  "website": "https://bostonpizza.com",
+  "deals": [
+    {
+      "id": "bp-pizza-monday-mh",
+      "title": "$10 Individual Pizzas",
+      "description": "$10 individual pizzas all day. Dine-in only. Strachan: 500-1751 Strachan Rd SE, Box Springs: 2500 Box Springs Blvd NW.",
+      "type": "food",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bp-pasta-tuesday-mh",
+      "title": "Pasta From $11.99",
+      "description": "Pasta starting at $11.99 all day. Dine-in only. Both locations.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bp-wing-wednesday-mh",
+      "title": "50% Off Starter Wings",
+      "description": "50% off starter wings all day. Dine-in only. Both locations.",
+      "type": "food",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bp-appy-thursday-mh",
+      "title": "Buy 2 Apps, Get 3rd Free",
+      "description": "Buy 2 appetizers, get 3rd free all day. Dine-in only. Both locations.",
+      "type": "food",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bp-cactus-friday-mh",
+      "title": "$2 Off Cactus Cut Potatoes",
+      "description": "$2 off Cactus Cut Potatoes all day. Dine-in only. Both locations.",
+      "type": "food",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bp-bandera-saturday-mh",
+      "title": "$3 Off Bandera Bread",
+      "description": "$3 off Bandera Bread all day. Dine-in only. Both locations.",
+      "type": "food",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bp-burger-sunday-mh",
+      "title": "$2 Off Boston-Sized Burgers",
+      "description": "$2 off Boston-Sized Burgers all day. Dine-in only. Both locations.",
+      "type": "food",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bp-appy-hour-weekday-mh",
+      "title": "Appy Hour",
+      "description": "Drinks & apps from $4. Mon-Thu 2-5pm & 9pm-close. Dine-in only.",
+      "type": "both",
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startHour": 14,
+      "endHour": 17,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "bp-appy-hour-weekend-mh",
+      "title": "Appy Hour",
+      "description": "Drinks & apps from $4. Fri-Sun 9pm-close. Dine-in only.",
+      "type": "both",
+      "daysOfWeek": [
+        5,
+        6,
+        0
+      ],
+      "startHour": 21,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

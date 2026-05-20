@@ -1,0 +1,75 @@
+{
+  "id": "blowers-grafton-rd",
+  "name": "Blowers & Grafton",
+  "type": "chain",
+  "address": "2079 50 Ave",
+  "website": "https://blowersgrafton.com/red-deer/",
+  "deals": [
+    {
+      "id": "bg-monday-rd",
+      "title": "$5 Off Pizza & $1 Off Lager",
+      "description": "$5 off any pizza, $1 off Grafton Street Lager (14oz). Dine-in only. 2079 50 Ave.",
+      "type": "both",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bg-music-bingo-rd",
+      "title": "Music Bingo: $4 Hi-Balls & Beer",
+      "description": "Monday Music Bingo night with $4 hi-balls and beer. Dine-in only. 2079 50 Ave.",
+      "type": "drink",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bg-tuesday-rd",
+      "title": "$4 Off Fish & Chips",
+      "description": "$4 off Fish & Chips, $1 off Grafton Street Amber (14oz). Dine-in only. 2079 50 Ave.",
+      "type": "both",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "bg-wednesday-rd",
+      "title": "$2 Off Cocktails & Donair",
+      "description": "$2 off all cocktails, $3 off OG Halifax Donair (regular). Dine-in only. 2079 50 Ave.",
+      "type": "both",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bg-thursday-rd",
+      "title": "$2.50 Oysters & Half-Price Wine",
+      "description": "Oysters $2.50 each or $15 half-dozen. 50% off wine bottles. Dine-in only. 2079 50 Ave.",
+      "type": "both",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bg-sunday-rd",
+      "title": "$2 Off Caesars, Garlic Fingers & Nachos",
+      "description": "$2 off all Caesars (1oz), $2 off Selfie Garlic Fingers, $3 off Selfie Nachos. Dine-in only. 2079 50 Ave.",
+      "type": "both",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bg-hali-hour-rd",
+      "title": "Hali Hour",
+      "description": "Food from $5, drinks from $5. Daily 2-5pm & 9pm-close. Dine-in only. 2079 50 Ave.",
+      "type": "both",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "lastVerified": "2026-02-07",
+      "startHour": 14,
+      "endHour": 17
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "brickstone-leth",
+  "name": "Brickstone Kitchen + Bar",
+  "type": "local",
+  "address": "203 41 St S, Lethbridge, AB",
+  "website": "https://brickstonekb.com",
+  "deals": [
+    {
+      "id": "brick-leth-sangria-sun",
+      "title": "Sangria Sunday",
+      "description": "$1 off sangrias plus feature Caesar (1oz). Happy hour 3-6pm. Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 0,
+      "startHour": 15,
+      "endHour": 18,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "brick-leth-marg-mon",
+      "title": "Margarita Monday",
+      "description": "$1 off margaritas plus weekly margarita feature. Happy hour 3-6pm. Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 1,
+      "startHour": 15,
+      "endHour": 18,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "brick-leth-tue",
+      "title": "Tuesday Specials",
+      "description": "$1 off signature vodka cocktails 3-6pm. $2 off fish & chips 11am-4pm. Dine-in only.",
+      "type": "both",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "brick-leth-wine-wed",
+      "title": "Wine Wednesday",
+      "description": "$1 off wine by the glass. Happy hour 3-6pm. Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 3,
+      "startHour": 15,
+      "endHour": 18,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "brick-leth-draft-thu",
+      "title": "Pour Decision Thursday",
+      "description": "$1 off Peak/Granville Island draft (16oz). Happy hour 3-6pm. Dine-in only.",
+      "type": "drink",
+      "dayOfWeek": 4,
+      "startHour": 15,
+      "endHour": 18,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "brick-leth-steak-fri",
+      "title": "Steak Friday",
+      "description": "$16.75 sirloin steak sandwich with focaccia, fresh-cut fries, and coleslaw. 11am-4pm.",
+      "type": "food",
+      "dayOfWeek": 5,
+      "startHour": 11,
+      "endHour": 16,
+      "lastVerified": "2026-02-15"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "subway-lethbridge",
+  "name": "Subway",
+  "type": "chain",
+  "website": "https://www.subway.com/en-CA",
+  "deals": [
+    {
+      "id": "subway-mon-lethbridge",
+      "title": "Meal of the Day: Veggie Delite",
+      "description": "6\" Veggie Delite sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations. Confirmed in-person at west side locations.",
+      "type": "food",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "subway-tue-lethbridge",
+      "title": "Meal of the Day: Italian B.M.T.",
+      "description": "6\" Italian B.M.T. sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations. Confirmed in-person at west side locations.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "subway-wed-lethbridge",
+      "title": "Meal of the Day: Cold Cut Combo",
+      "description": "6\" Cold Cut Combo sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations. Confirmed in-person at west side locations.",
+      "type": "food",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "subway-thu-lethbridge",
+      "title": "Meal of the Day: Black Forest Ham",
+      "description": "6\" Black Forest Ham sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations. Confirmed in-person at west side locations.",
+      "type": "food",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "subway-fri-lethbridge",
+      "title": "Meal of the Day: Tuna",
+      "description": "6\" Tuna sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations. Confirmed in-person at west side locations.",
+      "type": "food",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "subway-sat-lethbridge",
+      "title": "Meal of the Day: Turkey Breast",
+      "description": "6\" Turkey Breast sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations. Confirmed in-person at west side locations.",
+      "type": "food",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-03-25"
+    },
+    {
+      "id": "subway-sun-lethbridge",
+      "title": "Meal of the Day: Sweet Onion Chicken Teriyaki",
+      "description": "6\" Sweet Onion Chicken Teriyaki sub + 20oz drink + chips or 2 cookies for $7.99. Footlong upgrade +$3. National promotion, participating locations. Confirmed in-person at west side locations.",
+      "type": "food",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-03-25"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "earls-mh",
+  "name": "Earls Kitchen + Bar",
+  "type": "chain",
+  "address": "3215 Dunmore Rd SE",
+  "website": "https://earls.ca",
+  "deals": [
+    {
+      "id": "earls-mon-mh",
+      "title": "Monday — Margaritas & Corona",
+      "description": "$5 off all margaritas, $2 off Corona Draft. 3215 Dunmore Rd SE.",
+      "type": "drink",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "earls-tue-mh",
+      "title": "Tuesday — Half-Off Wine Bottles",
+      "description": "Half-off all bottles of wine. 3215 Dunmore Rd SE.",
+      "type": "drink",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "earls-wed-mh",
+      "title": "Wednesday — Wings & Rhino Draft",
+      "description": "$5 off wings, $3 off Rhino Draft. 3pm until close. 3215 Dunmore Rd SE.",
+      "type": "both",
+      "dayOfWeek": 3,
+      "startHour": 15,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "earls-thu-sat-mh",
+      "title": "Half-Off Nitro Espresso Martini",
+      "description": "Half-off Nitro Espresso Martini. Thu-Sat. 3215 Dunmore Rd SE.",
+      "type": "drink",
+      "daysOfWeek": [
+        4,
+        5,
+        6
+      ],
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

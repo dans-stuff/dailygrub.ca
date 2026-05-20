@@ -1,0 +1,112 @@
+{
+  "id": "mr-mikes-gp",
+  "name": "MR MIKES",
+  "type": "chain",
+  "address": "10214 116 Ave",
+  "website": "https://mrmikes.ca",
+  "deals": [
+    {
+      "id": "mikes-happiest-hours-gp",
+      "title": "$5 Bites & Drinks",
+      "description": "Daily 2-5PM: Bites from $5 (fries, bruschetta, sliders, shrimp, steak frites). Drinks: wine $5, draft $7, highballs $5. 10214 116 Ave.",
+      "type": "both",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "startHour": 14,
+      "endHour": 17,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "mikes-happiest-hours-late-gp",
+      "title": "$5 Late Night Bites",
+      "description": "Daily 9PM-close: Same happy hour menu. Dine-in only.",
+      "type": "both",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "startHour": 21,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "mikes-sun-gp",
+      "title": "Sunday Caesars & Mimosas",
+      "description": "Bacon & Spiked Caesars $8, mimosas $5 (until 2pm), Molson Canadian bottles $6. Participating locations only.",
+      "type": "drink",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "mikes-mon-gp",
+      "title": "$9 Margaritas",
+      "description": "Margarita or Coconut Margarita $9 all day Monday. Participating locations only.",
+      "type": "drink",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "mikes-tue-gp",
+      "title": "$5 Miller/Coors & $8 Cocktails",
+      "description": "Miller Lite & Coors Light $5, all classic cocktails $8. Participating locations only.",
+      "type": "drink",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "mikes-wed-gp",
+      "title": "Wine Wednesday",
+      "description": "$5 off half-litre, $10 off bottle (750ml). Participating locations only.",
+      "type": "drink",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "mikes-thu-gp",
+      "title": "$7 Draft Thursday",
+      "description": "All-day draft beer 550ml $7 (Molson Canadian, Coors Light, Blue Moon). Participating locations only.",
+      "type": "drink",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "mikes-fri-sat-gp",
+      "title": "$5 Jameson & Fireball Shots",
+      "description": "Jameson & Fireball shots $5 Friday & Saturday. Participating locations only.",
+      "type": "drink",
+      "daysOfWeek": [
+        5,
+        6
+      ],
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "mikes-sat-mimosas-gp",
+      "title": "Weekend Mimosas $5",
+      "description": "Mimosas $5 (3oz) until 2pm Saturday. Participating locations only.",
+      "type": "drink",
+      "dayOfWeek": 6,
+      "endHour": 14,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "mikes-sat-madri-gp",
+      "title": "$1 Off Madri Excepcional",
+      "description": "Madri Excepcional $1 off (450ml or 473ml tall can) all day Saturday. Participating locations only.",
+      "type": "drink",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-02-15"
+    }
+  ]
+}

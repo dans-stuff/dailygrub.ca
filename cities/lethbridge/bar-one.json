@@ -1,0 +1,60 @@
+{
+  "id": "bar-one",
+  "name": "Bar One",
+  "type": "chain",
+  "address": "421 Mayor Magrath Dr S",
+  "website": "https://baronecanada.com",
+  "deals": [
+    {
+      "id": "bar-one-taco-tue",
+      "title": "$4 Tacos & $5.25 Coronas",
+      "description": "$4 tacos (Chipotle Lime Chicken or Cajun Shrimp) and $5.25 Coronas from 4pm. Dine-in only. 421 Mayor Magrath Dr S.",
+      "type": "both",
+      "dayOfWeek": 2,
+      "startHour": 16,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bar-one-wine-wed",
+      "title": "Wine Wednesday",
+      "description": "$1 off 8oz wine glasses, $5 off bottles (red, white, rosé). Dine-in only. 421 Mayor Magrath Dr S.",
+      "type": "drink",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bar-one-wing-thu",
+      "title": "50% Off Wings & $6 Draft",
+      "description": "50% off wings (8 flavors) and $6 house draft from 4pm. Dine-in only. 421 Mayor Magrath Dr S.",
+      "type": "both",
+      "dayOfWeek": 4,
+      "startHour": 16,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bar-one-drinks-fri",
+      "title": "$7.50 Double Highballs & $6 Draft",
+      "description": "$7.50 double highballs (house liquor only) and $6 house draft (16oz). Dine-in only. 421 Mayor Magrath Dr S.",
+      "type": "drink",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bar-one-wing-sat",
+      "title": "50% Off Wings & $6 Draft",
+      "description": "50% off wings (8 flavors) and $6 house draft from 4pm. Dine-in only. 421 Mayor Magrath Dr S.",
+      "type": "both",
+      "dayOfWeek": 6,
+      "startHour": 16,
+      "lastVerified": "2026-02-07"
+    },
+    {
+      "id": "bar-one-caesar-sun",
+      "title": "$5 Caesars",
+      "description": "$5 Caesars all day. Double for +$4. Dine-in only. 421 Mayor Magrath Dr S.",
+      "type": "drink",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-07"
+    }
+  ]
+}

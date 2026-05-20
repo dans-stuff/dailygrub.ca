@@ -1,0 +1,34 @@
+{
+  "id": "latitude-55-gp",
+  "name": "Latitude 55 Distillery & Lounge",
+  "type": "local",
+  "address": "10030 102 Ave",
+  "website": "https://latitude55.ca/pages/l55-lounge",
+  "deals": [
+    {
+      "id": "lat55-happy-hour-gp",
+      "title": "Happy Hour",
+      "description": "$10 cocktails, $5 draft beer. Wed-Sat 4-6pm. Lounge only open Wed-Sat.",
+      "type": "drink",
+      "daysOfWeek": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "startHour": 16,
+      "endHour": 18,
+      "lastVerified": "2026-02-28"
+    },
+    {
+      "id": "lat55-wine-charcuterie-wed-gp",
+      "title": "Wine & Charcuterie Wednesday",
+      "description": "Charcuterie board + bottle of wine for $50. Wednesdays 4-9pm. 10030 102 Ave (Old Firehall downtown).",
+      "type": "both",
+      "dayOfWeek": 3,
+      "startHour": 16,
+      "endHour": 21,
+      "lastVerified": "2026-02-28"
+    }
+  ]
+}

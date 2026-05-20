@@ -1,0 +1,26 @@
+{
+  "id": "cora-rd",
+  "name": "Cora Breakfast and Lunch",
+  "type": "chain",
+  "address": "6858 Gaetz Ave, Unit 3",
+  "website": "https://chezcora.com",
+  "deals": [
+    {
+      "id": "cora-early-morning-rd",
+      "title": "$5.55 Early Morning Special",
+      "description": "Before 8am: 2 eggs, 3 bacon strips, toast, pan-fried potatoes, coffee for $5.55. Mon-Sat 6am-3pm, Sun 7am-3pm.",
+      "type": "food",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "endHour": 8,
+      "lastVerified": "2025-12-16"
+    }
+  ]
+}

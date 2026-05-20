@@ -1,0 +1,57 @@
+{
+  "id": "montanas-gp",
+  "name": "Montana's BBQ & Bar",
+  "type": "chain",
+  "address": "10820 100th Ave, Grande Prairie, AB",
+  "website": "https://www.montanas.ca",
+  "deals": [
+    {
+      "id": "montanas-gp-wings-mon",
+      "title": "Half-Price Wings",
+      "description": "Half-price 8pc wings with beverage purchase. Times vary by location.",
+      "type": "food",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "montanas-gp-tacos-tue",
+      "title": "$5 Tacos",
+      "description": "$5 tacos with beverage purchase. Chicken, beef, shrimp, or beans.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "montanas-gp-ribs-wed",
+      "title": "All-You-Can-Eat Ribs",
+      "description": "AYCE ribs with BBQ sauce, beans/slaw, cornbread, and fries.",
+      "type": "food",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "montanas-gp-takeout-sun",
+      "title": "15% Off Online Takeout",
+      "description": "15% off online takeout orders of $45 or more.",
+      "type": "food",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-06"
+    },
+    {
+      "id": "montanas-gp-happy-hour",
+      "title": "Happy Hour",
+      "description": "$10 starters and $4.99 beverages. Mon-Fri 2-5pm and 8pm-close.",
+      "type": "both",
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startHour": 14,
+      "endHour": 17,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

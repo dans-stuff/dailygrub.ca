@@ -33,6 +33,7 @@ export interface Restaurant {
 export interface City {
   name: string;
   province: string;
+  website?: string;
   restaurants: Restaurant[];
 }
 

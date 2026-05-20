@@ -45,3 +45,6 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# Generated build artifact (assembled from data/cities/** by scripts/build-deals.mjs)
+/data/deals.json

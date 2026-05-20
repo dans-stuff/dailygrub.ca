@@ -1,0 +1,17 @@
+{
+  "id": "mary-browns",
+  "name": "Mary Brown's",
+  "type": "chain",
+  "address": "2414 Fairway Plaza Rd S",
+  "website": "https://marybrowns.com",
+  "deals": [
+    {
+      "id": "mary-browns-monday",
+      "title": "Big Mary Monday",
+      "description": "Big Mary $4.99. 2414 Fairway Plaza Road S.",
+      "type": "food",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-06"
+    }
+  ]
+}

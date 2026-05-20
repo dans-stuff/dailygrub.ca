@@ -1,0 +1,75 @@
+{
+  "id": "big-sky-bbq-okotoks",
+  "name": "Big Sky BBQ Pit",
+  "type": "local",
+  "address": "Okotoks, AB",
+  "website": "https://bigskybbq.ca",
+  "deals": [
+    {
+      "id": "bigsky-happy-hour-okotoks",
+      "title": "Happy Hour",
+      "description": "Drink specials daily from 2pm to close. Dine-in only.",
+      "type": "drink",
+      "daysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "startHour": 14,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bigsky-sunday-okotoks",
+      "title": "Sunday Ribs & Caesars",
+      "description": "$1 off Caesars + Full Rack St. Louis Ribs $25.99. All day Sunday.",
+      "type": "both",
+      "dayOfWeek": 0,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bigsky-tuesday-okotoks",
+      "title": "Taco Tuesday",
+      "description": "$1 off Peach Sunrise Sangria + Tacos $5. All day Tuesday.",
+      "type": "both",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bigsky-wednesday-okotoks",
+      "title": "Wing & Wine Wednesday",
+      "description": "Half-price wine + wing night from 5pm. Wednesday.",
+      "type": "both",
+      "dayOfWeek": 3,
+      "startHour": 17,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bigsky-thursday-okotoks",
+      "title": "Meatza Pizza & Draft Thursday",
+      "description": "$1 off draft pints + Meatza Pizza $25.99. All day Thursday.",
+      "type": "both",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bigsky-friday-okotoks",
+      "title": "Brisket Friday",
+      "description": "Brisket Beef Dip $22.99, $1 off Margaritas & Landshark. All day Friday.",
+      "type": "both",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "bigsky-saturday-okotoks",
+      "title": "Saturday Drink Specials",
+      "description": "$1 off Corona, Texas Tipsy, and Big Sky Shafts. All day Saturday.",
+      "type": "drink",
+      "dayOfWeek": 6,
+      "lastVerified": "2026-02-15"
+    }
+  ]
+}

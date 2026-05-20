@@ -1,0 +1,60 @@
+{
+  "id": "wok-box-gp",
+  "name": "Wok Box",
+  "type": "chain",
+  "address": "10915 104A Ave",
+  "website": "https://wokbox.ca/menu/daily-deals",
+  "deals": [
+    {
+      "id": "wb-2-can-dine-monday-gp",
+      "title": "2 Can Dine Monday",
+      "description": "$21.99 for 2 Value Meal Dishes + 4pc appetizer + 2 drinks. In-store only. 10915 104A Ave.",
+      "type": "both",
+      "dayOfWeek": 1,
+      "lastVerified": "2026-02-28"
+    },
+    {
+      "id": "wb-wokstar-tuesday-gp",
+      "title": "Wokstar Tuesday",
+      "description": "20% off bestsellers (Teriyaki, Dan Dan, Pad Thai, Butter Chicken). In-store only. 10915 104A Ave.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-28"
+    },
+    {
+      "id": "wb-sumo-wednesday-gp",
+      "title": "Sumo Wednesday",
+      "description": "$1 off any Sumo Box. In-store only. 10915 104A Ave.",
+      "type": "food",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-28"
+    },
+    {
+      "id": "wb-sidekick-thursday-gp",
+      "title": "Sidekick Thursday",
+      "description": "$5 sidekick with regular or sumo box purchase. In-store only. 10915 104A Ave.",
+      "type": "food",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-28"
+    },
+    {
+      "id": "wb-fryday-friday-gp",
+      "title": "FryDay Friday",
+      "description": "10% off wings, tenders, and poutines. In-store only. 10915 104A Ave.",
+      "type": "food",
+      "dayOfWeek": 5,
+      "lastVerified": "2026-02-28"
+    },
+    {
+      "id": "wb-kids-free-weekend-gp",
+      "title": "Kids Eat Free Weekend",
+      "description": "1 free kids meal with regular box purchase. Child must be present. Sat & Sun. In-store only. 10915 104A Ave.",
+      "type": "food",
+      "daysOfWeek": [
+        0,
+        6
+      ],
+      "lastVerified": "2026-02-28"
+    }
+  ]
+}

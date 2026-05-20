@@ -1,0 +1,33 @@
+{
+  "id": "joeys-fish-shack-rd",
+  "name": "Joey's Fish Shack",
+  "type": "chain",
+  "address": "5101 76th St, Ste A",
+  "website": "https://joeysfishshack.com/",
+  "deals": [
+    {
+      "id": "joeys-ayce-tue-rd",
+      "title": "All You Can Eat Fish & Chips",
+      "description": "AYCE Fish & Chips (Wild Alaska Pollock or North Pacific Cod). Dine-in only. Tuesday all day. 5101 76th St, Ste A.",
+      "type": "food",
+      "dayOfWeek": 2,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "joeys-dumpling-wed-rd",
+      "title": "$1 Dumpling Wednesday",
+      "description": "$1 dumplings (choose dumpling and sauce). Wednesday all day. 5101 76th St, Ste A.",
+      "type": "food",
+      "dayOfWeek": 3,
+      "lastVerified": "2026-02-15"
+    },
+    {
+      "id": "joeys-taco-thu-rd",
+      "title": "$4 Fish Taco Thursday",
+      "description": "$4 fish tacos. Thursday all day. 5101 76th St, Ste A.",
+      "type": "food",
+      "dayOfWeek": 4,
+      "lastVerified": "2026-02-15"
+    }
+  ]
+}
