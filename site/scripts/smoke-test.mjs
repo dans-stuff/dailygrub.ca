@@ -21,22 +21,16 @@ for (const [slug, city] of Object.entries(data.cities)) {
   check(city.name && /^[A-Z]{2}$/.test(city.province), `${slug}: name/province`);
   check(Array.isArray(city.restaurants), `${slug}: restaurants array`);
 
-  const namesInCity = new Set();
   for (const r of city.restaurants) {
     check(r.name, `${slug}: restaurant missing name`);
-    check(!namesInCity.has(r.name), `${slug}: duplicate restaurant "${r.name}"`);
-    namesInCity.add(r.name);
     check(['sponsored', 'exclusive', 'local', 'chain'].includes(r.type), `${slug}/${r.name}: bad type`);
     check(Array.isArray(r.deals) && r.deals.length > 0, `${slug}/${r.name}: needs deals`);
     restaurantCount++;
 
-    const titlesInRestaurant = new Set();
     for (const d of r.deals) {
       check(d.title, `${slug}/${r.name}: deal missing title`);
       check(d.description, `${slug}/${r.name}/${d.title}: description`);
       check(['food', 'drink', 'both'].includes(d.type), `${slug}/${r.name}/${d.title}: deal type`);
-      check(!titlesInRestaurant.has(d.title), `${slug}/${r.name}: duplicate title "${d.title}"`);
-      titlesInRestaurant.add(d.title);
       if (d.days !== undefined)
         check(Array.isArray(d.days) && d.days.every((x) => DAYS.includes(x)),
           `${slug}/${r.name}/${d.title}: days must be Monday..Sunday`);

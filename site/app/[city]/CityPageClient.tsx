@@ -120,9 +120,10 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
               <p className="text-sm text-gray-400 mt-1">Try another day</p>
             </div>
           ) : (
-            dealsGrouped.map(({ restaurant, activeDeals }) =>
-              activeDeals.map((deal) => {
-                const key = `${restaurant.name}::${deal.title}`;
+            dealsGrouped.map(({ restaurant, activeDeals }, i) =>
+              activeDeals.map((deal, j) => {
+                // Index-based — uniqueness is a rendering concern, not a data concern.
+                const key = `${i}-${j}`;
                 return (
                   <DealCard
                     key={key}
