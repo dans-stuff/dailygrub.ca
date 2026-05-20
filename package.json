@@ -10,6 +10,8 @@
     "lint": "eslint",
     "data:build": "node scripts/build-deals.mjs",
     "data:validate": "node scripts/validate-deals.mjs",
+    "data:smoke-test": "node scripts/smoke-test.mjs",
+    "test": "npm run data:validate && npm run data:build && npm run data:smoke-test && npx tsc --noEmit",
     "deploy": "npm run build && npx wrangler deploy",
     "preview": "npm run build && npx wrangler dev"
   },
@@ -30,6 +32,7 @@
     "eslint-config-next": "16.0.3",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "wrangler": "^4"
+    "wrangler": "^4",
+    "yaml": "^2.9.0"
   }
 }

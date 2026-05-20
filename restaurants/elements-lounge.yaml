@@ -1,0 +1,91 @@
+id: elements-lounge
+name: Elements Lounge
+type: local
+website: https://www.medhatlodge.com/elements-restaurant-bar/
+cities:
+  medicine-hat:
+    address: 1051 Ross Glen Dr SE
+deals:
+  - id: elements-happy-hour
+    title: Happy Hour
+    description: $5.50 domestic beer, highballs, Cu Lager 16oz, house wine 6oz. Daily 2-6pm. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: drink
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 14
+    endHour: 18
+    lastVerified: 2026-02-06
+  - id: elements-late-night
+    title: Late Night Happy Hour
+    description: $5.50 domestic beer, highballs, Cu Lager 16oz, house wine 6oz. Sun-Thu 9pm-close. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: drink
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    startHour: 21
+    lastVerified: 2026-02-06
+  - id: elements-mon
+    title: Monday Burger Special
+    description: Burger special $12.99. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: food
+    dayOfWeek: 1
+    lastVerified: 2026-02-06
+  - id: elements-tue
+    title: Tuesday Steak Sandwich
+    description: Steak sandwich & fries $12.99. 6oz wine $6.25. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: both
+    dayOfWeek: 2
+    lastVerified: 2026-02-06
+  - id: elements-wed
+    title: Wing Wednesday
+    description: $0.50 wing special from 3pm. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: food
+    dayOfWeek: 3
+    startHour: 15
+    lastVerified: 2026-02-06
+  - id: elements-thu
+    title: Thursday — 3 Apps for $30
+    description: Choose 3 appetizers for $30. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: food
+    dayOfWeek: 4
+    lastVerified: 2026-02-06
+  - id: elements-fri
+    title: Friday Fish & Chips
+    description: Fish & chips $12.99. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: food
+    dayOfWeek: 5
+    lastVerified: 2026-02-06
+  - id: elements-sat
+    title: Saturday BBQ Ribs
+    description: BBQ pork ribs + fries $19.99. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: food
+    dayOfWeek: 6
+    lastVerified: 2026-02-06
+  - id: elements-sun
+    title: Caesar Sunday
+    description: $5 Caesar Sunday. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: drink
+    dayOfWeek: 0
+    lastVerified: 2026-02-06
+  - id: elements-tacos
+    title: All You Can Eat Tacos
+    description: All you can eat tacos $17.99. Sol beer $6 or bucket of 5 for $30. Lime margarita $6. Must purchase 1 beverage. 1051 Ross Glen Dr SE (Medicine Hat Lodge).
+    type: both
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    lastVerified: 2026-02-06

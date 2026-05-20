@@ -1,0 +1,43 @@
+id: local-public-eatery
+name: LOCAL Public Eatery
+type: chain
+website: https://localpubliceatery.com
+cities:
+  medicine-hat:
+    address: 579 3rd St SE
+deals:
+  - id: local-happy-hour
+    title: Happy Hour
+    description: Mon-Sat 2-5pm. Fish taco $6, pork tacos $10, perogies $10, fried chicken $13.50, nachos $15, wings $16, burger w/ fries $17. House lager $4.25, draft $5.25, rail highballs $5, wine $2 off, cocktails from $9. 579 3rd St SE.
+    type: both
+    daysOfWeek:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 14
+    endHour: 17
+    lastVerified: 2026-02-06
+  - id: local-late-night
+    title: Late Night Happy Hour
+    description: Same happy hour menu. Sun-Thu 9pm-close, Fri-Sat 10pm-close. 579 3rd St SE.
+    type: both
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    startHour: 21
+    lastVerified: 2026-02-06
+  - id: local-late-night-fri-sat
+    title: Late Night Happy Hour (Fri-Sat)
+    description: Same happy hour menu. Fri-Sat 10pm-close. 579 3rd St SE.
+    type: both
+    daysOfWeek:
+      - 5
+      - 6
+    startHour: 22
+    lastVerified: 2026-02-06

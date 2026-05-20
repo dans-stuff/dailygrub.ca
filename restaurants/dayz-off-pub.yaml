@@ -1,0 +1,51 @@
+id: dayz-off-pub
+name: Dayz Off Pub
+type: local
+website: https://www.dayzoffpub.com
+cities:
+  medicine-hat:
+    address: 640 Kingsway Ave SE
+deals:
+  - id: dayz-wings-mon
+    title: Wings & Bottles Monday
+    description: Wings $8.95/lb + $4.75 domestic bottles after 2pm. 640 Kingsway Ave SE.
+    type: both
+    dayOfWeek: 1
+    startHour: 14
+    lastVerified: 2026-02-06
+  - id: dayz-burger-tue
+    title: Burger & Pint Tuesday
+    description: Cheeseburger & pint $13.75 + $4.50 domestic highballs after 2pm. 640 Kingsway Ave SE.
+    type: both
+    dayOfWeek: 2
+    startHour: 14
+    lastVerified: 2026-02-06
+  - id: dayz-wings-wed
+    title: Wing Wednesday
+    description: Wings $8.95/lb (25+ flavors) after 2pm. 640 Kingsway Ave SE.
+    type: food
+    dayOfWeek: 3
+    startHour: 14
+    lastVerified: 2026-02-06
+  - id: dayz-steak-thu
+    title: Steak Sandwich & Wine Thursday
+    description: Steak sandwich $10.95 + $5.50 wine or Caesar all day. 640 Kingsway Ave SE.
+    type: both
+    dayOfWeek: 4
+    lastVerified: 2026-03-25
+  - id: dayz-fish-fri
+    title: Fish & Chips Friday
+    description: Fish & chips + 5 beer bucket $20.95 all day. 640 Kingsway Ave SE.
+    type: both
+    dayOfWeek: 5
+    lastVerified: 2026-02-06
+  - id: dayz-breakfast-weekend
+    title: Weekend Breakfast
+    description: Hot breakfast 11am-3pm Saturday & Sunday. 640 Kingsway Ave SE.
+    type: food
+    daysOfWeek:
+      - 6
+      - 0
+    startHour: 11
+    endHour: 15
+    lastVerified: 2026-02-06

@@ -1,0 +1,77 @@
+id: rustys-lounge
+name: Rusty's Lounge
+type: local
+website: https://rustyslounge.com
+cities:
+  kelowna:
+    address: Kelowna, BC
+deals:
+  - id: rustys-hh
+    title: Happy Hour
+    description: $4.95 drinks and $9 eats. Daily 3-6pm.
+    type: both
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 15
+    endHour: 18
+    lastVerified: 2026-02-28
+  - id: rustys-lunch
+    title: Lunch Special
+    description: Select lunch items $11.95. Daily 11am-2pm.
+    type: food
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 11
+    endHour: 14
+    lastVerified: 2026-02-28
+  - id: rustys-sun-burger
+    title: Signature Burger Sunday
+    description: Signature Burger $13.95 all day.
+    type: food
+    dayOfWeek: 0
+    lastVerified: 2026-02-28
+  - id: rustys-mon-lager
+    title: $4.95 Lager Monday
+    description: $4.95 lager all day Monday.
+    type: drink
+    dayOfWeek: 1
+    lastVerified: 2026-02-28
+  - id: rustys-tue-butterchicken
+    title: Butter Chicken Tuesday
+    description: Butter Chicken $13.95 all day.
+    type: food
+    dayOfWeek: 2
+    lastVerified: 2026-02-28
+  - id: rustys-wed-wings
+    title: 60¢ Wing Wednesday
+    description: 60¢ wings after 2pm.
+    type: food
+    dayOfWeek: 3
+    startHour: 14
+    lastVerified: 2026-02-28
+  - id: rustys-thu-corona
+    title: Corona Bucket Thursday
+    description: Corona Bucket $24.95 all day.
+    type: drink
+    dayOfWeek: 4
+    lastVerified: 2026-02-28
+  - id: rustys-frisit-shots
+    title: Shot Platter Friday & Saturday
+    description: Shot Platter $24.95 all day Friday and Saturday.
+    type: drink
+    daysOfWeek:
+      - 5
+      - 6
+    lastVerified: 2026-02-28

@@ -1,5 +1,5 @@
-name: Report a stale or wrong deal
-description: A deal on the site is out of date, wrong, or no longer offered
+name: 🛠️ Report a stale or wrong deal
+description: A deal on the site is out of date, wrong, or no longer offered.
 title: "[fix] <restaurant> — <what's wrong>"
 labels: ["correction"]
 body:

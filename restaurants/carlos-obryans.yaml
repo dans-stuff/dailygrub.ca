@@ -1,0 +1,25 @@
+id: carlos-obryans
+name: Carlos O'Bryan's
+type: chain
+website: https://kobcob.com
+cities:
+  kamloops:
+    address: 357 Victoria Street, Kamloops, BC
+  kelowna:
+    address: Kelowna & West Kelowna, BC
+deals:
+  - id: cob-kam-happy-hour
+    title: Happy Hour
+    description: "Single highballs $6.25, domestic 16oz $6.25, Irish 20oz $8.75, house wine 9oz $7.75. Food: wings/McCracken Rolls/Beef Dip $16, Chicken Lips/Dry Ribs/Poutine $14, Pachos/Pickles/Potato Skins $12. Daily 2-6pm and 9pm-close."
+    type: both
+    startHour: 14
+    endHour: 18
+    lastVerified: 2026-02-28
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6

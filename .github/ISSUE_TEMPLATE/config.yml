@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the contributor guide
+    url: https://github.com/dans-stuff/dailygrub.ca/blob/main/CONTRIBUTING.md
+    about: Step-by-step guide for adding deals, restaurants, and cities.

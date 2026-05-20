@@ -40,5 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Generated build artifact (assembled from cities/** by scripts/build-deals.mjs)
-/data/deals.json
+# Generated build artifact — assembled from restaurants/*.yaml + cities.yaml
+# by scripts/build-deals.mjs. Also served at dailygrub.ca/deals.json.
+/public/deals.json

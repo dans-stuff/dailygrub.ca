@@ -1,0 +1,50 @@
+# Restaurant template — copy this to a new file named after the restaurant.
+# Example: restaurants/the-slice.yaml
+#
+# Files starting with "_" (like this one) are ignored by the build and CI.
+# Lines starting with "#" are comments — delete or keep, your choice.
+#
+# Need help? See CONTRIBUTING.md or open an issue and a maintainer will help.
+
+# The restaurant's ID — must match the filename, lowercase with dashes.
+id: the-slice
+
+# How the restaurant is publicly known.
+name: The Slice
+
+# Pick one:
+#   local      — independent, one or a few locations
+#   chain      — national or regional chain
+#   sponsored  — paid partner (maintainer-only)
+#   exclusive  — exclusive partner (maintainer-only)
+type: local
+
+# Optional — the restaurant's official website. Leave out if there isn't one.
+website: https://theslice.ca
+
+# Every city the restaurant operates in.
+# The key (e.g. "lethbridge") must already exist in cities.yaml.
+# "address:" is optional but helps locals find the place. Use "{}" if there's no per-city address.
+cities:
+  lethbridge:
+    address: 517 4 Ave S
+  # red-deer:
+  #   address: 2839 Gaetz Ave
+  # kelowna: {}     # no per-city address override
+
+# The deals. Add as many as you want.
+deals:
+  - id: slice-wing-wed
+    title: Wing Wednesday
+    description: Half-price wings all day. Dine-in only.
+    # food | drink | both
+    type: food
+    # 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    # Use "dayOfWeek:" for a single day, OR "daysOfWeek: [1, 2, 3]" for several.
+    # Omit both for an all-week deal.
+    dayOfWeek: 3
+    # Optional time window (24-hour clock, 0–23):
+    # startHour: 17
+    # endHour: 21
+    # The date you confirmed this is still happening. Required.
+    lastVerified: 2026-05-19

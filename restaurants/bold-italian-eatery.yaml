@@ -1,0 +1,58 @@
+id: bold-italian-eatery
+name: Bold Italian Eatery
+type: local
+website: https://bolditalianeatery.com
+cities:
+  kamloops:
+    address: Kamloops, BC
+deals:
+  - id: bold-kam-social-hour
+    title: Social Hour
+    description: BOGO half-price 'For the Table' items. House wine $5, canned beer $6, Caesar $8/$11, rail highball $6/$9, Bad Apple Spritz $9. Mon-Sat 3-5pm and 8pm-close. Closed Sundays.
+    type: both
+    daysOfWeek:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 15
+    endHour: 17
+    lastVerified: 2026-02-28
+  - id: bold-kam-marg-mon
+    title: $2 Off Margaritas Monday
+    description: $2 off menu margaritas all day Monday.
+    type: drink
+    dayOfWeek: 1
+    lastVerified: 2026-02-28
+  - id: bold-kam-social-tue
+    title: All-Day Social Hour Tuesday
+    description: Social hour pricing available all day Tuesday.
+    type: both
+    dayOfWeek: 2
+    lastVerified: 2026-02-28
+  - id: bold-kam-wine-wed
+    title: $5 Off Privy Wine Wednesday
+    description: $5 off Privy wine bottles on Wednesday.
+    type: drink
+    dayOfWeek: 3
+    lastVerified: 2026-02-28
+  - id: bold-kam-spritz-thu
+    title: $2 Off Bad Apple Spritz Thursday
+    description: $2 off Bad Apple Spritz on Thursday.
+    type: drink
+    dayOfWeek: 4
+    lastVerified: 2026-02-28
+  - id: bold-kam-cider-fri
+    title: $2 Off Woodward Ciders Friday
+    description: $2 off Woodward ciders on Friday.
+    type: drink
+    dayOfWeek: 5
+    lastVerified: 2026-02-28
+  - id: bold-kam-sangria-sat
+    title: $2 Off Sangria Saturday
+    description: $2 off sangria on Saturday.
+    type: drink
+    dayOfWeek: 6
+    lastVerified: 2026-02-28

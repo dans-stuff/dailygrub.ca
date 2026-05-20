@@ -1,0 +1,58 @@
+id: rosters-sport-club-bar-and-grill
+name: Rosters Sport Club Bar & Grill
+type: local
+website: https://www.rostersvernon.com
+cities:
+  vernon:
+    address: 2319 53 Ave, Vernon, BC
+deals:
+  - id: rosters-wings
+    title: 87¢ Wings
+    description: 87¢ wings with beverage purchase. 20 flavours including Hot, Teriyaki, Caribbean Jerk, Honey Garlic, Sweet Chili, Smokey BBQ. Tue/Thu after 5pm, Sun all day. Dine-in only.
+    type: food
+    daysOfWeek:
+      - 2
+      - 4
+      - 0
+    lastVerified: 2026-02-15
+  - id: rosters-pulled-pork-mon
+    title: Pulled Pork Sandwich
+    description: Pulled pork sandwich with fries $14.95. After 2pm, beverage purchase required.
+    type: food
+    dayOfWeek: 1
+    startHour: 14
+    lastVerified: 2026-02-15
+  - id: rosters-burger-wed
+    title: Roster Burger
+    description: Roster burger with fries $11.95. After 5pm, beverage purchase required.
+    type: food
+    dayOfWeek: 3
+    startHour: 17
+    lastVerified: 2026-02-15
+  - id: rosters-fish-fri
+    title: Fish & Chips
+    description: Fish & chips 1pc $12.95 / 2pc $15.95. After 5pm, beverage purchase required.
+    type: food
+    dayOfWeek: 5
+    startHour: 17
+    lastVerified: 2026-02-15
+  - id: rosters-steak-wknd
+    title: Steak Sandwich
+    description: Steak sandwich with fries $18.50. All day Sat & Sun, beverage purchase required.
+    type: food
+    daysOfWeek:
+      - 6
+      - 0
+    lastVerified: 2026-02-15
+  - id: rosters-highballs-thu
+    title: Double Highballs
+    description: Double highballs $7.95 all day Thursday.
+    type: drink
+    dayOfWeek: 4
+    lastVerified: 2026-02-15
+  - id: rosters-caesars-sun
+    title: Caesars
+    description: Caesars 1oz $6.95 / 2oz $8.95 all day Sunday.
+    type: drink
+    dayOfWeek: 0
+    lastVerified: 2026-02-15

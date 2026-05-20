@@ -1,0 +1,59 @@
+id: blowers-and-grafton
+name: Blowers & Grafton
+type: chain
+website: https://blowersgrafton.com/lethbridge/
+cities:
+  lethbridge:
+    address: 3720 Mayor Magrath Dr S
+  lloydminster:
+    address: Unit 111, 7803 44 St, Lloydminster, AB
+  medicine-hat:
+    address: 105 Carry Dr SE Unit 93
+  red-deer:
+    address: 2079 50 Ave
+deals:
+  - id: bg-monday
+    title: Pizza Monday
+    description: $5 off any pizza + $1 off Grafton Street Lager 14oz. All day Monday. 3720 Mayor Magrath Dr S.
+    type: both
+    dayOfWeek: 1
+    lastVerified: 2026-02-15
+  - id: bg-tuesday
+    title: Fish & Chips Tuesday
+    description: $4 off fish & chips + $1 off Grafton Street Amber 14oz. All day Tuesday. 3720 Mayor Magrath Dr S.
+    type: both
+    dayOfWeek: 2
+    lastVerified: 2026-03-25
+  - id: bg-wednesday
+    title: Cocktail & Donair Wednesday
+    description: $2 off all cocktails + $3 off OG Halifax Donair (Regular). All day Wednesday. 3720 Mayor Magrath Dr S.
+    type: both
+    dayOfWeek: 3
+    lastVerified: 2026-02-15
+  - id: bg-thursday
+    title: Oyster & Wine Thursday
+    description: Oysters $2.50 each / $15 half-dozen + 50% off wine bottles. All day Thursday. 3720 Mayor Magrath Dr S.
+    type: both
+    dayOfWeek: 4
+    lastVerified: 2026-02-15
+  - id: bg-sunday
+    title: Caesar & Snack Sunday
+    description: $2 off all Caesars (1oz) + $2 off Selfie Garlic Fingers + $3 off Selfie Nachos. All day Sunday. 3720 Mayor Magrath Dr S.
+    type: both
+    dayOfWeek: 0
+    lastVerified: 2026-02-15
+  - id: bg-hali-hour
+    title: Hali Hour
+    description: Food from $5, drinks from $5. Daily 2-5pm & 9pm-close. Dine-in only. 3720 Mayor Magrath Dr S.
+    type: both
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 14
+    endHour: 17
+    lastVerified: 2026-02-15

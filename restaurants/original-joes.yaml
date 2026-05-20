@@ -1,0 +1,57 @@
+id: original-joes
+name: Original Joe's
+type: chain
+website: https://www.originaljoes.ca
+cities:
+  grande-prairie:
+    address: 10704 78th Ave, Grande Prairie, AB
+  lethbridge:
+    address: 8 Aquitania Blvd W & 323 Bluefox Blvd N
+  red-deer:
+    address: 4720 51st Avenue
+deals:
+  - id: oj-gp-margaritas-mon
+    title: $2 Off Margaritas
+    description: $2 off margaritas all day Monday. Dine-in only.
+    type: drink
+    dayOfWeek: 1
+    lastVerified: 2026-02-06
+  - id: oj-gp-wings-tue
+    title: Half-Price Wings
+    description: 50% off wings after 2pm Tuesday. Dine-in only.
+    type: food
+    dayOfWeek: 2
+    startHour: 14
+    lastVerified: 2026-02-06
+  - id: oj-gp-dry-ribs-wed
+    title: Dry Ribs
+    description: Garlic sesame pork ends after 2pm Wednesday.
+    type: food
+    dayOfWeek: 3
+    startHour: 14
+    lastVerified: 2026-02-06
+  - id: oj-gp-wine-thu
+    title: Half-Price Wine
+    description: 50% off bottles of wine all day Thursday. Dine-in only.
+    type: drink
+    dayOfWeek: 4
+    lastVerified: 2026-02-06
+  - id: oj-gp-fish-fri
+    title: Fish & Chips
+    description: Haddock fish & chips after 2pm Friday.
+    type: food
+    dayOfWeek: 5
+    startHour: 14
+    lastVerified: 2026-02-06
+  - id: oj-gp-sangria-sat
+    title: $2 Off Sangria
+    description: $2 off sangria all day Saturday. Dine-in only.
+    type: drink
+    dayOfWeek: 6
+    lastVerified: 2026-02-06
+  - id: oj-gp-caesars-sun
+    title: $1 Off Caesars
+    description: $1 off Caesars all day Sunday. Dine-in only.
+    type: drink
+    dayOfWeek: 0
+    lastVerified: 2026-02-06

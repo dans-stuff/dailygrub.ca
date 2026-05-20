@@ -77,14 +77,36 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
             <div className="text-right">
               <p className="text-xs text-gray-500 mb-0.5">Missing a deal?</p>
               <a
-                href="mailto:support@lunoh.com"
+                href="https://github.com/dans-stuff/dailygrub.ca/issues/new/choose"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm text-gray-900 hover:underline font-medium"
               >
-                support@lunoh.com
+                Add it on GitHub
               </a>
             </div>
           </div>
         </header>
+
+        {/* Per-city external site — driven by cities.yaml `website` */}
+        {city.website && (
+          <a
+            href={city.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mb-6 bg-emerald-50 border border-emerald-200 hover:border-emerald-400 rounded-lg px-4 py-3 transition-colors group"
+          >
+            <p className="text-sm font-semibold text-emerald-800 mb-0.5">
+              More from {city.name}
+            </p>
+            <p className="text-sm text-emerald-700">
+              Visit{' '}
+              <span className="font-medium group-hover:underline">
+                {city.website.replace(/^https?:\/\//, '').replace(/\/$/, '')} &rarr;
+              </span>
+            </p>
+          </a>
+        )}
 
         {/* Day Selector */}
         <div className="mb-6">

@@ -1,0 +1,59 @@
+id: the-george-traditional-house
+name: The George Traditional House
+type: local
+website: https://thegeorgeokotoks.com
+cities:
+  okotoks:
+    address: 101-31 Southridge Drive
+deals:
+  - id: george-happy-hour
+    title: Happy Hour
+    description: Domestic bottles & highball specials, $1 off draft ($4.50/16oz, $5.60/20oz domestics). Daily 2-6pm. 101-31 Southridge Drive.
+    type: drink
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 14
+    endHour: 18
+    lastVerified: 2026-02-15
+  - id: george-monday
+    title: Steak Sandwich & Perogies Monday
+    description: Steak Sandwiches $13, Perogies 6 for $5. All day Monday. 101-31 Southridge Drive.
+    type: food
+    dayOfWeek: 1
+    lastVerified: 2026-02-15
+  - id: george-wednesday
+    title: 45c Wing Wednesday
+    description: Wings $0.45 each. All day Wednesday. 101-31 Southridge Drive.
+    type: food
+    dayOfWeek: 3
+    lastVerified: 2026-02-15
+  - id: george-thursday
+    title: Pasta & Wine Thursday
+    description: Pasta night + 40% off wine bottles or $1 off wine by the glass. All day Thursday. 101-31 Southridge Drive.
+    type: both
+    dayOfWeek: 4
+    lastVerified: 2026-02-15
+  - id: george-friday
+    title: Free Italian Paninis Friday
+    description: Free Italian Paninis. All day Friday. 101-31 Southridge Drive.
+    type: food
+    dayOfWeek: 5
+    lastVerified: 2026-02-15
+  - id: george-saturday
+    title: $12.95 Entrees Saturday
+    description: All entrees $12.95. All day Saturday. 101-31 Southridge Drive.
+    type: food
+    dayOfWeek: 6
+    lastVerified: 2026-02-15
+  - id: george-sunday
+    title: $8.95 Fish & Chips Sunday
+    description: Fish & Chips $8.95. All day Sunday. 101-31 Southridge Drive.
+    type: food
+    dayOfWeek: 0
+    lastVerified: 2026-02-15

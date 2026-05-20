@@ -1,0 +1,53 @@
+id: duke-pub
+name: Duke Pub
+type: local
+website: https://dukepub.ca
+cities:
+  lethbridge:
+    address: 132 Columbia Blvd W
+deals:
+  - id: duke-sunday
+    title: Sunday Happy Hour
+    description: "All day: $6 Classic Caesar, $5 Vodka Soda, $12.95 steak sandwich. Dine-in only."
+    type: both
+    dayOfWeek: 0
+    lastVerified: 2026-03-25
+  - id: duke-monday
+    title: $9.95 Build-a-Burger
+    description: $9.95 build-a-burger after 2pm. $1/oz all house wine (min 5oz), half-price wine bottles. Dine-in only.
+    type: both
+    dayOfWeek: 1
+    startHour: 14
+    lastVerified: 2026-03-25
+  - id: duke-taco-tuesday
+    title: Toonie Taco Tuesday
+    description: $2 tacos after 2pm (beef or chicken). Shrimp +$2. $6 Coronas, $6 Paloma/Margaritas. Dine-in only.
+    type: both
+    dayOfWeek: 2
+    startHour: 14
+    lastVerified: 2026-03-25
+  - id: duke-wing-wednesday
+    title: Wing Wednesday
+    description: 89¢/wing after 2pm with beverage purchase. 10 wings/order. $6 domestic draught (16oz). Dine-in only.
+    type: both
+    dayOfWeek: 3
+    startHour: 14
+    lastVerified: 2026-03-25
+  - id: duke-thursday
+    title: 35¢ Perogies
+    description: 35¢ perogies (10/order). $4 Duke Lager (16oz), $5 vodka lemonade. Dine-in only.
+    type: both
+    dayOfWeek: 4
+    lastVerified: 2026-03-25
+  - id: duke-friday
+    title: $11.95 Fish & Chips
+    description: $11.95 fish & chips. $5 domestic beer bottles, $5 Vizzy seltzers. Dine-in only.
+    type: both
+    dayOfWeek: 5
+    lastVerified: 2026-03-25
+  - id: duke-saturday
+    title: $11.95 Hangover Breakfast & 25% Off Pizza
+    description: $11.95 hangover breakfast (until 2pm), 25% off late night pizza after 2pm. $14.95 mini jug hi-balls. Dine-in only.
+    type: both
+    dayOfWeek: 6
+    lastVerified: 2026-03-25

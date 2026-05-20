@@ -1,0 +1,23 @@
+id: holiday-bowl
+name: Holiday Bowl
+type: local
+website: https://holidaybowl.ca
+cities:
+  lethbridge:
+    address: 2825 2nd Ave S
+deals:
+  - id: holiday-bowl-pizza-tuesday
+    title: Half-Price Large Pizzas
+    description: All large pizzas half price 6pm-10pm. Dine-in or take-out.
+    type: food
+    dayOfWeek: 2
+    startHour: 18
+    endHour: 22
+    lastVerified: 2026-02-06
+  - id: holiday-bowl-sunday
+    title: Sunday Sevens
+    description: $7 for any 2-topping 8" pizza, $7 for 32oz mini jug of Moosehead. Also $7 for 2 games of bowling (shoe rental not included). After 7pm.
+    type: both
+    dayOfWeek: 0
+    startHour: 19
+    lastVerified: 2026-02-06

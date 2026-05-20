@@ -1,0 +1,16 @@
+id: mary-browns
+name: Mary Brown's
+type: chain
+website: https://marybrowns.com
+cities:
+  lethbridge:
+    address: 2414 Fairway Plaza Rd S
+  red-deer:
+    address: 6858 50 Ave, Suite 2
+deals:
+  - id: mary-browns-monday
+    title: Big Mary Monday
+    description: Big Mary $4.99. 2414 Fairway Plaza Road S.
+    type: food
+    dayOfWeek: 1
+    lastVerified: 2026-02-06

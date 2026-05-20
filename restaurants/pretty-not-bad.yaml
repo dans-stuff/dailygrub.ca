@@ -1,0 +1,52 @@
+id: pretty-not-bad
+name: Pretty Not Bad
+type: local
+website: https://prettynotbadylw.com
+cities:
+  kelowna:
+    address: Kelowna, BC
+deals:
+  - id: pnb-hh-drinks
+    title: Happy Hour Drinks
+    description: $3.66 house beer, wine, or highball. Daily 4-5pm and 9pm-close.
+    type: drink
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 16
+    endHour: 17
+    lastVerified: 2026-02-28
+  - id: pnb-hh-food
+    title: Happy Hour Food
+    description: Smash Burger $13, Cheesy Bread $12, Nachos $13. Daily 4-5pm and 9pm-close.
+    type: food
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 16
+    endHour: 17
+    lastVerified: 2026-02-28
+  - id: pnb-hh-late
+    title: Late Night Happy Hour
+    description: $3.66 drinks plus happy hour food menu. Daily 9pm until close.
+    type: both
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 21
+    lastVerified: 2026-02-28

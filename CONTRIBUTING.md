@@ -6,82 +6,88 @@ Welcome! This site lives or dies on locals knowing their local deals. **You don'
 
 Open an [issue](../../issues/new/choose) — pick **"Submit a deal"** or **"Report a stale or wrong deal"**. A maintainer will turn it into a PR. That's it.
 
-## The slightly faster way (edit one JSON file)
+## The slightly faster way (edit one YAML file)
 
-Every restaurant is a single file. Adding a deal = editing one file. Adding a new restaurant = creating one file.
+Every restaurant is **one file**. Adding a deal = editing one file. Adding a new restaurant = creating one file. No code involved.
 
 ### Layout
 
 ```
-cities/
-  lethbridge/
-    _city.json              ← city name & province (you don't usually touch this)
-    original-joes.json      ← one restaurant
-    churchs-chicken.json
-  calgary/
-    _city.json
-    ...
+restaurants/
+  subway.yaml          ← one file per restaurant; chains and locals alike
+  boston-pizza.yaml
+  duke-pub.yaml
+  ...
+cities.yaml            ← every city we cover, in one file
+site.config.json       ← global site settings
+LICENSE                ← MIT (code)
+LICENSE-DATA           ← CC BY-SA 4.0 (deal data)
 ```
 
 ### Adding a deal to an existing restaurant
 
-1. Open the restaurant file (e.g. `cities/lethbridge/original-joes.json`).
-2. Add an entry to the `deals` array. Today's date in `lastVerified`.
-3. Open a PR. CI will validate. A maintainer merges. Cloudflare auto-deploys.
+1. Open the restaurant file, e.g. `restaurants/subway.yaml`.
+2. Add an entry to the `deals:` list. Set `lastVerified:` to today.
+3. Open a PR. CI runs the full test gate. A maintainer merges. Cloudflare auto-deploys.
 
 ### Adding a brand new restaurant
 
-Create `cities/<city-slug>/<restaurant-slug>.json`:
+Create `restaurants/<restaurant-slug>.yaml`:
 
-```json
-{
-  "id": "the-slice",
-  "name": "The Slice",
-  "type": "local",
-  "address": "517 4 Ave S, Lethbridge",
-  "website": "https://theslice.ca",
-  "deals": [
-    {
-      "id": "slice-wing-wed",
-      "title": "Wing Wednesday",
-      "description": "Half-price wings all day. Dine-in only.",
-      "type": "food",
-      "dayOfWeek": 3,
-      "lastVerified": "2026-05-19"
-    }
-  ]
-}
+```yaml
+id: the-slice
+name: The Slice
+type: local            # local | chain | sponsored | exclusive
+website: https://theslice.ca
+
+cities:
+  lethbridge:
+    address: 517 4 Ave S
+
+deals:
+  - id: slice-wing-wed
+    title: Wing Wednesday
+    description: Half-price wings all day. Dine-in only.
+    type: food         # food | drink | both
+    dayOfWeek: 3       # 0 = Sun, 6 = Sat
+    lastVerified: 2026-05-19
+```
+
+For a chain that operates in many cities, add each one under `cities:`:
+
+```yaml
+cities:
+  lethbridge:
+    address: Multiple locations
+  red-deer:
+    address: 2839 Gaetz Ave
+  kelowna: {}          # no per-city address override
 ```
 
 Rules:
-- `id` must equal the filename (without `.json`) and be `kebab-case`.
-- `type` is one of `local`, `chain`, `sponsored`, or `exclusive`. Use `local` or `chain` for ordinary deals. `sponsored` and `exclusive` are reserved for restaurants that have arranged a partnership with the project — they sort to the top of the city page. Don't set these in a PR; a maintainer will.
+- `id` must equal the filename (without `.yaml`) and be `kebab-case`.
+- `type` is one of `local`, `chain`, `sponsored`, or `exclusive`. Use `local` or `chain` for ordinary deals. `sponsored` and `exclusive` are reserved for restaurants that have arranged a partnership with the project — a maintainer sets these.
 - Every deal needs `id`, `title`, `description`, `type` (`food`/`drink`/`both`), and `lastVerified` (`YYYY-MM-DD`).
-- Days are 0 (Sun) – 6 (Sat). Use `dayOfWeek` for one day, `daysOfWeek` for several. Omit for all-week.
-- Hours are 0–23. `startHour`/`endHour` are optional.
+- Days are 0 (Sun) – 6 (Sat). Use `dayOfWeek:` for one day, `daysOfWeek: [1, 2, 3]` for several. Omit for all-week.
+- Hours are 0–23. `startHour:` / `endHour:` are optional.
+- Every `cities:` key must already exist in `cities.yaml`.
 
 ### Adding a new city
 
-Create the folder and a `_city.json`:
+Add an entry to `cities.yaml`:
 
-```
-cities/<city-slug>/_city.json
-```
-```json
-{ "name": "Red Deer", "province": "AB" }
-```
-
-Optionally include a city-specific site, e.g.:
-
-```json
-{ "name": "Lethbridge", "province": "AB", "website": "https://myql.ca" }
+```yaml
+red-deer:
+  name: Red Deer
+  province: AB
+  website: https://example-local-site.ca   # optional, drives a per-city link
 ```
 
-Then add at least one restaurant file alongside it.
+Then reference the city from at least one restaurant under `cities:`.
 
 ### Site-wide config
 
-Global settings (site name, domain, default city, etc.) live in [`site.config.json`](site.config.json) at the repo root. Edit it the same way as any other file.
+Global settings (site name, domain, default city, etc.) live in [`site.config.json`](site.config.json) at the repo root.
 
 ## Sources matter
 
@@ -93,24 +99,29 @@ For deeper context per city (rumors, dead ends, removed places), see [`research/
 
 ```bash
 npm install
-npm run dev          # validates + assembles data/deals.json, then starts Next.js
-npm run data:validate
-npm run data:build   # regenerates data/deals.json from cities/**/*.json
+npm run dev               # validates + assembles deals, then runs Next.js
+npm run data:validate     # schema + invariant checks on YAML
+npm run data:build        # regenerate public/deals.json
+npm test                  # the full test gate CI runs
 ```
 
-`data/deals.json` is a **generated** file — don't edit it directly. It's not committed.
+`public/deals.json` is a **generated** file — don't edit it directly. It is not committed; it's reassembled from `restaurants/*.yaml` + `cities.yaml` on every build.
 
 ## How a contribution becomes a live site
 
 1. You open a PR.
-2. CI validates every JSON file (schema, required fields, unique IDs).
+2. CI runs the full gate: schema validation → assembly → invariant smoke tests → TypeScript typecheck → ESLint → Next build.
 3. A maintainer reviews and merges.
 4. Cloudflare rebuilds and deploys `dailygrub.ca` automatically.
 
 No server, no database, no accounts. The site is a few hundred KB of static files. Free, fast, always up.
 
+## Reusing the data
+
+The full dataset is published at **https://dailygrub.ca/deals.json** under [CC BY-SA 4.0](LICENSE-DATA). Anyone may use it (including commercially) provided they attribute Daily Grub and license their derivatives under the same terms. The code itself is MIT — see [LICENSE](LICENSE).
+
 ## Maintainers
 
-We use `CODEOWNERS` to route city-level changes to people who know the area. If you'd like to maintain your city, open an issue.
+We use `CODEOWNERS` for review routing. Open an issue if you'd like to maintain a city.
 
 Thanks for helping. 🍔

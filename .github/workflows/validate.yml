@@ -1,4 +1,4 @@
-name: Validate deals
+name: Validate
 
 on:
   pull_request:
@@ -13,5 +13,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node scripts/validate-deals.mjs
-      - run: node scripts/build-deals.mjs
+          cache: 'npm'
+      - run: npm ci
+      # Data: schema, IDs, days/hours, lastVerified, city refs
+      - name: Validate restaurants/*.yaml + cities.yaml
+        run: npm run data:validate
+      # Data: assembly must succeed
+      - name: Assemble public/deals.json
+        run: npm run data:build
+      # Data: invariants on the assembled artifact
+      - name: Smoke-test assembled artifact
+        run: node scripts/smoke-test.mjs
+      # Code: typecheck
+      - name: TypeScript typecheck
+        run: npx tsc --noEmit
+      # Code: lint
+      - name: ESLint
+        run: npx eslint .
+      # Code: full production build (catches any import/schema mismatch)
+      - name: Next build
+        run: npm run build

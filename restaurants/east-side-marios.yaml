@@ -1,0 +1,47 @@
+id: east-side-marios
+name: East Side Mario's
+type: chain
+website: https://eastsidemarios.com
+cities:
+  camrose:
+    address: 7300 48 Ave
+  red-deer:
+    address: 2004 50 Avenue
+deals:
+  - id: esm-monday
+    title: AYCE Pasta Monday
+    description: All-You-Can-Eat Pasta $19.99 with beverage purchase. Includes soup or salad and garlic homeloaf. All day Monday. 7300 48 Ave.
+    type: both
+    dayOfWeek: 1
+    lastVerified: 2026-02-15
+  - id: esm-tuesday
+    title: Kids Eat Free Tuesday
+    description: Kids eat free (10 & under) with $19.99+ adult entree purchase. All day Tuesday. 7300 48 Ave.
+    type: food
+    dayOfWeek: 2
+    lastVerified: 2026-02-15
+  - id: esm-wednesday
+    title: Buy One Take One Home Free
+    description: Order a dinner pasta or entree + beverage and take a free pasta home. All day Wednesday. 7300 48 Ave.
+    type: food
+    dayOfWeek: 3
+    lastVerified: 2026-02-15
+  - id: esm-thursday
+    title: Amore for Two $50
+    description: Apps, 2 pastas, AYCE soup/salad/bread, 2 mini desserts + 2 beverages for $50. All day Thursday. 7300 48 Ave.
+    type: both
+    dayOfWeek: 4
+    lastVerified: 2026-02-15
+  - id: esm-daily-drinks
+    title: $3.99 Domestic Draught & House Wine
+    description: $3.99 domestic draught & house wine with entree or pasta purchase. Daily. 7300 48 Ave.
+    type: drink
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    lastVerified: 2026-02-15

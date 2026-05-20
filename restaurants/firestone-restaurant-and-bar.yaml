@@ -1,0 +1,21 @@
+id: firestone-restaurant-and-bar
+name: Firestone Restaurant & Bar
+type: local
+website: https://firestonerestaurant.ca
+cities:
+  lethbridge:
+    address: 532 Mayor Magrath Dr S
+deals:
+  - id: firestone-casual-hour
+    title: Casual Hour
+    description: Food from $5, drinks from $4. Mon-Fri 2-5pm. Dine-in only. 532 Mayor Magrath Dr S (Coast Lethbridge Hotel).
+    type: both
+    daysOfWeek:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+    startHour: 14
+    endHour: 17
+    lastVerified: 2026-02-15

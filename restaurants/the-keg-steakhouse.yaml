@@ -1,0 +1,44 @@
+id: the-keg-steakhouse
+name: The Keg Steakhouse
+type: chain
+website: https://www.thekeg.com
+cities:
+  lethbridge:
+    address: 1717 Mayor Magrath Dr S
+  red-deer:
+    address: 6365 50 Ave
+deals:
+  - id: keg-happy-hour-weekday
+    title: Apps From $10
+    description: "Mon-Fri 3-5pm: $10 garlic toast, $15 tuna tartare, $15 wings, $20 burger, $24 prime rib sandwich."
+    type: both
+    daysOfWeek:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+    startHour: 15
+    endHour: 17
+    lastVerified: 2026-02-06
+  - id: keg-happy-hour-late-weekday
+    title: Late Night Bites From $10
+    description: "Sun-Thu 9pm-close: Same happy hour menu from $10."
+    type: both
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    startHour: 21
+    lastVerified: 2026-02-06
+  - id: keg-happy-hour-late-weekend
+    title: Late Night Bites From $10
+    description: "Fri-Sat 10pm-close: Same happy hour menu from $10."
+    type: both
+    daysOfWeek:
+      - 5
+      - 6
+    startHour: 22
+    lastVerified: 2026-02-06

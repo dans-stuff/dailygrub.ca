@@ -1,0 +1,31 @@
+id: moxies
+name: Moxies
+type: chain
+website: https://moxies.com
+cities:
+  lethbridge:
+    address: 1621 3 Ave S
+  medicine-hat:
+    address: 3090 Dunmore Rd
+  red-deer:
+    address: 2828 Gaetz Ave
+deals:
+  - id: moxies-happy-hour
+    title: $5 Drinks & $10 Cocktails
+    description: "2-5PM & 9PM-close daily. Drinks: highballs/beer/wine from $5, $6 Absolut Sippin' Sodas, $10 cocktails (Smoked Old Fashioned, Espresso Martini, Mojito, Moxies Mule), half-price select wine bottles. Food: $17 shareables (Roasted Tomatoes & Whipped Feta, Calamari and Shrimp), $19 Bacon Cheeseburger & Fries, $27 Steak Frites. 1621 3 Ave S."
+    type: both
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    lastVerified: 2026-02-06
+  - id: moxies-wine-wednesday
+    title: Half-Price Wine Bottles
+    description: Half-price wine bottles all day. Dine-in only.
+    type: drink
+    dayOfWeek: 3
+    lastVerified: 2026-02-06

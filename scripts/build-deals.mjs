@@ -1,43 +1,54 @@
 #!/usr/bin/env node
-// Assembles data/deals.json from data/cities/**.
-// Runs as `prebuild` so the site keeps consuming a single JSON at build time.
-import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
+// Assemble public/deals.json from restaurants/*.yaml + cities.yaml.
+// Output lives in public/ so it ships as a static asset at dailygrub.ca/deals.json
+// (CC BY-SA 4.0 — see LICENSE-DATA) and is consumed by lib/deals.ts at build time.
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import YAML from 'yaml';
 
 const root = new URL('..', import.meta.url).pathname;
-const citiesDir = join(root, 'cities');
+const restaurantsDir = join(root, 'restaurants');
+const citiesFile = join(root, 'cities.yaml');
+const outFile = join(root, 'public', 'deals.json');
 
-const citySlugs = readdirSync(citiesDir).filter((n) =>
-  statSync(join(citiesDir, n)).isDirectory()
-);
+const cities = YAML.parse(readFileSync(citiesFile, 'utf8'));
+const restaurantFiles = readdirSync(restaurantsDir)
+  .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
+  .sort();
 
-const cities = {};
-let restaurantCount = 0;
-let dealCount = 0;
-
-for (const slug of citySlugs.sort()) {
-  const cityDir = join(citiesDir, slug);
-  const meta = JSON.parse(readFileSync(join(cityDir, '_city.json'), 'utf8'));
-  const restaurantFiles = readdirSync(cityDir)
-    .filter((n) => n.endsWith('.json') && !n.startsWith('_'))
-    .sort();
-  const restaurants = restaurantFiles.map((f) =>
-    JSON.parse(readFileSync(join(cityDir, f), 'utf8'))
-  );
-  cities[slug] = {
-    name: meta.name,
-    province: meta.province,
-    ...(meta.website ? { website: meta.website } : {}),
-    restaurants,
-  };
-  restaurantCount += restaurants.length;
-  dealCount += restaurants.reduce((s, r) => s + r.deals.length, 0);
+// Build cities -> { ...meta, restaurants: [...] }
+const out = { cities: {} };
+for (const [slug, meta] of Object.entries(cities)) {
+  out.cities[slug] = { ...meta, restaurants: [] };
 }
 
-writeFileSync(
-  join(root, 'data/deals.json'),
-  JSON.stringify({ cities }, null, 2) + '\n'
-);
+let restaurantCount = 0;
+let dealCount = 0;
+for (const f of restaurantFiles) {
+  const r = YAML.parse(readFileSync(join(restaurantsDir, f), 'utf8'));
+  for (const [citySlug, override] of Object.entries(r.cities || {})) {
+    if (!out.cities[citySlug]) continue; // skip unknown city
+    const entry = {
+      id: r.id,
+      name: r.name,
+      type: r.type,
+      ...(override?.address ? { address: override.address } : {}),
+      ...(r.website ? { website: r.website } : {}),
+      deals: r.deals,
+    };
+    out.cities[citySlug].restaurants.push(entry);
+    restaurantCount++;
+    dealCount += r.deals.length;
+  }
+}
+
+// Sort restaurants within each city alphabetically for stable output
+for (const city of Object.values(out.cities)) {
+  city.restaurants.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+if (!existsSync(join(root, 'public'))) mkdirSync(join(root, 'public'), { recursive: true });
+writeFileSync(outFile, JSON.stringify(out, null, 2) + '\n');
 console.log(
-  `built data/deals.json: ${citySlugs.length} cities, ${restaurantCount} restaurants, ${dealCount} deals`
+  `built public/deals.json: ${Object.keys(out.cities).length} cities, ${restaurantCount} restaurant entries, ${dealCount} deals`
 );

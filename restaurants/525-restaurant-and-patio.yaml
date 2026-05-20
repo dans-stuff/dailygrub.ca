@@ -1,0 +1,52 @@
+id: 525-restaurant-and-patio
+name: 525 Restaurant & Patio
+type: local
+website: https://525restaurant.com
+cities:
+  airdrie:
+    address: 525 Woodside Drive NW
+deals:
+  - id: 525-monday
+    title: Monday Happy Hour & Specials
+    description: All-day happy hour. Classic Steak Sandwich $23. Dine-in only. 525 Woodside Dr NW.
+    type: both
+    dayOfWeek: 1
+    lastVerified: 2026-03-25
+  - id: 525-tuesday
+    title: Bottles & Bowls
+    description: All bowls $20, half-off wine bottles. Dine-in only. 525 Woodside Dr NW.
+    type: both
+    dayOfWeek: 2
+    lastVerified: 2026-03-25
+  - id: 525-wednesday
+    title: Pints & Breads
+    description: Draught/wine $7, Flatbreads $15. Dine-in only. 525 Woodside Dr NW.
+    type: both
+    dayOfWeek: 3
+    lastVerified: 2026-03-25
+  - id: 525-thursday
+    title: Date Night
+    description: 1 appetizer + 2 entrees + 1 dessert for $60. Bottle of Pitch $30. Wine $1 off. All day Thursday. 525 Woodside Dr NW.
+    type: both
+    dayOfWeek: 4
+    lastVerified: 2026-03-25
+  - id: 525-friday
+    title: Cocktail Appreciated Day
+    description: 2oz Cocktails $12, 1oz Cocktails $8. Dine-in only. 525 Woodside Dr NW.
+    type: drink
+    dayOfWeek: 5
+    lastVerified: 2026-03-25
+  - id: 525-saturday
+    title: Signature Sips Saturday
+    description: 355ml beer $5, coolers $6, 473ml beer $7. Dine-in only. 525 Woodside Dr NW.
+    type: drink
+    dayOfWeek: 6
+    lastVerified: 2026-03-25
+  - id: 525-sunday
+    title: Mimosa and Caesar Sunday
+    description: Mimosa and Caesar Sunday. Brunch buffet 9am-2pm. 525 Woodside Dr NW.
+    type: both
+    dayOfWeek: 0
+    startHour: 9
+    endHour: 14
+    lastVerified: 2026-03-25

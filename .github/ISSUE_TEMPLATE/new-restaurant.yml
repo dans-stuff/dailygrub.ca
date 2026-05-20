@@ -1,0 +1,59 @@
+name: 🏪 Submit a new restaurant
+description: Add a restaurant that isn't on the site yet.
+title: "[restaurant] <name> — <city>"
+labels: ["new-restaurant"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Just answer what you know — a maintainer will turn this into a properly formatted entry.
+  - type: input
+    id: name
+    attributes:
+      label: Restaurant name
+      placeholder: e.g. The Slice
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City (or cities, if it's a chain)
+      placeholder: e.g. Lethbridge, AB
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: Address
+      placeholder: Street, city, province
+  - type: input
+    id: website
+    attributes:
+      label: Website or Facebook page
+      placeholder: https://...
+  - type: dropdown
+    id: type
+    attributes:
+      label: Is it a chain or a local?
+      options:
+        - Local (independent)
+        - Chain (national or regional)
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: deals
+    attributes:
+      label: What deals do they offer?
+      description: One per line. Days, times, and what's discounted.
+      placeholder: |
+        Monday: $2 off pints all day
+        Wing Wednesday: half-price wings, 4pm-close
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: How do you know? (link, photo, or "I work there" / "I eat there every week")
+    validations:
+      required: true

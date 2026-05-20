@@ -1,0 +1,23 @@
+id: water-tower-grill
+name: Water Tower Grill
+type: local
+website: https://www.thewatertowergrill.ca
+cities:
+  lethbridge:
+    address: 103 Mayor Magrath Dr S
+deals:
+  - id: water-tower-cocktail-hour
+    title: 20% Off Cocktails Daily 2-5pm
+    description: 20% off cocktails daily 2-5pm. Dine-in only.
+    type: drink
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 14
+    endHour: 17
+    lastVerified: 2026-02-06

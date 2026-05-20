@@ -1,0 +1,32 @@
+id: joeys-fish-shack
+name: Joey's Fish Shack
+type: chain
+website: https://joeysfishshack.com/
+cities:
+  grande-prairie:
+    address: 10420 116 Ave Unit 101
+  lethbridge:
+    address: 905 1 Ave S
+  medicine-hat:
+    address: 1290 Trans Canada Way SE
+  red-deer:
+    address: 5101 76th St, Ste A
+deals:
+  - id: joeys-ayce-tue
+    title: All You Can Eat Fish & Chips
+    description: AYCE Fish & Chips (Wild Alaska Pollock or North Pacific Cod). Dine-in only. Tuesday all day. 10420 116 Ave Unit 101.
+    type: food
+    dayOfWeek: 2
+    lastVerified: 2026-02-28
+  - id: joeys-dumpling-wed
+    title: $1 Dumpling Wednesday
+    description: $1 dumplings (choose dumpling and sauce). Wednesday all day. 10420 116 Ave Unit 101.
+    type: food
+    dayOfWeek: 3
+    lastVerified: 2026-02-28
+  - id: joeys-taco-thu
+    title: $4 Fish Taco Thursday
+    description: $4 fish tacos. Thursday all day. 10420 116 Ave Unit 101.
+    type: food
+    dayOfWeek: 4
+    lastVerified: 2026-02-28

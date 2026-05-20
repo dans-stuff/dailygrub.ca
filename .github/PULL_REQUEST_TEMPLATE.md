@@ -8,6 +8,6 @@
      We won't merge deal changes without a source. -->
 
 ## Checklist
-- [ ] I edited only files under `cities/<city>/` (or research notes)
-- [ ] Every deal has a `lastVerified` date (today, in `YYYY-MM-DD`)
-- [ ] CI validation passes (it'll run automatically)
+- [ ] I edited only files under `restaurants/`, `cities.yaml`, or `research/`
+- [ ] Every deal I touched has a `lastVerified` date (today, in `YYYY-MM-DD`)
+- [ ] CI passes (validate → build → smoke → typecheck → lint → Next build)

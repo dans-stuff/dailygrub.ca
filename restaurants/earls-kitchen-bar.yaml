@@ -1,0 +1,36 @@
+id: earls-kitchen-bar
+name: Earls Kitchen + Bar
+type: chain
+website: https://earls.ca
+cities:
+  medicine-hat:
+    address: 3215 Dunmore Rd SE
+deals:
+  - id: earls-mon
+    title: Monday — Margaritas & Corona
+    description: $5 off all margaritas, $2 off Corona Draft. 3215 Dunmore Rd SE.
+    type: drink
+    dayOfWeek: 1
+    lastVerified: 2026-02-06
+  - id: earls-tue
+    title: Tuesday — Half-Off Wine Bottles
+    description: Half-off all bottles of wine. 3215 Dunmore Rd SE.
+    type: drink
+    dayOfWeek: 2
+    lastVerified: 2026-02-06
+  - id: earls-wed
+    title: Wednesday — Wings & Rhino Draft
+    description: $5 off wings, $3 off Rhino Draft. 3pm until close. 3215 Dunmore Rd SE.
+    type: both
+    dayOfWeek: 3
+    startHour: 15
+    lastVerified: 2026-02-06
+  - id: earls-thu-sat
+    title: Half-Off Nitro Espresso Martini
+    description: Half-off Nitro Espresso Martini. Thu-Sat. 3215 Dunmore Rd SE.
+    type: drink
+    daysOfWeek:
+      - 4
+      - 5
+      - 6
+    lastVerified: 2026-02-06

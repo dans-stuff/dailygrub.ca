@@ -1,0 +1,52 @@
+airdrie:
+  name: Airdrie
+  province: AB
+camrose:
+  name: Camrose
+  province: AB
+cochrane:
+  name: Cochrane
+  province: AB
+fort-mcmurray:
+  name: Fort McMurray
+  province: AB
+grande-prairie:
+  name: Grande Prairie
+  province: AB
+kamloops:
+  name: Kamloops
+  province: BC
+kelowna:
+  name: Kelowna
+  province: BC
+leduc:
+  name: Leduc
+  province: AB
+lethbridge:
+  name: Lethbridge
+  province: AB
+  website: https://myql.ca
+lloydminster:
+  name: Lloydminster
+  province: AB
+medicine-hat:
+  name: Medicine Hat
+  province: AB
+nanaimo:
+  name: Nanaimo
+  province: BC
+okotoks:
+  name: Okotoks
+  province: AB
+penticton:
+  name: Penticton
+  province: BC
+red-deer:
+  name: Red Deer
+  province: AB
+st-albert:
+  name: St. Albert
+  province: AB
+vernon:
+  name: Vernon
+  province: BC

@@ -1,0 +1,35 @@
+id: chillabongs-bar-and-grill
+name: Chillabong's Bar & Grill
+type: local
+website: https://chillabongs.ca
+cities:
+  red-deer:
+    address: 18-69 Dunlop Street
+deals:
+  - id: chillabongs-wing-wednesday
+    title: Wing Night
+    description: Wing Wednesday specials. Dine-in only. 18-69 Dunlop Street.
+    type: food
+    dayOfWeek: 3
+    lastVerified: 2025-12-16
+  - id: chillabongs-guinness-thursday
+    title: Cheap Guinness Thursday
+    description: Discounted Guinness on Thursday. Dine-in only.
+    type: drink
+    dayOfWeek: 4
+    lastVerified: 2025-12-16
+  - id: chillabongs-happy-hour
+    title: Happy Hour
+    description: Daily 4-7pm drink specials. Dine-in only.
+    type: drink
+    daysOfWeek:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    startHour: 16
+    endHour: 19
+    lastVerified: 2025-12-16
