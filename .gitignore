@@ -10,6 +10,10 @@
 /site/tsconfig.tsbuildinfo
 /site/.env*
 
+# Tip-intake worker build artifacts.
+/workers/tip-intake/node_modules/
+/workers/tip-intake/.wrangler/
+
 # Per-city research notes are kept locally for institutional memory but
 # no longer tracked. Delete locally if you don't want them.
 /research/

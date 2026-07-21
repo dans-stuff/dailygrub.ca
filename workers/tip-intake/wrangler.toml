@@ -1,0 +1,35 @@
+name = "dailygrub-tip-intake"
+main = "src/index.ts"
+compatibility_date = "2026-07-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[ai]
+binding = "AI"
+
+# Native rate limiting — windows are best-effort and max 60s, so these are
+# burst caps; the model's abuse flag + human PR review are the real gates.
+[[ratelimits]]
+name = "SENDER_LIMIT"
+namespace_id = "1001"
+simple = { limit = 2, period = 60 }
+
+[[ratelimits]]
+name = "GLOBAL_LIMIT"
+namespace_id = "1002"
+simple = { limit = 15, period = 60 }
+
+[vars]
+GITHUB_REPO = "dans-stuff/dailygrub.ca"
+GITHUB_BASE_BRANCH = "main"
+CITIES_URL = "https://raw.githubusercontent.com/dans-stuff/dailygrub.ca/main/cities.yaml"
+AI_MODEL = "@cf/meta/llama-4-scout-17b-16e-instruct"
+DRY_RUN = "false"
+MAX_ATTACHMENTS = "4"
+MAX_ATTACHMENT_BYTES = "5242880"
+# Comma-separated sender allowlist; empty = accept from anyone.
+ALLOWED_SENDERS = ""
+
+# Secret (not a var): npx wrangler secret put GITHUB_TOKEN

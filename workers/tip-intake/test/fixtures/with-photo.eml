@@ -1,0 +1,24 @@
+From: "Photo Tipper" <photos@example.com>
+To: tips@dailygrub.ca
+Subject: Deal board at Browns Socialhouse Kelowna
+Message-ID: <fixture-with-photo@example.com>
+Date: Mon, 20 Jul 2026 12:15:00 -0600
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="fixture-boundary"
+
+--fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+
+Snapped this at Browns Socialhouse in Kelowna - their happy hour board.
+Weekdays 3-6pm, half price apps and $5 draft beer.
+
+--fixture-boundary
+Content-Type: image/jpeg; name="deal-board.jpg"
+Content-Disposition: attachment; filename="deal-board.jpg"
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAALCAABAAEBAREA/8QAFAABAAAAAAAA
+AAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAD8AKp//2Q==
+
+--fixture-boundary--

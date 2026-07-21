@@ -2,6 +2,10 @@
 
 Every restaurant on [dailygrub.ca](https://dailygrub.ca) is a single YAML file in [`restaurants/`](restaurants). To help out:
 
+## No GitHub? Email a tip
+
+Send the deal — text or photos of menus, signs, or deal boards — to **tips@dailygrub.ca**. Include the restaurant name and city. It's turned into a pull request automatically and you'll get a reply with a link to track it. A human reviews every submission before it goes live.
+
 ## To **fix or add a deal**
 
 1. Open the restaurant's file in [`restaurants/`](restaurants).

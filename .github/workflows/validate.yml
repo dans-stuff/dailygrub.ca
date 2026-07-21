@@ -32,3 +32,19 @@ jobs:
         run: npx eslint .
       - name: Next build
         run: npm run build
+
+  tip-intake:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: workers/tip-intake
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: workers/tip-intake/package-lock.json
+      - run: npm ci
+      - name: Unit tests + typecheck
+        run: npm test

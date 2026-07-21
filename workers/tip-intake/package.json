@@ -1,0 +1,24 @@
+{
+  "name": "dailygrub-tip-intake",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --var DRY_RUN:true",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail dailygrub-tip-intake",
+    "test": "vitest run && tsc --noEmit",
+    "test:email": "scripts/send-test-email.sh"
+  },
+  "dependencies": {
+    "mimetext": "^3.0.27",
+    "postal-mime": "^2.4.4",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5",
+    "typescript": "^5",
+    "vitest": "^3",
+    "wrangler": "^4"
+  }
+}
