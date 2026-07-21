@@ -1,0 +1,31 @@
+# Added from an email tip — see the PR for provenance.
+name: Barley Mill Brewpub
+type: local
+cities:
+  penticton: {}
+deals:
+  - title: $6 House Lager Pints
+    description: "Monday: $6 House Lager Pints, all day"
+    type: drink
+    days:
+      - Monday
+  - title: $2.50 Tacos
+    description: "Taco Tuesday: $2.50 Tacos, 4-9pm"
+    type: food
+    days:
+      - Tuesday
+    startHour: 16
+    endHour: 21
+  - title: 1/2 Price Wings
+    description: "Wednesday: 1/2 Price Wings after 5pm, dine-in only"
+    type: food
+    days:
+      - Wednesday
+    startHour: 17
+  - title: $10 Fish & Chips
+    description: "Friday: $10 Fish & Chips, 11am-3pm"
+    type: food
+    days:
+      - Friday
+    startHour: 11
+    endHour: 15
