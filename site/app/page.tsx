@@ -26,7 +26,8 @@ function getHomeJsonLd(cities: Array<{ slug: string; name: string; province: str
 }
 
 export default function Home() {
-  const cities = getCities();
+  // Only cities with deals get tiles; empty provinces drop out with them.
+  const cities = getCities().filter((c) => c.dealCount > 0);
   const jsonLd = getHomeJsonLd(cities);
   const totalDeals = cities.reduce((sum, c) => sum + c.dealCount, 0);
 
