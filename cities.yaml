@@ -1,24 +1,282 @@
 airdrie:
   name: Airdrie
   province: AB
+ajax:
+  name: Ajax
+  province: ON
+alma:
+  name: Alma
+  province: QC
+amherstburg:
+  name: Amherstburg
+  province: ON
+aurora:
+  name: Aurora
+  province: ON
+baie-comeau:
+  name: Baie-Comeau
+  province: QC
+barrie:
+  name: Barrie
+  province: ON
+beaconsfield:
+  name: Beaconsfield
+  province: QC
+beaumont:
+  name: Beaumont
+  province: AB
+belleville:
+  name: Belleville
+  province: ON
+beloeil:
+  name: Beloeil
+  province: QC
+blainville:
+  name: Blainville
+  province: QC
+boisbriand:
+  name: Boisbriand
+  province: QC
+boucherville:
+  name: Boucherville
+  province: QC
+bracebridge:
+  name: Bracebridge
+  province: ON
+bradford-west-gwillimbury:
+  name: Bradford West Gwillimbury
+  province: ON
+brandon:
+  name: Brandon
+  province: MB
+brant:
+  name: Brant
+  province: ON
+brantford:
+  name: Brantford
+  province: ON
+brockville:
+  name: Brockville
+  province: ON
+brossard:
+  name: Brossard
+  province: QC
+caledon:
+  name: Caledon
+  province: ON
+cambridge:
+  name: Cambridge
+  province: ON
+campbell-river:
+  name: Campbell River
+  province: BC
 camrose:
   name: Camrose
   province: AB
+candiac:
+  name: Candiac
+  province: QC
+canmore:
+  name: Canmore
+  province: AB
+cape-breton:
+  name: Cape Breton
+  province: NS
+central-saanich:
+  name: Central Saanich
+  province: BC
+chambly:
+  name: Chambly
+  province: QC
+charlottetown:
+  name: Charlottetown
+  province: PE
+chateauguay:
+  name: Châteauguay
+  province: QC
+chatham-kent:
+  name: Chatham-Kent
+  province: ON
+chestermere:
+  name: Chestermere
+  province: AB
+chilliwack:
+  name: Chilliwack
+  province: BC
+clarence-rockland:
+  name: Clarence-Rockland
+  province: ON
+clarington:
+  name: Clarington
+  province: ON
+cobourg:
+  name: Cobourg
+  province: ON
 cochrane:
   name: Cochrane
   province: AB
+cold-lake:
+  name: Cold Lake
+  province: AB
+collingwood:
+  name: Collingwood
+  province: ON
+colwood:
+  name: Colwood
+  province: BC
+conception-bay-south:
+  name: Conception Bay South
+  province: NL
+coquitlam:
+  name: Coquitlam
+  province: BC
+corner-brook:
+  name: Corner Brook
+  province: NL
+cornwall:
+  name: Cornwall
+  province: ON
+cote-saint-luc:
+  name: Côte-Saint-Luc
+  province: QC
+courtenay:
+  name: Courtenay
+  province: BC
+cowansville:
+  name: Cowansville
+  province: QC
+cranbrook:
+  name: Cranbrook
+  province: BC
+delta:
+  name: Delta
+  province: BC
+deux-montagnes:
+  name: Deux-Montagnes
+  province: QC
+dieppe:
+  name: Dieppe
+  province: NB
+dollard-des-ormeaux:
+  name: Dollard-Des Ormeaux
+  province: QC
+dorval:
+  name: Dorval
+  province: QC
+drummondville:
+  name: Drummondville
+  province: QC
+east-gwillimbury:
+  name: East Gwillimbury
+  province: ON
+edmundston:
+  name: Edmundston
+  province: NB
+esquimalt:
+  name: Esquimalt
+  province: BC
+essex:
+  name: Essex
+  province: ON
+fort-erie:
+  name: Fort Erie
+  province: ON
 fort-mcmurray:
   name: Fort McMurray
   province: AB
+fort-saskatchewan:
+  name: Fort Saskatchewan
+  province: AB
+fort-st-john:
+  name: Fort St. John
+  province: BC
+fredericton:
+  name: Fredericton
+  province: NB
+gaspe:
+  name: Gaspé
+  province: QC
+georgina:
+  name: Georgina
+  province: ON
+granby:
+  name: Granby
+  province: QC
 grande-prairie:
   name: Grande Prairie
   province: AB
+greater-napanee:
+  name: Greater Napanee
+  province: ON
+grimsby:
+  name: Grimsby
+  province: ON
+guelph:
+  name: Guelph
+  province: ON
+haldimand-county:
+  name: Haldimand County
+  province: ON
+halton-hills:
+  name: Halton Hills
+  province: ON
+huntsville:
+  name: Huntsville
+  province: ON
+innisfil:
+  name: Innisfil
+  province: ON
+joliette:
+  name: Joliette
+  province: QC
 kamloops:
   name: Kamloops
   province: BC
+kawartha-lakes:
+  name: Kawartha Lakes
+  province: ON
 kelowna:
   name: Kelowna
   province: BC
+kingston:
+  name: Kingston
+  province: ON
+kingsville:
+  name: Kingsville
+  province: ON
+kirkland:
+  name: Kirkland
+  province: QC
+la-prairie:
+  name: La Prairie
+  province: QC
+lake-country:
+  name: Lake Country
+  province: BC
+lakeshore:
+  name: Lakeshore
+  province: ON
+lancienne-lorette:
+  name: L'Ancienne-Lorette
+  province: QC
+langford:
+  name: Langford
+  province: BC
+langley-city:
+  name: Langley (City)
+  province: BC
+langley-district:
+  name: Langley (District)
+  province: BC
+lasalle:
+  name: LaSalle
+  province: ON
+lassomption:
+  name: L'Assomption
+  province: QC
+leamington:
+  name: Leamington
+  province: ON
 leduc:
   name: Leduc
   province: AB
@@ -26,27 +284,405 @@ lethbridge:
   name: Lethbridge
   province: AB
   website: https://myql.ca
+levis:
+  name: Lévis
+  province: QC
+lincoln:
+  name: Lincoln
+  province: ON
 lloydminster:
   name: Lloydminster
   province: AB
+magog:
+  name: Magog
+  province: QC
+maple-ridge:
+  name: Maple Ridge
+  province: BC
+mascouche:
+  name: Mascouche
+  province: QC
 medicine-hat:
   name: Medicine Hat
   province: AB
+middlesex-centre:
+  name: Middlesex Centre
+  province: ON
+midland:
+  name: Midland
+  province: ON
+milton:
+  name: Milton
+  province: ON
+mirabel:
+  name: Mirabel
+  province: QC
+miramichi:
+  name: Miramichi
+  province: NB
+mission:
+  name: Mission
+  province: BC
+moncton:
+  name: Moncton
+  province: NB
+mont-royal:
+  name: Mont-Royal
+  province: QC
+mont-saint-hilaire:
+  name: Mont-Saint-Hilaire
+  province: QC
+moose-jaw:
+  name: Moose Jaw
+  province: SK
+mount-pearl:
+  name: Mount Pearl
+  province: NL
 nanaimo:
   name: Nanaimo
+  province: BC
+new-tecumseth:
+  name: New Tecumseth
+  province: ON
+new-westminster:
+  name: New Westminster
+  province: BC
+newmarket:
+  name: Newmarket
+  province: ON
+niagara-falls:
+  name: Niagara Falls
+  province: ON
+niagara-on-the-lake:
+  name: Niagara-on-the-Lake
+  province: ON
+norfolk-county:
+  name: Norfolk County
+  province: ON
+north-bay:
+  name: North Bay
+  province: ON
+north-cowichan:
+  name: North Cowichan
+  province: BC
+north-grenville:
+  name: North Grenville
+  province: ON
+north-perth:
+  name: North Perth
+  province: ON
+north-vancouver-city:
+  name: North Vancouver (City)
+  province: BC
+north-vancouver-district:
+  name: North Vancouver (District)
+  province: BC
+oak-bay:
+  name: Oak Bay
   province: BC
 okotoks:
   name: Okotoks
   province: AB
+orangeville:
+  name: Orangeville
+  province: ON
+orillia:
+  name: Orillia
+  province: ON
+owen-sound:
+  name: Owen Sound
+  province: ON
+paradise:
+  name: Paradise
+  province: NL
+pelham:
+  name: Pelham
+  province: ON
 penticton:
   name: Penticton
   province: BC
+petawawa:
+  name: Petawawa
+  province: ON
+peterborough:
+  name: Peterborough
+  province: ON
+pickering:
+  name: Pickering
+  province: ON
+pitt-meadows:
+  name: Pitt Meadows
+  province: BC
+pointe-claire:
+  name: Pointe-Claire
+  province: QC
+port-alberni:
+  name: Port Alberni
+  province: BC
+port-colborne:
+  name: Port Colborne
+  province: ON
+port-coquitlam:
+  name: Port Coquitlam
+  province: BC
+port-hope:
+  name: Port Hope
+  province: ON
+port-moody:
+  name: Port Moody
+  province: BC
+prince-albert:
+  name: Prince Albert
+  province: SK
+prince-edward-county:
+  name: Prince Edward County
+  province: ON
+prince-george:
+  name: Prince George
+  province: BC
+quinte-west:
+  name: Quinte West
+  province: ON
+quispamsis:
+  name: Quispamsis
+  province: NB
 red-deer:
   name: Red Deer
   province: AB
+repentigny:
+  name: Repentigny
+  province: QC
+rimouski:
+  name: Rimouski
+  province: QC
+riverview:
+  name: Riverview
+  province: NB
+riviere-du-loup:
+  name: Rivière-du-Loup
+  province: QC
+rouyn-noranda:
+  name: Rouyn-Noranda
+  province: QC
+saanich:
+  name: Saanich
+  province: BC
+saguenay:
+  name: Saguenay
+  province: QC
+saint-augustin-de-desmaures:
+  name: Saint-Augustin-de-Desmaures
+  province: QC
+saint-basile-le-grand:
+  name: Saint-Basile-le-Grand
+  province: QC
+saint-bruno-de-montarville:
+  name: Saint-Bruno-de-Montarville
+  province: QC
+saint-charles-borromee:
+  name: Saint-Charles-Borromée
+  province: QC
+saint-colomban:
+  name: Saint-Colomban
+  province: QC
+saint-constant:
+  name: Saint-Constant
+  province: QC
+saint-eustache:
+  name: Saint-Eustache
+  province: QC
+saint-georges:
+  name: Saint-Georges
+  province: QC
+saint-hyacinthe:
+  name: Saint-Hyacinthe
+  province: QC
+saint-jean-sur-richelieu:
+  name: Saint-Jean-sur-Richelieu
+  province: QC
+saint-jerome:
+  name: Saint-Jérôme
+  province: QC
+saint-john:
+  name: Saint John
+  province: NB
+saint-lambert:
+  name: Saint-Lambert
+  province: QC
+saint-lazare:
+  name: Saint-Lazare
+  province: QC
+saint-lin-laurentides:
+  name: Saint-Lin--Laurentides
+  province: QC
+sainte-anne-des-plaines:
+  name: Sainte-Anne-des-Plaines
+  province: QC
+sainte-catherine:
+  name: Sainte-Catherine
+  province: QC
+sainte-julie:
+  name: Sainte-Julie
+  province: QC
+sainte-marthe-sur-le-lac:
+  name: Sainte-Marthe-sur-le-Lac
+  province: QC
+sainte-sophie:
+  name: Sainte-Sophie
+  province: QC
+sainte-therese:
+  name: Sainte-Thérèse
+  province: QC
+salaberry-de-valleyfield:
+  name: Salaberry-de-Valleyfield
+  province: QC
+salmon-arm:
+  name: Salmon Arm
+  province: BC
+sarnia:
+  name: Sarnia
+  province: ON
+saugeen-shores:
+  name: Saugeen Shores
+  province: ON
+sault-ste-marie:
+  name: Sault Ste. Marie
+  province: ON
+sept-iles:
+  name: Sept-Îles
+  province: QC
+shawinigan:
+  name: Shawinigan
+  province: QC
+sooke:
+  name: Sooke
+  province: BC
+sorel-tracy:
+  name: Sorel-Tracy
+  province: QC
+spruce-grove:
+  name: Spruce Grove
+  province: AB
+squamish:
+  name: Squamish
+  province: BC
 st-albert:
   name: St. Albert
   province: AB
+st-catharines:
+  name: St. Catharines
+  province: ON
+st-johns:
+  name: St. John's
+  province: NL
+st-thomas:
+  name: St. Thomas
+  province: ON
+steinbach:
+  name: Steinbach
+  province: MB
+stony-plain:
+  name: Stony Plain
+  province: AB
+stratford:
+  name: Stratford
+  province: ON
+strathcona-county:
+  name: Strathcona County
+  province: AB
+strathroy-caradoc:
+  name: Strathroy-Caradoc
+  province: ON
+summerside:
+  name: Summerside
+  province: PE
+swift-current:
+  name: Swift Current
+  province: SK
+sylvan-lake:
+  name: Sylvan Lake
+  province: AB
+tecumseh:
+  name: Tecumseh
+  province: ON
+terrebonne:
+  name: Terrebonne
+  province: QC
+thetford-mines:
+  name: Thetford Mines
+  province: QC
+thorold:
+  name: Thorold
+  province: ON
+thunder-bay:
+  name: Thunder Bay
+  province: ON
+tillsonburg:
+  name: Tillsonburg
+  province: ON
+timmins:
+  name: Timmins
+  province: ON
+tracadie:
+  name: Tracadie
+  province: NB
+trois-rivieres:
+  name: Trois-Rivières
+  province: QC
+val-dor:
+  name: Val-d'Or
+  province: QC
+varennes:
+  name: Varennes
+  province: QC
+vaudreuil-dorion:
+  name: Vaudreuil-Dorion
+  province: QC
 vernon:
   name: Vernon
   province: BC
+victoria:
+  name: Victoria
+  province: BC
+victoriaville:
+  name: Victoriaville
+  province: QC
+wasaga-beach:
+  name: Wasaga Beach
+  province: ON
+waterloo:
+  name: Waterloo
+  province: ON
+welland:
+  name: Welland
+  province: ON
+west-kelowna:
+  name: West Kelowna
+  province: BC
+west-vancouver:
+  name: West Vancouver
+  province: BC
+westmount:
+  name: Westmount
+  province: QC
+whitby:
+  name: Whitby
+  province: ON
+whitchurch-stouffville:
+  name: Whitchurch-Stouffville
+  province: ON
+white-rock:
+  name: White Rock
+  province: BC
+whitehorse:
+  name: Whitehorse
+  province: YT
+woodstock:
+  name: Woodstock
+  province: ON
+yellowknife:
+  name: Yellowknife
+  province: NT
+yorkton:
+  name: Yorkton
+  province: SK
