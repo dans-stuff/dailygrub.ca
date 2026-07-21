@@ -1,0 +1,15 @@
+# Added from an email tip — see the PR for provenance.
+name: The Keg
+type: local
+cities:
+  kelowna: {}
+deals:
+  - title: Half-Price Appetizers
+    description: Half-price appetizers, Monday to Thursday from 9pm to close, dine-in only.
+    type: food
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+    startHour: 21
