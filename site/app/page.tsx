@@ -105,6 +105,13 @@ export default function Home() {
                 className="text-gray-900 hover:text-emerald-600 font-medium transition-colors"
               >
                 Contribute on GitHub
+              </a>{' '}
+              or email a tip (photos welcome) to{' '}
+              <a
+                href="mailto:tips@dailygrub.ca"
+                className="text-gray-900 hover:text-emerald-600 font-medium transition-colors"
+              >
+                tips@dailygrub.ca
               </a>
             </p>
             <p className="text-xs text-gray-500">

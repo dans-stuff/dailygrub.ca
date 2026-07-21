@@ -17,6 +17,7 @@ email → Email Routing → this Worker
 
 Outcomes:
 - **Valid tip** → PR + success reply. Model confidence is advisory only and noted in the PR body; the human PR review is the accuracy gate.
+- **Valid tip from an `AUTO_MERGE_SENDERS` address with a DMARC pass** → PR is squash-merged immediately and the reply says so. DMARC gating matters: the From header alone is spoofable.
 - **Unextractable** (no restaurant/city/deal) → no PR; reply asks for specifics.
 - **Everything already listed** → no PR; "already listed" reply.
 - **Abusive content** (profanity, slurs, spam, prompt-injection attempts — flagged by the model) → silently dropped and logged.

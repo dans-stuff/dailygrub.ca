@@ -64,6 +64,11 @@ function toBase64Utf8(text: string): string {
   return btoa(binary);
 }
 
+export interface TipPr {
+  url: string;
+  number: number;
+}
+
 export async function openTipPr(
   env: Env,
   opts: {
@@ -74,14 +79,14 @@ export async function openTipPr(
     body: string;
     commitMessage: string;
   },
-): Promise<string> {
+): Promise<TipPr> {
   const branch = `tip/${opts.slug}-${Math.floor(Date.now() / 1000)}`;
 
   if (isDryRun(env)) {
     console.log(`[DRY_RUN] would open PR "${opts.title}" on branch ${branch}`);
     console.log(`[DRY_RUN] restaurants/${opts.slug}.yaml:\n${opts.yaml}`);
     console.log(`[DRY_RUN] PR body:\n${opts.body}`);
-    return `https://github.com/${env.GITHUB_REPO}/pull/DRY_RUN`;
+    return { url: `https://github.com/${env.GITHUB_REPO}/pull/DRY_RUN`, number: 0 };
   }
 
   const ref = await gh<{ object: { sha: string } }>(
@@ -96,12 +101,20 @@ export async function openTipPr(
     branch,
     ...(opts.existingFileSha ? { sha: opts.existingFileSha } : {}),
   });
-  const pr = await gh<{ html_url: string }>(env, 'POST', '/pulls', {
+  const pr = await gh<{ html_url: string; number: number }>(env, 'POST', '/pulls', {
     title: opts.title,
     head: branch,
     base: env.GITHUB_BASE_BRANCH,
     body: opts.body,
     draft: false,
   });
-  return pr.html_url;
+  return { url: pr.html_url, number: pr.number };
+}
+
+export async function mergePr(env: Env, prNumber: number): Promise<void> {
+  if (isDryRun(env)) {
+    console.log(`[DRY_RUN] would merge PR #${prNumber}`);
+    return;
+  }
+  await gh(env, 'PUT', `/pulls/${prNumber}/merge`, { merge_method: 'squash' });
 }

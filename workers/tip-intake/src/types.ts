@@ -12,6 +12,7 @@ export interface Env {
   MAX_ATTACHMENTS: string;
   MAX_ATTACHMENT_BYTES: string;
   ALLOWED_SENDERS: string;
+  AUTO_MERGE_SENDERS: string;
 }
 
 // Mirrors the rules in site/scripts/validate-deals.mjs. Duplicated on purpose:

@@ -4,7 +4,7 @@ import { parseEmail } from './parse';
 import { extractTip } from './extract';
 import { matchRestaurant } from './match';
 import { createRestaurantYaml, mergeRestaurantYaml } from './yamlgen';
-import { getRestaurantFile, listRestaurantSlugs, openTipPr } from './github';
+import { getRestaurantFile, listRestaurantSlugs, mergePr, openTipPr } from './github';
 import { checkRateLimit } from './ratelimit';
 import { replyToTipster, type ReplyKind } from './reply';
 import { maskEmail, sanitizeForPrBody } from './sanitize';
@@ -70,6 +70,17 @@ function prBody(
   ].join('\n');
 }
 
+// Auto-merge is allowlist + DMARC-pass only: the From address is trivially
+// spoofable, so we require Cloudflare's Authentication-Results header to show
+// dmarc=pass before treating the sender as trusted.
+function isTrustedSender(message: ForwardableEmailMessage, env: Env): boolean {
+  const sender = message.from.toLowerCase();
+  const trusted = env.AUTO_MERGE_SENDERS.split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
+  if (!trusted.includes(sender)) return false;
+  const auth = message.headers.get('authentication-results') ?? '';
+  return /\bdmarc=pass\b/i.test(auth);
+}
+
 async function handleTip(message: ForwardableEmailMessage, env: Env): Promise<Outcome> {
   const sender = message.from.toLowerCase();
 
@@ -133,7 +144,7 @@ async function handleTip(message: ForwardableEmailMessage, env: Env): Promise<Ou
   }
 
   const receivedAt = new Date().toISOString();
-  const prUrl = await openTipPr(env, {
+  const pr = await openTipPr(env, {
     slug: match.slug,
     yaml,
     existingFileSha,
@@ -141,8 +152,20 @@ async function handleTip(message: ForwardableEmailMessage, env: Env): Promise<Ou
     body: prBody(env, parsed, tip, rawModelOutput, receivedAt),
     commitMessage: `tip: ${action}`,
   });
-  console.log(`opened PR: ${prUrl}`);
-  return { reply: 'success', prUrl };
+  console.log(`opened PR: ${pr.url}`);
+
+  if (isTrustedSender(message, env)) {
+    try {
+      await mergePr(env, pr.number);
+      console.log(`auto-merged PR #${pr.number} (trusted sender ${sender}, dmarc=pass)`);
+      return { reply: 'merged', prUrl: pr.url };
+    } catch (err) {
+      // Merge can fail (e.g. required checks still running); the PR stands for
+      // normal review and the tipster still gets the tracking link.
+      console.warn(`auto-merge failed for PR #${pr.number}: ${err instanceof Error ? err.message : err}`);
+    }
+  }
+  return { reply: 'success', prUrl: pr.url };
 }
 
 // Builds a message shim from a raw RFC 822 string so the pipeline can run
@@ -151,7 +174,7 @@ function testMessage(raw: string, from: string, to: string): ForwardableEmailMes
   const header = (name: string) =>
     raw.split(/\r?\n\r?\n/)[0].match(new RegExp(`^${name}:\\s*(.+)$`, 'im'))?.[1].trim() ?? '';
   const headers = new Headers();
-  for (const name of ['subject', 'message-id', 'references']) {
+  for (const name of ['subject', 'message-id', 'references', 'authentication-results']) {
     const v = header(name);
     if (v) headers.set(name, v);
   }

@@ -1,7 +1,7 @@
 import { createMimeMessage } from 'mimetext';
 import { EmailMessage } from 'cloudflare:email';
 
-export type ReplyKind = 'success' | 'needs-info' | 'already-listed';
+export type ReplyKind = 'success' | 'merged' | 'needs-info' | 'already-listed';
 
 function replyBody(kind: ReplyKind, detail: { prUrl?: string }): string {
   switch (kind) {
@@ -12,6 +12,14 @@ function replyBody(kind: ReplyKind, detail: { prUrl?: string }): string {
         `Your tip is being tracked here: ${detail.prUrl}`,
         '',
         'A human reviews every submission before it goes live on dailygrub.ca.',
+      ].join('\n');
+    case 'merged':
+      return [
+        'Thanks for the tip!',
+        '',
+        `Merged straight in (trusted sender): ${detail.prUrl}`,
+        '',
+        'It will appear on dailygrub.ca with the next site deploy.',
       ].join('\n');
     case 'already-listed':
       return [

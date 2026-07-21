@@ -47,6 +47,8 @@ function systemPrompt(cities: Record<string, string>): string {
     '- Only report deals actually stated in the email or photos. Never invent days, hours, prices, or details.',
     '- When the email states which days or hours a deal runs, put them in days/startHour/endHour. Omit them when not stated; "all day" means omit the hours entirely.',
     '- description must be a complete sentence restating the deal as stated (price, conditions like dine-in only); never leave it empty.',
+    '- title names the deal itself (e.g. "Wing Wednesday", "$6 Lager Pints"), never just a day of the week.',
+    '- Open-ended times ("after 5pm", "until close"): set startHour only and omit endHour.',
     '- If the email covers multiple restaurants, extract only the first one.',
     '- confident is advisory: set it false when the restaurant, city, or a deal is a guess; still extract your best reading.',
     '- If the city is not in the supported list, pick nothing — leave confident false and explain in notes.',
@@ -139,10 +141,12 @@ export function validateTip(raw: unknown, citySlugs: string[]): ExtractedTip | n
         const v = d[key];
         if (Number.isInteger(v) && (v as number) >= 0 && (v as number) <= 23) deal[key] = v as number;
       }
-      // Models render "all day" as 0-0 or 0-23 despite instructions; the schema
-      // convention for all-day deals is omitting hours.
+      // Models render "all day" as 0-0 or 0-23, and "until close" as endHour 0,
+      // despite instructions; the schema convention is omitting unknown hours.
       if (deal.startHour === 0 && (deal.endHour === 0 || deal.endHour === 23)) {
         delete deal.startHour;
+        delete deal.endHour;
+      } else if (deal.endHour === 0) {
         delete deal.endHour;
       }
       deals.push(deal);

@@ -31,5 +31,7 @@ MAX_ATTACHMENTS = "4"
 MAX_ATTACHMENT_BYTES = "5242880"
 # Comma-separated sender allowlist; empty = accept from anyone.
 ALLOWED_SENDERS = ""
+# Senders whose tip PRs merge automatically — requires DMARC pass, see index.ts.
+AUTO_MERGE_SENDERS = "time4dan@gmail.com"
 
 # Secret (not a var): npx wrangler secret put GITHUB_TOKEN

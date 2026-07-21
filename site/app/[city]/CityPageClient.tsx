@@ -84,6 +84,12 @@ export default function CityPageClient({ citySlug }: CityPageClientProps) {
               >
                 Add it on GitHub
               </a>
+              <p className="text-xs text-gray-500 mt-0.5">
+                or email{' '}
+                <a href="mailto:tips@dailygrub.ca" className="hover:underline">
+                  tips@dailygrub.ca
+                </a>
+              </p>
             </div>
           </div>
         </header>
