@@ -8,38 +8,56 @@ cities:
     address: 12 Conway St
 deals:
   - title: Dry Rib Monday
-    description: $9.99 cracked pepper & sea salt dry ribs. $1.50 off Michelob Ultra tankards. Dine-in only.
+    description: $9.99 cracked pepper & sea salt dry ribs. $1.50 off Michelob Ultra
+      tankards. Dine-in only.
     type: both
     days:
       - Monday
   - title: Taco Tuesday
-    description: $3.99 tacos. $5.99 spicy mango margarita, $6.25 Corona, $24.99 Corona buckets. Dine-in only.
+    description: $3.99 tacos. $5.99 spicy mango margarita, $6.25 Corona, $24.99
+      Corona buckets. Dine-in only.
     type: both
     days:
       - Tuesday
   - title: Wing Wednesday
-    description: 69¢ wings all day — regular, boneless, or cauliflower. $10.99 all beers on tap. Dine-in only.
+    description: 69¢ wings all day — regular, boneless, or cauliflower. $10.99 all
+      beers on tap. Dine-in only.
     type: both
     days:
       - Wednesday
   - title: Pasta Thursday
-    description: $12.99 pasta dishes. 50% more wine (9oz for 6oz price). $2 off Stella Artois tankards. Dine-in only.
+    description: $12.99 pasta dishes. 50% more wine (9oz for 6oz price). $2 off
+      Stella Artois tankards. Dine-in only.
     type: both
     days:
       - Thursday
   - title: Fired Up Friday
-    description: Prime rib with sides — $22.99 (8oz) or $26.99 (12oz). $1 off Coors Light tankards, $5.99 White Claw cans, $23.99 White Claw buckets. Dine-in only.
+    description: Prime rib with sides — $22.99 (8oz) or $26.99 (12oz). $1 off Coors
+      Light tankards, $5.99 White Claw cans, $23.99 White Claw buckets. Dine-in
+      only.
     type: both
     days:
       - Friday
   - title: Ribeye Saturday
-    description: Ribeye & shrimp with sides — $27.99 (12oz) or $36.99 (20oz). 4pm–close. $1.50 off Blue Moon tankards, $4.99 Jager shots. $1 off Caesars open–2pm. Dine-in only.
+    description: Ribeye & shrimp with sides — $27.99 (12oz) or $36.99 (20oz).
+      4pm–close. $1.50 off Blue Moon tankards, $4.99 Jager shots. $1 off Caesars
+      open–2pm. Dine-in only.
     type: both
     days:
       - Saturday
     startHour: 16
   - title: Pizza Sunday
-    description: $9.99 two-topping 8" pizza. $49.99 16" pizza + 2 wing orders. $1 off Bud/Bud Light tankards, $7.99 double highballs. $1 off Caesars open–2pm. Dine-in only.
+    description: $9.99 two-topping 8" pizza. $49.99 16" pizza + 2 wing orders. $1
+      off Bud/Bud Light tankards, $7.99 double highballs. $1 off Caesars
+      open–2pm. Dine-in only.
     type: both
     days:
       - Sunday
+  - title: Sunday Caesars
+    description: The Canadian Brewhouse in Lethbridge now has Sunday Caesars - $5.25
+      caesars all day every Sunday, dine-in only.
+    type: drink
+    days:
+      - Sunday
+    startHour: 0
+    endHour: 23
