@@ -2,11 +2,25 @@ name: The Canadian Brewhouse
 type: chain
 website: https://thecanadianbrewhouse.com
 cities:
+  calgary-northeast:
+    address: 9650 Harvest Hills Blvd N #1200 & 425 36 St NE
+  calgary-northwest:
+    address: 3953 University Ave NW #220
+  calgary-southeast:
+    address: 7 Mahogany Plaza SE & 80 Longview Common SE #100
+  calgary-southwest:
+    address: 8538 Broadcast Ave SW
   lethbridge:
     address: 3521 Mayor Magrath Dr S
   red-deer:
     address: 12 Conway St
 deals:
+  - title: Happy Hour
+    description: "$3.99 Bud Light steins, $4.99 highballs, $4.99 mocktails, $7.99 Bud Light tankards, $3.99 birria tacos, $7.99 classic poutine, $9.99 two-topping 8\" pizza, $12.99 spicy chorizo mac & cheese. Dine-in only."
+    type: both
+    days: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    startHour: 14
+    endHour: 18
   - title: Dry Rib Monday
     description: $9.99 cracked pepper & sea salt dry ribs. $1.50 off Michelob Ultra tankards. Dine-in only.
     type: both

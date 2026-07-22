@@ -10,3 +10,8 @@ deals:
     type: food
     days:
       - Tuesday
+  - title: Half-Price Margarita Wednesday
+    description: All handcrafted margaritas half price (regular $15.75, all doubles).
+    type: drink
+    days:
+      - Wednesday

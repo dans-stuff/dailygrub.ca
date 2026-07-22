@@ -1,0 +1,32 @@
+name: Marrow Restaurant & Lounge
+type: local
+website: https://marrowrestaurant.com
+cities:
+  camrose:
+    address: 4919 47 Street
+deals:
+  - title: Happy Hour
+    description: "2-5pm & 7pm-close daily: 25% off all highballs, house wine, and draft beer."
+    type: drink
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+  - title: Family Sunday
+    description: Schnitzel $26, 1oz Caesars $6, kids under 10 eat free with purchase of any regular-priced main, burger, sandwich, or steak.
+    type: both
+    days: [Sunday]
+  - title: Mocktail Monday
+    description: 30% off mocktails. 6oz Top Sirloin Steak Sandwich $29 with fries, farmhouse greens, or soup.
+    type: both
+    days: [Monday]
+  - title: Burger Tuesday
+    description: 20% off all beef burgers (with fries, farmhouse greens, or soup). Draft beer $5 (16oz), $8 (22oz), $15 pitchers.
+    type: both
+    days: [Tuesday]
+  - title: unWined Wednesday
+    description: Buy one appetizer, get the second 50% off. $6 house wine (8oz).
+    type: both
+    days: [Wednesday]
+  - title: Prime Thursday
+    description: Prime rib dinner $36 with Yorkshire pudding, mashed potatoes, and green beans. After 4pm.
+    type: food
+    days: [Thursday]
+    startHour: 16

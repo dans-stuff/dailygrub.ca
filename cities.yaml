@@ -64,6 +64,39 @@ brossard:
 caledon:
   name: Caledon
   province: ON
+calgary-beltline:
+  name: Calgary — Beltline & 17th Ave
+  province: AB
+calgary-bridgeland:
+  name: Calgary — Bridgeland
+  province: AB
+calgary-downtown:
+  name: Calgary — Downtown & Stephen Ave
+  province: AB
+calgary-inglewood:
+  name: Calgary — Inglewood & Ramsay
+  province: AB
+calgary-kensington:
+  name: Calgary — Kensington
+  province: AB
+calgary-marda-loop:
+  name: Calgary — Marda Loop
+  province: AB
+calgary-mission:
+  name: Calgary — Mission & 4th St
+  province: AB
+calgary-northeast:
+  name: Calgary — Northeast
+  province: AB
+calgary-northwest:
+  name: Calgary — Northwest
+  province: AB
+calgary-southeast:
+  name: Calgary — Southeast
+  province: AB
+calgary-southwest:
+  name: Calgary — Southwest
+  province: AB
 cambridge:
   name: Cambridge
   province: ON
@@ -169,6 +202,9 @@ drummondville:
 east-gwillimbury:
   name: East Gwillimbury
   province: ON
+edmonton:
+  name: Edmonton
+  province: AB
 edmundston:
   name: Edmundston
   province: NB
@@ -449,6 +485,9 @@ quispamsis:
 red-deer:
   name: Red Deer
   province: AB
+regina:
+  name: Regina
+  province: SK
 repentigny:
   name: Repentigny
   province: QC
@@ -542,6 +581,9 @@ salmon-arm:
 sarnia:
   name: Sarnia
   province: ON
+saskatoon:
+  name: Saskatoon
+  province: SK
 saugeen-shores:
   name: Saugeen Shores
   province: ON
@@ -622,6 +664,9 @@ tillsonburg:
   province: ON
 timmins:
   name: Timmins
+  province: ON
+toronto:
+  name: Toronto
   province: ON
 tracadie:
   name: Tracadie

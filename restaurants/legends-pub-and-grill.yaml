@@ -22,23 +22,40 @@ deals:
     type: drink
     days:
       - Sunday
-  - title: Pasta & Pizza Night
-    description: Regular pasta $14.50, baked pasta $17. Small pizzas (#1–20) $12. Draught pints 16oz $7, Blue Moon pints $7. Starts at 5pm.
+  - title: Pasta Night
+    description: Regular pasta $15.50, baked pasta $17.50. Blue Moon pints $7. Starts at 5pm.
     type: both
     days:
       - Monday
     startHour: 17
   - title: Wing Night
-    description: Wings $7.50/order with beverage purchase. Mini jugs of draught (32oz) $12, mini jugs of hiballs (4oz) $19. Starts at 5pm.
+    description: Wings $8.50/order with beverage purchase. Mini jugs of draught (32oz) $12.75, mini jugs of hiballs (4oz) $19.75. Starts at 5pm.
     type: both
     days:
       - Tuesday
     startHour: 17
   - title: Wednesday Specials
-    description: Hiballs $6.50 all night. Shots $6.50. Steak sandwich 6oz New York $18 with beverage purchase.
+    description: Hiballs $6.50 all night. Shots $6.50. Steak sandwich 6oz New York $19 with beverage purchase.
     type: both
     days:
       - Wednesday
+  - title: Pizza Night
+    description: Small pizzas (#1–20) $13. Draught pints (16oz) $7. Starts at 5pm.
+    type: both
+    days:
+      - Thursday
+    startHour: 17
+  - title: Lunch Specials
+    description: 6oz New York steak sandwich $19, small pizzas (#1–20) $13, regular pasta $15.50, baked pasta $17.50. Dine-in only.
+    type: food
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+    startHour: 11
+    endHour: 14
   - title: Friday Mini Jugs
     description: Mini jugs of draught $12.
     type: drink

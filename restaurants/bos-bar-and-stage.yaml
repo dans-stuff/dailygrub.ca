@@ -16,8 +16,8 @@ deals:
     days:
       - Thursday
   - title: Happy Hour
-    description: "Mon-Fri 2:30-5:30PM: $2 off Winterlust items & cocktails. Dine-in only."
-    type: drink
+    description: "$5 eats: fried chicken (per pc), 12oz dry ribs, slugger dogs, scotch egg, True North street fries. Drinks: half-price wine bottles (non-house), $7 house wine glasses, $5 1oz cocktail samplers, $5 house lager (12oz), $20 house lager towers (64oz)."
+    type: both
     days:
       - Monday
       - Tuesday
@@ -25,4 +25,4 @@ deals:
       - Thursday
       - Friday
     startHour: 14
-    endHour: 17
+    endHour: 18
