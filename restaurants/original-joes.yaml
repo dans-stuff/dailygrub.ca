@@ -2,6 +2,10 @@ name: Original Joe's
 type: chain
 website: https://www.originaljoes.ca
 cities:
+  calgary-downtown:
+    address: 109 8th Avenue SW
+  calgary-kensington:
+    address: 1220 Kensington Road NW, Unit 100
   grande-prairie:
     address: 10704 78th Ave, Grande Prairie, AB
   lethbridge:

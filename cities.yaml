@@ -1,6 +1,7 @@
 airdrie:
   name: Airdrie
   province: AB
+  population: 74100
 ajax:
   name: Ajax
   province: ON
@@ -67,36 +68,47 @@ caledon:
 calgary-beltline:
   name: Calgary — Beltline & 17th Ave
   province: AB
+  population: 25880
 calgary-bridgeland:
   name: Calgary — Bridgeland
   province: AB
+  population: 6800
 calgary-downtown:
   name: Calgary — Downtown & Stephen Ave
   province: AB
+  population: 15000
 calgary-inglewood:
   name: Calgary — Inglewood & Ramsay
   province: AB
+  population: 7000
 calgary-kensington:
   name: Calgary — Kensington
   province: AB
+  population: 10500
 calgary-marda-loop:
   name: Calgary — Marda Loop
   province: AB
+  population: 14000
 calgary-mission:
   name: Calgary — Mission & 4th St
   province: AB
+  population: 5500
 calgary-northeast:
   name: Calgary — Northeast
   province: AB
+  population: 320000
 calgary-northwest:
   name: Calgary — Northwest
   province: AB
+  population: 300000
 calgary-southeast:
   name: Calgary — Southeast
   province: AB
+  population: 300000
 calgary-southwest:
   name: Calgary — Southwest
   province: AB
+  population: 260000
 cambridge:
   name: Cambridge
   province: ON
@@ -106,6 +118,7 @@ campbell-river:
 camrose:
   name: Camrose
   province: AB
+  population: 18742
 candiac:
   name: Candiac
   province: QC
@@ -148,6 +161,7 @@ cobourg:
 cochrane:
   name: Cochrane
   province: AB
+  population: 32199
 cold-lake:
   name: Cold Lake
   province: AB
@@ -205,6 +219,7 @@ east-gwillimbury:
 edmonton:
   name: Edmonton
   province: AB
+  population: 1010899
 edmundston:
   name: Edmundston
   province: NB
@@ -220,6 +235,7 @@ fort-erie:
 fort-mcmurray:
   name: Fort McMurray
   province: AB
+  population: 68002
 fort-saskatchewan:
   name: Fort Saskatchewan
   province: AB
@@ -241,6 +257,7 @@ granby:
 grande-prairie:
   name: Grande Prairie
   province: AB
+  population: 64141
 greater-napanee:
   name: Greater Napanee
   province: ON
@@ -268,12 +285,14 @@ joliette:
 kamloops:
   name: Kamloops
   province: BC
+  population: 97902
 kawartha-lakes:
   name: Kawartha Lakes
   province: ON
 kelowna:
   name: Kelowna
   province: BC
+  population: 144576
 kingston:
   name: Kingston
   province: ON
@@ -316,9 +335,11 @@ leamington:
 leduc:
   name: Leduc
   province: AB
+  population: 34094
 lethbridge:
   name: Lethbridge
   province: AB
+  population: 98406
   website: https://myql.ca
 levis:
   name: Lévis
@@ -329,6 +350,7 @@ lincoln:
 lloydminster:
   name: Lloydminster
   province: AB
+  population: 31582
 magog:
   name: Magog
   province: QC
@@ -341,6 +363,7 @@ mascouche:
 medicine-hat:
   name: Medicine Hat
   province: AB
+  population: 63271
 middlesex-centre:
   name: Middlesex Centre
   province: ON
@@ -377,6 +400,7 @@ mount-pearl:
 nanaimo:
   name: Nanaimo
   province: BC
+  population: 99863
 new-tecumseth:
   name: New Tecumseth
   province: ON
@@ -419,6 +443,7 @@ oak-bay:
 okotoks:
   name: Okotoks
   province: AB
+  population: 30405
 orangeville:
   name: Orangeville
   province: ON
@@ -437,6 +462,7 @@ pelham:
 penticton:
   name: Penticton
   province: BC
+  population: 36885
 petawawa:
   name: Petawawa
   province: ON
@@ -485,9 +511,11 @@ quispamsis:
 red-deer:
   name: Red Deer
   province: AB
+  population: 100844
 regina:
   name: Regina
   province: SK
+  population: 226404
 repentigny:
   name: Repentigny
   province: QC
@@ -584,6 +612,7 @@ sarnia:
 saskatoon:
   name: Saskatoon
   province: SK
+  population: 266141
 saugeen-shores:
   name: Saugeen Shores
   province: ON
@@ -611,6 +640,7 @@ squamish:
 st-albert:
   name: St. Albert
   province: AB
+  population: 68232
 st-catharines:
   name: St. Catharines
   province: ON
@@ -668,6 +698,7 @@ timmins:
 toronto:
   name: Toronto
   province: ON
+  population: 2794356
 tracadie:
   name: Tracadie
   province: NB
@@ -686,6 +717,7 @@ vaudreuil-dorion:
 vernon:
   name: Vernon
   province: BC
+  population: 44519
 victoria:
   name: Victoria
   province: BC

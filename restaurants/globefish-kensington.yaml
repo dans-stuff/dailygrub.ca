@@ -1,0 +1,17 @@
+name: Globefish Kensington
+type: local
+website: https://globefishkensington.ca
+cities:
+  calgary-kensington:
+    address: 332 14 St NW
+deals:
+  - title: Happy Hour
+    description: "4:30-6pm daily: $2 off beers, cocktails, and 10oz sake; $2 off 6oz shochu, 25% off shochu bottles; wine $9 (6oz) / $13.50 (9oz) / $23 (half-litre); 40% off wine bottles (excludes house wines)."
+    type: drink
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    startHour: 16
+    endHour: 18
+  - title: All-Day Wine & Half-Litre Discounts
+    description: Half-litre and bottle discounts run all day Friday through Sunday.
+    type: drink
+    days: [Friday, Saturday, Sunday]

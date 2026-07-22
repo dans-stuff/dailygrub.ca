@@ -39,8 +39,24 @@ for (const f of restaurantFiles) {
   }
 }
 
+// Coverage estimate: assume ~1 deal-serving restaurant per 1,000 residents
+// (populations: 2021 Census 98-10-0004-01 for municipalities; City of Calgary
+// community profiles, approximate, for Calgary districts). A city is "active"
+// (promoted on the homepage) once it has deals AND at least 5% estimated
+// coverage. Below that, the data stays in this file — the open dataset never
+// shrinks — but the city isn't promoted as browsable until coverage improves.
+const RESTAURANTS_PER_1000_RESIDENTS = 1;
+const MIN_COVERAGE = 0.05;
 for (const city of Object.values(out.cities)) {
   city.restaurants.sort((a, b) => a.name.localeCompare(b.name));
+  const deals = city.restaurants.reduce((s, r) => s + r.deals.length, 0);
+  if (city.population && city.restaurants.length > 0) {
+    const estTotal = (city.population / 1000) * RESTAURANTS_PER_1000_RESIDENTS;
+    city.coverage = Math.round((city.restaurants.length / estTotal) * 1000) / 1000;
+    city.active = deals > 0 && city.coverage >= MIN_COVERAGE;
+  } else {
+    city.active = false;
+  }
 }
 
 if (!existsSync(join(siteRoot, 'public'))) mkdirSync(join(siteRoot, 'public'), { recursive: true });

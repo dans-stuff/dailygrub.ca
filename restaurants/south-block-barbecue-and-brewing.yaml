@@ -1,0 +1,33 @@
+name: South Block Barbecue & Brewing Co.
+type: local
+website: https://southblockbbq.com
+cities:
+  calgary-mission:
+    address: 2437 4th Street SW
+deals:
+  - title: Happy Hour
+    description: $6.50 pints, half-price whiskey, $4 off cocktails.
+    type: drink
+    days: [Monday, Tuesday, Wednesday, Thursday, Friday]
+    startHour: 15
+    endHour: 18
+  - title: $10 Pork Ribs
+    description: $10 pork ribs all day Monday.
+    type: food
+    days: [Monday]
+  - title: Tap Feature Tuesday
+    description: $2 off the featured tap.
+    type: drink
+    days: [Tuesday]
+  - title: Half-Price Wings
+    description: Half-priced wings all day Wednesday.
+    type: food
+    days: [Wednesday]
+  - title: Whiskey Flight Thursday
+    description: Featured whiskey flights.
+    type: drink
+    days: [Thursday]
+  - title: $14 Feature Cocktail
+    description: $14 featured cocktail on Fridays.
+    type: drink
+    days: [Friday]

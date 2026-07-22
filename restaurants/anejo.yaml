@@ -1,0 +1,11 @@
+name: Añejo
+type: local
+website: https://anejo.ca
+cities:
+  calgary-mission:
+    address: 2116 4th Street SW #2
+deals:
+  - title: Happy Hour
+    description: "3-5pm & 10pm-close daily: $7.50 margaritas, $4 classic tacos, half-price tequila."
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]

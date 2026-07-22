@@ -1,0 +1,13 @@
+name: El Furniture Warehouse
+type: chain
+website: https://warehousegroup.ca/location/el-furniture-warehouse-stephen-ave/
+cities:
+  calgary-downtown:
+    address: 107 Stephen Ave SW
+deals:
+  - title: $6.95 Happy Hour Food
+    description: All food $6.95 flat — Works 2.0 Burger, poutine, loaded fries, beef dip au jus, perogies, Baja fish tacos, spicy rigatoni, veggie burger. Plus discounted draft beer and classic margaritas.
+    type: both
+    days: [Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+    startHour: 15
+    endHour: 17

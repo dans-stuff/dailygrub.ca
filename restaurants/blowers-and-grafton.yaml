@@ -1,7 +1,9 @@
 name: Blowers & Grafton
 type: chain
-website: https://blowersgrafton.com/lethbridge/
+website: https://blowersgrafton.com
 cities:
+  calgary-mission:
+    address: 2120 4 St SW
   lethbridge:
     address: 3720 Mayor Magrath Dr S
   lloydminster:
@@ -12,32 +14,32 @@ cities:
     address: 2079 50 Ave
 deals:
   - title: Pizza Monday
-    description: $5 off any pizza + $1 off Grafton Street Lager 14oz. All day Monday. 3720 Mayor Magrath Dr S.
+    description: $5 off any pizza + $1 off Grafton Street Lager 14oz. All day Monday.
     type: both
     days:
       - Monday
   - title: Fish & Chips Tuesday
-    description: $4 off fish & chips + $1 off Grafton Street Amber 14oz. All day Tuesday. 3720 Mayor Magrath Dr S.
+    description: $4 off fish & chips + $1 off Grafton Street Amber 14oz. All day Tuesday.
     type: both
     days:
       - Tuesday
   - title: Cocktail & Donair Wednesday
-    description: $2 off all cocktails + $3 off OG Halifax Donair (Regular). All day Wednesday. 3720 Mayor Magrath Dr S.
+    description: $2 off all cocktails + $3 off OG Halifax Donair (Regular). All day Wednesday.
     type: both
     days:
       - Wednesday
   - title: Oyster & Wine Thursday
-    description: Oysters $2.50 each / $15 half-dozen + 50% off wine bottles. All day Thursday. 3720 Mayor Magrath Dr S.
+    description: Oysters $2.50 each / $15 half-dozen + 50% off wine bottles. All day Thursday.
     type: both
     days:
       - Thursday
   - title: Caesar & Snack Sunday
-    description: $2 off all Caesars (1oz) + $2 off Selfie Garlic Fingers + $3 off Selfie Nachos. All day Sunday. 3720 Mayor Magrath Dr S.
+    description: $2 off all Caesars (1oz) + $2 off Selfie Garlic Fingers + $3 off Selfie Nachos. All day Sunday.
     type: both
     days:
       - Sunday
   - title: Hali Hour
-    description: Food from $5, drinks from $5. Daily 2-5pm & 9pm-close. Dine-in only. 3720 Mayor Magrath Dr S.
+    description: Food from $5, drinks from $5. Daily 2-5pm & 9pm-close. Dine-in only.
     type: both
     days:
       - Sunday

@@ -24,7 +24,11 @@ for (const [slug, meta] of Object.entries(cities)) {
     err('cities.yaml', `${slug}: province required (2-letter)`);
   if (meta?.website !== undefined && (typeof meta.website !== 'string' || !/^https?:\/\//.test(meta.website)))
     err('cities.yaml', `${slug}: website must be http(s) URL`);
+  if (meta?.population !== undefined && (!Number.isInteger(meta.population) || meta.population < 1000))
+    err('cities.yaml', `${slug}: population must be an integer >= 1000`);
 }
+
+const citiesWithRestaurants = new Set();
 
 const seenSlugs = new Set();
 for (const f of readdirSync(restaurantsDir).filter((x) => x.endsWith('.yaml') && !x.startsWith('_'))) {
@@ -52,6 +56,7 @@ for (const f of readdirSync(restaurantsDir).filter((x) => x.endsWith('.yaml') &&
   else
     for (const [citySlug, entry] of Object.entries(r.cities)) {
       if (!cities[citySlug]) err(file, `unknown city "${citySlug}" (add it to cities.yaml first)`);
+      else citiesWithRestaurants.add(citySlug);
       if (entry !== null && entry !== undefined && typeof entry !== 'object')
         err(file, `cities.${citySlug} must be a mapping`);
       if (entry?.address !== undefined && typeof entry.address !== 'string')
@@ -78,6 +83,13 @@ for (const f of readdirSync(restaurantsDir).filter((x) => x.endsWith('.yaml') &&
       }
     });
   }
+}
+
+// Coverage gating needs a denominator: any city that has restaurants must
+// carry a population figure in cities.yaml.
+for (const slug of citiesWithRestaurants) {
+  if (cities[slug]?.population === undefined)
+    err('cities.yaml', `${slug}: population required (city has restaurants; used for coverage gating)`);
 }
 
 if (errors.length) {

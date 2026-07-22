@@ -33,6 +33,9 @@ export interface City {
   name: string;
   province: string;
   website?: string;
+  population?: number;
+  coverage?: number;
+  active?: boolean;
   restaurants: Restaurant[];
 }
 
@@ -56,6 +59,7 @@ export function getCities() {
     slug,
     name: city.name,
     province: city.province,
+    active: city.active === true,
     dealCount: city.restaurants.reduce((s, r) => s + r.deals.length, 0),
   }));
 }
