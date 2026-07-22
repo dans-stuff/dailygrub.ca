@@ -1,0 +1,11 @@
+name: Sip Neighbourhood Pub
+type: local
+website: https://sipdrinkeat.ca
+cities:
+  nanaimo:
+    address: 106-601 Bruce Ave
+deals:
+  - title: Happy Hour
+    description: "Weekdays noon-6pm, weekends 3-6pm, and every night 9:30pm-close: craft beer 20oz $6, highballs $5.50/$8.50 (single/double), house wine 6oz $6, cocktails $7/$10. Food features — SIP appy basket, half-pound wings, Caesar salad, cheese fries, grilled cheese & soup."
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]

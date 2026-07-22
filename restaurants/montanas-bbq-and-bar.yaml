@@ -2,6 +2,8 @@ name: Montana's BBQ & Bar
 type: chain
 website: https://www.montanas.ca
 cities:
+  st-albert:
+    address: 445 St Albert Rd
   leduc:
     address: 1101 4 St, Nisku
   grande-prairie:

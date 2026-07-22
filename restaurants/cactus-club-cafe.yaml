@@ -1,0 +1,17 @@
+name: Cactus Club Cafe
+type: chain
+website: https://cactusclubcafe.com
+cities:
+  nanaimo:
+    address: 801-5800 Turner Road
+deals:
+  - title: Happy Hour
+    description: Deals from $5, including the happy-hour-exclusive $9 Smash Burger.
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    startHour: 14
+    endHour: 17
+  - title: Half-Price Wine Tuesday
+    description: Half-price wine bottles.
+    type: drink
+    days: [Tuesday]

@@ -2,6 +2,14 @@ name: The Canadian Brewhouse
 type: chain
 website: https://thecanadianbrewhouse.com
 cities:
+  airdrie:
+    address: 130 Sierra Springs Dr SE Unit 2000
+  st-albert:
+    address: 105-840 St Albert Trail & 101 St Albert Trail #50
+  fort-mcmurray:
+    address: 108 Riverstone Ridge #117
+  kelowna:
+    address: 3030 Pandosy St #130
   calgary-northeast:
     address: 9650 Harvest Hills Blvd N #1200 & 425 36 St NE
   calgary-northwest:

@@ -1,0 +1,32 @@
+name: Leopold's Tavern
+type: chain
+website: https://leopoldstavern.com
+cities:
+  kelowna:
+    address: 279 Bernard Ave
+deals:
+  - title: Happy Hour
+    description: "Daily 2-5pm (and ALL DAY Monday): $0.99 pickled egg, $5 messy fries (garlic parm, taco, or dill pickle), $6 scotch egg, perogies & sour cream-onion dip, $9 chips & guac, $10 fried pickles & crispy chicken Caesar tacos, $12.50 bucket of bacon. Leo's Lager 20oz $7, Michelob Ultra 20oz $8, house wine $7/$9.50, Caesars $8, highballs & Jameson $6."
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+  - title: Tacos + Tequila Tuesday
+    description: $4.50 tacos, snacks from $5, drinks from $5. From 2pm to close.
+    type: both
+    days: [Tuesday]
+    startHour: 14
+  - title: Wing Wednesday
+    description: Half-price wings — 5 wing types, 17 flavours. From 2pm to close.
+    type: food
+    days: [Wednesday]
+    startHour: 14
+  - title: Late Night $5 Menu
+    description: $5 pints of Leo's Lager, Leo's Island Iced Tea, Leo's Fizz, and Smash Burger Junior. 11pm to close.
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    startHour: 23
+  - title: Breakfast Club
+    description: $12 brunch, drinks from $5. Weekends and select holidays, 11am-2pm.
+    type: both
+    days: [Saturday, Sunday]
+    startHour: 11
+    endHour: 14

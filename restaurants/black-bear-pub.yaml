@@ -1,0 +1,35 @@
+name: Black Bear Pub
+type: local
+website: https://theblackbearpub.com
+cities:
+  nanaimo:
+    address: 6201 Doumont Rd
+deals:
+  - title: Monday Steak Sandwich
+    description: Steak sandwich with fries $19. Lucky Lager 20oz $6.25.
+    type: both
+    days: [Monday]
+  - title: Tuesday Pasta
+    description: Classic pasta $18. Hoyne 20oz $6.25.
+    type: both
+    days: [Tuesday]
+  - title: Wednesday Wings
+    description: Pound of wings $15. Bud & OK Pale Ale 20oz $6.25.
+    type: both
+    days: [Wednesday]
+  - title: Thursday Haddock & Chips
+    description: Haddock & chips $15-$18. Tilt Lager 20oz $6.25.
+    type: both
+    days: [Thursday]
+  - title: Friday Paralyzers
+    description: Paralyzers $6-$8. Blue Buck 20oz $6.25.
+    type: drink
+    days: [Friday]
+  - title: Saturday Long Islands
+    description: Long Islands $6-$8. Canadian & Coors Light 20oz $6.25.
+    type: drink
+    days: [Saturday]
+  - title: Sunday Wings & Caesars
+    description: Pound of wings $15. Caesars $8-$10. Arrowsmith 20oz $6.25.
+    type: both
+    days: [Sunday]

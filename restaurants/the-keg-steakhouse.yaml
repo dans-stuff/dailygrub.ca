@@ -2,6 +2,8 @@ name: The Keg Steakhouse
 type: chain
 website: https://www.thekeg.com
 cities:
+  fort-mcmurray:
+    address: 10006 MacDonald Avenue
   lethbridge:
     address: 1717 Mayor Magrath Dr S
   red-deer:
