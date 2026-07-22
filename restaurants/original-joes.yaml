@@ -5,9 +5,9 @@ cities:
   st-albert:
     address: 5 Giroux Road Unit 520
   calgary-downtown:
-    address: 109 8th Avenue SW
-  calgary-kensington:
-    address: 1220 Kensington Road NW, Unit 100
+    address: 109 8th Avenue SW & 1220 Kensington Road NW
+  calgary-southwest:
+    address: 2047 34 Ave SW
   grande-prairie:
     address: 10704 78th Ave, Grande Prairie, AB
   lethbridge:

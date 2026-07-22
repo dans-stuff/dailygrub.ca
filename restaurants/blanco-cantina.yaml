@@ -2,10 +2,8 @@ name: Blanco Cantina
 type: chain
 website: https://www.blancocantina.ca
 cities:
-  calgary-beltline:
-    address: 723 17th Avenue SW
-  calgary-kensington:
-    address: 1140 Kensington Rd NW
+  calgary-downtown:
+    address: 723 17th Avenue SW & 1140 Kensington Rd NW
   calgary-southwest:
     address: 8537 Broadcast Avenue SW
   edmonton:

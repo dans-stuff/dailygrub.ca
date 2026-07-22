@@ -65,34 +65,10 @@ brossard:
 caledon:
   name: Caledon
   province: ON
-calgary-beltline:
-  name: Calgary — Beltline & 17th Ave
-  province: AB
-  population: 25880
-calgary-bridgeland:
-  name: Calgary — Bridgeland
-  province: AB
-  population: 6800
 calgary-downtown:
-  name: Calgary — Downtown & Stephen Ave
+  name: Calgary — Downtown
   province: AB
-  population: 15000
-calgary-inglewood:
-  name: Calgary — Inglewood & Ramsay
-  province: AB
-  population: 7000
-calgary-kensington:
-  name: Calgary — Kensington
-  province: AB
-  population: 10500
-calgary-marda-loop:
-  name: Calgary — Marda Loop
-  province: AB
-  population: 14000
-calgary-mission:
-  name: Calgary — Mission & 4th St
-  province: AB
-  population: 5500
+  population: 85000
 calgary-northeast:
   name: Calgary — Northeast
   province: AB

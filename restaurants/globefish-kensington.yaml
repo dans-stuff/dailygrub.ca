@@ -2,7 +2,7 @@ name: Globefish Kensington
 type: local
 website: https://globefishkensington.ca
 cities:
-  calgary-kensington:
+  calgary-downtown:
     address: 332 14 St NW
 deals:
   - title: Happy Hour
