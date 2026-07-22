@@ -1,0 +1,39 @@
+name: Barley Mill Brew Pub
+type: local
+website: https://barleymillpub.com
+cities:
+  penticton:
+    address: 2460 Skaha Lake Rd
+deals:
+  - title: Buck Off Monday
+    description: '"Buck Off" 9oz glasses of wine all day. $5 off all in-house burgers from 3pm.'
+    type: both
+    days: [Monday]
+  - title: Rib Tuesday
+    description: $17.99 full rack baby back ribs with fries & coleslaw, from 3pm. $9 double highballs.
+    type: both
+    days: [Tuesday]
+    startHour: 15
+  - title: Wing Night
+    description: Half-price chicken wings with weekly flavour specials, from 3pm. $2 off Barley Mill Iced Teas, $5.50 tequila shooters. Karaoke 8:30pm.
+    type: both
+    days: [Wednesday]
+    startHour: 15
+  - title: Trivia Thursday
+    description: $12.99 all flatbreads, $9 double highballs, $2 off Long Island Iced Teas, $5 off Barley Brew bottles & jugs, $1 off Caesars & wine. From 3pm.
+    type: both
+    days: [Thursday]
+    startHour: 15
+  - title: Sirloin Friday
+    description: $20.99 sirloin steak dinner with mashed potatoes, gravy & Caesar salad, from 3pm. $10 New England clam chowder, $5 off Barley Brew bottles & jugs, $5.50 shooters. Karaoke 8:30pm.
+    type: both
+    days: [Friday]
+    startHour: 15
+  - title: Saturday Ribs & Breakfast
+    description: $17.99 full rack baby back ribs from 3pm. Breakfast from $15, 11am-2pm. $1 off Barley Mill Iced Teas.
+    type: both
+    days: [Saturday]
+  - title: Sunday Cod & Chips
+    description: $14.99 cod & chips all day. Breakfast from $15, 11am-2pm. $1 off Caesars, $5 off Barley Brew jugs.
+    type: both
+    days: [Sunday]

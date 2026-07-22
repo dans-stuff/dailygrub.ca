@@ -1,0 +1,40 @@
+name: Duffy's Neighbourhood Pub
+type: local
+website: https://duffyspub.ca
+cities:
+  kamloops:
+    address: 1797 Pacific Way
+deals:
+  - title: Happy Hour
+    description: "3-6pm (except Saturday) & 9-11pm: pints $6.50, bottles $5.50, highballs $5.50, house wine (6oz) $7. Apps $8.50 (dry ribs, fried pickles, potato skins). After 8pm: $4 cans, $7 smash burger."
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday]
+  - title: Quesadilla Monday
+    description: Quesadillas $16.95, IPA pints $7.50.
+    type: both
+    days: [Monday]
+  - title: Taco Tuesday
+    description: Tacos $16.95, Stella $10.50.
+    type: both
+    days: [Tuesday]
+  - title: Wing Wednesday
+    description: Wings $7.95/lb.
+    type: food
+    days: [Wednesday]
+  - title: Prime Rib Thursday
+    description: Prime rib $28.95, after 5pm.
+    type: food
+    days: [Thursday]
+    startHour: 17
+  - title: Keith's Friday
+    description: Alexander Keith's pints $7.50.
+    type: drink
+    days: [Friday]
+  - title: Saturday Burger & Wine
+    description: Mile-high burger $19.95, $5 off wine bottles.
+    type: both
+    days: [Saturday]
+  - title: Sunday Fish & Chips
+    description: Fish 'n chips $17.95, Guinness $9.50, double Caesars $8.50.
+    type: both
+    days: [Sunday]

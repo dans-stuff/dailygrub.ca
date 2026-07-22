@@ -1,0 +1,36 @@
+name: Stockman's Restaurant & Lounge
+type: local
+website: https://stockmansrestaurant.ca
+cities:
+  okotoks:
+    address: 300 Pine Creek Road, Heritage Pointe
+deals:
+  - title: Half-Price Wing Monday
+    description: Half-price wings 2pm-close. $6.50 20oz house draught. Stockman's Lager & Red Ale $8.25 daily.
+    type: both
+    days: [Monday]
+    startHour: 14
+  - title: Burger Tuesday
+    description: $15 cheeseburger and fries. $6 16oz draught, all taps.
+    type: both
+    days: [Tuesday]
+  - title: Fish & Chips Wednesday
+    description: Fish & chips $16 (1pc) / $20 (2pc). $7.50 20oz Wild Rose draught.
+    type: both
+    days: [Wednesday]
+  - title: Lasagna Thursday
+    description: $18 lasagna and Caesar salad. $1 off 6oz wine, $2 off 9oz wine.
+    type: both
+    days: [Thursday]
+  - title: Brisket & Mules Friday
+    description: $23 house-smoked BBQ brisket sandwich from 4pm. $8 all 2oz Mule cocktails.
+    type: both
+    days: [Friday]
+  - title: Saturday Chef's Plate
+    description: Chef's Plate dinner special. $6 Coronas & highballs.
+    type: both
+    days: [Saturday]
+  - title: Sunday Buffet & Pizza
+    description: Breakfast buffet 10am-1pm — $22 adults / $20 seniors / $17 kids. Pizza Day $22 (12") / $26 (14"). $22 buckets of PBR tallboys or iced tea.
+    type: both
+    days: [Sunday]

@@ -1,0 +1,11 @@
+name: Kin & Folk
+type: local
+website: https://kinandfolk.ca
+cities:
+  penticton:
+    address: 557 Main St
+deals:
+  - title: Happy Hour
+    description: "3-5pm & 9pm-close daily: $6 beer (Farm Folk Lager, Hazy IPA), $8-$12 cocktails, $10 Negroni. Food from $6 — togarashi fries, fried rice, dumplings, burrata; $16-$17 burgers (Pork Belly, Ginger Beef, Korean Fried Chicken), $17 Katsu Chicken sandwich."
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]

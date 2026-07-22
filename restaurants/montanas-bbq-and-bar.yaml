@@ -2,6 +2,8 @@ name: Montana's BBQ & Bar
 type: chain
 website: https://www.montanas.ca
 cities:
+  leduc:
+    address: 1101 4 St, Nisku
   grande-prairie:
     address: 10820 100th Ave, Grande Prairie, AB
   red-deer:

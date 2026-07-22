@@ -1,12 +1,14 @@
 name: Match Eatery & Public House
 type: chain
-website: https://matchpub.com/vernon/
+website: https://matchpub.com
 cities:
+  penticton:
+    address: 553 Vees Drive
   vernon:
     address: 4900 Anderson Way, Vernon, BC
 deals:
   - title: Happy Hour
-    description: $6.50 food items, half-price wine, $2 off craft beer, $1 off highballs. Daily 3-5:30pm and 9pm-close.
+    description: $6.95 appetizers (sliders, tacos, fried ravioli), half-price wine, $2 off craft beer, $1 off highballs. Daily 3-5:30pm and 9pm-close. Menu may vary by location.
     type: both
     days:
       - Sunday

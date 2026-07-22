@@ -2,6 +2,8 @@ name: Wing'n It
 type: chain
 website: https://wingnit.ca
 cities:
+  airdrie:
+    address: 3 Stonegate Drive NW
   grande-prairie:
     address: 10312 67th Ave
 deals:

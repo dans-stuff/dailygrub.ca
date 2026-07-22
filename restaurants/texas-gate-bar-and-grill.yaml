@@ -5,8 +5,37 @@ cities:
   cochrane:
     address: 304 1st Street West, Cochrane, AB
 deals:
-  - title: Steak Sandwich
-    description: Daily steak sandwich $6.95 until 8pm.
+  - title: Jumbo Wings & Fish Tacos
+    description: Jumbo chicken wings & gourmet fish tacos $8.95/order, 4-9pm. Beverage purchase required. Dine-in only.
+    type: food
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+    startHour: 16
+    endHour: 21
+  - title: Fish & Chips Thursday
+    description: 2-piece fish & chips $8.95/order, 4-9pm. Beverage purchase required. Dine-in only.
+    type: food
+    days:
+      - Thursday
+    startHour: 16
+    endHour: 21
+  - title: Pub Favorites & Prime Rib
+    description: $4 off pub favorites all day. 10oz AAA prime rib dinner $39.95, 4-9pm. Beverage purchase required. Dine-in only.
+    type: food
+    days:
+      - Friday
+      - Saturday
+  - title: Spaghetti Sunday
+    description: Spaghetti with house-made beef sauce $8.95/order, 2-9pm. Beverage purchase required. Dine-in only.
+    type: food
+    days:
+      - Sunday
+    startHour: 14
+    endHour: 21
+  - title: Steak Sandwich Everyday
+    description: 6oz AAA New York steak sandwich $18.95/order, 11am-9pm. Beverage purchase required. Dine-in only.
     type: food
     days:
       - Sunday
@@ -16,19 +45,19 @@ deals:
       - Thursday
       - Friday
       - Saturday
-    endHour: 20
-  - title: $0.35 Jumbo Wings
-    description: $0.35 jumbo wings Tuesday 4-10pm.
+    startHour: 11
+    endHour: 21
+  - title: Pork Ribs Everyday
+    description: Pork ribs (5 pieces) $8.95/order, 4-10pm. Beverage purchase required. Dine-in only.
     type: food
     days:
+      - Sunday
+      - Monday
       - Tuesday
-    startHour: 16
-    endHour: 22
-  - title: Buck-A-Rib
-    description: St. Louis buck-a-rib Wednesday 4-10pm.
-    type: food
-    days:
       - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     startHour: 16
     endHour: 22
   - title: Kids All Dishes $5.95

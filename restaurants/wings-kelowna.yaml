@@ -1,0 +1,31 @@
+name: WINGS Kelowna
+type: chain
+website: https://greatwings.ca/kelowna/
+cities:
+  kelowna:
+    address: 1-590 Hwy 33 West
+deals:
+  - title: Kids Eat Free Monday
+    description: Kids eat free. $1 off tap beer.
+    type: both
+    days: [Monday]
+  - title: Pasta Tuesday
+    description: Pasta from $10. Half-price wine bottles.
+    type: both
+    days: [Tuesday]
+  - title: $12 Wings
+    description: $12 wings all day Wednesday and Sunday — dine-in only, one flavour per order, beverage purchase required. $4.75 Fiji Blonde Lager.
+    type: both
+    days: [Wednesday, Sunday]
+  - title: Cocktail Thursday
+    description: $1-$1.50 off cocktails.
+    type: drink
+    days: [Thursday]
+  - title: Friday Fish & Chips
+    description: $12 fish & chips. $1 off Timber Hazy IPA.
+    type: both
+    days: [Friday]
+  - title: Saturday Ribs
+    description: Half-rack ribs $19.75. $1 off Corona.
+    type: both
+    days: [Saturday]

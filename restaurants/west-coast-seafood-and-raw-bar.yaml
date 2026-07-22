@@ -1,0 +1,13 @@
+name: West Coast Seafood + Raw Bar
+type: local
+website: https://westcoastrawbar.ca
+cities:
+  kelowna:
+    address: 1675 Abbott St
+deals:
+  - title: Happy Hour
+    description: "2:30-5:30pm daily: $7.95 20oz beer, $6.75-$8.75 wine by the glass, $8.95 Caesars & G&Ts, $3.25 oysters, $20 mussels pot, $45 Happy Hour Tower, 20% off maki rolls and casual plates."
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    startHour: 14
+    endHour: 17

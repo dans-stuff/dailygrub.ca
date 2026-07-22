@@ -1,0 +1,39 @@
+name: Seventy Two Kitchen & Patio
+type: local
+website: https://seventytwokitchen.ca
+cities:
+  fort-mcmurray:
+    address: 1 C.A. Knight Way
+deals:
+  - title: Happy Hour
+    description: "2-5pm & 8pm-close daily: $7 bottled beer, canned coolers, and highballs. Food: truffle kettle chips $6, sweet potato fries $6, poutine $8, loaded potato skins $10, Bam Bam shrimp $15, chicken or ginger beef bowl $18."
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+  - title: Monday Pairing
+    description: Loaded potato skins $10 + Mango Mai Tai $7.
+    type: both
+    days: [Monday]
+  - title: Tuesday Pairing
+    description: Chicken fingers $15 + Mojito $7.
+    type: both
+    days: [Tuesday]
+  - title: Wednesday Wings
+    description: 20 wings $23 + draft beer $7.
+    type: both
+    days: [Wednesday]
+  - title: Thursday Pairing
+    description: Taco salad $14 + house wine (6oz) $7.
+    type: both
+    days: [Thursday]
+  - title: Friday Fish & Chips
+    description: Fish & chips $18 + John Daly $7.
+    type: both
+    days: [Friday]
+  - title: Saturday Pairing
+    description: Steak bites $15 + Mimosa $7.
+    type: both
+    days: [Saturday]
+  - title: Sunday Breakfast
+    description: Classic breakfast $17 + Caesar $7.
+    type: both
+    days: [Sunday]

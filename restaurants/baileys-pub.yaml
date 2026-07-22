@@ -1,0 +1,17 @@
+name: Bailey's Pub
+type: local
+website: https://baileyspubfortmac.com
+cities:
+  fort-mcmurray:
+    address: 9713 Hardin Street
+deals:
+  - title: Monday Wings & Smirnoff
+    description: Wings $9.99. $1 off Smirnoff, all flavours.
+    type: both
+    days: [Monday]
+  - title: Happy Hour
+    description: Daily happy hour 4-7pm.
+    type: drink
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    startHour: 16
+    endHour: 19

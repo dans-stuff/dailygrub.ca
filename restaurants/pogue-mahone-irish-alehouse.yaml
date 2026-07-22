@@ -1,0 +1,43 @@
+name: Pogue Mahone Irish Alehouse
+type: local
+website: https://poguemahonekamloops.com
+cities:
+  kamloops:
+    address: 843 Desmond St
+deals:
+  - title: Happy Hour
+    description: Domestic sleeves & house wine $4.60, appetizers from $9.99.
+    type: both
+    days: [Monday, Tuesday, Wednesday, Thursday, Friday]
+    startHour: 14
+    endHour: 17
+  - title: Fish & Chips Monday
+    description: Fish & chips special.
+    type: food
+    days: [Monday]
+  - title: Pizza Tuesday
+    description: Two-topping 10" pizza $12.
+    type: food
+    days: [Tuesday]
+  - title: Wing Wednesday
+    description: Wings $7.99/lb with beverage purchase. Dine-in only.
+    type: food
+    days: [Wednesday]
+  - title: Triple Highball Thursday
+    description: Triple highballs on special.
+    type: drink
+    days: [Thursday]
+  - title: Steak Night Friday
+    description: Steak night $21.99-$24.99. Double highballs on special.
+    type: both
+    days: [Friday]
+  - title: Burger & Beer Brunch
+    description: Burger & beer brunch, 11am-2pm.
+    type: both
+    days: [Saturday]
+    startHour: 11
+    endHour: 14
+  - title: Caesar Sunday
+    description: Caesars on special all day.
+    type: drink
+    days: [Sunday]

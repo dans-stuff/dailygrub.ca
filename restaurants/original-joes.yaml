@@ -2,6 +2,8 @@ name: Original Joe's
 type: chain
 website: https://www.originaljoes.ca
 cities:
+  st-albert:
+    address: 5 Giroux Road Unit 520
   calgary-downtown:
     address: 109 8th Avenue SW
   calgary-kensington:

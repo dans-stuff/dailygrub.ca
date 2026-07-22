@@ -1,0 +1,11 @@
+name: TABLE twelvefifty
+type: local
+website: https://tabletwelvefifty.ca
+cities:
+  kamloops:
+    address: 1250 Rogers Way
+deals:
+  - title: Happy Hour
+    description: "1-5pm & 8pm-close daily (extended during live NHL games after 12pm): cocktails (1.5oz) $8, beer (355ml) $5, highballs $6, wine bottles $30. Apps $5-$13 — ketchup chips, crispy chicken wings, poutine of the month, smashed grilled cheese."
+    type: both
+    days: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
