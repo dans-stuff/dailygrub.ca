@@ -1,8 +1,12 @@
 // Worker for handling non-asset requests (404s, etc.)
 // Assets are served directly by Cloudflare - this only handles fallback
 
+interface Env {
+  ASSETS: { fetch: (request: Request) => Promise<Response> };
+}
+
 const worker = {
-  async fetch(request: Request): Promise<Response> {
+  async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
     // Log every worker invocation to understand what's hitting the worker
@@ -16,13 +20,12 @@ const worker = {
       cfRay: request.headers.get('cf-ray') || 'unknown',
     }));
 
-    // Return 404 for any request that reaches the worker
-    // (static assets are served directly and don't hit this)
-    return new Response("Not found", {
+    // Serve the site's real 404 page (static assets are served directly
+    // and don't hit this; anything reaching the worker is a miss).
+    const page = await env.ASSETS.fetch(new Request(new URL('/404.html', url.origin)));
+    return new Response(page.body, {
       status: 404,
-      headers: {
-        'content-type': 'text/plain',
-      }
+      headers: { 'content-type': 'text/html; charset=utf-8' },
     });
   },
 };

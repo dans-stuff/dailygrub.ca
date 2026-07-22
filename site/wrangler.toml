@@ -19,4 +19,5 @@ zone_name = "dailygrub.ca"
 
 [assets]
 directory = "./out"
+binding = "ASSETS"
 not_found_handling = "404-page"
