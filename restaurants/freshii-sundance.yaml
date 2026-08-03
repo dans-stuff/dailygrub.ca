@@ -1,0 +1,13 @@
+# Added from an email tip — see the PR for provenance.
+name: Freshii Sundance
+type: local
+website: https://freshiisundance.com/
+cities:
+  calgary-southeast: {}
+deals:
+  - title: Bowl of the Day
+    description: Bowl of the Day is $12.99 with protein included, varies by day.
+    type: food
+  - title: Friday Smoothii Deal
+    description: 12-ounce Smoothii is $3.99 on Fridays.
+    type: food
